@@ -1,0 +1,15 @@
+[project]
+name = "vocab-pipeline"
+version = "0.1.0"
+description = "Extract, review, validate, and package vocabulary PDFs for apps."
+requires-python = ">=3.10"
+dependencies = [
+  "pypdf>=6.0",
+]
+
+[project.scripts]
+vocab-pipeline = "vocab_pipeline.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

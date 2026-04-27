@@ -1,0 +1,46 @@
+{
+  "schema_version": "validation-report.v1",
+  "status": "ok",
+  "source": {
+    "source_id": "classical-roots-vocabulary-from-classical-roots-ocr",
+    "category": "classical-roots",
+    "source_title": "Vocabulary from classical roots.ocr",
+    "file_name": "Vocabulary_from_classical_roots.ocr.pdf",
+    "file_path": "/home/anqiguo@Apollo.Lab/pjt/data/ocr/classical-roots/Vocabulary_from_classical_roots.ocr.pdf",
+    "file_sha256": "f4675fe45daafac4b70313b3cbeb0607b45589a7452145ce0bfd41b9b75bbc65",
+    "page_count": 32,
+    "extracted_at": "2026-04-27T04:15:14.900608+00:00",
+    "extraction_engine": "pypdf",
+    "warnings": []
+  },
+  "page_count": 32,
+  "empty_page_count": 1,
+  "empty_pages": [
+    3
+  ],
+  "entry_count": 89,
+  "entry_category_counts": {
+    "classical-roots": 89
+  },
+  "parser_profile_counts": {
+    "generic": 89
+  },
+  "category_mismatch_ids": [],
+  "duplicate_normalized_terms": [
+    "key words",
+    "nearly the same as the word in bold",
+    "new york",
+    "nota bene",
+    "the same as the word in bold",
+    "unus",
+    "vocabulary from classical roots"
+  ],
+  "missing_term_ids": [],
+  "missing_definition_ids": [],
+  "entry_warning_counts": {
+    "short_definition": 8
+  },
+  "recommendations": [
+    "Review random entries against the source PDF before packaging the data for apps."
+  ]
+}
