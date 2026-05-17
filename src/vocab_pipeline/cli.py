@@ -10,33 +10,39 @@ from .db import build_database, default_db_output
 from .extract import default_raw_output, extract_to_file
 from .ids import DEFAULT_CATEGORY, normalize_category, source_id_from_path
 from .parse import DEFAULT_PARSER_PROFILE, available_parser_profiles, default_entries_output, parse_raw_file
+from .pipeline import PipelineRunner
 from .review import default_review_csv_output, default_review_markdown_output, write_review_files
+from .structured_extraction import extract_and_write_all_lessons
 from .validate import default_report_output, validate_files
+from .paths import PipelinePaths
 
 
 def print_json(payload: dict[str, Any]) -> None:
     print(json.dumps(payload, ensure_ascii=False, indent=2))
 
 
-def discover_pdf_paths(paths: list[str]) -> list[Path]:
-    pdf_paths: list[Path] = []
+def discover_source_paths(paths: list[str]) -> list[Path]:
+    source_paths: list[Path] = []
+    supported_suffixes = {".pdf", ".txt"}
     for raw_path in paths:
         path = Path(raw_path)
         if path.is_dir():
-            pdf_paths.extend(sorted(child for child in path.rglob("*") if child.is_file() and child.suffix.lower() == ".pdf"))
+            source_paths.extend(
+                sorted(child for child in path.rglob("*") if child.is_file() and child.suffix.lower() in supported_suffixes)
+            )
             continue
-        if path.is_file() and path.suffix.lower() == ".pdf":
-            pdf_paths.append(path)
+        if path.is_file() and path.suffix.lower() in supported_suffixes:
+            source_paths.append(path)
             continue
-        raise FileNotFoundError(f"Expected a PDF file or directory containing PDFs: {path}")
-    return pdf_paths
+        raise FileNotFoundError(f"Expected a PDF or text source file, or a directory containing them: {path}")
+    return source_paths
 
 
-def category_for_pdf(pdf_path: Path, args: argparse.Namespace) -> str:
+def category_for_source(source_path: Path, args: argparse.Namespace) -> str:
     if getattr(args, "category", None):
         return normalize_category(args.category)
     if getattr(args, "category_from_parent", False):
-        return normalize_category(pdf_path.parent.name)
+        return normalize_category(source_path.parent.name)
     return DEFAULT_CATEGORY
 
 
@@ -54,69 +60,22 @@ def run_pdf_pipeline(
     db_path: Path | None = None,
     allow_empty_db: bool = False,
 ) -> dict[str, Any]:
-    selected_category = normalize_category(category)
-    selected_source_id = source_id or source_id_from_path(pdf_path, category=selected_category)
-    selected_raw_path = raw_path or default_raw_output(
+    runner = PipelineRunner()
+    result = runner.run_all(
         pdf_path,
-        source_id=selected_source_id,
-        category=selected_category,
-    )
-    selected_entries_path = entries_path or default_entries_output(selected_raw_path, category=selected_category)
-    selected_review_markdown_path = review_markdown_path or default_review_markdown_output(
-        selected_entries_path,
-        category=selected_category,
-    )
-    selected_review_csv_path = review_csv_path or default_review_csv_output(
-        selected_entries_path,
-        category=selected_category,
-    )
-    selected_validation_report_path = validation_report_path or default_report_output(
-        selected_raw_path,
-        category=selected_category,
-    )
-    selected_db_path = db_path or default_db_output()
-
-    extract_to_file(
-        pdf_path,
-        output_path=selected_raw_path,
-        source_id=selected_source_id,
-        category=selected_category,
+        category=category,
+        source_id=source_id,
         source_title=source_title,
-    )
-    _, entry_count = parse_raw_file(
-        selected_raw_path,
-        output_path=selected_entries_path,
         parser_profile=parser_profile,
+        raw_path=raw_path,
+        entries_path=entries_path,
+        review_markdown_path=review_markdown_path,
+        review_csv_path=review_csv_path,
+        validation_report_path=validation_report_path,
+        db_path=db_path,
+        allow_empty_db=allow_empty_db,
     )
-    write_review_files(
-        selected_entries_path,
-        markdown_path=selected_review_markdown_path,
-        csv_path=selected_review_csv_path,
-        category=selected_category,
-    )
-    validate_files(selected_raw_path, entries_path=selected_entries_path, output_path=selected_validation_report_path)
-
-    db_summary: dict[str, Any] | None = None
-    if entry_count or allow_empty_db:
-        db_summary = build_database(selected_raw_path, selected_entries_path, db_path=selected_db_path)
-
-    return {
-        "source_id": selected_source_id,
-        "category": selected_category,
-        "parser_profile": parser_profile,
-        "pdf_path": str(pdf_path),
-        "raw_path": str(selected_raw_path),
-        "entries_path": str(selected_entries_path),
-        "review_markdown_path": str(selected_review_markdown_path),
-        "review_csv_path": str(selected_review_csv_path),
-        "validation_report_path": str(selected_validation_report_path),
-        "db_path": str(selected_db_path) if db_summary else None,
-        "entry_count": entry_count,
-        "fts_enabled": db_summary["fts_enabled"] if db_summary else None,
-        "next_step": None
-        if entry_count
-        else "No entries were parsed. Inspect the validation report and run OCR or a stronger extraction engine before building the app database.",
-    }
+    return result.as_summary()
 
 
 def cmd_extract(args: argparse.Namespace) -> None:
@@ -211,21 +170,20 @@ def cmd_run_all(args: argparse.Namespace) -> None:
 
 
 def cmd_run_batch(args: argparse.Namespace) -> None:
-    pdf_paths = discover_pdf_paths(args.inputs)
-    summaries = []
-    for pdf_path in pdf_paths:
-        summaries.append(
-            run_pdf_pipeline(
-                pdf_path,
-                category=category_for_pdf(pdf_path, args),
-                parser_profile=args.parser_profile,
-                db_path=Path(args.db) if args.db else None,
-                allow_empty_db=args.allow_empty_db,
-            )
-        )
+    source_paths = discover_source_paths(args.inputs)
+    runner = PipelineRunner()
+    results = runner.run_batch(
+        source_paths,
+        category=args.category,
+        category_from_parent=args.category_from_parent,
+        parser_profile=args.parser_profile,
+        db_path=Path(args.db) if args.db else None,
+        allow_empty_db=args.allow_empty_db,
+    )
+    summaries = [result.as_summary() for result in results]
     print_json(
         {
-            "pdf_count": len(pdf_paths),
+            "source_count": len(source_paths),
             "entry_count": sum(summary["entry_count"] for summary in summaries),
             "categories": sorted({summary["category"] for summary in summaries}),
             "results": summaries,
@@ -233,11 +191,41 @@ def cmd_run_batch(args: argparse.Namespace) -> None:
     )
 
 
+def cmd_extract_lessons(args: argparse.Namespace) -> None:
+    source_path = Path(args.source)
+    summary = extract_and_write_all_lessons(
+        source_path=source_path,
+        json_output_path=Path(args.json_output),
+        markdown_output_path=Path(args.markdown_output),
+    )
+    print_json(summary)
+
+
+def cmd_bundle_lessons(args: argparse.Namespace) -> None:
+    raw_path = Path(args.raw)
+    paths = PipelinePaths()
+    category = paths.category_for_raw(raw_path, category=args.category)
+    json_default, markdown_default = paths.lesson_bundle_paths_for_raw(
+        raw_path,
+        category=category,
+        base_name=args.base_name,
+    )
+    json_output_path = Path(args.json_output) if args.json_output else json_default
+    markdown_output_path = Path(args.markdown_output) if args.markdown_output else markdown_default
+    summary = extract_and_write_all_lessons(
+        source_path=raw_path,
+        json_output_path=json_output_path,
+        markdown_output_path=markdown_output_path,
+    )
+    summary["category"] = category
+    print_json(summary)
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Extract and package vocabulary PDFs for apps.")
     subparsers = parser.add_subparsers(required=True)
 
-    extract_parser = subparsers.add_parser("extract", help="Extract page-level text from a PDF.")
+    extract_parser = subparsers.add_parser("extract", help="Extract page-level text from a PDF or text source.")
     extract_parser.add_argument("pdf")
     extract_parser.add_argument("--source-id")
     extract_parser.add_argument("--source-title")
@@ -272,7 +260,7 @@ def build_parser() -> argparse.ArgumentParser:
     doctor_parser = subparsers.add_parser("doctor", help="Report available PDF/OCR tooling.")
     doctor_parser.set_defaults(func=cmd_doctor)
 
-    run_all_parser = subparsers.add_parser("run-all", help="Run extract, parse, review, validate, and build-db.")
+    run_all_parser = subparsers.add_parser("run-all", help="Run extract, parse, review, validate, and build-db for a PDF or text source.")
     run_all_parser.add_argument("pdf")
     run_all_parser.add_argument("--source-id")
     run_all_parser.add_argument("--source-title")
@@ -299,6 +287,34 @@ def build_parser() -> argparse.ArgumentParser:
     run_batch_parser.add_argument("--db")
     run_batch_parser.add_argument("--allow-empty-db", action="store_true")
     run_batch_parser.set_defaults(func=cmd_run_batch)
+
+    extract_lessons_parser = subparsers.add_parser(
+        "extract-lessons",
+        help="Extract all lesson content into consolidated JSON and Markdown in lesson-oriented format.",
+    )
+    extract_lessons_parser.add_argument("source", help="Path to the raw textbook .pages.json source file.")
+    extract_lessons_parser.add_argument("--json-output", required=True, help="Path for consolidated lessons JSON output.")
+    extract_lessons_parser.add_argument(
+        "--markdown-output",
+        required=True,
+        help="Path for consolidated lessons Markdown output.",
+    )
+    extract_lessons_parser.set_defaults(func=cmd_extract_lessons)
+
+    bundle_lessons_parser = subparsers.add_parser(
+        "bundle-lessons",
+        help="Extract lessons into the standard content/<category>/lessons folder.",
+    )
+    bundle_lessons_parser.add_argument("raw", help="Path to the raw pages JSON file.")
+    bundle_lessons_parser.add_argument("--category", help="Optional category override.")
+    bundle_lessons_parser.add_argument(
+        "--base-name",
+        default="all_lessons_extraction",
+        help="Filename stem for JSON/Markdown outputs (default: all_lessons_extraction).",
+    )
+    bundle_lessons_parser.add_argument("--json-output", help="Optional explicit JSON output path.")
+    bundle_lessons_parser.add_argument("--markdown-output", help="Optional explicit Markdown output path.")
+    bundle_lessons_parser.set_defaults(func=cmd_bundle_lessons)
 
     return parser
 

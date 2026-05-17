@@ -6,10 +6,12 @@ from pathlib import Path
 from typing import Any
 
 from .json_io import ensure_parent, read_json, read_jsonl
+from .paths import PipelinePaths
 
 
-def default_db_output(data_root: Path = Path("data")) -> Path:
-    return data_root / "db" / "vocabulary.sqlite"
+def default_db_output(content_root: Path = Path("content")) -> Path:
+    paths = PipelinePaths(content_root=content_root)
+    return paths.db_path()
 
 
 def connect_database(db_path: Path) -> sqlite3.Connection:
@@ -61,6 +63,7 @@ def initialize_schema(connection: sqlite3.Connection) -> bool:
             parser_version TEXT NOT NULL,
             review_status TEXT NOT NULL,
             warnings_json TEXT NOT NULL DEFAULT '[]',
+            related_terms_json TEXT NOT NULL DEFAULT '[]',
             FOREIGN KEY (source_id) REFERENCES sources(source_id) ON DELETE CASCADE
         );
 
@@ -72,6 +75,7 @@ def initialize_schema(connection: sqlite3.Connection) -> bool:
     ensure_column(connection, "sources", "source_title", "source_title TEXT")
     ensure_column(connection, "entries", "category", "category TEXT NOT NULL DEFAULT 'uncategorized'")
     ensure_column(connection, "entries", "parser_profile", "parser_profile TEXT NOT NULL DEFAULT 'generic'")
+    ensure_column(connection, "entries", "related_terms_json", "related_terms_json TEXT NOT NULL DEFAULT '[]'")
     connection.execute("CREATE INDEX IF NOT EXISTS idx_entries_category ON entries(category)")
 
     fts_enabled = True
@@ -131,8 +135,9 @@ def upsert_entry(connection: sqlite3.Connection, entry: dict[str, Any]) -> None:
         INSERT INTO entries (
             id, term, normalized_term, definition, part_of_speech, root_or_origin,
             example, section, category, source_id, source_page, source_order,
-            raw_entry_text, parser_profile, parser_version, review_status, warnings_json
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            raw_entry_text, parser_profile, parser_version, review_status, warnings_json,
+            related_terms_json
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ON CONFLICT(id) DO UPDATE SET
             term = excluded.term,
             normalized_term = excluded.normalized_term,
@@ -149,7 +154,8 @@ def upsert_entry(connection: sqlite3.Connection, entry: dict[str, Any]) -> None:
             parser_profile = excluded.parser_profile,
             parser_version = excluded.parser_version,
             review_status = excluded.review_status,
-            warnings_json = excluded.warnings_json
+            warnings_json = excluded.warnings_json,
+            related_terms_json = excluded.related_terms_json
         """,
         (
             entry.get("id"),
@@ -169,6 +175,7 @@ def upsert_entry(connection: sqlite3.Connection, entry: dict[str, Any]) -> None:
             entry.get("parser_version") or "unknown",
             entry.get("review_status") or "needs_review",
             json.dumps(entry.get("warnings") or [], ensure_ascii=False),
+            json.dumps(entry.get("related_terms") or [], ensure_ascii=False),
         ),
     )
 

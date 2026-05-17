@@ -1,0 +1,43 @@
+{
+  "schema_version": "validation-report.v1",
+  "status": "ok",
+  "source": {
+    "source_id": "grade-8-808060348-vocabulary-from-classical-roots-book-b-grade-8-student-tests",
+    "category": "grade-8",
+    "source_title": "808060348-Vocabulary-From-Classical-Roots-Book-B-Grade-8-Student-Tests",
+    "file_name": "808060348-Vocabulary-From-Classical-Roots-Book-B-Grade-8-Student-Tests.txt",
+    "file_path": "/Users/anqiguo/Documents/Projects/vocab_app/sources/materials/808060348-Vocabulary-From-Classical-Roots-Book-B-Grade-8-Student-Tests.txt",
+    "file_sha256": "0e7cbf99298fb19eaf299eddfd8414a69053889fe9aeb5761ab906e65fe6fbd9",
+    "page_count": 40,
+    "extracted_at": "2026-05-17T00:42:15.336398+00:00",
+    "extraction_engine": "text-file",
+    "warnings": []
+  },
+  "page_count": 40,
+  "empty_page_count": 1,
+  "empty_pages": [
+    40
+  ],
+  "entry_count": 147,
+  "entry_category_counts": {
+    "grade-8": 147
+  },
+  "parser_profile_counts": {
+    "generic": 147
+  },
+  "category_mismatch_ids": [],
+  "duplicate_normalized_terms": [
+    "name",
+    "o a obsequious",
+    "o b exhilarated",
+    "test"
+  ],
+  "missing_term_ids": [],
+  "missing_definition_ids": [],
+  "entry_warning_counts": {
+    "short_definition": 78
+  },
+  "recommendations": [
+    "Review random entries against the source PDF before packaging the data for apps."
+  ]
+}

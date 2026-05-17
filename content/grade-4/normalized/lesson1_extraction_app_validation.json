@@ -1,0 +1,9 @@
+{
+  "human_validation": {
+    "path": "data/normalized/grade-4/lesson1_extraction_template.md",
+    "note": "This file is for human sanity checking only. The app-fed output should match the contents generated for lesson 1."
+  },
+  "app_output_should_match": {
+    "path": "data/normalized/grade-4/lesson_1_extraction.json"
+  }
+}

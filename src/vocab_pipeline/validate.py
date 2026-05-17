@@ -6,6 +6,7 @@ from typing import Any
 
 from .ids import DEFAULT_CATEGORY, normalize_category
 from .json_io import read_json, read_jsonl, write_json
+from .paths import PipelinePaths
 
 
 def validate_payload(raw_payload: dict[str, Any], entries: list[dict[str, Any]]) -> dict[str, Any]:
@@ -70,7 +71,7 @@ def build_recommendations(
         )
     if pages and not entries:
         recommendations.append(
-            "No entries were parsed. Inspect data/raw output and update parsing rules after confirming text extraction quality."
+            "No entries were parsed. Inspect the category's raw JSON output under content/<category>/raw and update parsing rules after confirming text extraction quality."
         )
     if any(not str(entry.get("definition") or "").strip() for entry in entries):
         recommendations.append("Some entries are missing definitions and should be reviewed manually.")
@@ -83,20 +84,11 @@ def build_recommendations(
 
 def default_report_output(
     raw_path: Path,
-    reports_root: Path = Path("reports"),
+    content_root: Path = Path("content"),
     category: str | None = None,
 ) -> Path:
-    source_id = raw_path.name.removesuffix(".pages.json")
-    if category:
-        selected_category = normalize_category(category)
-    elif raw_path.parent.name == "raw":
-        selected_category = DEFAULT_CATEGORY
-    else:
-        selected_category = normalize_category(raw_path.parent.name)
-    report_root = reports_root
-    if selected_category != DEFAULT_CATEGORY:
-        report_root = report_root / selected_category
-    return report_root / f"{source_id}.validation.json"
+    paths = PipelinePaths(content_root=content_root)
+    return paths.report_output(raw_path, category=category)
 
 
 def validate_files(raw_path: Path, entries_path: Path | None = None, output_path: Path | None = None) -> Path:

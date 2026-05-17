@@ -1,0 +1,53 @@
+{
+  "schema_version": "validation-report.v1",
+  "status": "ok",
+  "source": {
+    "source_id": "grade-5-808059410-vocabulary-from-classical-roots-book-5-grade-5-student-book",
+    "category": "grade-5",
+    "source_title": "808059410-Vocabulary-From-Classical-Roots-Book-5-Grade-5-Student-Book",
+    "file_name": "808059410-Vocabulary-From-Classical-Roots-Book-5-Grade-5-Student-Book.txt",
+    "file_path": "/Users/anqiguo/Documents/Projects/vocab_app/sources/materials/808059410-Vocabulary-From-Classical-Roots-Book-5-Grade-5-Student-Book.txt",
+    "file_sha256": "536601060428132b62b332a878a11d36d8c9ccadbd5e7f6a3e568cf3821487dd",
+    "page_count": 85,
+    "extracted_at": "2026-05-17T00:41:58.436757+00:00",
+    "extraction_engine": "text-file",
+    "warnings": []
+  },
+  "page_count": 85,
+  "empty_page_count": 1,
+  "empty_pages": [
+    85
+  ],
+  "entry_count": 186,
+  "entry_category_counts": {
+    "grade-5": 186
+  },
+  "parser_profile_counts": {
+    "generic": 186
+  },
+  "category_mismatch_ids": [],
+  "duplicate_normalized_terms": [
+    "com",
+    "exercise a",
+    "exercise b",
+    "exercise c",
+    "exercise d",
+    "exercise e",
+    "in",
+    "ing as the word in bold",
+    "lee mountain",
+    "re",
+    "semi",
+    "the noun suffix",
+    "the prefix in",
+    "the same as the word in bold"
+  ],
+  "missing_term_ids": [],
+  "missing_definition_ids": [],
+  "entry_warning_counts": {
+    "short_definition": 18
+  },
+  "recommendations": [
+    "Review random entries against the source PDF before packaging the data for apps."
+  ]
+}

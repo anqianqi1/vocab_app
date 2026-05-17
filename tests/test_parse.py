@@ -12,18 +12,11 @@ def test_parse_inline_entries() -> None:
 
     entries = parse_page_text(text)
 
-    assert entries == [
-        {
-            "term": "abrogate",
-            "definition": "to abolish or repeal",
-            "raw_entry_text": "abrogate - to abolish or repeal",
-        },
-        {
-            "term": "benevolent",
-            "definition": "kind and generous",
-            "raw_entry_text": "benevolent: kind and generous",
-        },
-    ]
+    assert [entry["term"] for entry in entries] == ["abrogate", "benevolent"]
+    assert entries[0]["definition"] == "to abolish or repeal"
+    assert entries[0]["raw_entry_text"] == "abrogate - to abolish or repeal"
+    assert entries[1]["definition"] == "kind and generous"
+    assert entries[1]["raw_entry_text"] == "benevolent: kind and generous"
 
 
 def test_parse_term_line_followed_by_definition() -> None:
@@ -59,15 +52,17 @@ def test_parse_rejects_unknown_profile() -> None:
 def test_raw_output_partitions_by_category() -> None:
     output_path = default_raw_output(Path("Vocabulary from Classical Roots.pdf"), category="Classical Roots")
 
-    assert output_path == Path("data/raw/classical-roots/classical-roots-vocabulary-from-classical-roots.pages.json")
+    assert output_path == Path(
+        "content/classical-roots/raw/classical-roots-vocabulary-from-classical-roots.pages.json"
+    )
 
 
 def test_generated_outputs_infer_category_from_raw_path() -> None:
-    raw_path = Path("data/raw/classical-roots/classical-roots-source.pages.json")
+    raw_path = Path("content/classical-roots/raw/classical-roots-source.pages.json")
 
     assert default_entries_output(raw_path) == Path(
-        "data/normalized/classical-roots/classical-roots-source.entries.jsonl"
+        "content/classical-roots/normalized/classical-roots-source.entries.jsonl"
     )
     assert default_report_output(raw_path) == Path(
-        "reports/classical-roots/classical-roots-source.validation.json"
+        "content/classical-roots/reports/classical-roots-source.validation.json"
     )

@@ -1,135 +1,163 @@
 # Vocabulary Data Pipeline
 
-This project turns vocabulary PDFs into a reusable data package for apps.
+Structured content extractor for the *Vocabulary From Classical Roots* series. The current scope covers data ingestion and packaging; Duolingo-style app logic (APIs, UI, spaced repetition) comes later.
 
-The pipeline keeps three layers separate:
+---
 
-1. **Raw extraction**: page-level text and PDF metadata for auditability.
-2. **Normalized records**: one vocabulary entry per JSONL line for review and interchange.
-3. **App database**: a SQLite content database that can be bundled with Windows, macOS, iOS, desktop, or web apps.
+## At a Glance
 
-The PDF is source material. Apps should consume the generated SQLite database, not the PDF directly.
+- ✅ **Pipeline**: Grade 4, 5, 8, 10, and 11 `.txt` sources run end-to-end (raw JSON → JSONL → review → validation → SQLite).
+- ✅ **Lesson bundles**: Markdown + JSON summaries for every processed grade (`content/<grade>/lessons/`).
+- 🟡 **Next phase**: design learner app + backend while keeping data pipeline stable.
 
-## Layout
+---
 
-```text
-pjt/
-  Vocabulary_from_classical_roots.pdf
-  sources/       # optional future input PDFs grouped by category
-  data/
-    raw/          # page-level extraction artifacts
-    normalized/   # JSONL vocabulary records
-    review/       # Markdown/CSV files for human verification
-    db/           # SQLite app content database
-    exports/      # optional exports for spreadsheet/manual workflows
-  reports/        # validation reports
-  src/vocab_pipeline/
-  tests/
-```
+## Documentation Map
 
-## Quick Start
+| Reference | Description |
+| --- | --- |
+| [docs/README.md](docs/README.md) | Documentation hub and table of contents |
+| [docs/agent/AGENT_GUIDE.md](docs/agent/AGENT_GUIDE.md) | Operational playbook for coding agents |
+| [docs/flows/plan.md](docs/flows/plan.md) | Grade-level extraction roadmap and milestones |
+| [ai_agent_flows/](ai_agent_flows/README.md) | Session logs and runbooks (create/update per engagement) |
 
-From this folder:
+Every time you touch the project, add a dated note under `ai_agent_flows/` and update the “Recent Updates” list in `docs/README.md`.
 
-```bash
-PYTHONPATH=src /usr/local/bin/python3.12 -m vocab_pipeline.cli run-all Vocabulary_from_classical_roots.pdf --category classical-roots
-```
+---
 
-This writes:
+## Repository Map
 
-- `data/raw/classical-roots/classical-roots-vocabulary-from-classical-roots.pages.json`
-- `data/normalized/classical-roots/classical-roots-vocabulary-from-classical-roots.entries.jsonl`
-- `data/review/classical-roots/classical-roots-vocabulary-from-classical-roots.review.md`
-- `data/review/classical-roots/classical-roots-vocabulary-from-classical-roots.review.csv`
-- `reports/classical-roots/classical-roots-vocabulary-from-classical-roots.validation.json`
-- `data/db/vocabulary.sqlite` when parsed entries exist
+| Path | Purpose |
+| --- | --- |
+| [sources/materials](sources/materials) | Raw textbooks (`.txt`, archival PDFs) grouped by category |
+| [content/](content) | Per-category outputs: `raw`, `normalized`, `review`, `reports`, `lessons` |
+| [content/_shared/db](content/_shared/db) | App-ready SQLite (`vocabulary.sqlite`) |
+| [src/vocab_pipeline](src/vocab_pipeline) | Extraction, parsing, validation code |
+| [tests/](tests) | Pytest suite (parsing + path helpers) |
+| [docs/](docs) | Maintainer & agent documentation |
+| [ai_agent_flows/](ai_agent_flows) | Templates / scratchpad for agent workflows |
+| [data/exports/](data/exports) | Optional manual exports (currently empty) |
+| [archive/legacy_pipeline/](archive/legacy_pipeline) | Legacy layout note (kept for history only) |
 
-If a PDF has no extractable text, the raw artifact and validation report will say so. In that case the next step is OCR or a different extraction engine; the app database should only be built from reviewed vocabulary records.
+---
 
-## Commands
+## Workflow Overview
 
-Check available PDF/OCR tooling:
+1. **Extract** – `extract`/`run-all` produces `content/<category>/raw/*.pages.json`.
+2. **Parse** – raw pages → vocabulary entries (`normalized/*.entries.jsonl`).
+3. **Review** – Markdown + CSV decks for human QA (`review/`).
+4. **Validate** – data quality metrics (`reports/`).
+5. **Bundle** – lesson summaries (`lessons/all_lessons_extraction.{json,md}`).
+6. **Package** – refresh shared SQLite (`content/_shared/db/vocabulary.sqlite`).
 
-```bash
-PYTHONPATH=src /usr/local/bin/python3.12 -m vocab_pipeline.cli doctor
-```
+---
 
-Run the full local pipeline:
+## Environment Setup
 
 ```bash
-PYTHONPATH=src /usr/local/bin/python3.12 -m vocab_pipeline.cli run-all Vocabulary_from_classical_roots.pdf --category classical-roots
+git clone <repo-url>
+cd vocab_app
+
+# create & activate virtual environment (macOS/Linux)
+python3 -m venv .venv
+source .venv/bin/activate
+
+# install dependencies
+pip install --upgrade pip
+pip install -e .[dev]
+
+# verify installation
+PYTHONPATH=src python -m pytest
 ```
 
-Run many future PDFs. A practical layout is one folder per category:
+On Windows powershell: `python -m venv .venv; .\.venv\Scripts\Activate.ps1`.
 
-```text
-sources/
-  classical-roots/
-    Vocabulary_from_classical_roots.pdf
-  medical/
-    medical_terms.pdf
-  sat/
-    sat_word_list.pdf
-```
+---
 
-Then process everything with the parent folder as the category:
+## Core Commands
 
+### Diagnostics
 ```bash
-PYTHONPATH=src /usr/local/bin/python3.12 -m vocab_pipeline.cli run-batch sources --category-from-parent
+PYTHONPATH=src python -m vocab_pipeline.cli doctor
 ```
 
-If every PDF in a batch belongs to one category, pass it directly:
-
+### One-shot pipeline
 ```bash
-PYTHONPATH=src /usr/local/bin/python3.12 -m vocab_pipeline.cli run-batch sources/classical-roots --category classical-roots
+PYTHONPATH=src python -m vocab_pipeline.cli run-all sources/materials/808059440-Vocabulary-From-Classical-Roots-Book-4-Grade-4-Student-Book.txt --category grade-4
 ```
 
-Run stages separately:
-
+### Batch processing
 ```bash
-PYTHONPATH=src /usr/local/bin/python3.12 -m vocab_pipeline.cli extract Vocabulary_from_classical_roots.pdf --category classical-roots
-PYTHONPATH=src /usr/local/bin/python3.12 -m vocab_pipeline.cli parse data/raw/classical-roots/classical-roots-vocabulary-from-classical-roots.pages.json
-PYTHONPATH=src /usr/local/bin/python3.12 -m vocab_pipeline.cli review data/normalized/classical-roots/classical-roots-vocabulary-from-classical-roots.entries.jsonl
-PYTHONPATH=src /usr/local/bin/python3.12 -m vocab_pipeline.cli validate data/raw/classical-roots/classical-roots-vocabulary-from-classical-roots.pages.json --entries data/normalized/classical-roots/classical-roots-vocabulary-from-classical-roots.entries.jsonl
-PYTHONPATH=src /usr/local/bin/python3.12 -m vocab_pipeline.cli build-db data/raw/classical-roots/classical-roots-vocabulary-from-classical-roots.pages.json data/normalized/classical-roots/classical-roots-vocabulary-from-classical-roots.entries.jsonl
+PYTHONPATH=src python -m vocab_pipeline.cli run-batch sources --category-from-parent
 ```
 
-The current parser profile is `generic`. Future PDFs with different layouts should get new parser profiles instead of changing the generic parser for every source.
+### Stage-by-stage
+```bash
+PYTHONPATH=src python -m vocab_pipeline.cli extract  sources/materials/Vocabulary_from_classical_roots.pdf --category classical-roots
+PYTHONPATH=src python -m vocab_pipeline.cli parse    content/classical-roots/raw/classical-roots-vocabulary-from-classical-roots.pages.json
+PYTHONPATH=src python -m vocab_pipeline.cli review   content/classical-roots/normalized/classical-roots-vocabulary-from-classical-roots.entries.jsonl
+PYTHONPATH=src python -m vocab_pipeline.cli validate content/classical-roots/raw/classical-roots-vocabulary-from-classical-roots.pages.json --entries content/classical-roots/normalized/classical-roots-vocabulary-from-classical-roots.entries.jsonl
+PYTHONPATH=src python -m vocab_pipeline.cli build-db content/classical-roots/raw/classical-roots-vocabulary-from-classical-roots.pages.json content/classical-roots/normalized/classical-roots-vocabulary-from-classical-roots.entries.jsonl
+```
 
-## Data Model
+### Lesson bundles (default destinations)
+```bash
+PYTHONPATH=src python -m vocab_pipeline.cli bundle-lessons content/grade-4/raw/grade-4-808059440-vocabulary-from-classical-roots-book-4-grade-4-student-book.pages.json
+```
 
-Each normalized vocabulary entry contains source-tracking fields:
+### Process every grade at once
+```bash
+PYTHONPATH=src python -m vocab_pipeline.cli run-batch sources --category-from-parent --allow-empty-db
+```
 
-- `id`
-- `term`
-- `normalized_term`
-- `definition`
-- `part_of_speech`
-- `root_or_origin`
-- `example`
-- `section`
-- `category`
-- `source_id`
-- `source_page`
-- `source_order`
-- `raw_entry_text`
-- `parser_profile`
-- `parser_version`
-- `review_status`
-- `warnings`
+The default parser profile is `generic`. Create new profiles for different layouts instead of modifying the generic rules.
 
-Keep app/user state separate from this source content. Favorites, notes, learning progress, quiz history, and spaced-repetition state should live in a separate user database or separate mutable tables.
+---
 
-## App Packaging
+## Data Products
 
-Use `data/db/vocabulary.sqlite` as the read-only content package for apps.
+- **Raw pages** – `content/<grade>/raw/*.pages.json`
+- **Normalized entries** – `content/<grade>/normalized/*.entries.jsonl`
+- **Review decks** – `content/<grade>/review/*.review.{md,csv}`
+- **Validation reports** – `content/<grade>/reports/*.validation.json`
+- **Lesson bundles** – `content/<grade>/lessons/all_lessons_extraction.{json,md}`
+- **App database** – `content/_shared/db/vocabulary.sqlite`
 
-- Windows/macOS desktop: bundle the SQLite file with Electron, Tauri, Qt, .NET MAUI, or native apps.
-- iOS: bundle the same SQLite file as an app resource and query it locally.
-- Web/backend: query SQLite from the backend, or migrate the same schema to PostgreSQL later if remote multi-user sync is needed.
+All current grades (4, 5, 8, 10, 11) produce 147–203 entries across 16 lessons each.
 
-## Verification
+| Stage | Files | Location |
+| --- | --- | --- |
+| Extract | `*.pages.json` | `content/<grade>/raw/` |
+| Parse | `*.entries.jsonl` | `content/<grade>/normalized/` |
+| Review | `*.review.{md,csv}` | `content/<grade>/review/` |
+| Validate | `*.validation.json` | `content/<grade>/reports/` |
+| Bundle | `all_lessons_extraction.{json,md}` | `content/<grade>/lessons/` |
+| Package | `vocabulary.sqlite` | `content/_shared/db/` |
 
-Always inspect the generated review file before using the data in an app. It includes parsed fields, source pages, raw entry text, and parser warnings.
+---
 
-For future maintainers and coding agents, see `docs/AGENT_GUIDE.md`.
+## Quality & Testing
+
+- Unit tests: `/Users/anqiguo/Documents/Projects/vocab_app/.venv/bin/python -m pytest`
+- Validation check: inspect `content/<grade>/reports/*.validation.json` (status `ok` expected)
+- Manual QA: review Markdown decks before shipping updated datasets
+
+---
+
+## Roadmap
+
+1. **Data foundation** *(complete)* – multi-grade extraction pipeline.
+2. **Extensibility** – parser profiles for other layouts, OCR support for image-only PDFs.
+3. **App layer** *(upcoming)* – learner UX, scheduling, progress storage, API design.
+4. **Scale-out** – additional textbooks/grades plugged into the same pipeline.
+
+---
+
+## Documentation & Agent Guides
+
+- [docs/README.md](docs/README.md) – documentation index & update conventions
+- [docs/agent/AGENT_GUIDE.md](docs/agent/AGENT_GUIDE.md) – operational playbook for coding agents
+- [docs/flows/plan.md](docs/flows/plan.md) – grade-level extraction roadmap
+- [ai_agent_flows/README.md](ai_agent_flows/README.md) – record agent-specific workflows or session notes
+
+Keep these references current so future maintainers (human or AI) can understand the project at a glance.

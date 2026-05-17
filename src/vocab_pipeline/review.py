@@ -4,40 +4,27 @@ import csv
 from pathlib import Path
 from typing import Any
 
-from .ids import DEFAULT_CATEGORY, normalize_category
+from .ids import DEFAULT_CATEGORY
 from .json_io import ensure_parent, read_jsonl
-
-
-def _category_from_entries_path(entries_path: Path) -> str:
-    if entries_path.parent.name == "normalized":
-        return DEFAULT_CATEGORY
-    return normalize_category(entries_path.parent.name)
+from .paths import PipelinePaths
 
 
 def default_review_markdown_output(
     entries_path: Path,
-    data_root: Path = Path("data"),
+    content_root: Path = Path("content"),
     category: str | None = None,
 ) -> Path:
-    source_id = entries_path.name.removesuffix(".entries.jsonl")
-    selected_category = normalize_category(category or _category_from_entries_path(entries_path))
-    review_root = data_root / "review"
-    if selected_category != DEFAULT_CATEGORY:
-        review_root = review_root / selected_category
-    return review_root / f"{source_id}.review.md"
+    paths = PipelinePaths(content_root=content_root)
+    return paths.review_markdown_output(entries_path, category=category)
 
 
 def default_review_csv_output(
     entries_path: Path,
-    data_root: Path = Path("data"),
+    content_root: Path = Path("content"),
     category: str | None = None,
 ) -> Path:
-    source_id = entries_path.name.removesuffix(".entries.jsonl")
-    selected_category = normalize_category(category or _category_from_entries_path(entries_path))
-    review_root = data_root / "review"
-    if selected_category != DEFAULT_CATEGORY:
-        review_root = review_root / selected_category
-    return review_root / f"{source_id}.review.csv"
+    paths = PipelinePaths(content_root=content_root)
+    return paths.review_csv_output(entries_path, category=category)
 
 
 def write_review_markdown(path: Path, entries: list[dict[str, Any]]) -> None:
@@ -62,6 +49,11 @@ def write_review_markdown(path: Path, entries: list[dict[str, Any]]) -> None:
             file_handle.write(f"- Parser profile: `{entry.get('parser_profile') or 'unknown'}`\n")
             file_handle.write(f"- Parser version: `{entry.get('parser_version') or 'unknown'}`\n")
             file_handle.write(f"- Review status: `{entry.get('review_status')}`\n")
+            if entry.get("example"):
+                file_handle.write(f"- Example: `{entry.get('example')}`\n")
+            related_terms = entry.get("related_terms") or []
+            if related_terms:
+                file_handle.write(f"- Related terms: `{', '.join(related_terms)}`\n")
             warnings = entry.get("warnings") or []
             if warnings:
                 file_handle.write(f"- Warnings: `{', '.join(warnings)}`\n")
@@ -80,6 +72,8 @@ def write_review_csv(path: Path, entries: list[dict[str, Any]]) -> None:
         "id",
         "term",
         "definition",
+        "example",
+        "related_terms",
         "section",
         "category",
         "source_id",
@@ -97,6 +91,7 @@ def write_review_csv(path: Path, entries: list[dict[str, Any]]) -> None:
         for entry in entries:
             row = {fieldname: entry.get(fieldname) for fieldname in fieldnames}
             row["warnings"] = ";".join(entry.get("warnings") or [])
+            row["related_terms"] = ";".join(entry.get("related_terms") or [])
             writer.writerow(row)
 
 

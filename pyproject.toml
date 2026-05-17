@@ -7,6 +7,11 @@ dependencies = [
   "pypdf>=6.0",
 ]
 
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+]
+
 [project.scripts]
 vocab-pipeline = "vocab_pipeline.cli:main"
 

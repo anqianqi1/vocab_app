@@ -1,0 +1,4696 @@
+[
+  {
+    "lesson_number": 1,
+    "title": "GOING IN CIRCLES",
+    "roots": [
+      {
+        "root": "CIRC",
+        "origin": "Latin/Greek",
+        "meaning": "circum meaning “around”",
+        "example_word": "circum"
+      }
+    ],
+    "key_words": [
+      "circuit",
+      "circulate",
+      "cyclone",
+      "semicircle",
+      "circular",
+      "cycle",
+      "recycle",
+      "unicycle"
+    ],
+    "familiar_words": [
+      "circle",
+      "circus",
+      "bicycle",
+      "cyclist",
+      "motorcycle",
+      "tricycle"
+    ],
+    "challenge_words": [
+      "circlet",
+      "circuitry",
+      "circuitous",
+      "cyclic",
+      "cyclops"
+    ],
+    "word_details": [
+      {
+        "word": "circuit",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Circuit is something we talk about when we think about around.",
+            "example": "In class, we say \"circuit\" when we talk about around."
+          }
+        ]
+      },
+      {
+        "word": "circulate",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "v.",
+            "definition": "Circulate means taking action that involves around.",
+            "example": "In class we circulate when we want to focus on around."
+          }
+        ]
+      },
+      {
+        "word": "cyclone",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Cyclone is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"cyclone\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "semicircle",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "A half circle.",
+            "example": "We sat in a semicircle facing the librarian as he explained where to find the books we would need for our reports."
+          }
+        ]
+      },
+      {
+        "word": "circular",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Circular is something we talk about when we think about around.",
+            "example": "In class, we say \"circular\" when we talk about around."
+          }
+        ]
+      },
+      {
+        "word": "cycle",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "A strong whirling windstorm. tricycle Thunderstorms surrounded the center of the tropical cyclone as it moved toward the coast. cyclic The factory recycled old newspapers to produce new paper Cyclops products.",
+            "example": ""
+          }
+        ]
+      },
+      {
+        "word": "recycle",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Recycle is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"recycle\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "unicycle",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Unicycle is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"unicycle\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "circle",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Circle is something we talk about when we think about around.",
+            "example": "In class, we say \"circle\" when we talk about around."
+          }
+        ]
+      },
+      {
+        "word": "circus",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Circus is something we talk about when we think about around.",
+            "example": "In class, we say \"circus\" when we talk about around."
+          }
+        ]
+      },
+      {
+        "word": "bicycle",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Bicycle is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"bicycle\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "cyclist",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Cyclist is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"cyclist\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "motorcycle",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Motorcycle is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"motorcycle\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "tricycle",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Tricycle is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"tricycle\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "circlet",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Circlet is something we talk about when we think about around.",
+            "example": "In class, we say \"circlet\" when we talk about around."
+          }
+        ]
+      },
+      {
+        "word": "circuitry",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Circuitry is something we talk about when we think about around.",
+            "example": "In class, we say \"circuitry\" when we talk about around."
+          }
+        ]
+      },
+      {
+        "word": "circuitous",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Circuitous describes something connected to around.",
+            "example": "The word circuitous helps me describe things that are about around."
+          }
+        ]
+      },
+      {
+        "word": "cyclic",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Cyclic describes something connected to important ideas in daily life.",
+            "example": "The word cyclic helps me describe things that are about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "cyclops",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Cyclops is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"cyclops\" when we talk about important ideas in daily life."
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "title": "Using ROOT CLUES",
+        "lines": [
+          "The roots circ (around) and cycl (revolving) give you clues about meaning. When you spot",
+          "one of these roots in a word, you have a key to the word's meaning. Use the underlined",
+          "root clues to help you match the following columns:",
+          "1. circulate A. one revolving wheel",
+          "2. unicycle B. to move around",
+          "3. circuit C. revolving winds",
+          "4. cyclone D. path around which electricity passes",
+          "The root clues did not give you complete definitions as the following dictionary listings",
+          "will. But they got you started by giving you part of the meaning. Sometimes that part helps",
+          "you to figure out the word."
+        ]
+      },
+      {
+        "title": "EXERCISE A",
+        "lines": [
+          "SYNONYMS",
+          "Write the letter of the best SYNONYM (the word or phrase with the meaning most nearly",
+          "the same as the word in bold-faced type).",
+          "1. a dangerous cyclone",
+          "a. accident b. event c. windstorm d. wheel",
+          "2. a circular route",
+          "a. curved b. level c. short d. difficult",
+          "3. a two-year cycle",
+          "a. job b. journey c. school d. time period",
+          "4. an electrical circuit",
+          "a. circus b. shock c. breaker d. route",
+          "5. to recycle glass",
+          "a. collect b. distribute c. fix for reuse d. wash"
+        ]
+      },
+      {
+        "title": "EXERCISE B",
+        "lines": [
+          "MEANING IN CONTEXT",
+          "Use these words to fill in the blanks in the following paragraph.",
+          "semicircle unicycle circular cyclone circulate",
+          "Members of our local One-Wheel Cyclists Club claim that anyone can learn to ride",
+          "a (1) . The club members meet in a park that has both",
+          "straight and (2) paths for riding. Some of the more skilled",
+          "members can pedal halfway around a circle and then pedal backwards over the same",
+          "(3) . At the meetings, newcomers often (4)",
+          "among the long-term members to hear about some interesting and unusual",
+          "experiences. One rider likes to tell beginners about the time she was almost caught in a",
+          "(5) and pedaled home as fast as she could while the wind and",
+          "rain increased.",
+          "4 VOCABULARY FROM CLASSICAL ROOTS"
+        ]
+      },
+      {
+        "title": "EXERCISE C",
+        "lines": [
+          "EXTEND YOUR VOCABULARY",
+          "The “one, two, three” prefixes: uni-, bi-, tri-",
+          "The numbers one, two, and three are connected with many words. In this lesson you met the",
+          "word unicycle, and you learned that a unicycle has only one wheel. There are other words",
+          "that start with uni-, and they also have a “one” connection. Look at the word unify, which",
+          "means “to bring together as one.”",
+          "In the box with Familiar Words, you see bicycle and tricycle. The prefix bi- has a “two” connec-",
+          "tion. A bicycle has two wheels. A biped has two feet. The prefix tri- has a “three” connection.",
+          "A tricycle has three wheels. The dinosaur triceratops had three horns.",
+          "Underline the number prefix you see in each of these words. On the line beside the word,",
+          "write the number and a short definition of the word.",
+          "1. triangle",
+          "2. united",
+          "3. bilingual",
+          "4. unicorn",
+          "5. triplets"
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_number": 2,
+    "title": "BALANCING EVENLY",
+    "roots": [
+      {
+        "root": "EQU",
+        "origin": "Latin/Greek",
+        "meaning": "aequus meaning “same, even, equal”",
+        "example_word": "aequus"
+      },
+      {
+        "root": "PEND",
+        "origin": "Latin/Greek",
+        "meaning": "pendo meaning “hang”",
+        "example_word": "pendo"
+      }
+    ],
+    "key_words": [
+      "dependent",
+      "equate",
+      "equidistant",
+      "pending",
+      "equality",
+      "equator",
+      "equilateral",
+      "pendulum"
+    ],
+    "familiar_words": [
+      "equal",
+      "equally",
+      "equivalent",
+      "unequal",
+      "depend",
+      "dependable",
+      "suspenders"
+    ],
+    "challenge_words": [
+      "equanimity",
+      "equilibrium",
+      "equinox",
+      "equitable",
+      "expendable",
+      "impending",
+      "pendant",
+      "pendulous",
+      "suspend",
+      "suspense"
+    ],
+    "word_details": [
+      {
+        "word": "dependent",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Dependent describes something connected to hang.",
+            "example": "The word dependent helps me describe things that are about hang."
+          }
+        ]
+      },
+      {
+        "word": "equate",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "v.",
+            "definition": "Equate means taking action that involves same, even, equal.",
+            "example": "In class we equate when we want to focus on same, even, equal."
+          }
+        ]
+      },
+      {
+        "word": "equidistant",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Equidistant describes something connected to same, even, equal.",
+            "example": "The word equidistant helps me describe things that are about same, even, equal."
+          }
+        ]
+      },
+      {
+        "word": "pending",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Pending is something we talk about when we think about hang.",
+            "example": "In class, we say \"pending\" when we talk about hang."
+          }
+        ]
+      },
+      {
+        "word": "equality",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Equality is something we talk about when we think about same, even, equal.",
+            "example": "In class, we say \"equality\" when we talk about same, even, equal."
+          }
+        ]
+      },
+      {
+        "word": "equator",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "An imaginary line around the center of the earth, at the same distance from the North Pole and the South Pole.",
+            "example": "The equator passes through many tropical countries, including Kenya in Africa and Brazil in South America."
+          }
+        ]
+      },
+      {
+        "word": "equilateral",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Equilateral describes something connected to same, even, equal.",
+            "example": "The word equilateral helps me describe things that are about same, even, equal."
+          }
+        ]
+      },
+      {
+        "word": "pendulum",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Pendulum is something we talk about when we think about hang.",
+            "example": "In class, we say \"pendulum\" when we talk about hang."
+          }
+        ]
+      },
+      {
+        "word": "equal",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Equal describes something connected to same, even, equal.",
+            "example": "The word equal helps me describe things that are about same, even, equal."
+          }
+        ]
+      },
+      {
+        "word": "equally",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "adv.",
+            "definition": "Equally tells us that something happens in a way related to same, even, equal.",
+            "example": "It reminds me that something happens in a way that connects to same, even, equal."
+          }
+        ]
+      },
+      {
+        "word": "equivalent",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Equivalent describes something connected to same, even, equal.",
+            "example": "The word equivalent helps me describe things that are about same, even, equal."
+          }
+        ]
+      },
+      {
+        "word": "unequal",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Unequal describes something connected to same, even, equal.",
+            "example": "The word unequal helps me describe things that are about same, even, equal."
+          }
+        ]
+      },
+      {
+        "word": "depend",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Depend is something we talk about when we think about hang.",
+            "example": "In class, we say \"depend\" when we talk about hang."
+          }
+        ]
+      },
+      {
+        "word": "dependable",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Dependable describes something connected to hang.",
+            "example": "The word dependable helps me describe things that are about hang."
+          }
+        ]
+      },
+      {
+        "word": "suspenders",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Suspenders is something we talk about when we think about hang.",
+            "example": "In class, we say \"suspenders\" when we talk about hang."
+          }
+        ]
+      },
+      {
+        "word": "equanimity",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Equanimity is something we talk about when we think about same, even, equal.",
+            "example": "In class, we say \"equanimity\" when we talk about same, even, equal."
+          }
+        ]
+      },
+      {
+        "word": "equilibrium",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Equilibrium is something we talk about when we think about same, even, equal.",
+            "example": "In class, we say \"equilibrium\" when we talk about same, even, equal."
+          }
+        ]
+      },
+      {
+        "word": "equinox",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Equinox is something we talk about when we think about same, even, equal.",
+            "example": "In class, we say \"equinox\" when we talk about same, even, equal."
+          }
+        ]
+      },
+      {
+        "word": "equitable",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Equitable describes something connected to same, even, equal.",
+            "example": "The word equitable helps me describe things that are about same, even, equal."
+          }
+        ]
+      },
+      {
+        "word": "expendable",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Expendable describes something connected to hang.",
+            "example": "The word expendable helps me describe things that are about hang."
+          }
+        ]
+      },
+      {
+        "word": "impending",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Impending is something we talk about when we think about hang.",
+            "example": "In class, we say \"impending\" when we talk about hang."
+          }
+        ]
+      },
+      {
+        "word": "pendant",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Pendant describes something connected to hang.",
+            "example": "The word pendant helps me describe things that are about hang."
+          }
+        ]
+      },
+      {
+        "word": "pendulous",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Pendulous describes something connected to hang.",
+            "example": "The word pendulous helps me describe things that are about hang."
+          }
+        ]
+      },
+      {
+        "word": "suspend",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Suspend is something we talk about when we think about hang.",
+            "example": "In class, we say \"suspend\" when we talk about hang."
+          }
+        ]
+      },
+      {
+        "word": "suspense",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Suspense is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"suspense\" when we talk about important ideas in daily life."
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "title": "Using ROOT CLUES",
+        "lines": [
+          "The roots equ (same) and pend (hanging) give you clues about meaning. When you spot",
+          "one of these roots in a word, you have a key to the word's meaning. Use the underlined",
+          "root clues to help you match the following columns:",
+          "1. equidistant A. hanging onto for support",
+          "2. pendulum B. same conditions or treatment",
+          "3. equality C. same distance",
+          "4. dependent D. hanging from a clock",
+          "The root clues did not give you complete definitions as the following dictionary listings",
+          "will. But they got you started by giving you part of the meaning. Sometimes that part helps",
+          "you to figure out the word."
+        ]
+      },
+      {
+        "title": "EXERCISE A",
+        "lines": [
+          "SYNONYMS",
+          "Write the letter of the best SYNONYM (the word or phrase most nearly the same in mean-",
+          "ing as the word in bold-faced type).",
+          "1. an equilateral triangle",
+          "a. equal sides b. right angles c. large d. yellow",
+          "2. a dependent patient",
+          "a. giving help b. needing help c. young d. angry",
+          "3. working for equality",
+          "a. liberty b. getting votes c. voting d. fairness",
+          "4. the festival dates still pending",
+          "a. undecided b. certain c. canceled d. posted",
+          "5. to equate the situations",
+          "a. describe b. make unfair c. treat as same d. criticize"
+        ]
+      },
+      {
+        "title": "EXERCISE B",
+        "lines": [
+          "MEANING IN CONTEXT",
+          "Use these words to fill in the blanks in the following paragraph.",
+          "equator depending equidistant pendulum",
+          "Rizzo's Clock Shop was easy to get to, right in the middle of the block,",
+          "(1) from each end. When I walked in, Mr. Rizzo was",
+          "talking to a customer about a tall grandfather clock that had a long swinging",
+          "(2) and an unusual face. He said, “Many clocks have faces",
+          "that are circular, like the (3) that goes around our earth, but",
+          "the face of this clock is shaped like an octagon. It is the only one of its kind, so I am",
+          "(4) on the person who buys it to treasure it.”",
+          "8 VOCABULARY FROM CLASSICAL ROOTS"
+        ]
+      },
+      {
+        "title": "EXERCISE C",
+        "lines": [
+          "EXTEND YOUR VOCABULARY",
+          "The “four” prefix: quadr-",
+          "One of the key words in this lesson is equilateral, which means “having sides that are equal.”",
+          "Looking at the two meaningful parts of this word, you recognize equi, “equal,” and lateral,",
+          "“side.” In your math textbook, you may have met the word quadrilateral. Now let's use what",
+          "you already know about equilateral to extend your vocabulary to quadrilateral and to other",
+          "words that start with quadr-. Answer these questions.",
+          "1. Which figure is equilateral?",
+          "A. B. C. D.",
+          "2. How many sides do you see on each of the preceding figures?",
+          "3. The preceding figures are called quadrilaterals. You know that one part of the word",
+          "quadrilateral means “side.” What does the other part mean?",
+          "4. The word quadr uplets refers to a certain number of babies. How many?",
+          "5. When you quadr uple an amount, by what number do you multiply?"
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_number": 3,
+    "title": "MOVING ACROSS AND BETWEEN",
+    "roots": [],
+    "key_words": [
+      "interactive",
+      "intersect",
+      "transfer",
+      "interfere",
+      "interval",
+      "transfusion",
+      "intermittent",
+      "transact",
+      "transmit"
+    ],
+    "familiar_words": [
+      "transform",
+      "transparent",
+      "transplant",
+      "transportation",
+      "intermediate",
+      "interstate"
+    ],
+    "challenge_words": [
+      "transcribe",
+      "transgress",
+      "transitory",
+      "translucent",
+      "interim",
+      "interject",
+      "interloper"
+    ],
+    "word_details": [
+      {
+        "word": "interactive",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Interactive describes something connected to important ideas in daily life.",
+            "example": "The word interactive helps me describe things that are about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "intersect",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "v.",
+            "definition": "To cut or pass through, to cross.",
+            "example": "To get to the zoo, follow this street to where it intersects Carson Avenue, and then turn right. intersection,."
+          }
+        ]
+      },
+      {
+        "word": "transfer",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Transfer is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"transfer\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "interfere",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Interfere is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"interfere\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "interval",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Interval describes something connected to important ideas in daily life.",
+            "example": "The word interval helps me describe things that are about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "transfusion",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Transfusion is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"transfusion\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "intermittent",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Off-and-on, stop-and-start.",
+            "example": "The dry fields needed steady rain but received only intermittent."
+          }
+        ]
+      },
+      {
+        "word": "transact",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "9 VCR_SB_5_EPS2266_int_r2.indd 9 9/12/22 10:41 AM 10 VOCABULARY FROM CLASSICAL ROOTS with Prefix TRANS- meaning “to carry”]",
+            "example": null
+          },
+          {
+            "part_of_speech": "v.",
+            "definition": "To move or change from one place to another.",
+            "example": "On Saturday, we helped transfer the science equipment from the old lab on the first floor to the new one on the second."
+          },
+          {
+            "part_of_speech": "n.",
+            "definition": "A ticket for moving from one public vehicle to another to complete a trip. (tran(t)s ` fÆr) The bus driver gave Jessica a transfer so that she would not have to pay again on the connecting bus.",
+            "example": null
+          }
+        ]
+      },
+      {
+        "word": "transmit",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Transmit is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"transmit\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "transform",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Transform is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"transform\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "transparent",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Transparent describes something connected to important ideas in daily life.",
+            "example": "The word transparent helps me describe things that are about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "transplant",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Transplant describes something connected to important ideas in daily life.",
+            "example": "The word transplant helps me describe things that are about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "transportation",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Transportation is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"transportation\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "intermediate",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "v.",
+            "definition": "Intermediate means taking action that involves important ideas in daily life.",
+            "example": "In class we intermediate when we want to focus on important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "interstate",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "v.",
+            "definition": "Interstate means taking action that involves important ideas in daily life.",
+            "example": "In class we interstate when we want to focus on important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "transcribe",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Transcribe is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"transcribe\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "transgress",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Transgress is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"transgress\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "transitory",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Transitory describes something connected to important ideas in daily life.",
+            "example": "The word transitory helps me describe things that are about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "translucent",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Translucent describes something connected to important ideas in daily life.",
+            "example": "The word translucent helps me describe things that are about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "interim",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Interim is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"interim\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "interject",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Interject is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"interject\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "interloper",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Interloper is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"interloper\" when we talk about important ideas in daily life."
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "title": "EXERCISE A",
+        "lines": [
+          "SYNONYMS",
+          "Write the letter of the best SYNONYM (the word or phrase with the meaning most nearly",
+          "the same as the word in bold-faced type).",
+          "1. lines that intersect",
+          "a. cross b. curve c. parallel d. twist",
+          "2. to transfer students",
+          "a. teach b. grade c. move d. keep",
+          "3. a blood transfusion",
+          "a. spot b. loss c. clot d. transfer",
+          "4. to interfere in",
+          "a. perform b. sing c. meddle d. speak",
+          "5. to transact business",
+          "a. do b. lose c. look for d. miss",
+          "12 VOCABULARY FROM CLASSICAL ROOTS"
+        ]
+      },
+      {
+        "title": "EXERCISE B",
+        "lines": [
+          "MEANING IN CONTEXT",
+          "Use these words to fill in the blanks in the following paragraph.",
+          "intermittent transmit interactive interval",
+          "Serena sat at the computer, working on an (1) science program",
+          "that responded each time she entered an answer. At the end of the program, she pressed",
+          "SEND to (2) her work to her teacher. She thought that after a",
+          "short (3) she would see her score on the monitor. But instead,",
+          "her computer began making an (4) beeping sound, a sure sign",
+          "that she was not yet finished."
+        ]
+      },
+      {
+        "title": "EXERCISE C",
+        "lines": [
+          "EXTEND YOUR VOCABULARY",
+          "The “cut” root: sect",
+          "You met the word intersect in this lesson. You know that inter- means “between.” The “sect”",
+          "part of intersect is derived from the Latin word sectare, meaning “to cut.” Two streets that",
+          "intersect “cut through” each other. The root sect also appears in the words bisect, trisect, and",
+          "section.",
+          "Look at the words in the first column. Using your knowledge of word parts, find the cor-",
+          "rect meaning for each word in the second column. Then write its letter on the line before it.",
+          "1. bisect A. to cut into three parts",
+          "2. trisect B. a piece, cut from something",
+          "3. section C. to cut into two parts",
+          "4. Choose one of the words and use it in a sentence."
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_number": 4,
+    "title": "REVIEWING LESSONS 1–3",
+    "roots": [],
+    "key_words": [],
+    "familiar_words": [],
+    "challenge_words": [],
+    "word_details": [],
+    "exercises": [
+      {
+        "title": "EXERCISE A",
+        "lines": [
+          "MATCHING",
+          "Match each root or prefix with its meaning.",
+          "1. circ A. across",
+          "2. cycl B. between",
+          "3. equ C. hang",
+          "4. pend D. around",
+          "5. trans- E. revolving",
+          "6. inter- F. same",
+          "In Exercise C of Lessons 1, 2, and 3, you met these roots and prefixes. Match the columns.",
+          "7. uni- G. cut",
+          "8. bi- H. four",
+          "9. tri- I. two",
+          "10. quadr- J. one",
+          "11. sect K. three",
+          "Write sentences in which you use each of these words meaningfully.",
+          "12. quadrilateral",
+          "13. bisect",
+          "14. unify",
+          "14 VOCABULARY FROM CLASSICAL ROOTS"
+        ]
+      },
+      {
+        "title": "EXERCISE B",
+        "lines": [
+          "SORTING",
+          "Sort these words, listing each one under its root or prefix. When you finish, add another word",
+          "that goes with each group. (Look back at the lists of familiar and challenge words for ideas.)",
+          "circuit unicycle intermittent pending",
+          "circular interfere pendulum semicircle",
+          "dependent cyclone equidistant transact",
+          "transmit equality interval equate",
+          "intersect circulate equator interactive",
+          "transfusion transfer equilateral cycle",
+          "recycle",
+          "1. CIRC 2. CYCL 3. EQU",
+          "4. PEND 5. TRANS- 6. INTER-",
+          "Write the answers to the following questions on the lines.",
+          "A. Which two columns contain words related to “going in circles”?",
+          "B. In which two columns do all the words have prefixes?",
+          "C. What are the meanings of the prefix and root in the word unicycle?",
+          "D. What are the meanings of the prefix and root in the word intersect?"
+        ]
+      },
+      {
+        "title": "EXERCISE C",
+        "lines": [
+          "VOCABULARY FROM YOUR TEXTBOOKS",
+          "Many of the subjects you are studying in school have specific words associated with them.",
+          "Use these words to answer the following questions.",
+          "equilateral circulate intersect circuit interactive",
+          "1. As you read a lesson about blood vessels, which word might you see?",
+          "2. As you work on a lesson with crossing lines and equal-sided figures, what two words",
+          "do you expect to see in the directions?",
+          "3. When you make a poster to illustrate how electricity works, what word will you",
+          "probably use?",
+          "4. When your teacher gives directions for using the new typing program on the",
+          "computer, which word might he use as he describes it?",
+          "16 VOCABULARY FROM CLASSICAL ROOTS"
+        ]
+      },
+      {
+        "title": "EXERCISE D",
+        "lines": [
+          "RHYMING RIDDLES",
+          "Write the letter of the answer for each riddle.",
+          "1. What do you call a tropical reptile?",
+          "2. What did the author say when she was not sure how to conclude her book?",
+          "3. What do you call a leader of a school system who thinks for herself?",
+          "4. What do you call a piece of jewelry that meddles?",
+          "A. Independent superintendent",
+          "B. Interfering earring",
+          "C. Equator alligator",
+          "D. Ending pending"
+        ]
+      },
+      {
+        "title": "EXERCISE E",
+        "lines": [
+          "WRITING AND DISCUSSION ACTIVITIES",
+          "1. Look at these headlines. Choose one. Then on the lines below, write a paragraph to tell",
+          "what happened.",
+          "A. Student Computer Whiz Develops Unusual Interactive Game",
+          "B. Police Puzzled by Appearance of Ancient Pendulum at Headquarters",
+          "C. Newspaper Recycling Leads to Surprising Problem",
+          "2. With a partner, compose a short conversation between one of these pairs of speakers.",
+          "Make notes for your conversation on the lines below.",
+          "A. A unicycle rider and a bicycle rider comparing the advantages of their vehicles",
+          "B. A transfer student and a student in the school talking about what activities the",
+          "school offers",
+          "C. Two people at a flea market in the middle of transacting some business",
+          "3. Look back at the boxes of Challenge Words on pages 2, 6, and 10. From these words,",
+          "choose three to write on the following lines. Try to define each word.",
+          "A.",
+          "B.",
+          "C.",
+          "Now look up these three words in the dictionary. Expand (or revise) your definitions on",
+          "the following lines.",
+          "A.",
+          "B.",
+          "C."
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_number": 5,
+    "title": "LOOKING AT OUR PLANET",
+    "roots": [
+      {
+        "root": "AQUA",
+        "origin": "Latin/Greek",
+        "meaning": "aqua meaning “water”",
+        "example_word": "aqua"
+      },
+      {
+        "root": "TERR",
+        "origin": "Latin/Greek",
+        "meaning": "terra meaning “land”",
+        "example_word": "terra"
+      }
+    ],
+    "key_words": [
+      "aquaculture",
+      "aquatic",
+      "subterranean",
+      "terrain",
+      "aquamarine",
+      "mediterranean",
+      "terrace",
+      "territory"
+    ],
+    "familiar_words": [
+      "aquarium",
+      "aquarius",
+      "extraterrestrial",
+      "terrarium"
+    ],
+    "challenge_words": [
+      "aqueduct",
+      "aqueous",
+      "aquifer",
+      "terrazzo",
+      "terrestrial"
+    ],
+    "word_details": [
+      {
+        "word": "aquaculture",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Aquaculture is something we talk about when we think about water.",
+            "example": "In class, we say \"aquaculture\" when we talk about water."
+          }
+        ]
+      },
+      {
+        "word": "aquatic",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Aquatic describes something connected to water.",
+            "example": "The word aquatic helps me describe things that are about water."
+          }
+        ]
+      },
+      {
+        "word": "subterranean",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Subterranean is something we talk about when we think about land.",
+            "example": "In class, we say \"subterranean\" when we talk about land."
+          }
+        ]
+      },
+      {
+        "word": "terrain",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Land or ground.",
+            "example": "The truck bumped along on the rough terrain of the field until it reached a paved road on the other side."
+          }
+        ]
+      },
+      {
+        "word": "aquamarine",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Aquamarine is something we talk about when we think about water.",
+            "example": "In class, we say \"aquamarine\" when we talk about water."
+          }
+        ]
+      },
+      {
+        "word": "mediterranean",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Mediterranean is something we talk about when we think about land.",
+            "example": "In class, we say \"mediterranean\" when we talk about land."
+          }
+        ]
+      },
+      {
+        "word": "terrace",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "An area of ground on the side of a hill that has a flattened top in order to grow things.",
+            "example": "We could see terraces all the way up the hillside where farmers had planted their crops."
+          }
+        ]
+      },
+      {
+        "word": "territory",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Territory describes something connected to land.",
+            "example": "The word territory helps me describe things that are about land."
+          }
+        ]
+      },
+      {
+        "word": "aquarium",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Aquarium is something we talk about when we think about water.",
+            "example": "In class, we say \"aquarium\" when we talk about water."
+          }
+        ]
+      },
+      {
+        "word": "aquarius",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Aquarius is something we talk about when we think about water.",
+            "example": "In class, we say \"aquarius\" when we talk about water."
+          }
+        ]
+      },
+      {
+        "word": "extraterrestrial",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Extraterrestrial describes something connected to land.",
+            "example": "The word extraterrestrial helps me describe things that are about land."
+          }
+        ]
+      },
+      {
+        "word": "terrarium",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Terrarium is something we talk about when we think about land.",
+            "example": "In class, we say \"terrarium\" when we talk about land."
+          }
+        ]
+      },
+      {
+        "word": "aqueduct",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Aqueduct is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"aqueduct\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "aqueous",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Aqueous describes something connected to important ideas in daily life.",
+            "example": "The word aqueous helps me describe things that are about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "aquifer",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Aquifer is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"aquifer\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "terrazzo",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Terrazzo is something we talk about when we think about land.",
+            "example": "In class, we say \"terrazzo\" when we talk about land."
+          }
+        ]
+      },
+      {
+        "word": "terrestrial",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Terrestrial describes something connected to land.",
+            "example": "The word terrestrial helps me describe things that are about land."
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "title": "Using ROOT CLUES",
+        "lines": [
+          "The roots aqua (water) and terr (land) give you clues about meaning. When you spot one",
+          "of these roots in a word, you have a key to the word's meaning. Use the underlined root",
+          "clues to help you match the following columns:",
+          "1. subterranean A. color of sea water",
+          "2. aquaculture B. under the land",
+          "3. territory C. large area of land",
+          "4. aquamarine D. farming water creatures",
+          "The root clues did not give you complete definitions as the following dictionary listings",
+          "will. But they got you started by giving you part of the meaning. Sometimes that part helps",
+          "you figure out the word."
+        ]
+      },
+      {
+        "title": "EXERCISE A",
+        "lines": [
+          "SYNONYMS",
+          "Write the letter of the best SYNONYM (the word or phrase most nearly the same in mean-",
+          "ing as the word in bold-faced type).",
+          "1. subterranean oil",
+          "a. expensive b. thick c. underground d. dark",
+          "2. an aquaculture business",
+          "a. diving b. flying c. hiking d. farming in water",
+          "3. a wooden terrace",
+          "a. fountain b. outdoor platform c. house d. sign",
+          "4. aquatic plants",
+          "a. in the air b. on land c. in water d. in caves",
+          "5. a large territory",
+          "a. region b. ocean c. continent d. river"
+        ]
+      },
+      {
+        "title": "EXERCISE B",
+        "lines": [
+          "MEANING IN CONTEXT",
+          "Use these words to fill in the blanks in the following paragraph.",
+          "aquatic terrain aquamarine Mediterranean",
+          "The lands around the (1) Sea have a variety of features.",
+          "Some have soil that is good for farming, while others have rocky hills and rough",
+          "(2) where planting anything would be difficult. From some",
+          "points on the seacoast, the water looks clear; in other places it appears to be a deep shade",
+          "of (3) . In shallow spots, you can see (4)",
+          "plants growing underwater."
+        ]
+      },
+      {
+        "title": "EXERCISE C",
+        "lines": [
+          "EXTEND YOUR VOCABULARY",
+          "The “sea” root: marin",
+          "One of the key words in this lesson is aquamarine. It has two meaningful parts, aqua and",
+          "marine. Marine is derived from the Latin word marinus, meaning “belonging to the sea” or",
+          "“of the sea.” So the meaning of aquamarine can be pieced together as “water of the sea.”",
+          "Seawater sometimes seems to have a blue-green color, which explains the definition of",
+          "aquamarine.",
+          "The root marin also appears in other words connected with the sea.",
+          "Match the words with the root marin with their meaning.",
+          "1. person guiding a ship A. marina",
+          "2. underwater ship B. marine plant",
+          "3. place for docking boats C. submarine",
+          "4. seaweed D. mariner",
+          "5. Use two of the words with the root marin in sentences of your own."
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_number": 6,
+    "title": "EXPLORING DISTANT PLACES",
+    "roots": [],
+    "key_words": [
+      "astronaut",
+      "astronomy",
+      "teleconference",
+      "telemarketing",
+      "astronomical",
+      "telecast",
+      "telegraph",
+      "telescope"
+    ],
+    "familiar_words": [
+      "telephone",
+      "television",
+      "astronomer",
+      "disaster"
+    ],
+    "challenge_words": [
+      "telecommunication",
+      "telepathy",
+      "telethon",
+      "asterisk",
+      "asteroid",
+      "astral"
+    ],
+    "word_details": [
+      {
+        "word": "astronaut",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Astronaut is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"astronaut\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "astronomy",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Astronomy is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"astronomy\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "teleconference",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Teleconference is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"teleconference\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "telemarketing",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Telemarketing is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"telemarketing\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "astronomical",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Extremely large, huge.",
+            "example": ""
+          },
+          {
+            "part_of_speech": "n.",
+            "definition": "The branch of science for the study of planets, stars, and space.",
+            "example": "After her course in astronomy, Tameka could point out the stars in the constellation Aquarius. NOTA BENE In your social studies textbook, you may have met another word with the astr root: astrolabe. Long ago, sailors used an astrolabe to determine their location at sea by measuring the altitude of the = stars. EXERCISE A: SYNONYMS Write the letter of the best SYNONYM (the word or phrase most nearly the same in mean- ing as the word in bold-faced type)."
+          }
+        ]
+      },
+      {
+        "word": "telecast",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Telecast is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"telecast\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "telegraph",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "An instrument invented in 1837 by Samuel Morse that used electricity passing through wires to send messages over distances.",
+            "example": "By the 1860s, the telegraph had become the fastest way to send a message from one city to another."
+          }
+        ]
+      },
+      {
+        "word": "telescope",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Telescope is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"telescope\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "telephone",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Telephone is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"telephone\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "television",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Television is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"television\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "astronomer",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Astronomer is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"astronomer\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "disaster",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Disaster is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"disaster\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "telecommunication",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Telecommunication is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"telecommunication\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "telepathy",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Telepathy is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"telepathy\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "telethon",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Telethon is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"telethon\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "asterisk",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Asterisk is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"asterisk\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "asteroid",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Asteroid is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"asteroid\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "astral",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Astral describes something connected to important ideas in daily life.",
+            "example": "The word astral helps me describe things that are about important ideas in daily life."
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "title": "Using ROOT CLUES",
+        "lines": [
+          "The roots tele (far) and astr (outer space) give you clues about meaning. When you spot",
+          "one of these roots in a word, you have a key to the word's meaning. Use the underlined",
+          "root clues to help you match the following columns:",
+          "1. telescope A. selling from afar, not face-to-face",
+          "2. astronaut B. science of outer space",
+          "3. telemarketing C. traveler in outer space",
+          "4. astronomy D. device for seeing far-away objects",
+          "The root clues did not give you complete definitions as the following dictionary listings",
+          "will. But they got you started by giving you part of the meaning. Sometimes that part helps",
+          "you to figure out the word."
+        ]
+      },
+      {
+        "title": "EXERCISE A",
+        "lines": [
+          "SYNONYMS",
+          "Write the letter of the best SYNONYM (the word or phrase most nearly the same in mean-",
+          "ing as the word in bold-faced type).",
+          "1. learning about astronomy",
+          "a. space travel b. science of space c. space scientist d. starship",
+          "2. a long teleconference",
+          "a. meeting b. series c. announcement d. view",
+          "3. an astronomical figure",
+          "a. distant b. important c. medium d. huge",
+          "4. to send by telegraph",
+          "a. horse b. train c. electrical currents through wires",
+          "d. fax machine",
+          "5. the job of telemarketing",
+          "a. writing b. editing c. mailing d. phoning"
+        ]
+      },
+      {
+        "title": "EXERCISE B",
+        "lines": [
+          "MEANING IN CONTEXT",
+          "Use these words to fill in the blanks in the following paragraph.",
+          "astronaut telecast astronomy teleconference telescope",
+          "Miguel turned on the television to watch the (1) he had been wait-",
+          "ing a week to see. Tonight two of his heroes were going to be interviewed for an hour. They",
+          "were an engineer who had worked on moon landings and an (2)",
+          "who had traveled to the moon. Miguel had a (3) in his back-",
+          "yard, and he often looked at the moon's changes. He hoped that someday he could walk",
+          "on its surface. Last year, his science teacher had set up a (4) so",
+          "that he and other members of the (5) club could ask questions",
+          "of scientists at the local university. But tonight, Miguel would be able to hear someone",
+          "who had actually been on the moon."
+        ]
+      },
+      {
+        "title": "EXERCISE C",
+        "lines": [
+          "EXTEND YOUR VOCABULARY",
+          "The “instrument” root: scope",
+          "The word telescope has two meaningful parts: tele and scope. You know that tele means “far",
+          "away.” Scope is derived from the Greek word skopein meaning “to see.” A telescope helps you",
+          "see objects in space that are far away.",
+          "Here are some more instruments that include scope. Match each of them with what it helps",
+          "you see.",
+          "1. microscope A. changing patterns in a tube that you can twist",
+          "2. periscope B. very tiny items",
+          "3. kaleidoscope C. the inside of the eye",
+          "4. ophthalmoscope D. things that are above, as from a submarine",
+          "Below each of the following pictures, write the name of the correct “scope.”",
+          "1. 2. 3. 4."
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_number": 7,
+    "title": "CHANGING MEANING WITH PREFIXES",
+    "roots": [],
+    "key_words": [
+      "inactive",
+      "insomnia",
+      "semiconscious",
+      "informal",
+      "semiannual",
+      "semiformal",
+      "insignificant",
+      "semicolon",
+      "semiprecious"
+    ],
+    "familiar_words": [
+      "incomplete",
+      "inconvenient",
+      "incorrect",
+      "infrequent",
+      "semifinal",
+      "semiprivate",
+      "semisweet"
+    ],
+    "challenge_words": [
+      "inadequate",
+      "incapable",
+      "incomparable",
+      "indecisive",
+      "indefinite",
+      "insincere",
+      "semidetached",
+      "semiprofessional"
+    ],
+    "word_details": [
+      {
+        "word": "inactive",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Inactive describes something connected to important ideas in daily life.",
+            "example": "The word inactive helps me describe things that are about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "insomnia",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "An ongoing condition of being unable to fall or stay asleep.",
+            "example": "Because of her insomnia, Sarah’s mother kept a book by the bed so she could read when she awoke in the middle of the night. NOTA BENE In is a complete word by itself as well as a meaningful part of other words. Example: The gift is in the box. In that example, the word in means “withi."
+          },
+          {
+            "part_of_speech": "n.",
+            "definition": "” Sometimes in carries the same “within” meaning as a prefix—on words like inside, inland, and internal.",
+            "example": "The prefix in-, like many other prefixes, has more than one meaning. The words featured in this lesson demonstrate the “not” meaning of the prefix in-."
+          }
+        ]
+      },
+      {
+        "word": "semiconscious",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Semiconscious describes something connected to important ideas in daily life.",
+            "example": "The word semiconscious helps me describe things that are about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "informal",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Not significant, unimportant, lacking power or value. indefinite An insignificant amount of snow fell last night, leaving only a dusting on the streets.",
+            "example": null
+          }
+        ]
+      },
+      {
+        "word": "semiannual",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Semiannual describes something connected to important ideas in daily life.",
+            "example": "The word semiannual helps me describe things that are about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "semiformal",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Requiring good clothes rather than play clothes.",
+            "example": "Natalie attended the wedding in a semiformal outfit, but the bridesmaids wore formal gowns."
+          }
+        ]
+      },
+      {
+        "word": "insignificant",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Insignificant describes something connected to important ideas in daily life.",
+            "example": "The word insignificant helps me describe things that are about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "semicolon",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "A punctuation mark that signals a break in a sentence, halfway between the full stop of a period and the short pause of a comma. ; A semicolon looks like a dot over a comma; it separates two independent clauses in a sentence.",
+            "example": null
+          }
+        ]
+      },
+      {
+        "word": "semiprecious",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Having only part of the value of a precious gemstone.",
+            "example": "Semiprecious stones like opals have value but not as much as precious stones like diamonds, emeralds, and rubies. = EXERCISE A: SYNONYMS Write the letter of the best SYNONYM (word or phrase that is closest in meaning to the word in bold-faced type)."
+          }
+        ]
+      },
+      {
+        "word": "incomplete",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Incomplete is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"incomplete\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "inconvenient",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Inconvenient describes something connected to important ideas in daily life.",
+            "example": "The word inconvenient helps me describe things that are about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "incorrect",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Incorrect is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"incorrect\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "infrequent",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Infrequent describes something connected to important ideas in daily life.",
+            "example": "The word infrequent helps me describe things that are about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "semifinal",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Semifinal describes something connected to important ideas in daily life.",
+            "example": "The word semifinal helps me describe things that are about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "semiprivate",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "v.",
+            "definition": "Semiprivate means taking action that involves important ideas in daily life.",
+            "example": "In class we semiprivate when we want to focus on important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "semisweet",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Semisweet is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"semisweet\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "inadequate",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "v.",
+            "definition": "Inadequate means taking action that involves important ideas in daily life.",
+            "example": "In class we inadequate when we want to focus on important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "incapable",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Incapable describes something connected to important ideas in daily life.",
+            "example": "The word incapable helps me describe things that are about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "incomparable",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Incomparable describes something connected to important ideas in daily life.",
+            "example": "The word incomparable helps me describe things that are about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "indecisive",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Indecisive describes something connected to important ideas in daily life.",
+            "example": "The word indecisive helps me describe things that are about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "indefinite",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Indefinite is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"indefinite\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "insincere",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Insincere is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"insincere\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "semidetached",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Semidetached describes something connected to important ideas in daily life.",
+            "example": "The word semidetached helps me describe things that are about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "semiprofessional",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Semiprofessional describes something connected to important ideas in daily life.",
+            "example": "The word semiprofessional helps me describe things that are about important ideas in daily life."
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "title": "EXERCISE A",
+        "lines": [
+          "SYNONYMS",
+          "Write the letter of the best SYNONYM (word or phrase that is closest in meaning to the",
+          "word in bold-faced type).",
+          "1. using a semicolon",
+          "a. number b. punctuation mark c. letter d. abbreviation",
+          "2. a semiprecious stone",
+          "a. having the highest value b. having partial value",
+          "c. having no value d. brand new",
+          "3. their semiformal outfits",
+          "a. dirty b. patched c. blue d. dressy",
+          "4. insignificant gossip",
+          "a. whispered b. unimportant c. colorful d. loud",
+          "5. a semiconscious state",
+          "a. dazed b. alert c. unhappy d. sick"
+        ]
+      },
+      {
+        "title": "EXERCISE B",
+        "lines": [
+          "MEANING IN CONTEXT",
+          "Use these words to fill in the blanks in the following paragraph.",
+          "semiannual insomnia insignificant inactive",
+          "Brenda knew it made no sense to fret over something as (1)",
+          "as losing a game of chess. But in the middle of the night she was still wide awake with",
+          "(2) . How had her cousin Sam beaten her so easily? Sam and",
+          "his parents were visiting her family as they usually did every six months. On these",
+          "(3) visits she and Sam always played chess, and Brenda usually",
+          "won. But this time it had been different. Then she remembered. Sam had injured him-",
+          "self in a soccer game and was on the team's (4) list. He probably",
+          "had played a lot of chess instead. Brenda decided that losing a chess game to Sam was",
+          "completely understandable, and she quickly fell asleep."
+        ]
+      },
+      {
+        "title": "EXERCISE C",
+        "lines": [
+          "EXTEND YOUR VOCABULARY",
+          "Other spellings of the prefix in-: ig-, il-, im-, ir-",
+          "The prefix in- has several spelling variations, but they all mean “not.” Ignore means not to",
+          "notice. Illegal means not legal. Impossible means not possible. Irresistible means not able to be",
+          "resisted.",
+          "30 VOCABULARY FROM CLASSICAL ROOTS",
+          "Sort the following twelve words, listing them by the spelling of the prefix.",
+          "impatient illiterate imperfect irremovable",
+          "irregular irreplaceable ignoble irresponsible",
+          "immovable illogical impractical immature",
+          "IG- IL-",
+          "IM- IR-",
+          "Reread the twelve words you sorted.",
+          "1. How many started with ig-?",
+          "2. How many started with il-?",
+          "3. How many started with im-?",
+          "4. How many started with ir-?",
+          "5. What is the meaning of all four of these prefixes?",
+          "Other negative prefixes",
+          "There are other prefixes that also mean “not.”",
+          "6. What does un- mean in the word unlucky?",
+          "7. What does dis- mean in disagree?",
+          "8. What does non- mean in nonfiction?",
+          "9. Write another word that starts with each of the prefixes un-, dis-, and non-.",
+          "10. Use each of the words you wrote in a sentence."
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_number": 8,
+    "title": "REVIEWING LESSONS 5–7",
+    "roots": [],
+    "key_words": [],
+    "familiar_words": [],
+    "challenge_words": [],
+    "word_details": [],
+    "exercises": [
+      {
+        "title": "EXERCISE A",
+        "lines": [
+          "MATCHING",
+          "Match each root or prefix with its meaning.",
+          "1. aqua A. space",
+          "2. terr B. land",
+          "3. astr C. partly or half",
+          "4. tele D. not",
+          "5. in- E. far or distant",
+          "6. semi- F. water",
+          "In Exercise C of Lessons 5, 6, and 7, you met these roots and prefixes. Match the columns. (You",
+          "will use one of the letters twice.)",
+          "7. marin G. not",
+          "8. ig-, il-, im-, ir- H. instrument",
+          "9. scope I. sea",
+          "10. non-, un-, dis-"
+        ]
+      },
+      {
+        "title": "EXERCISE B",
+        "lines": [
+          "SORTING",
+          "Sort these words, listing each one under its root or prefix. When you finish, add another word",
+          "that goes with each group. (Look back at the lists of familiar and challenge words for ideas.)",
+          "telecast aquaculture astronaut informal",
+          "semicolon telescope territory Mediterranean",
+          "astronomy semiformal insignificant semiconscious",
+          "insomnia astronomical telegraph teleconference",
+          "subterranean aquamarine inactive terrain",
+          "aquatic terrace telemarketing semiannual",
+          "semiprecious",
+          "1. AQUA 2. TERR 3. ASTR",
+          "4. TELE 5. IN- 6. SEMI-",
+          "In the blanks, write the answers for the following questions.",
+          "A. In which two columns do you find words related to seeing or hearing at a distance?",
+          "B. In which column do you find a word for a punctuation mark?",
+          "C. What are the meanings of the two parts of the word telescope?",
+          "D. What are the meanings of the two parts of the word aquamarine?",
+          "34 VOCABULARY FROM CLASSICAL ROOTS"
+        ]
+      },
+      {
+        "title": "EXERCISE C",
+        "lines": [
+          "VOCABULARY FROM YOUR TEXTBOOKS",
+          "Many of the subjects you are studying in school have specific words associated with them.",
+          "Use these words to answer the following questions.",
+          "telegraph semiprecious telescope semicolon astronomical",
+          "1. If you were reading a lesson on punctuation, which word would you see?",
+          "2. In a chapter about the solar system, which two words would you probably meet?",
+          "3. While you are doing a Web search for a report on gems and other valuable stones,",
+          "which word are you likely to see?",
+          "4. When you read about the life of Samuel Morse for a book report, which word will",
+          "you find?"
+        ]
+      },
+      {
+        "title": "EXERCISE D",
+        "lines": [
+          "RHYMING RIDDLES",
+          "Write the letter of the answer for each rhyming riddle.",
+          "1. What do you call a person aged thirteen to nineteen with blue-green skin?",
+          "2. What do you call the final news report on TV?",
+          "3. What do you call land with little to see?",
+          "4. What do you call a guidebook that is issued twice a year?",
+          "5. What do you call a tale about a big region of land?",
+          "A. Last telecast",
+          "B. Aquamarine teen",
+          "C. Plain terrain",
+          "D. Territory story",
+          "E. Semiannual manual"
+        ]
+      },
+      {
+        "title": "EXERCISE E",
+        "lines": [
+          "WRITING AND DISCUSSION ACTIVITIES",
+          "1. Look at these headlines. Choose one. Then on the lines below, write a paragraph to tell",
+          "what happened.",
+          "A. Teleconference Ends Suddenly Leaving Participants Puzzled",
+          "B. Aquaculture Farmer Displays New Fish",
+          "C. Students Change to Semiformal Clothes for School",
+          "2. With a partner, compose a short conversation between one of these pairs of speakers.",
+          "Make notes for your conversation on the lines below.",
+          "A. An astronaut circling the earth and a student on a Mediterranean cruise discussing",
+          "what they are seeing on their travels",
+          "B. A person returning from an aquatic vacation and someone whose vacation was spent",
+          "exploring subterranean caves comparing their adventures",
+          "C. A person with insomnia asking a doctor for advice on how to get a good night's",
+          "sleep",
+          "3. Look back at the boxes of Challenge Words on pages 19, 23, 24, 27, and 28. From these",
+          "words, choose three to write on the following lines. Try to define each word.",
+          "A.",
+          "B.",
+          "C.",
+          "Now look up these three words in the dictionary. Expand (or revise) your definitions on",
+          "the following lines.",
+          "A.",
+          "B.",
+          "C."
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_number": 9,
+    "title": "CREATING ORDER",
+    "roots": [
+      {
+        "root": "CIVI",
+        "origin": "Latin/Greek",
+        "meaning": "civis meaning “citizen, a member of a city”",
+        "example_word": "civis"
+      },
+      {
+        "root": "ORD",
+        "origin": "Latin/Greek",
+        "meaning": "ordo meaning “regularity, order”",
+        "example_word": "ordo"
+      }
+    ],
+    "key_words": [
+      "civics",
+      "civilian",
+      "coordinate",
+      "ordinarily",
+      "civil",
+      "civility",
+      "extraordinary",
+      "uncivilized"
+    ],
+    "familiar_words": [
+      "civilization",
+      "civilize",
+      "disorder",
+      "order",
+      "orderly",
+      "orderliness",
+      "reorder"
+    ],
+    "challenge_words": [
+      "inordinate",
+      "insubordination",
+      "ordinal",
+      "ordinance"
+    ],
+    "word_details": [
+      {
+        "word": "civics",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Civics is something we talk about when we think about citizen, a member of a city.",
+            "example": "In class, we say \"civics\" when we talk about citizen, a member of a city."
+          }
+        ]
+      },
+      {
+        "word": "civilian",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "A person who is not in the military.",
+            "example": "Many countries agree that during war civilians should not be attacked by those who are fighting."
+          },
+          {
+            "part_of_speech": "adj.",
+            "definition": "Relating to civil life, not military.",
+            "example": "After serving in the navy for two years, my brother returned to civilian life."
+          }
+        ]
+      },
+      {
+        "word": "coordinate",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "More than the ordinary, beyond what is expected, The extraordinary length of the Mississippi inordinate 8. ordinarily (or dÆn er ` Æ lŒ) insubordination",
+            "example": null
+          },
+          {
+            "part_of_speech": "adv.",
+            "definition": "Usually, generally, in the regular way. ordinal Ordinarily, I take my piano lesson at one o’clock on Saturdays, but ordinance next week I’ll take it at two. <> EXERCISE A: ANTONYMS Write the letter of the best ANTONYM (the word or phrase most nearly opposite in mean- ing to the word in bold-faced type).",
+            "example": null
+          }
+        ]
+      },
+      {
+        "word": "ordinarily",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "adv.",
+            "definition": "Ordinarily tells us that something happens in a way related to regularity, order.",
+            "example": "It reminds me that something happens in a way that connects to regularity, order."
+          }
+        ]
+      },
+      {
+        "word": "civil",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "”",
+            "example": null
+          }
+        ]
+      },
+      {
+        "word": "civility",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Courteous behavior.",
+            "example": "Nathan greeted his unwelcome visitors with civility, but not with."
+          }
+        ]
+      },
+      {
+        "word": "extraordinary",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Extraordinary describes something connected to regularity, order.",
+            "example": "The word extraordinary helps me describe things that are about regularity, order."
+          }
+        ]
+      },
+      {
+        "word": "uncivilized",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Uncivilized describes something connected to citizen, a member of a city.",
+            "example": "The word uncivilized helps me describe things that are about citizen, a member of a city."
+          }
+        ]
+      },
+      {
+        "word": "civilization",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Civilization is something we talk about when we think about citizen, a member of a city.",
+            "example": "In class, we say \"civilization\" when we talk about citizen, a member of a city."
+          }
+        ]
+      },
+      {
+        "word": "civilize",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "v.",
+            "definition": "Civilize means taking action that involves citizen, a member of a city.",
+            "example": "In class we civilize when we want to focus on citizen, a member of a city."
+          }
+        ]
+      },
+      {
+        "word": "disorder",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Disorder is something we talk about when we think about regularity, order.",
+            "example": "In class, we say \"disorder\" when we talk about regularity, order."
+          }
+        ]
+      },
+      {
+        "word": "order",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Order is something we talk about when we think about regularity, order.",
+            "example": "In class, we say \"order\" when we talk about regularity, order."
+          }
+        ]
+      },
+      {
+        "word": "orderly",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "adv.",
+            "definition": "Orderly tells us that something happens in a way related to regularity, order.",
+            "example": "It reminds me that something happens in a way that connects to regularity, order."
+          }
+        ]
+      },
+      {
+        "word": "orderliness",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Orderliness is something we talk about when we think about regularity, order.",
+            "example": "In class, we say \"orderliness\" when we talk about regularity, order."
+          }
+        ]
+      },
+      {
+        "word": "reorder",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Reorder is something we talk about when we think about regularity, order.",
+            "example": "In class, we say \"reorder\" when we talk about regularity, order."
+          }
+        ]
+      },
+      {
+        "word": "inordinate",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "v.",
+            "definition": "Inordinate means taking action that involves regularity, order.",
+            "example": "In class we inordinate when we want to focus on regularity, order."
+          }
+        ]
+      },
+      {
+        "word": "insubordination",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Insubordination is something we talk about when we think about regularity, order.",
+            "example": "In class, we say \"insubordination\" when we talk about regularity, order."
+          }
+        ]
+      },
+      {
+        "word": "ordinal",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Ordinal describes something connected to regularity, order.",
+            "example": "The word ordinal helps me describe things that are about regularity, order."
+          }
+        ]
+      },
+      {
+        "word": "ordinance",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Ordinance is something we talk about when we think about regularity, order.",
+            "example": "In class, we say \"ordinance\" when we talk about regularity, order."
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "title": "Using ROOT CLUES",
+        "lines": [
+          "The roots civi (citizen) and ord (regular) give you clues about meaning. When you spot one",
+          "of these roots in a word, you have a key to the word's meaning. Use the underlined root",
+          "clues to help you match the following columns:",
+          "1. ordinarily A. more than regular",
+          "2. uncivilized B. in the regular way",
+          "3. extraordinary C. related to life as a citizen",
+          "4. civil D. not having the organized life of a citizen",
+          "The root clues did not give you complete definitions as the following dictionary listings",
+          "will. But they got you started by giving you part of the meaning. Sometimes that part helps",
+          "you to figure out the word. In addition, the prefix clues were helpful—un- meaning “not,”",
+          "and extra- meaning “more than.”"
+        ]
+      },
+      {
+        "title": "EXERCISE B",
+        "lines": [
+          "MEANING IN CONTEXT",
+          "Use these words to fill in the blanks in the following paragraph.",
+          "civics extraordinary coordinated civil",
+          "Ms. Weber teaches classes in two related subjects, United States history and",
+          "(1) , the study of our government. In both classes, she teaches",
+          "about Martin Luther King Jr., who (2) the drive for legislation",
+          "that would ensure equality for everyone. Her students say that after studying with her, they",
+          "have a much better understanding of Dr. King's role in the (3)",
+          "rights movement. They can see clearly what an (4) time it was."
+        ]
+      },
+      {
+        "title": "EXERCISE C",
+        "lines": [
+          "EXTEND YOUR VOCABULARY",
+          "The noun suffix -ity",
+          "One of the key words in this lesson is civility. It ends with the suffix -ity. This suffix shows",
+          "that a word is a noun. The meaning of a noun ending in -ity is usually connected to the",
+          "meaning of its adjective partner. Civility is related to “being civil,” just as equality is related to",
+          "“being equal.” Civil and equal are adjectives. Civility and equality are nouns.",
+          "All of the nouns in the first column end in the suffix -ity. On the line, write the adjective",
+          "from which the noun was formed.",
+          "Nouns Adjectives",
+          "1. activity",
+          "2. possibility",
+          "3. vitality",
+          "4. originality",
+          "5. creativity",
+          "6. Choose two of the nouns and use each one in a sentence."
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_number": 10,
+    "title": "MEASURING IN MATH AND SCIENCE",
+    "roots": [],
+    "key_words": [
+      "diameter",
+      "metronome",
+      "symmetrical",
+      "thermometer",
+      "geometry",
+      "perimeter",
+      "thermal",
+      "thermostat"
+    ],
+    "familiar_words": [
+      "meter",
+      "metric",
+      "therm",
+      "thermos"
+    ],
+    "challenge_words": [
+      "chronometer",
+      "trigonometry",
+      "biometric",
+      "therm",
+      "thermodynamics",
+      "thermoelectric",
+      "thermoplastic"
+    ],
+    "word_details": [
+      {
+        "word": "diameter",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Diameter is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"diameter\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "metronome",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "A device that marks the beat for musicians.",
+            "example": "Mr. Rogers, our band leader, set the metronome to tick the quick tempo of a march."
+          }
+        ]
+      },
+      {
+        "word": "symmetrical",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Similar in shape and size on opposite sides of a dividing line.",
+            "example": "Carlos folded the paper in half so that as he cut out the bird shape the sides would be symmetrical. NOTA BENE Meter is a complete word in itself as well as a meaningful part of other words. It means the basic unit of length in the metric system, a measurement of 39.37 inches, which is a little longer than a yard."
+          }
+        ]
+      },
+      {
+        "word": "thermometer",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Thermometer is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"thermometer\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "geometry",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Geometry is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"geometry\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "perimeter",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Perimeter is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"perimeter\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "thermal",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Thermal describes something connected to important ideas in daily life.",
+            "example": "The word thermal helps me describe things that are about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "thermostat",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Thermostat is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"thermostat\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "meter",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Meter is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"meter\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "metric",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Metric describes something connected to important ideas in daily life.",
+            "example": "The word metric helps me describe things that are about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "therm",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Therm is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"therm\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "thermos",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Thermos is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"thermos\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "chronometer",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Chronometer is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"chronometer\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "trigonometry",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Trigonometry is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"trigonometry\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "biometric",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Biometric describes something connected to important ideas in daily life.",
+            "example": "The word biometric helps me describe things that are about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "therm",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Therm is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"therm\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "thermodynamics",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Thermodynamics is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"thermodynamics\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "thermoelectric",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Thermoelectric describes something connected to important ideas in daily life.",
+            "example": "The word thermoelectric helps me describe things that are about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "thermoplastic",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Thermoplastic describes something connected to important ideas in daily life.",
+            "example": "The word thermoplastic helps me describe things that are about important ideas in daily life."
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "title": "Using ROOT CLUES",
+        "lines": [
+          "The roots metr/meter (measurement) and therm (heat) give you clues about meaning. When",
+          "you spot one of these roots in a word, you have a key to the word's meaning. Use the",
+          "underlined root clues to help you match the following columns:",
+          "1. thermal A. measurement of outside boundary",
+          "2. perimeter B. having to do with heat",
+          "3. thermostat C. the study of the measurement of shapes",
+          "4. geometry D. device for controlling heat",
+          "The root clues did not give you complete definitions as the following dictionary listings",
+          "will. But they got you started by giving you part of the meaning. Sometimes that part helps",
+          "you to figure out the word.",
+          "METR/METER (from the Greek word metron meaning “measure”)",
+          "1. diameter (dœ a ` mÆ tÆr) [also derived from Greek dia meaning",
+          "Familiar Words “through”]",
+          "with Root n. A line passing through the center of a circle from one side",
+          "METR/METER to the other.",
+          "meter",
+          "Kylie created two semicircles by drawing the diameter through the",
+          "metric circle.",
+          "Challenge Words 2. geometry (jŒ † ` mÆ trŒ) [also derived from Greek ge meaning",
+          "with Root “earth”]",
+          "METR/METER n. The area of mathematics that deals with lines, angles, and",
+          "figures and their measurements.",
+          "chronometer",
+          "When studying geometry, we will learn how to measure the size of",
+          "trigonometry",
+          "different kinds of figures.",
+          "biometric",
+          "geometric, adj.",
+          "3. metronome (me ` trÆ n§m)",
+          "n. A device that marks the beat for musicians.",
+          "Mr. Rogers, our band leader, set the metronome to",
+          "tick the quick tempo of a march.",
+          "4. perimeter (pÆ ri ` mÆ tÆr) [also derived from Greek peri",
+          "meaning “around”]",
+          "n. The distance around a figure.",
+          "Before ordering the materials for a fence to enclose her yard, Aunt",
+          "Anna measured its perimeter.",
+          "5. symmetrical (sÆ me ` tri kÆl)",
+          "[also derived from Greek syn meaning",
+          "“together”]",
+          "adj. Similar in shape and size on",
+          "opposite sides of a dividing line.",
+          "Carlos folded the paper in half so that as",
+          "he cut out the bird shape the sides would",
+          "be symmetrical.",
+          "NOTA BENE",
+          "Meter is a complete word in itself as well as a meaningful part of",
+          "other words. It means the basic unit of length in the metric system,",
+          "a measurement of 39.37 inches, which is a little longer than a yard."
+        ]
+      },
+      {
+        "title": "EXERCISE A",
+        "lines": [
+          "SYNONYMS",
+          "Write the letter of the best SYNONYM (the word or phrase most nearly the same in mean-",
+          "ing as the word in bold-faced type).",
+          "1. measure the diameter",
+          "a. curve b. circle c. line d. arc",
+          "2. a thermal system",
+          "a. difficult b. heating c. grading d. drawing",
+          "3. adjusted the thermostat",
+          "a. sound b. light c. temperature d. speed",
+          "4. symmetrical parts",
+          "a. intersecting b. warm c. cold d. similar",
+          "5. using a metronome",
+          "a. timekeeper b. metal bar c. musical instrument d. subway"
+        ]
+      },
+      {
+        "title": "EXERCISE B",
+        "lines": [
+          "MEANING IN CONTEXT",
+          "Use these words to fill in the blanks in the following paragraph.",
+          "perimeter thermometer geometry thermal",
+          "When working outdoors in Alaska, the surveyors from Louisiana wore",
+          "(1) underwear to preserve their body heat, but they were still",
+          "cold. The morning that the (2) showed a temperature below",
+          "zero, they put on extra layers of clothing, but they were still cold. These surveyors",
+          "were smart. They had studied (3) and knew how to correctly",
+          "mark the boundaries of large pieces of land. They had no difficulty measuring the",
+          "(4) of what they had marked. What they didn't know was how",
+          "to get used to the cold."
+        ]
+      },
+      {
+        "title": "EXERCISE C",
+        "lines": [
+          "EXTEND YOUR VOCABULARY",
+          "The “thousand” prefixes: kilo- and milli-",
+          "Kilo and milli (which appear with meter) are meaningful word parts. In the metric measur-",
+          "ing system kilo- (from Greek for thousand) means “one thousand” and milli- (from Latin",
+          "for thousand) means “one part of one thousand.” A kilometer is 1000 meters. A millimeter",
+          "is 1/1000 of a meter.",
+          "Using what you know from these meaningful parts, answer the following questions:",
+          "1. Is a kilogram lighter or heavier than a gram?",
+          "2. Is a milligram lighter or heavier than a gram?",
+          "3. Do you think a milliliter has more or less liquid than a liter?",
+          "4. Do you think a kiloliter has more or less liquid than a liter?",
+          "Among the key words in this lesson are perimeter, diameter, and thermometer. Meter is a mean-",
+          "ingful part of many other words too. Match each “meter” word in Column 1 with what it",
+          "could measure in Column 2.",
+          "5. speedometer A. distance between cities",
+          "6. kilometer B. a line less than a centimeter long",
+          "7. millimeter C. atmospheric pressure for predicting the weather",
+          "8. barometer D. miles per hour in a car"
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_number": 11,
+    "title": "PULLING TOGETHER",
+    "roots": [
+      {
+        "root": "STRUCT",
+        "origin": "Latin/Greek",
+        "meaning": "struere meaning “to heap up, build”",
+        "example_word": "struere"
+      },
+      {
+        "root": "TRACT",
+        "origin": "Latin/Greek",
+        "meaning": "tractus meaning “to pull”",
+        "example_word": "tractus"
+      }
+    ],
+    "key_words": [
+      "construction",
+      "extract",
+      "retract",
+      "contraction",
+      "protractor",
+      "structure",
+      "destructive",
+      "reconstruct",
+      "traction"
+    ],
+    "familiar_words": [
+      "struct",
+      "construct",
+      "instruct",
+      "instructions",
+      "tract",
+      "attract",
+      "subtract",
+      "subtraction",
+      "tractor"
+    ],
+    "challenge_words": [
+      "struct",
+      "obstruct",
+      "restructure",
+      "structurally",
+      "superstructure",
+      "tract",
+      "detract",
+      "distraction",
+      "intractable"
+    ],
+    "word_details": [
+      {
+        "word": "construction",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Construction is something we talk about when we think about to heap up, build.",
+            "example": "In class, we say \"construction\" when we talk about to heap up, build."
+          }
+        ]
+      },
+      {
+        "word": "extract",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Extract is something we talk about when we think about to pull.",
+            "example": "In class, we say \"extract\" when we talk about to pull."
+          }
+        ]
+      },
+      {
+        "word": "retract",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Retract is something we talk about when we think about to pull.",
+            "example": "In class, we say \"retract\" when we talk about to pull."
+          }
+        ]
+      },
+      {
+        "word": "contraction",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Contraction is something we talk about when we think about to pull.",
+            "example": "In class, we say \"contraction\" when we talk about to pull."
+          }
+        ]
+      },
+      {
+        "word": "protractor",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "A semicircular device for drawing and measuring angles.",
+            "example": "When Dominic placed his protractor on top of the angle, he could see the number of degrees it had."
+          }
+        ]
+      },
+      {
+        "word": "structure",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Structure is something we talk about when we think about to heap up, build.",
+            "example": "In class, we say \"structure\" when we talk about to heap up, build."
+          }
+        ]
+      },
+      {
+        "word": "destructive",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Destructive describes something connected to to heap up, build.",
+            "example": "The word destructive helps me describe things that are about to heap up, build."
+          }
+        ]
+      },
+      {
+        "word": "reconstruct",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Reconstruct is something we talk about when we think about to heap up, build.",
+            "example": "In class, we say \"reconstruct\" when we talk about to heap up, build."
+          }
+        ]
+      },
+      {
+        "word": "traction",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "The power to grip or hold to a surface.",
+            "example": "Our new tires had good traction, which kept our car from sliding on the ice."
+          }
+        ]
+      },
+      {
+        "word": "struct",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Struct is something we talk about when we think about to heap up, build.",
+            "example": "In class, we say \"struct\" when we talk about to heap up, build."
+          }
+        ]
+      },
+      {
+        "word": "construct",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Construct is something we talk about when we think about to heap up, build.",
+            "example": "In class, we say \"construct\" when we talk about to heap up, build."
+          }
+        ]
+      },
+      {
+        "word": "instruct",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Instruct is something we talk about when we think about to heap up, build.",
+            "example": "In class, we say \"instruct\" when we talk about to heap up, build."
+          }
+        ]
+      },
+      {
+        "word": "instructions",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Instructions is something we talk about when we think about to heap up, build.",
+            "example": "In class, we say \"instructions\" when we talk about to heap up, build."
+          }
+        ]
+      },
+      {
+        "word": "tract",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Tract is something we talk about when we think about to pull.",
+            "example": "In class, we say \"tract\" when we talk about to pull."
+          }
+        ]
+      },
+      {
+        "word": "attract",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Attract is something we talk about when we think about to pull.",
+            "example": "In class, we say \"attract\" when we talk about to pull."
+          }
+        ]
+      },
+      {
+        "word": "subtract",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Subtract is something we talk about when we think about to pull.",
+            "example": "In class, we say \"subtract\" when we talk about to pull."
+          }
+        ]
+      },
+      {
+        "word": "subtraction",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Subtraction is something we talk about when we think about to pull.",
+            "example": "In class, we say \"subtraction\" when we talk about to pull."
+          }
+        ]
+      },
+      {
+        "word": "tractor",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Tractor is something we talk about when we think about to pull.",
+            "example": "In class, we say \"tractor\" when we talk about to pull."
+          }
+        ]
+      },
+      {
+        "word": "struct",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Struct is something we talk about when we think about to heap up, build.",
+            "example": "In class, we say \"struct\" when we talk about to heap up, build."
+          }
+        ]
+      },
+      {
+        "word": "obstruct",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Obstruct is something we talk about when we think about to heap up, build.",
+            "example": "In class, we say \"obstruct\" when we talk about to heap up, build."
+          }
+        ]
+      },
+      {
+        "word": "restructure",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Restructure is something we talk about when we think about to heap up, build.",
+            "example": "In class, we say \"restructure\" when we talk about to heap up, build."
+          }
+        ]
+      },
+      {
+        "word": "structurally",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "adv.",
+            "definition": "Structurally tells us that something happens in a way related to to heap up, build.",
+            "example": "It reminds me that something happens in a way that connects to to heap up, build."
+          }
+        ]
+      },
+      {
+        "word": "superstructure",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Superstructure is something we talk about when we think about to heap up, build.",
+            "example": "In class, we say \"superstructure\" when we talk about to heap up, build."
+          }
+        ]
+      },
+      {
+        "word": "tract",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Tract is something we talk about when we think about to pull.",
+            "example": "In class, we say \"tract\" when we talk about to pull."
+          }
+        ]
+      },
+      {
+        "word": "detract",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Detract is something we talk about when we think about to pull.",
+            "example": "In class, we say \"detract\" when we talk about to pull."
+          }
+        ]
+      },
+      {
+        "word": "distraction",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Distraction is something we talk about when we think about to pull.",
+            "example": "In class, we say \"distraction\" when we talk about to pull."
+          }
+        ]
+      },
+      {
+        "word": "intractable",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Intractable describes something connected to to pull.",
+            "example": "The word intractable helps me describe things that are about to pull."
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "title": "Using ROOT CLUES",
+        "lines": [
+          "The roots struct (build) and tract (pull) give you clues about meaning. When you spot one",
+          "of these roots in a word, you have a key to the word's meaning. Use the underlined root",
+          "clues to help you match the following columns:",
+          "1. contraction A. to build again",
+          "2. reconstruct B. to pull back",
+          "3. structure C. a pulling together",
+          "4. retract D. a building",
+          "The root clues did not give you complete definitions as the following dictionary listings",
+          "will. But they got you started by giving you part of the meaning. Sometimes that part helps",
+          "you to figure out the word."
+        ]
+      },
+      {
+        "title": "EXERCISE B",
+        "lines": [
+          "MEANING IN CONTEXT",
+          "Use these words to fill in the blanks in the following paragraphs.",
+          "structure reconstruct protractor traction destructive",
+          "After a (1) windstorm blew down their tree house, Tyrone and",
+          "Lana decided to (2) it and make it bigger and better.",
+          "“Let's draw the new version before we start building,” said Tyrone, pulling out paper and",
+          "pencil. “I want our new tree house to be an impressive (3) .”",
+          "“If we put it on the big limb on the right,” said Lana, “we'll need to know the angle it",
+          "makes with the trunk.” She pulled out her (4) to get a general",
+          "idea of the measure of the angle.",
+          "“Not that limb,” said Tyrone. “I fell from it last year and broke my leg. At the hospital",
+          "I was hooked up to cords and weights in (5) to pull the bone",
+          "straight so that it would heal well. Let's put the new tree house on a lower limb.”"
+        ]
+      },
+      {
+        "title": "EXERCISE C",
+        "lines": [
+          "EXTEND YOUR VOCABULARY",
+          "The “out” prefix: ex-, e-",
+          "In the key word extract, the prefix ex- means “out.” To extract a splinter is to pull it out.",
+          "Match each word that starts with the prefix ex- with its meaning.",
+          "1. export A. stretch out",
+          "2. exit B. ship out",
+          "3. extend C. breathe out",
+          "4. exhale D. go out",
+          "5. Choose two of the words above and write sentences for each.",
+          "48 VOCABULARY FROM CLASSICAL ROOTS",
+          "The prefix ex- is sometimes spelled e-, as in emancipate meaning “deliver out” or “free.”",
+          "Example: The slaves were emancipated in 1863. The prefix e- has the same “out” meaning as",
+          "ex-. Match each word that starts with the prefix e- with its meaning.",
+          "6. erase A. leave out",
+          "7. emigrate B. throw out",
+          "8. eject C. travel out",
+          "9. eliminate D. rub out",
+          "10. Choose two of the words above and write sentences for each."
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_number": 12,
+    "title": "REVIEWING LESSONS 9–11",
+    "roots": [],
+    "key_words": [],
+    "familiar_words": [],
+    "challenge_words": [],
+    "word_details": [],
+    "exercises": [
+      {
+        "title": "EXERCISE A",
+        "lines": [
+          "MATCHING",
+          "Match each root with its meaning.",
+          "1. civi A. pull",
+          "2. ord B. build",
+          "3. therm C. measurement",
+          "4. metr/meter D. citizen",
+          "5. struct E. regularity",
+          "6. tract F. heat",
+          "In Exercise C of Lessons 9, 10, and 11, you met these prefixes and this suffix. Match the",
+          "columns.",
+          "7. kilo- G. out",
+          "8. milli- H. noun suffix",
+          "9. ex- or e- I. 1000",
+          "10. -ity J. 1/1000",
+          "Write sentences in which you use each of these words meaningfully.",
+          "11. extract",
+          "12. kilometer",
+          "13. civility",
+          "50 VOCABULARY FROM CLASSICAL ROOTS"
+        ]
+      },
+      {
+        "title": "EXERCISE B",
+        "lines": [
+          "SORTING",
+          "Sort these words, listing each one under its root. When you finish, add another word that",
+          "goes with each group. (Look back at the lists of familiar and challenge words for ideas.)",
+          "contraction civil diameter thermal",
+          "civility structure civics extraordinary",
+          "extract construction traction retract",
+          "geometry uncivilized ordinarily destructive",
+          "civilian thermostat reconstruct symmetrical",
+          "coordinate protractor metronome perimeter",
+          "thermometer",
+          "1. CIVI 2. ORD 3. THERM",
+          "4. METR/METER 5. STRUCT 6. TRACT",
+          "Write the correct answer in each of the sentences below.",
+          "A. Words with the root struct are related to the idea of",
+          ".",
+          "B. Words with the root therm are related to the idea of",
+          ".",
+          "C. Words with the root civi are related to the idea of",
+          ".",
+          "D. The prefixes kilo- and milli- can be used with the root",
+          ".",
+          "E. The meanings of the two parts of the word thermometer are",
+          "."
+        ]
+      },
+      {
+        "title": "EXERCISE C",
+        "lines": [
+          "VOCABULARY FROM YOUR TEXTBOOKS",
+          "Many of the subjects you are studying in school have specific words associated with them.",
+          "Use these words to answer the following questions.",
+          "civics contraction protractor metronome",
+          "diameter perimeter thermometer geometry",
+          "1. Which word would be most likely to appear in a chapter about weather?",
+          "2. Which word would be most likely to appear in a lesson about using the apostrophe?",
+          "3. Which word would be most likely to be in the title of a book about government?",
+          "4. Which word would you be most likely to hear spoken in music class?",
+          "5. Which four words would be most likely to appear in a math book?",
+          "52 VOCABULARY FROM CLASSICAL ROOTS"
+        ]
+      },
+      {
+        "title": "EXERCISE D",
+        "lines": [
+          "RHYMING RIDDLES",
+          "Write the letter of the answer for each rhyming riddle.",
+          "1. What do you call an unruly child who turns up the heat?",
+          "2. What do you call the semicircular cover for a tempo clicker?",
+          "3. What do you call one third of a cramp?",
+          "4. What do you call buying tires that will hug the road?",
+          "5. What do you call an exceptional boat for crossing rivers?",
+          "A. Traction transaction",
+          "B. Thermostat brat",
+          "C. Metronome dome",
+          "D. Contraction fraction",
+          "E. Extraordinary ferry"
+        ]
+      },
+      {
+        "title": "EXERCISE E",
+        "lines": [
+          "WRITING AND DISCUSSION ACTIVITIES",
+          "1. Look at these headlines. Choose one. Then on the lines below, write a paragraph to tell",
+          "what happened.",
+          "A. Huge Argument between Ordinarily Civil Neighbors",
+          "B. Town Discovers Unusual Thermal Source",
+          "C. Destructive Insects Hold Up Construction",
+          "2. With a partner, compose a short conversation between one of these pairs of speakers.",
+          "Make notes for your conversation on the lines below.",
+          "A. A thermostat repairperson and a metronome repairperson, describing the",
+          "customers who phoned for their help",
+          "B. A civilian nurse and a soldier, discussing the care of their uniforms",
+          "C. A construction worker and a civics teacher, describing their jobs to each other",
+          "3. Look back at the boxes of Challenge Words on pages 37, 38, 41, 42, and 45. From these",
+          "words, choose three to write on the following lines. Try to define each word.",
+          "A.",
+          "B.",
+          "C.",
+          "Now look up those three words in the dictionary. Expand (or revise) your definitions on",
+          "the following lines.",
+          "A.",
+          "B.",
+          "C."
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_number": 13,
+    "title": "CRACKING APART",
+    "roots": [
+      {
+        "root": "FRAG",
+        "origin": "Latin/Greek",
+        "meaning": "fractus/frangere meaning “to crack; to break”",
+        "example_word": "fractusfrangere"
+      },
+      {
+        "root": "RUPT",
+        "origin": "Latin/Greek",
+        "meaning": "rumpere meaning “to break; to burst”",
+        "example_word": "rumpere"
+      }
+    ],
+    "key_words": [
+      "abrupt",
+      "fractional",
+      "fragility",
+      "interruption",
+      "disrupt",
+      "fracture",
+      "fragment",
+      "rupture"
+    ],
+    "familiar_words": [
+      "fraction",
+      "fragile",
+      "erupt",
+      "interrupt"
+    ],
+    "challenge_words": [
+      "fracas",
+      "infraction",
+      "fragmentary",
+      "corrupt"
+    ],
+    "word_details": [
+      {
+        "word": "abrupt",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "v.",
+            "definition": "To disturb, to break into or destroy corrupt engine disrupted the quiet summer morning. incorruptibility 7. interruption (in tÆ rÆp ` shÆn)",
+            "example": null
+          },
+          {
+            "part_of_speech": "n.",
+            "definition": "The act of breaking in o",
+            "example": null
+          },
+          {
+            "part_of_speech": "n.",
+            "definition": "Mayra could not finish a sentence without an interruption from her talkative friend.",
+            "example": null
+          }
+        ]
+      },
+      {
+        "word": "fractional",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Fractional describes something connected to important ideas in daily life.",
+            "example": "The word fractional helps me describe things that are about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "fragility",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "The condition of being easily shattered or broke",
+            "example": null
+          },
+          {
+            "part_of_speech": "n.",
+            "definition": "Before the movers arrived, Luz decided to wrap each of the cups separately because of their fragility.",
+            "example": null
+          }
+        ]
+      },
+      {
+        "word": "interruption",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Interruption is something we talk about when we think about to break; to burst.",
+            "example": "In class, we say \"interruption\" when we talk about to break; to burst."
+          }
+        ]
+      },
+      {
+        "word": "disrupt",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Disrupt is something we talk about when we think about to break; to burst.",
+            "example": "In class, we say \"disrupt\" when we talk about to break; to burst."
+          }
+        ]
+      },
+      {
+        "word": "fracture",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Fracture is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"fracture\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "fragment",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Fragment is something we talk about when we think about to crack; to break.",
+            "example": "In class, we say \"fragment\" when we talk about to crack; to break."
+          }
+        ]
+      },
+      {
+        "word": "rupture",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Rupture is something we talk about when we think about to break; to burst.",
+            "example": "In class, we say \"rupture\" when we talk about to break; to burst."
+          }
+        ]
+      },
+      {
+        "word": "fraction",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Fraction is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"fraction\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "fragile",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Fragile is something we talk about when we think about to crack; to break.",
+            "example": "In class, we say \"fragile\" when we talk about to crack; to break."
+          }
+        ]
+      },
+      {
+        "word": "erupt",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Erupt is something we talk about when we think about to break; to burst.",
+            "example": "In class, we say \"erupt\" when we talk about to break; to burst."
+          }
+        ]
+      },
+      {
+        "word": "interrupt",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Interrupt is something we talk about when we think about to break; to burst.",
+            "example": "In class, we say \"interrupt\" when we talk about to break; to burst."
+          }
+        ]
+      },
+      {
+        "word": "fracas",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Fracas is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"fracas\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "infraction",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Infraction is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"infraction\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "fragmentary",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Fragmentary describes something connected to to crack; to break.",
+            "example": "The word fragmentary helps me describe things that are about to crack; to break."
+          }
+        ]
+      },
+      {
+        "word": "corrupt",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Corrupt is something we talk about when we think about to break; to burst.",
+            "example": "In class, we say \"corrupt\" when we talk about to break; to burst."
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "title": "Using ROOT CLUES",
+        "lines": [
+          "When you spot the root frac/frag (break) or the root rupt (burst) in a word, you have a key",
+          "to the word's meaning. Use the underlined root clues to help you match the following",
+          "columns:",
+          "1. fracture A. a piece that has broken off",
+          "2. fragment B. to break apart",
+          "3. interruption C. to burst open",
+          "4. rupture D. bursting in between two speakers",
+          "The root clues did not give you complete definitions as the following dictionary listings",
+          "will. But they got you started by giving you part of the meaning. Sometimes that part helps",
+          "you to figure out the word.",
+          "FRAC/FRAG (from the Latin word fractus/frangere meaning “to crack; to break”)",
+          "1. fracture (frak ` chÆr)",
+          "Familiar Words n. A break, crack, or split.",
+          "with Root After many days of careful work, the sculptor made",
+          "FRAC/FRAG one wrong tap, causing a fracture in the marble.",
+          "fraction v. To break, crack, or split.",
+          "fragile When Jabir fractured his arm, he was in a cast for",
+          "six weeks.",
+          "Challenge Words 2. fractional (frak ` shÆn Æl)",
+          "with Root adj. Having to do with a part, expressed with a numerator and",
+          "FRAC/FRAG a denominator.",
+          "The fractional representation of a half is 1/2.",
+          "fracas",
+          "infraction",
+          "3. fragility (frÆ ji ` lÆ tŒ)",
+          "n. The condition of being easily",
+          "fragmentary",
+          "shattered or broken.",
+          "Before the movers arrived, Luz decided to",
+          "wrap each of the cups separately because",
+          "of their fragility.",
+          "4. fragment (frag ` mÆnt)",
+          "n. A part chipped away, a broken piece.",
+          "When I dropped the cup, it broke apart and",
+          "fragments slid across the floor."
+        ]
+      },
+      {
+        "title": "EXERCISE A",
+        "lines": [
+          "SYNONYMS",
+          "Write the letter of the best SYNONYM (the word or phrase most nearly the same in mean-",
+          "ing as the word in bold-faced type).",
+          "1. to fracture a bone",
+          "a. bruise b. cast c. clean d. crack",
+          "2. a small fragment",
+          "a. dish b. piece c. split d. cup",
+          "3. a serious rupture",
+          "a. bursting b. splinter c. injure d. sprain",
+          "4. to disrupt a game",
+          "a. dissect b. disappoint c. dislike d. disturb",
+          "5. an abrupt stop",
+          "a. scheduled b. expected c. sudden d. regular"
+        ]
+      },
+      {
+        "title": "EXERCISE B",
+        "lines": [
+          "MEANING IN CONTEXT",
+          "Use these words to fill in the blanks in the following paragraph.",
+          "fractional interruption fragments disrupt fragility",
+          "Students on an archeological dig unearthed (1) of ancient",
+          "pottery. They needed to handle each piece carefully because of its",
+          "(2) . The students laid everything on a table and began to put the",
+          "pieces together. They worked for hours without (3) . When they",
+          "stopped, they had assembled only a (4) part of a bowl. Before they",
+          "left the room, they locked the door so no one would (5) their work."
+        ]
+      },
+      {
+        "title": "EXERCISE C",
+        "lines": [
+          "EXTEND YOUR VOCABULARY",
+          "The noun suffix -ment",
+          "One of the key words in this lesson is fragment. It has two parts: the root frag (break) and",
+          "the suffix -ment. Ment can be used as a suffix on a complete word as well as on a root. Look",
+          "at the verb amaze and the related noun amazement.",
+          "All of the following words end in -ment. Sort them into two groups. On the lines in the first",
+          "column, write the ones that are a complete word plus the suffix -ment. In the second col-",
+          "umn, write the words in which -ment is added to a root.",
+          "monument amusement ornament",
+          "punishment document development",
+          "improvement management instrument",
+          "government",
+          "Complete word + -ment Root + -ment",
+          "1. What part of speech are all the words in the first column?",
+          "2. On each word in the first column, cross out the suffix -ment and look at the base",
+          "word that is left. What part of speech are all of those words?",
+          "3. On the words in the first column, how does the suffix -ment change the original",
+          "word?",
+          "4. In which column are all the words the names of things you can touch?",
+          "5. What part of speech are all the words in the second column?"
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_number": 14,
+    "title": "PLACING THE FOUNDATION",
+    "roots": [
+      {
+        "root": "BAS",
+        "origin": "Latin/Greek",
+        "meaning": "bassus meaning “low,” and the Greek word basis meaning “pedestal or base”",
+        "example_word": "bassus"
+      },
+      {
+        "root": "POS",
+        "origin": "Latin/Greek",
+        "meaning": "positum meaning “to put, to place”",
+        "example_word": "positum"
+      }
+    ],
+    "key_words": [
+      "basement",
+      "bass",
+      "dispose",
+      "position",
+      "basis",
+      "composition",
+      "exposure",
+      "positive"
+    ],
+    "familiar_words": [
+      "base",
+      "baseboard",
+      "basic",
+      "pose",
+      "post",
+      "poster",
+      "posture"
+    ],
+    "challenge_words": [
+      "bassoon",
+      "debase",
+      "depose",
+      "impose",
+      "interpose",
+      "proposal",
+      "repose"
+    ],
+    "word_details": [
+      {
+        "word": "basement",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Basement is something we talk about when we think about low,.",
+            "example": "In class, we say \"basement\" when we talk about low,."
+          }
+        ]
+      },
+      {
+        "word": "bass",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Bass is something we talk about when we think about low,.",
+            "example": "In class, we say \"bass\" when we talk about low,."
+          }
+        ]
+      },
+      {
+        "word": "dispose",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "v.",
+            "definition": "To get rid of or throw away.",
+            "example": "Because of its odor, Ryan disposed of the garbage in a covered container."
+          }
+        ]
+      },
+      {
+        "word": "position",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Position is something we talk about when we think about to put, to place.",
+            "example": "In class, we say \"position\" when we talk about to put, to place."
+          }
+        ]
+      },
+      {
+        "word": "basis",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Basis is something we talk about when we think about low,.",
+            "example": "In class, we say \"basis\" when we talk about low,."
+          }
+        ]
+      },
+      {
+        "word": "composition",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Composition is something we talk about when we think about to put, to place.",
+            "example": "In class, we say \"composition\" when we talk about to put, to place."
+          }
+        ]
+      },
+      {
+        "word": "exposure",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "The result of being unprotected outside, especially in severe weather.",
+            "example": "We were worried that the lost hikers would suffer from exposure if we didn’t find them soo."
+          }
+        ]
+      },
+      {
+        "word": "positive",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Sure, certain, definite.",
+            "example": "The twins were positive that they had left their bicycles in back of the house."
+          }
+        ]
+      },
+      {
+        "word": "base",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Base is something we talk about when we think about low,.",
+            "example": "In class, we say \"base\" when we talk about low,."
+          }
+        ]
+      },
+      {
+        "word": "baseboard",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Baseboard is something we talk about when we think about low,.",
+            "example": "In class, we say \"baseboard\" when we talk about low,."
+          }
+        ]
+      },
+      {
+        "word": "basic",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Basic describes something connected to low,.",
+            "example": "The word basic helps me describe things that are about low,."
+          }
+        ]
+      },
+      {
+        "word": "pose",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Pose is something we talk about when we think about to put, to place.",
+            "example": "In class, we say \"pose\" when we talk about to put, to place."
+          }
+        ]
+      },
+      {
+        "word": "post",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Post is something we talk about when we think about to put, to place.",
+            "example": "In class, we say \"post\" when we talk about to put, to place."
+          }
+        ]
+      },
+      {
+        "word": "poster",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Poster is something we talk about when we think about to put, to place.",
+            "example": "In class, we say \"poster\" when we talk about to put, to place."
+          }
+        ]
+      },
+      {
+        "word": "posture",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Posture is something we talk about when we think about to put, to place.",
+            "example": "In class, we say \"posture\" when we talk about to put, to place."
+          }
+        ]
+      },
+      {
+        "word": "bassoon",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Bassoon is something we talk about when we think about low,.",
+            "example": "In class, we say \"bassoon\" when we talk about low,."
+          }
+        ]
+      },
+      {
+        "word": "debase",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Debase is something we talk about when we think about low,.",
+            "example": "In class, we say \"debase\" when we talk about low,."
+          }
+        ]
+      },
+      {
+        "word": "depose",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Depose is something we talk about when we think about to put, to place.",
+            "example": "In class, we say \"depose\" when we talk about to put, to place."
+          }
+        ]
+      },
+      {
+        "word": "impose",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Impose is something we talk about when we think about to put, to place.",
+            "example": "In class, we say \"impose\" when we talk about to put, to place."
+          }
+        ]
+      },
+      {
+        "word": "interpose",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Interpose is something we talk about when we think about to put, to place.",
+            "example": "In class, we say \"interpose\" when we talk about to put, to place."
+          }
+        ]
+      },
+      {
+        "word": "proposal",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "adj.",
+            "definition": "Proposal describes something connected to to put, to place.",
+            "example": "The word proposal helps me describe things that are about to put, to place."
+          }
+        ]
+      },
+      {
+        "word": "repose",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Repose is something we talk about when we think about to put, to place.",
+            "example": "In class, we say \"repose\" when we talk about to put, to place."
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "title": "Using ROOT CLUES",
+        "lines": [
+          "The roots bas (low) and pos (putting or placing) give you clues about meaning. When you",
+          "spot one of these roots in a word, you know a piece of the word's meaning. Use the under-",
+          "lined clues to help you match the following columns:",
+          "1. basement A. low musical sounds",
+          "2. composition B. placement",
+          "3. bass C. parts put together to make a whole",
+          "4. position D. lowest floor",
+          "The root clues did not give you complete definitions as the following dictionary listings",
+          "will. But they got you started by giving you part of the meaning. Sometimes that part helps",
+          "you to figure out the word."
+        ]
+      },
+      {
+        "title": "EXERCISE A",
+        "lines": [
+          "SYNONYMS",
+          "Write the letter of the best SYNONYM (the word or phrase most nearly the same in mean-",
+          "ing as the word in bold-faced type).",
+          "1. her position in the line",
+          "a. place b. lead c. posture d. pushing",
+          "2. the basis of his idea",
+          "a. power b. foundation c. construction d. appeal",
+          "3. composition of the paint",
+          "a. odor b. placement c. part d. makeup",
+          "4. the bass drum",
+          "a. chorus b. with low notes c. with high notes d. orchestra",
+          "5. hurt by exposure",
+          "a. being hidden b. being bored c. being revealed d. being punished"
+        ]
+      },
+      {
+        "title": "EXERCISE B",
+        "lines": [
+          "MEANING IN CONTEXT",
+          "Use these words to fill in the blanks in the following paragraph.",
+          "positive position basement dispose",
+          "When Mom says it's time for spring housecleaning, she means the whole house from the",
+          "attic to the (1) . She loves to have everything fresh and clean",
+          "after the winter. She takes the (2) that everyone in the family",
+          "should help. Last week she handed me a pail of soapy water. When I frowned, she said,",
+          "“Look on the (3) side of things; when we're through, we won't",
+          "need to work this hard until the fall.” In addition, she made me clean out my closet and",
+          "(4) of all the clothes that I'd outgrown. I, too, like everything",
+          "fresh and organized, but I'll be glad when spring housecleaning is over."
+        ]
+      },
+      {
+        "title": "EXERCISE C",
+        "lines": [
+          "EXTEND YOUR VOCABULARY",
+          "The noun suffix -ure",
+          "The key word exposure has three meaningful parts: ex which can mean “out,” pos which can",
+          "mean “put,” and ure which can mean “the result of being.” So, one of the meanings of expo-",
+          "sure is “the result of being put out (outside).”",
+          "Use these words that end in the suffix -ure to answer the following questions.",
+          "mixture pleasure signature rupture fracture",
+          "1. Which word can mean the result of signing your name?",
+          "2. Which word can mean the result of mixing?",
+          "3. Which word can mean the result of being pleased?",
+          "4. Which word can mean the result of breaking?",
+          "5. Which word can mean the result of bursting?"
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_number": 15,
+    "title": "CONNECTING WITH PREFIXES",
+    "roots": [],
+    "key_words": [
+      "committee",
+      "conjunction",
+      "reaction",
+      "reflect",
+      "communicate",
+      "converse",
+      "reelect",
+      "relate"
+    ],
+    "familiar_words": [
+      "combine",
+      "commotion",
+      "rearrange",
+      "recall",
+      "repeat",
+      "return",
+      "review",
+      "rewrite"
+    ],
+    "challenge_words": [
+      "compete",
+      "condone",
+      "congestion",
+      "contrite",
+      "refute",
+      "remit",
+      "repose"
+    ],
+    "word_details": [
+      {
+        "word": "committee",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Committee is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"committee\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "conjunction",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "A joining word; the part of speech that joins other words or groups of words.",
+            "example": "In the sentence, “Kim and Lee liked baseball, but not tennis,” the words and and but are conjunctions."
+          }
+        ]
+      },
+      {
+        "word": "reaction",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Reaction is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"reaction\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "reflect",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Reflect is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"reflect\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "communicate",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "v.",
+            "definition": "Communicate means taking action that involves important ideas in daily life.",
+            "example": "In class we communicate when we want to focus on important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "converse",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Converse is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"converse\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "reelect",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Reelect is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"reelect\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "relate",
+        "group": "key",
+        "senses": [
+          {
+            "part_of_speech": "v.",
+            "definition": "To have a connection with.",
+            "example": "Often the meaning of a word is related to, and can be traced back to, its root."
+          }
+        ]
+      },
+      {
+        "word": "combine",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Combine is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"combine\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "commotion",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Commotion is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"commotion\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "rearrange",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Rearrange is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"rearrange\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "recall",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Recall is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"recall\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "repeat",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Repeat is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"repeat\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "return",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Return is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"return\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "review",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Review is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"review\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "rewrite",
+        "group": "familiar",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Rewrite is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"rewrite\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "compete",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Compete is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"compete\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "condone",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Condone is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"condone\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "congestion",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Congestion is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"congestion\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "contrite",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Contrite is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"contrite\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "refute",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Refute is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"refute\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "remit",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Remit is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"remit\" when we talk about important ideas in daily life."
+          }
+        ]
+      },
+      {
+        "word": "repose",
+        "group": "challenge",
+        "senses": [
+          {
+            "part_of_speech": "n.",
+            "definition": "Repose is something we talk about when we think about important ideas in daily life.",
+            "example": "In class, we say \"repose\" when we talk about important ideas in daily life."
+          }
+        ]
+      }
+    ],
+    "exercises": [
+      {
+        "title": "EXERCISE A",
+        "lines": [
+          "SYNONYMS",
+          "Write the letter of the best SYNONYM (the word or phrase most nearly the same in mean-",
+          "ing as the word in bold-faced type).",
+          "1. using a conjunction in the sentence",
+          "a. noun b. verb c. group d. joining word",
+          "2. to relate to",
+          "a. be done b. connect c. bend d. repeat",
+          "3. reelect the president",
+          "a. side with b. campaign c. vote d. choose again",
+          "4. communicate information",
+          "a. make known b. decide on c. join d. hide",
+          "5. to reflect upon",
+          "a. dream b. judge c. consider d. serve"
+        ]
+      },
+      {
+        "title": "EXERCISE B",
+        "lines": [
+          "MEANING IN CONTEXT",
+          "Use these words to fill in the blanks in the following paragraphs.",
+          "related Committee reaction conversed reelected",
+          "Each member of the Science Fair (1) had a different",
+          "idea about how to arrange the displays. Danya, who had attended last year's fair,",
+          "(2) how several projects got broken when people bumped",
+          "into the tables. Jason and Allison became irritated with each other when they",
+          "(3) about where to put the tables. Soon they were hav-",
+          "ing an argument. When Zoe, the chairperson, tried to get them to cooperate, their",
+          "(4) was to argue with her, too. Although she finally restored",
+          "order, Zoe hoped she would not be (5) to the committee when",
+          "the science fair came around next year."
+        ]
+      },
+      {
+        "title": "EXERCISE C",
+        "lines": [
+          "EXTEND YOUR VOCABULARY",
+          "Other spellings of “with” prefix com-/con-: col-, co-, cor-",
+          "The prefix com-/con- (together, with) is sometimes spelled other ways. Look at col- in collect",
+          "(to gather together). Look at co- in cooperate (to work with). Look at cor- in correspond (to com-",
+          "municate with by letters). All these spellings of the prefix carry the meaning “together, with.”",
+          "66 VOCABULARY FROM CLASSICAL ROOTS",
+          "Sort these words according to the spelling of the prefix by listing each one under COM-,",
+          "CON-, or OTHER.",
+          "concert community",
+          "collision congruent",
+          "companion connection",
+          "collage coordinate",
+          "correspondence company",
+          "COM- CON- OTHER",
+          "1. Which word means “an event where people hear music together”?",
+          "2. Which word means “a work of art made by putting together a variety of things”?",
+          "3. Which word means “a bumping together of two cars”?",
+          "4. Which word means “a joining with”?",
+          "5. Which word means “a person with whom you are friendly”?",
+          "6. What meaning is shared by these prefixes: com-, con-, col-, co-, cor-?"
+        ]
+      }
+    ]
+  },
+  {
+    "lesson_number": 16,
+    "title": "REVIEWING LESSONS 13–15",
+    "roots": [],
+    "key_words": [],
+    "familiar_words": [],
+    "challenge_words": [],
+    "word_details": [],
+    "exercises": [
+      {
+        "title": "EXERCISE A",
+        "lines": [
+          "MATCHING",
+          "Match each root or prefix with its meaning.",
+          "1. com-/con- A. burst",
+          "2. rupt B. break",
+          "3. re- C. together; with",
+          "4. frac/frag D. again",
+          "5. bas E. place",
+          "6. pos F. low",
+          "Write sentences in which you use each of these words meaningfully.",
+          "7. reelection",
+          "8. mixture",
+          "9. fragility",
+          "10. conversation",
+          "11. signature",
+          "68 VOCABULARY FROM CLASSICAL ROOTS"
+        ]
+      },
+      {
+        "title": "EXERCISE B",
+        "lines": [
+          "SORTING",
+          "Sort these words, listing each one under its root or prefix. When you finish, add another word",
+          "that goes with each group. (Look back at the list of familiar and challenge words for ideas.)",
+          "committee reflect reelect positive",
+          "position fracture abrupt fragility",
+          "composition basement basis disrupt",
+          "relate communicate rupture fragment",
+          "fractional exposure bass converse",
+          "interruption dispose conjunction reaction",
+          "1. FRAC/FRAG 2. RUPT 3. POS",
+          "4. BAS 5. COM-/CON- 6. RE-",
+          "Write the answers for these questions.",
+          "A. Which column contains words with a prefix that can mean “with”?",
+          "B. Which column contains words with a prefix that can mean “back”?",
+          "C. Which word could be listed in two columns?",
+          "D. What are the meanings of the two parts of the word rupture?"
+        ]
+      },
+      {
+        "title": "EXERCISE C",
+        "lines": [
+          "VOCABULARY FROM YOUR TEXTBOOKS",
+          "Many of the subjects you are studying in school have specific words associated with them.",
+          "Use these words to answer the following questions.",
+          "fragility bass fracture reelect fractional",
+          "1. Which word would be most likely to appear in a music lesson?",
+          "2. As you read a lesson on first aid, which word will you probably see?",
+          "3. As you study the history of voting in the United States, which word might you read?",
+          "4. When you read about objects found in Egyptian pyramids, which word might you see?",
+          "5. As you work on math problems, which word would be most likely to appear?",
+          "70 VOCABULARY FROM CLASSICAL ROOTS"
+        ]
+      },
+      {
+        "title": "EXERCISE D",
+        "lines": [
+          "RHYMING RIDDLES",
+          "Write the letter of the answer for each rhyming riddle.",
+          "1. What do you call a place for talking?",
+          "2. What do you call the job done by a joining word?",
+          "3. What do you call fixing a mistake in counting votes?",
+          "4. What do you call thinking about which way to turn?",
+          "5. What do you call feeling bad after having a tooth pulled?",
+          "6. What do you call a group of people working for the betterment of urban cats?",
+          "A. City kitty committee",
+          "B. Election correction",
+          "C. Conjunction function",
+          "D. Extraction reaction",
+          "E. Communication station",
+          "F. Direction reflection"
+        ]
+      },
+      {
+        "title": "EXERCISE E",
+        "lines": [
+          "WRITING AND DISCUSSION ACTIVITIES",
+          "1. Look at these headlines. Choose one. Then on the lines below, write a paragraph to tell",
+          "what happened.",
+          "A. Ruptured Water Pipe May Bring Positive Result",
+          "B. Fragments of Rare Old Instrument Discovered in Basement",
+          "C. Disposing of Old Toys Creates New Problem",
+          "2. With a partner, compose a conversation between one of these pairs of speakers. Make",
+          "notes for your conversation on the lines below.",
+          "A. A student who reflects before speaking and a student who blurts things out abruptly",
+          "B. A storyteller who hates to be interrupted and a “class clown” who loves to create",
+          "disruptions",
+          "3. Look back at the boxes of Challenge Words on pages 55, 59, 63, and 64. From these",
+          "words, choose three to write on the following lines. Try to define each word.",
+          "A.",
+          "B.",
+          "C.",
+          "Now look up these three words in the dictionary. Expand (or revise) your definitions on",
+          "the following lines.",
+          "A.",
+          "B.",
+          "C.",
+          "WORD LIST",
+          "(Numbers in parentheses refer to the lesson in which the word appears.)",
+          "abrupt (13) dependent (2) interval (3) symmetrical (10)",
+          "aquaculture (5) destructive (11)",
+          "Mediterranean (5) telecast (6)",
+          "aquamarine (5) diameter (10)",
+          "metronome (10) teleconference (6)",
+          "aquatic (5) dispose (14)",
+          "telegraph (6)",
+          "astronaut (6) disrupt (13) ordinarily (9)",
+          "telemarketing (6)",
+          "astronomical (6)",
+          "equality (2) pending (2) telescope (6)",
+          "astronomy (6)",
+          "equate (2) pendulum (2) terrace (5)",
+          "basement (14) equator (2) perimeter (10) terrain (5)",
+          "basis (14) equidistant (2) position (14) territory (5)",
+          "bass (14) equilateral (2) positive (14) thermal (10)",
+          "exposure (14) protractor (11) thermometer (10)",
+          "circuit (1)",
+          "extract (11) thermostat (10)",
+          "circular (1) reaction (15)",
+          "extraordinary (9) traction (11)",
+          "circulate (1) reconstruct (11) transact (3)",
+          "civics (9) fractional (13) recycle (1) transfer (3)",
+          "civil (9) fracture (13) reelect (15) transfusion (3)",
+          "civilian (9) fragility (13) reflect (15) transmit (3)",
+          "civility (9) fragment (13) relate (15)",
+          "committee (15) retract (11) uncivilized (9)",
+          "geometry (10)",
+          "communicate (15) rupture (13) unicycle (1)",
+          "composition (14) inactive (7)",
+          "conjunction (15) semiannual (7)",
+          "informal (7)",
+          "construction (11) semicircle (1)",
+          "insignificant (7)",
+          "contraction (11) semicolon (7)",
+          "insomnia (7)",
+          "converse (15) semiconscious (7)",
+          "interactive (3)",
+          "coordinate (9) semiformal (7)",
+          "interfere (3)",
+          "cycle (1) semiprecious (7)",
+          "intermittent (3)",
+          "cyclone (1) structure (11)",
+          "interruption (13)",
+          "subterranean (5)",
+          "intersect (3)",
+          "Key to Diacritical Marks",
+          "ƒ apron œ ivy",
+          "† father § open",
+          "Œ even y° unicycle",
+          "Æ around",
+          "Roots, Prefixes, and Suffixes",
+          "aqua (water) as in aquatic milli (thousand) as in milligram",
+          "astr (space) as in astronomy non (not) as in nonfiction",
+          "bas (low) as in basis ord (order) as in ordinarily",
+          "bi (two) as in bilingual pend (hang) as in pendulum",
+          "circ (around) as in circulate pos (place) as in position",
+          "civi (related to citizens) as in civics quadr (four) as in quadrilateral",
+          "com/con (together) as in committee and re (again) as in relate",
+          "conjunction rupt (burst) as in rupture",
+          "cycl (revolving) as in cyclone scope (instrument) telescope",
+          "dis (not) as in disagree sect (cut) as in intersect",
+          "equ (same, even, equal) as in equilateral semi (partly) as in semiconscious",
+          "ex (out) as in extract struct (build) as in structure",
+          "frac/frag (break) as in fracture and fragility tele (distant) as in teleconference",
+          "in (not) as in insignificant terr (land) as in territory",
+          "inter (between) as in interval therm (heat) as in thermostat",
+          "ity (noun suffix) as in civility tract (pull) as in traction",
+          "kilo (thousand) as in kilometer trans (across) as in transact",
+          "marin (sea) as in marina tri (three) as in triplet",
+          "ment (noun suffix) as in fragment un (not) as in unlucky",
+          "metr/meter (measure) as in symmetrical and uni (one) as in unicycle",
+          "perimeter ure (noun suffix) as in exposure",
+          "Lee Mountain"
+        ]
+      }
+    ]
+  }
+]

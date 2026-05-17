@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build SQLite database (grade-4)",
+			"type": "shell",
+			"command": "PYTHONPATH=src python3 -m vocab_pipeline.cli build-db content/grade-4/raw/grade-4-808059440-vocabulary-from-classical-roots-book-4-grade-4-student-book.pages.json content/grade-4/normalized/grade-4-808059440-vocabulary-from-classical-roots-book-4-grade-4-student-book.entries.jsonl",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}

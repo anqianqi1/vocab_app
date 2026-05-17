@@ -6,6 +6,7 @@ from typing import Any
 
 from .ids import DEFAULT_CATEGORY, normalize_category, normalize_term, stable_entry_id
 from .json_io import read_json, write_jsonl
+from .paths import PipelinePaths
 
 
 ENTRY_SCHEMA_VERSION = "vocabulary-entry.v1"
@@ -16,6 +17,12 @@ INLINE_ENTRY_RE = re.compile(
     r"^(?P<term>[A-Za-z][A-Za-z '\u2019\-]{1,80})\s*(?:--|-|:|\u2014|\u2013)\s*(?P<definition>\S.+)$"
 )
 TERM_ONLY_RE = re.compile(r"^[A-Za-z][A-Za-z '\u2019\-]{1,50}$")
+SECTION_HEADING_RE = re.compile(r"^lesson\s+\d+[:\-–—]?\s*(.+)$", re.IGNORECASE)
+NUMBERED_ENTRY_RE = re.compile(
+    r"^(?:\d+)\.\s*(?P<term>[A-Za-z][A-Za-z '\u2019\-]+)(?:\s*\([^)]*\))?$"
+)
+RELATED_WORDS_START_RE = re.compile(r"^(Familiar Words|Challenge Words)\b", re.IGNORECASE)
+KEY_WORDS_HEADER_RE = re.compile(r"^Key Words\s*$", re.IGNORECASE)
 
 
 def _clean_lines(text: str) -> list[str]:
@@ -48,27 +55,71 @@ def parser_version_for_profile(parser_profile: str) -> str:
     return GENERIC_PARSER_VERSION
 
 
-def parse_page_text(text: str, parser_profile: str = DEFAULT_PARSER_PROFILE) -> list[dict[str, str]]:
+def _extract_example_sentence(definition_lines: list[str]) -> str | None:
+    for line in definition_lines:
+        sentence = line.strip()
+        if sentence and sentence[0].isupper() and sentence.endswith("."):
+            return sentence
+    return None
+
+
+def parse_page_text(text: str, parser_profile: str = DEFAULT_PARSER_PROFILE) -> list[dict[str, Any]]:
     parser_version_for_profile(parser_profile)
     lines = _clean_lines(text)
     entries: list[dict[str, str]] = []
     pending_term: str | None = None
     pending_definition: list[str] = []
+    pending_related_terms: list[str] = []
+    current_section: str | None = None
+    current_related_words: list[str] = []
+    in_related_block = False
 
     def flush_pending() -> None:
-        nonlocal pending_term, pending_definition
+        nonlocal pending_term, pending_definition, pending_related_terms
         if pending_term and pending_definition:
-            entries.append(
-                {
-                    "term": pending_term,
-                    "definition": " ".join(pending_definition).strip(),
-                    "raw_entry_text": "\n".join([pending_term, *pending_definition]),
-                }
-            )
+            example = _extract_example_sentence(pending_definition[1:]) if len(pending_definition) > 1 else None
+            entry: dict[str, str] = {
+                "term": pending_term,
+                "definition": pending_definition[0].strip(),
+                "raw_entry_text": "\n".join([pending_term, *pending_definition]),
+            }
+            if current_section:
+                entry["section"] = current_section
+            if pending_related_terms:
+                entry["related_terms"] = pending_related_terms.copy()
+            if example:
+                entry["example"] = example
+            entries.append(entry)
         pending_term = None
         pending_definition = []
+        pending_related_terms = []
 
     for line in lines:
+        if not line:
+            in_related_block = False
+            continue
+
+        section_match = SECTION_HEADING_RE.match(line)
+        if section_match:
+            current_section = section_match.group(1).strip().title()
+            continue
+
+        if KEY_WORDS_HEADER_RE.match(line):
+            in_related_block = False
+            continue
+
+        related_match = RELATED_WORDS_START_RE.match(line)
+        if related_match:
+            in_related_block = True
+            current_related_words = []
+            continue
+
+        if in_related_block and line and not line.endswith(":"):
+            words = [word.strip() for word in re.split(r"[\s,]+", line) if word.strip()]
+            current_related_words.extend(words)
+            pending_related_terms = current_related_words.copy()
+            continue
+
         inline_match = INLINE_ENTRY_RE.match(line)
         if inline_match:
             flush_pending()
@@ -77,8 +128,17 @@ def parse_page_text(text: str, parser_profile: str = DEFAULT_PARSER_PROFILE) -> 
                     "term": inline_match.group("term").strip(),
                     "definition": inline_match.group("definition").strip(),
                     "raw_entry_text": line,
+                    "section": current_section or "",
+                    "related_terms": pending_related_terms.copy() if pending_related_terms else [],
                 }
             )
+            continue
+
+        numbered_match = NUMBERED_ENTRY_RE.match(line)
+        if numbered_match:
+            flush_pending()
+            pending_term = numbered_match.group("term").strip()
+            pending_definition = []
             continue
 
         if _looks_like_term(line):
@@ -122,11 +182,12 @@ def parse_raw_payload(raw_payload: dict[str, Any], parser_profile: str = DEFAULT
                     "id": stable_entry_id(source_id, page_number, source_order, term),
                     "term": term,
                     "normalized_term": normalize_term(term),
+                    "word_type": None,
                     "definition": definition,
                     "part_of_speech": None,
                     "root_or_origin": None,
-                    "example": None,
-                    "section": None,
+                    "example": parsed_entry.get("example"),
+                    "section": parsed_entry.get("section"),
                     "category": category,
                     "source_id": source_id,
                     "source_page": page_number,
@@ -135,29 +196,23 @@ def parse_raw_payload(raw_payload: dict[str, Any], parser_profile: str = DEFAULT
                     "parser_profile": parser_profile,
                     "parser_version": parser_version,
                     "review_status": "needs_review",
+                    "example_sentence": parsed_entry.get("example_sentence"),
                     "warnings": warnings,
+                    "related_terms": parsed_entry.get("related_terms", []),
                 }
             )
     return records
 
 
-def default_entries_output(raw_path: Path, data_root: Path = Path("data"), category: str | None = None) -> Path:
-    source_id = raw_path.name.removesuffix(".pages.json")
-    if category:
-        selected_category = normalize_category(category)
-    elif raw_path.parent.name == "raw":
-        selected_category = DEFAULT_CATEGORY
-    else:
-        selected_category = normalize_category(raw_path.parent.name)
-    normalized_root = data_root / "normalized"
-    if selected_category != DEFAULT_CATEGORY:
-        normalized_root = normalized_root / selected_category
-    return normalized_root / f"{source_id}.entries.jsonl"
+def default_entries_output(raw_path: Path, content_root: Path = Path("content"), category: str | None = None) -> Path:
+    paths = PipelinePaths(content_root=content_root)
+    return paths.entries_output(raw_path, category=category)
 
 
 def parse_raw_file(
     raw_path: Path,
     output_path: Path | None = None,
+    word_type: str | None = None,
     parser_profile: str = DEFAULT_PARSER_PROFILE,
 ) -> tuple[Path, int]:
     raw_payload = read_json(raw_path)
