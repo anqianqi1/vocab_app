@@ -114,6 +114,14 @@ The default parser profile is `generic`. Create new profiles for different layou
 
 ---
 
+## App Prototype Status
+
+- SwiftUI demo targeting grade-4 content is defined in [docs/app/APP_PLAN.md](docs/app/APP_PLAN.md).
+- The app consumes `content/_shared/db/vocabulary.sqlite` read-only; the pipeline remains the authoritative producer.
+- Any schema changes must be coordinated—update both the pipeline migration docs and the SwiftUI plan before shipping.
+
+---
+
 ## Data Products
 
 - **Raw pages** – `content/<grade>/raw/*.pages.json`

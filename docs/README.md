@@ -17,6 +17,7 @@ Two doc families live here:
 | [Lesson bundle example](../content/grade-4/lessons/all_lessons_extraction.md) | Sample Markdown output from the bundle step |
 | [Lesson template reference](../content/grade-4/normalized/lesson1_extraction_template.md) | Markdown template used during structured extraction |
 | [AI agent logs](../ai_agent_flows/README.md) | Instructions + links to session-specific notes |
+| [SwiftUI demo plan](app/APP_PLAN.md) | Architecture & scope for the iOS prototype |
 
 When you add a new guide, template, or grade-specific document, extend this table.
 
@@ -24,6 +25,7 @@ When you add a new guide, template, or grade-specific document, extend this tabl
 
 ## Recent Updates
 
+- _2026-05-17_: Added SwiftUI demo plan documenting the iOS-grade-4 prototype scope.
 - _2026-05-16_: Session log template added under `ai_agent_flows/`; README restructured with documentation map.
 - Add your entry here after each engagement. Link to the corresponding file inside `ai_agent_flows/` for quick context.
 
