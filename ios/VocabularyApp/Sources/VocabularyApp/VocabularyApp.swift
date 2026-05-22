@@ -3,33 +3,18 @@ import VocabularyData
 
 @main
 struct VocabularyDemoApp: App {
-    private let dataStore: SQLiteDataStore
+    private let lessonRepository: StructuredLessonRepository
 
     init() {
-        self.dataStore = VocabularyDemoApp.makeDataStore()
+        // Bundle.module is needed for SPM resource bundling; Bundle.main for .app bundles.
+        let bundle: Bundle = Bundle.module.url(forResource: "all_lessons_extraction", withExtension: "json") != nil
+            ? .module : .main
+        self.lessonRepository = BundledLessonRepository(bundle: bundle)
     }
 
     var body: some Scene {
         WindowGroup {
-            ContentView(lessonRepository: dataStore, entryRepository: dataStore)
+            ContentView(repository: lessonRepository)
         }
-    }
-
-    private static func makeDataStore() -> SQLiteDataStore {
-        guard let url = VocabularyDemoApp.resolveDatabaseURL() else {
-            fatalError("Missing bundled vocabulary.sqlite – see docs/app/APP_PLAN.md")
-        }
-        do {
-            return try SQLiteDataStore(databaseURL: url)
-        } catch {
-            fatalError("Failed to open vocabulary.sqlite: \(error)")
-        }
-    }
-
-    private static func resolveDatabaseURL() -> URL? {
-        if let mainURL = Bundle.main.url(forResource: "vocabulary", withExtension: "sqlite") {
-            return mainURL
-        }
-        return Bundle.module.url(forResource: "vocabulary", withExtension: "sqlite")
     }
 }
