@@ -5,12 +5,21 @@ import VocabularyFeatures
 struct ExerciseView: View {
     @State private var viewModel: ExerciseViewModel
 
+    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
+
+    private var isIPad: Bool { horizontalSizeClass == .regular }
+
     init(lesson: StructuredLesson) {
         _viewModel = State(initialValue: ExerciseViewModel(lesson: lesson))
     }
 
     var body: some View {
         VStack(spacing: 0) {
+            // Title header (shown on iPad since there's no tab label)
+            if isIPad {
+                headerView
+            }
+
             if viewModel.isComplete {
                 completionView
             } else if let question = viewModel.currentQuestion {
@@ -26,6 +35,20 @@ struct ExerciseView: View {
         .background(Color(.systemGroupedBackground))
     }
 
+    // MARK: - Header (iPad)
+
+    private var headerView: some View {
+        HStack {
+            Label("Practice", systemImage: "pencil.and.list.clipboard")
+                .font(.title3.weight(.semibold))
+                .foregroundStyle(.primary)
+            Spacer()
+        }
+        .padding(.horizontal, 32)
+        .padding(.top, 12)
+        .padding(.bottom, 4)
+    }
+
     // MARK: - Question View
 
     private func questionView(_ question: QuizQuestion) -> some View {
@@ -38,14 +61,14 @@ struct ExerciseView: View {
             // Word prompt
             VStack(spacing: 8) {
                 Text("What does this word mean?")
-                    .font(.subheadline)
+                    .font(isIPad ? .title3 : .subheadline)
                     .foregroundStyle(.secondary)
 
                 Text(question.word)
-                    .font(.system(size: 40, weight: .bold, design: .rounded))
+                    .font(.system(size: isIPad ? 52 : 40, weight: .bold, design: .rounded))
                     .foregroundStyle(.primary)
             }
-            .padding(.bottom, 32)
+            .padding(.bottom, isIPad ? 48 : 32)
 
             // Answer options
             VStack(spacing: 12) {
@@ -53,7 +76,8 @@ struct ExerciseView: View {
                     answerButton(option, question: question)
                 }
             }
-            .padding(.horizontal)
+            .frame(maxWidth: isIPad ? 600 : .infinity)
+            .padding(.horizontal, isIPad ? 32 : 16)
 
             Spacer()
 
@@ -69,7 +93,8 @@ struct ExerciseView: View {
                         .frame(maxWidth: .infinity)
                 }
                 .buttonStyle(.borderedProminent)
-                .padding(.horizontal)
+                .frame(maxWidth: isIPad ? 600 : .infinity)
+                .padding(.horizontal, isIPad ? 32 : 16)
                 .padding(.bottom, 16)
                 .transition(.move(edge: .bottom).combined(with: .opacity))
             }
@@ -93,7 +118,8 @@ struct ExerciseView: View {
                     .foregroundStyle(.blue)
             }
         }
-        .padding()
+        .padding(.horizontal, isIPad ? 32 : 16)
+        .padding(.vertical, 12)
     }
 
     // MARK: - Answer Button
@@ -106,7 +132,7 @@ struct ExerciseView: View {
         } label: {
             HStack {
                 Text(option)
-                    .font(.body)
+                    .font(isIPad ? .title3 : .body)
                     .multilineTextAlignment(.leading)
                     .foregroundStyle(buttonTextColor(for: option, question: question))
                 Spacer()
@@ -114,7 +140,7 @@ struct ExerciseView: View {
                     buttonIcon(for: option, question: question)
                 }
             }
-            .padding(16)
+            .padding(isIPad ? 20 : 16)
             .frame(maxWidth: .infinity, alignment: .leading)
             .background(
                 RoundedRectangle(cornerRadius: 16)
@@ -189,26 +215,26 @@ struct ExerciseView: View {
                         startPoint: .topLeading,
                         endPoint: .bottomTrailing
                     ))
-                    .frame(width: 100, height: 100)
+                    .frame(width: isIPad ? 120 : 100, height: isIPad ? 120 : 100)
 
                 Image(systemName: viewModel.score == viewModel.totalQuestions ? "trophy.fill" : "star.fill")
-                    .font(.system(size: 48))
+                    .font(.system(size: isIPad ? 56 : 48))
                     .foregroundStyle(.white)
             }
             .shadow(color: .orange.opacity(0.3), radius: 16, y: 8)
 
             Text(viewModel.score == viewModel.totalQuestions ? "Perfect!" : "Great job!")
-                .font(.largeTitle.bold())
+                .font(isIPad ? .largeTitle.bold() : .largeTitle.bold())
 
             Text("You got \(viewModel.score) out of \(viewModel.totalQuestions) correct")
-                .font(.title3)
+                .font(isIPad ? .title2 : .title3)
                 .foregroundStyle(.secondary)
 
             // Score ring
             ZStack {
                 Circle()
                     .stroke(Color(.systemGray5), lineWidth: 12)
-                    .frame(width: 120, height: 120)
+                    .frame(width: isIPad ? 140 : 120, height: isIPad ? 140 : 120)
 
                 Circle()
                     .trim(from: 0, to: CGFloat(viewModel.score) / CGFloat(max(viewModel.totalQuestions, 1)))
@@ -216,7 +242,7 @@ struct ExerciseView: View {
                         LinearGradient(colors: [.green, .mint], startPoint: .top, endPoint: .bottom),
                         style: StrokeStyle(lineWidth: 12, lineCap: .round)
                     )
-                    .frame(width: 120, height: 120)
+                    .frame(width: isIPad ? 140 : 120, height: isIPad ? 140 : 120)
                     .rotationEffect(.degrees(-90))
                     .animation(.easeInOut(duration: 1.0), value: viewModel.isComplete)
 
@@ -238,7 +264,8 @@ struct ExerciseView: View {
                 }
                 .buttonStyle(.borderedProminent)
             }
-            .padding(.horizontal)
+            .frame(maxWidth: isIPad ? 400 : .infinity)
+            .padding(.horizontal, isIPad ? 32 : 16)
             .padding(.bottom, 32)
         }
         .padding()

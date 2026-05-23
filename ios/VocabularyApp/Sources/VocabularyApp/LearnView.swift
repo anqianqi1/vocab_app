@@ -5,12 +5,21 @@ import VocabularyFeatures
 struct LearnView: View {
     @State private var viewModel: LearnViewModel
 
+    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
+
+    private var isIPad: Bool { horizontalSizeClass == .regular }
+
     init(lesson: StructuredLesson) {
         _viewModel = State(initialValue: LearnViewModel(lesson: lesson))
     }
 
     var body: some View {
         VStack(spacing: 0) {
+            // Title header (shown on iPad since there's no tab label)
+            if isIPad {
+                headerView
+            }
+
             // Root info header
             rootInfoHeader
 
@@ -21,16 +30,29 @@ struct LearnView: View {
             progressSection
 
             // Flashcard
-            Spacer()
+            Spacer(minLength: 16)
             flashcardSection
-            Spacer()
+            Spacer(minLength: 16)
 
             // Navigation buttons
             navigationButtons
         }
-        .padding(.horizontal)
+        .padding(.horizontal, isIPad ? 32 : 16)
         .padding(.bottom, 16)
         .background(Color(.systemGroupedBackground))
+    }
+
+    // MARK: - Header (iPad)
+
+    private var headerView: some View {
+        HStack {
+            Label("Learn", systemImage: "book.fill")
+                .font(.title3.weight(.semibold))
+                .foregroundStyle(.primary)
+            Spacer()
+        }
+        .padding(.top, 12)
+        .padding(.bottom, 4)
     }
 
     // MARK: - Root Info
@@ -43,7 +65,7 @@ struct LearnView: View {
                         rootBadge(root)
                     }
                 }
-                .padding(.top, 8)
+                .padding(.top, isIPad ? 4 : 8)
             }
         }
     }
@@ -51,15 +73,15 @@ struct LearnView: View {
     private func rootBadge(_ root: LessonRoot) -> some View {
         VStack(spacing: 2) {
             Text(root.root)
-                .font(.title3.bold())
+                .font(isIPad ? .title2.bold() : .title3.bold())
                 .foregroundStyle(.white)
             Text(root.meaning)
                 .font(.caption2)
                 .foregroundStyle(.white.opacity(0.8))
                 .lineLimit(1)
         }
-        .padding(.horizontal, 16)
-        .padding(.vertical, 10)
+        .padding(.horizontal, isIPad ? 20 : 16)
+        .padding(.vertical, isIPad ? 12 : 10)
         .background(
             RoundedRectangle(cornerRadius: 16)
                 .fill(LinearGradient(
@@ -138,10 +160,10 @@ struct LearnView: View {
     }
 
     private func flashcard(for word: WordDetail) -> some View {
-        VStack(spacing: 20) {
+        VStack(spacing: isIPad ? 28 : 20) {
             // Word
             Text(word.word)
-                .font(.system(size: 36, weight: .bold, design: .rounded))
+                .font(.system(size: isIPad ? 48 : 36, weight: .bold, design: .rounded))
                 .foregroundStyle(.primary)
 
             // Part of speech badge
@@ -161,7 +183,7 @@ struct LearnView: View {
 
                 // Definition
                 Text(word.definition)
-                    .font(.title3)
+                    .font(isIPad ? .title2 : .title3)
                     .multilineTextAlignment(.center)
                     .foregroundStyle(.primary)
                     .padding(.horizontal)
@@ -169,7 +191,7 @@ struct LearnView: View {
                 // Example
                 if !word.example.isEmpty {
                     Text(word.example)
-                        .font(.callout)
+                        .font(isIPad ? .body : .callout)
                         .foregroundStyle(.secondary)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal)
@@ -182,14 +204,13 @@ struct LearnView: View {
                     .padding(.top, 8)
             }
         }
-        .padding(32)
-        .frame(maxWidth: .infinity)
+        .padding(isIPad ? 48 : 32)
+        .frame(maxWidth: isIPad ? 600 : .infinity)
         .background(
             RoundedRectangle(cornerRadius: 24)
                 .fill(Color(.systemBackground))
                 .shadow(color: .black.opacity(0.08), radius: 12, y: 4)
         )
-        .padding(.horizontal, 8)
         .onTapGesture {
             withAnimation(.easeInOut(duration: 0.3)) {
                 viewModel.toggleDefinition()
@@ -225,6 +246,7 @@ struct LearnView: View {
             .buttonStyle(.borderedProminent)
             .disabled(!viewModel.hasNext)
         }
+        .frame(maxWidth: isIPad ? 600 : .infinity)
         .padding(.top, 8)
     }
 }

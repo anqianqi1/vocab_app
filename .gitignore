@@ -1,3 +1,4 @@
 # macOS Finder artifacts
 .DS_Store
 **/.DS_Store
+/tmp

@@ -4,17 +4,35 @@ import VocabularyContent
 struct LessonDetailView: View {
     let lesson: StructuredLesson
 
-    var body: some View {
-        TabView {
-            LearnView(lesson: lesson)
-                .tabItem {
-                    Label("Learn", systemImage: "book.fill")
-                }
+    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
 
-            ExerciseView(lesson: lesson)
-                .tabItem {
-                    Label("Practice", systemImage: "pencil.and.list.clipboard")
+    private var isIPad: Bool { horizontalSizeClass == .regular }
+
+    var body: some View {
+        Group {
+            if isIPad {
+                HStack(spacing: 0) {
+                    LearnView(lesson: lesson)
+                        .frame(maxWidth: .infinity)
+
+                    Divider()
+
+                    ExerciseView(lesson: lesson)
+                        .frame(maxWidth: .infinity)
                 }
+            } else {
+                TabView {
+                    LearnView(lesson: lesson)
+                        .tabItem {
+                            Label("Learn", systemImage: "book.fill")
+                        }
+
+                    ExerciseView(lesson: lesson)
+                        .tabItem {
+                            Label("Practice", systemImage: "pencil.and.list.clipboard")
+                        }
+                }
+            }
         }
         .navigationTitle(lesson.title)
         #if os(iOS)

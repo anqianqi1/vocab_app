@@ -44,7 +44,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "VocabularyApp"
-            BuildableName = "VocabularyApp.app"
+            BuildableName = "VocabularyApp"
             BlueprintName = "VocabularyApp"
             ReferencedContainer = "container:">
          </BuildableReference>
