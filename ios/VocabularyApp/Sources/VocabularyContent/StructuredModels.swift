@@ -1,5 +1,19 @@
 import Foundation
 
+/// Represents a grade level with its associated lessons.
+public struct Grade: Identifiable, Hashable {
+    public var id: Int { level }
+    public let level: Int
+    public let displayName: String
+
+    public init(level: Int) {
+        self.level = level
+        self.displayName = "Grade \(level)"
+    }
+
+    public static let supportedGrades: [Grade] = [4, 5, 8, 10, 11].map(Grade.init)
+}
+
 /// A single word with its definition, part of speech, example, and group classification.
 public struct WordDetail: Identifiable, Hashable, Codable {
     public var id: String { word }
