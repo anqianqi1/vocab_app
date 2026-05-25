@@ -63,4 +63,32 @@ Bundling steps are mirrored in `ios/README.md` for quick reference.
 - Future remote sync / analytics endpoints must preserve IDs and column semantics.
 
 ## 9. Roadmap / Status
-- [x] Add completion summary screen & navigation glue.
+
+### Completed
+- [x] SPM project structure: `VocabularyContent`, `VocabularyData`, `VocabularyFeatures`, `VocabularyApp`, `VocabularyAppTests`
+- [x] GRDB integration for SQLite access
+- [x] Bundled JSON lesson repository (`BundledLessonRepository`) loading from `grade-{N}_all_lessons_extraction.json`
+- [x] Structured domain models: `Grade`, `StructuredLesson`, `WordDetail`, `WordGroup` (key/familiar/challenge)
+- [x] `LessonDetailView` with Learn tab and Practice tab (TabView on iPhone, side-by-side on iPad)
+- [x] `LearnView` with vocabulary cards grouped by word type
+- [x] `ExerciseView` with flashcard, multiple choice, and fill-in-blank review modes
+- [x] `ContentView` with adaptive layout:
+  - **iPad (width ≥ 640)**: Custom `HStack` split-view with sidebar (grade list → lesson list) and detail area
+  - **iPhone (width < 640)**: `NavigationStack` with push navigation (grade picker → lesson list → lesson detail)
+- [x] `AppInfo.plist` with `UIDeviceFamily = [1, 2]` for universal iPhone + iPad support
+- [x] Xcode scheme with post-action script that creates `.app` bundle (copies executable, Info.plist, and resource bundles)
+- [x] `-sectcreate` linker flag embeds Info.plist into binary `__TEXT,__info_plist` section
+
+### In Progress / Known Issues
+- [ ] iPad simulator runs app in iPhone compatibility mode despite `UIDeviceFamily = [1, 2]` — worked around via `GeometryReader` width detection
+- [ ] `NavigationSplitView` collapses to single column on iPad due to compact size class — replaced with custom `HStack` split-view
+- [ ] `UIDevice.current.userInterfaceIdiom` returns `.phone` on iPad simulator — do not use for layout decisions
+- [ ] `horizontalSizeClass` returns `.compact` on iPad simulator — do not use for layout decisions
+
+### Next Steps
+- [ ] Add grade 5, 8, 10, 11 lesson JSON bundles to Resources
+- [ ] Implement review session scoring and progress tracking
+- [ ] Add completion summary screen with accuracy stats
+- [ ] Add settings/about screen with data version info
+- [ ] Investigate root cause of iPad compatibility mode (possibly SPM executable target limitation)
+- [ ] Consider migrating to Xcode project (`.xcodeproj`) for proper universal app support

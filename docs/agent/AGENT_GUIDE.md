@@ -144,3 +144,32 @@ The next likely implementation step is OCR support. Good options:
 - Try PyMuPDF or `pdfplumber` if the PDF has embedded text but `pypdf` cannot read it.
 
 When adding a new extraction backend, store the selected backend name in `source.extraction_engine` and keep `pypdf` as the lightweight default for normal text PDFs.
+
+## iOS App
+
+The project includes an iOS SwiftUI prototype under `ios/VocabularyApp/`. See [ios/README.md](../../ios/README.md) and [docs/app/APP_PLAN.md](../app/APP_PLAN.md) for full details.
+
+### Key facts for agents
+
+- **SPM executable target**: The app is built as a Swift Package Manager executable, not a traditional `.xcodeproj`. This has implications for platform detection.
+- **Adaptive layout**: Uses `GeometryReader` width detection (>= 640pt = iPad, < 640pt = iPhone). Do NOT use `UIDevice.current.userInterfaceIdiom` or `horizontalSizeClass` - they return iPhone values on iPad simulator.
+- **Info.plist**: Declares `UIDeviceFamily = [1, 2]` for universal support. Embedded via `-sectcreate __TEXT __info_plist` linker flag AND copied to `.app` bundle by scheme post-action script.
+- **Scheme post-action**: The `.xcscheme` file contains a shell script that creates the `.app` bundle after each build. If the scheme file is missing, the app won't launch on simulator.
+- **Data source**: Currently loads from bundled JSON files (`grade-{N}_all_lessons_extraction.json`), not SQLite. The `BundledLessonRepository` reads these from `Sources/VocabularyApp/Resources/`.
+- **Module structure**: `VocabularyContent` (models) -> `VocabularyData` (repositories) -> `VocabularyFeatures` (view models) -> `VocabularyApp` (views + entry point)
+
+### Build commands
+
+```bash
+cd ios/VocabularyApp
+
+# Build for simulator
+xcodebuild -scheme VocabularyApp \
+  -destination 'platform=iOS Simulator,name=iPhone 17 Pro' \
+  -derivedDataPath /tmp/vocab_build \
+  build
+
+# Install and launch on booted simulator
+xcrun simctl install booted /tmp/vocab_build/Build/Products/Debug-iphonesimulator/VocabularyApp.app
+xcrun simctl launch booted com.example.vocabularyapp
+```

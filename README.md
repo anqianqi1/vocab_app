@@ -6,8 +6,9 @@ Structured content extractor for the *Vocabulary From Classical Roots* series. T
 
 ## At a Glance
 
-- ✅ **Pipeline**: Grade 4, 5, 8, 10, and 11 `.txt` sources run end-to-end (raw JSON → JSONL → review → validation → SQLite).
+- ✅ **Pipeline**: Grade 4, 5, 8, 10, and 11 `.txt` sources run end-to-end (raw JSON -> JSONL -> review -> validation -> SQLite).
 - ✅ **Lesson bundles**: Markdown + JSON summaries for every processed grade (`content/<grade>/lessons/`).
+- ✅ **iOS App**: SwiftUI prototype with adaptive iPhone/iPad layout, lesson browsing, and review exercises. See [ios/README.md](ios/README.md).
 - 🟡 **Next phase**: design learner app + backend while keeping data pipeline stable.
 
 ---
