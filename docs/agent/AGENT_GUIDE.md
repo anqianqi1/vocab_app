@@ -23,21 +23,20 @@ Apps should consume the SQLite database or a structured lesson content export. J
 
 ## Current Focus
 
-- Current source: [sources/materials/808059440-Vocabulary-From-Classical-Roots-Book-4-Grade-4-Student-Book.txt](sources/materials/808059440-Vocabulary-From-Classical-Roots-Book-4-Grade-4-Student-Book.txt)
+- Current source: [raw-data/materials/grade-4/808059440-Vocabulary-From-Classical-Roots-Book-4-Grade-4-Student-Book.txt](raw-data/materials/grade-4/808059440-Vocabulary-From-Classical-Roots-Book-4-Grade-4-Student-Book.txt)
 - The pipeline now targets Grade 4 textbook extraction as the starting point for the unified workflow.
 - Prior work under [archive/legacy_pipeline](archive/legacy_pipeline) is no longer the active extraction path and should not be used for new builds.
 - The extraction workflow now supports raw `.txt` textbook exports as a first-class source format.
 
 ## Folder Contract
 
-- [sources/](sources) — grouped raw inputs (.txt, .pdf)
-- [content/](content) — per-category folders containing `raw`, `normalized`, `review`, `reports`, and `lessons`
-- [content/_shared/db](content/_shared/db) — shared SQLite database for apps
-- [archive/legacy_pipeline](archive/legacy_pipeline) — frozen artifacts from the previous layout
-- [data/exports](data/exports) — optional manual exports
+- [raw-data/](raw-data) — grouped raw inputs (.txt, .pdf) organized by grade
+- [content/](content) — per-grade folders containing `raw`, `normalized`, `review`, `reports`, and `lessons`
+- [content/shared/db](content/shared/db) — shared SQLite database for apps
 - [docs/](docs) — maintainer and agent documentation
 - [src/vocab_pipeline/](src/vocab_pipeline) — extraction and packaging code
 - [tests/](tests) — automated test suite
+- [ios/](ios) — iOS SwiftUI prototype app
 
 ## Commands
 
@@ -52,7 +51,7 @@ PYTHONPATH=src /usr/local/bin/python3.12 -m vocab_pipeline.cli doctor
 Run the whole pipeline for a PDF or a raw text textbook export:
 
 ```bash
-PYTHONPATH=src /usr/local/bin/python3.12 -m vocab_pipeline.cli run-all sources/materials/808059440-Vocabulary-From-Classical-Roots-Book-4-Grade-4-Student-Book.txt --category grade-4
+PYTHONPATH=src /usr/local/bin/python3.12 -m vocab_pipeline.cli run-all raw-data/materials/grade-4/808059440-Vocabulary-From-Classical-Roots-Book-4-Grade-4-Student-Book.txt --category grade-4
 ```
 
 Generate consolidated lesson bundles (JSON + Markdown) for an extracted raw payload:
@@ -121,7 +120,7 @@ Optional fields should stay nullable:
 
 Use stable entry IDs derived from source, page, order, and term so repeated imports are idempotent.
 
-Category-aware outputs live under [content](content): each grade folder contains `raw`, `normalized`, `review`, `reports`, and `lessons`. The shared SQLite database sits in [content/_shared/db/vocabulary.sqlite](content/_shared/db/vocabulary.sqlite) and is indexed by `entries.category`.
+Category-aware outputs live under [content](content): each grade folder contains `raw`, `normalized`, `review`, `reports`, and `lessons`. The shared SQLite database sits in [content/shared/db/vocabulary.sqlite](content/shared/db/vocabulary.sqlite) and is indexed by `entries.category`.
 
 ## Verification Workflow
 

@@ -11,7 +11,7 @@ class PipelinePaths:
     """Centralizes filesystem paths used by the vocabulary pipeline."""
 
     content_root: Path = Path("content")
-    sources_root: Path = Path("sources")
+    sources_root: Path = Path("raw-data")
     db_name: str = "vocabulary.sqlite"
 
     def category_root(self, category: str) -> Path:
@@ -33,7 +33,7 @@ class PipelinePaths:
         return self.category_root(category) / "reports"
 
     def db_dir(self) -> Path:
-        return self.content_root / "_shared" / "db"
+        return self.content_root / "shared" / "db"
 
     def raw_output(self, source_path: Path, *, source_id: str | None = None, category: str | None = None) -> Path:
         selected_category = normalize_category(category)

@@ -25,6 +25,7 @@ When you add a new guide, template, or grade-specific document, extend this tabl
 
 ## Recent Updates
 
+- _2026-05-31_: Major folder reorganization: `sources/` → `raw-data/`, `content/_shared/` → `content/shared/`, deleted empty `data/` directory. Raw materials organized into grade subfolders. All docs and code references updated.
 - _2026-05-22_: iOS app now supports both iPhone and iPad layouts via `GeometryReader`-based branching. Custom `HStack` split-view on iPad (sidebar + detail), `NavigationStack` on iPhone. See [session log](../ai_agent_flows/2026-05-22-ios-adaptive-layout/session.md) for full details.
 - _2026-05-17_: Added SwiftUI demo plan documenting the iOS-grade-4 prototype scope.
 - _2026-05-16_: Session log template added under `ai_agent_flows/`; README restructured with documentation map.

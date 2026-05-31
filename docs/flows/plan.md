@@ -10,7 +10,7 @@ Extract Grade 4 learning vocabulary from the "Vocabulary From Classical Roots" t
 
 ### 1. Current Focus
 
-- Target Grade 4 textbook extraction from [sources/materials/808059440-Vocabulary-From-Classical-Roots-Book-4-Grade-4-Student-Book.txt](sources/materials/808059440-Vocabulary-From-Classical-Roots-Book-4-Grade-4-Student-Book.txt).
+- Target Grade 4 textbook extraction from [raw-data/materials/grade-4/808059440-Vocabulary-From-Classical-Roots-Book-4-Grade-4-Student-Book.txt](raw-data/materials/grade-4/808059440-Vocabulary-From-Classical-Roots-Book-4-Grade-4-Student-Book.txt).
 - Focus on lesson structure, key vocabulary, related familiar words, example extraction, and exercises.
 - Reuse [src/vocab_pipeline](../../src/vocab_pipeline) while retiring artifacts under [archive/legacy_pipeline](../../archive/legacy_pipeline).
 - Treat app development as a later phase after extraction is validated.
@@ -41,7 +41,7 @@ Extract Grade 4 learning vocabulary from the "Vocabulary From Classical Roots" t
 
 - Generate Markdown and CSV review outputs for human verification in [content/grade-4/review](../../content/grade-4/review).
 - Produce JSON validation reports in [content/grade-4/reports](../../content/grade-4/reports) for missing definitions, duplicate terms, and extraction coverage.
-- Keep review artifacts separate from the SQLite database in [content/_shared/db](../../content/_shared/db).
+- Keep review artifacts separate from the SQLite database in [content/shared/db](../../content/shared/db).
 
 ### 5. App Packaging (Future Work)
 

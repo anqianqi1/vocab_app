@@ -30,15 +30,14 @@ Every time you touch the project, add a dated note under `ai_agent_flows/` and u
 
 | Path | Purpose |
 | --- | --- |
-| [sources/materials](sources/materials) | Raw textbooks (`.txt`, archival PDFs) grouped by category |
-| [content/](content) | Per-category outputs: `raw`, `normalized`, `review`, `reports`, `lessons` |
-| [content/_shared/db](content/_shared/db) | App-ready SQLite (`vocabulary.sqlite`) |
+| [raw-data/materials](raw-data/materials) | Raw textbooks (`.txt`, `.pdf`) organized by grade |
+| [content/](content) | Per-grade pipeline outputs: `raw`, `normalized`, `review`, `reports`, `lessons` |
+| [content/shared/db](content/shared/db) | App-ready SQLite (`vocabulary.sqlite`) |
 | [src/vocab_pipeline](src/vocab_pipeline) | Extraction, parsing, validation code |
 | [tests/](tests) | Pytest suite (parsing + path helpers) |
+| [ios/](ios) | iOS SwiftUI prototype app |
 | [docs/](docs) | Maintainer & agent documentation |
-| [ai_agent_flows/](ai_agent_flows) | Templates / scratchpad for agent workflows |
-| [data/exports/](data/exports) | Optional manual exports (currently empty) |
-| [archive/legacy_pipeline/](archive/legacy_pipeline) | Legacy layout note (kept for history only) |
+| [ai_agent_flows/](ai_agent_flows) | Session logs and runbooks |
 
 ---
 
@@ -49,7 +48,7 @@ Every time you touch the project, add a dated note under `ai_agent_flows/` and u
 3. **Review** – Markdown + CSV decks for human QA (`review/`).
 4. **Validate** – data quality metrics (`reports/`).
 5. **Bundle** – lesson summaries (`lessons/all_lessons_extraction.{json,md}`).
-6. **Package** – refresh shared SQLite (`content/_shared/db/vocabulary.sqlite`).
+6. **Package** – refresh shared SQLite (`content/shared/db/vocabulary.sqlite`).
 
 ---
 
@@ -84,17 +83,17 @@ PYTHONPATH=src python -m vocab_pipeline.cli doctor
 
 ### One-shot pipeline
 ```bash
-PYTHONPATH=src python -m vocab_pipeline.cli run-all sources/materials/808059440-Vocabulary-From-Classical-Roots-Book-4-Grade-4-Student-Book.txt --category grade-4
+PYTHONPATH=src python -m vocab_pipeline.cli run-all raw-data/materials/grade-4/808059440-Vocabulary-From-Classical-Roots-Book-4-Grade-4-Student-Book.txt --category grade-4
 ```
 
 ### Batch processing
 ```bash
-PYTHONPATH=src python -m vocab_pipeline.cli run-batch sources --category-from-parent
+PYTHONPATH=src python -m vocab_pipeline.cli run-batch raw-data/materials --category-from-parent
 ```
 
 ### Stage-by-stage
 ```bash
-PYTHONPATH=src python -m vocab_pipeline.cli extract  sources/materials/Vocabulary_from_classical_roots.pdf --category classical-roots
+PYTHONPATH=src python -m vocab_pipeline.cli extract  raw-data/materials/other/Vocabulary_from_classical_roots-A.pdf --category classical-roots
 PYTHONPATH=src python -m vocab_pipeline.cli parse    content/classical-roots/raw/classical-roots-vocabulary-from-classical-roots.pages.json
 PYTHONPATH=src python -m vocab_pipeline.cli review   content/classical-roots/normalized/classical-roots-vocabulary-from-classical-roots.entries.jsonl
 PYTHONPATH=src python -m vocab_pipeline.cli validate content/classical-roots/raw/classical-roots-vocabulary-from-classical-roots.pages.json --entries content/classical-roots/normalized/classical-roots-vocabulary-from-classical-roots.entries.jsonl
@@ -108,7 +107,7 @@ PYTHONPATH=src python -m vocab_pipeline.cli bundle-lessons content/grade-4/raw/g
 
 ### Process every grade at once
 ```bash
-PYTHONPATH=src python -m vocab_pipeline.cli run-batch sources --category-from-parent --allow-empty-db
+PYTHONPATH=src python -m vocab_pipeline.cli run-batch raw-data/materials --category-from-parent --allow-empty-db
 ```
 
 The default parser profile is `generic`. Create new profiles for different layouts instead of modifying the generic rules.
@@ -118,7 +117,7 @@ The default parser profile is `generic`. Create new profiles for different layou
 ## App Prototype Status
 
 - SwiftUI demo targeting grade-4 content is defined in [docs/app/APP_PLAN.md](docs/app/APP_PLAN.md).
-- The app consumes `content/_shared/db/vocabulary.sqlite` read-only; the pipeline remains the authoritative producer.
+- The app consumes `content/shared/db/vocabulary.sqlite` read-only; the pipeline remains the authoritative producer.
 - Any schema changes must be coordinated—update both the pipeline migration docs and the SwiftUI plan before shipping.
 
 ---
@@ -130,7 +129,7 @@ The default parser profile is `generic`. Create new profiles for different layou
 - **Review decks** – `content/<grade>/review/*.review.{md,csv}`
 - **Validation reports** – `content/<grade>/reports/*.validation.json`
 - **Lesson bundles** – `content/<grade>/lessons/all_lessons_extraction.{json,md}`
-- **App database** – `content/_shared/db/vocabulary.sqlite`
+- **App database** – `content/shared/db/vocabulary.sqlite`
 
 All current grades (4, 5, 8, 10, 11) produce 147–203 entries across 16 lessons each.
 
@@ -141,7 +140,7 @@ All current grades (4, 5, 8, 10, 11) produce 147–203 entries across 16 lessons
 | Review | `*.review.{md,csv}` | `content/<grade>/review/` |
 | Validate | `*.validation.json` | `content/<grade>/reports/` |
 | Bundle | `all_lessons_extraction.{json,md}` | `content/<grade>/lessons/` |
-| Package | `vocabulary.sqlite` | `content/_shared/db/` |
+| Package | `vocabulary.sqlite` | `content/shared/db/` |
 
 ---
 

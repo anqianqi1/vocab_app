@@ -7,7 +7,7 @@
 
 ## 2. Objectives
 1. Deliver a friendly lesson → review → summary flow using a single SwiftUI codebase.
-2. Reuse the packaged SQLite database (`content/_shared/db/vocabulary.sqlite`) without modifying pipeline code.
+2. Reuse the packaged SQLite database (`content/shared/db/vocabulary.sqlite`) without modifying pipeline code.
 3. Establish clean boundaries and a documented data contract between pipeline and app.
 
 ## 3. System Architecture
@@ -21,7 +21,7 @@
 | **UI** | SwiftUI views with Observation-based view models (unidirectional data flow). |
 
 ## 4. Data Contract
-Primary artifact: `content/_shared/db/vocabulary.sqlite`
+Primary artifact: `content/shared/db/vocabulary.sqlite`
 
 | Table | Purpose | Key Fields |
 | --- | --- | --- |
@@ -43,7 +43,7 @@ Derived models:
 
 ## 6. Build & Bundling Checklist
 1. Ensure the resource folder exists: `mkdir -p ios/VocabularyApp/Sources/VocabularyApp/Resources`.
-2. Copy the packaged DB: `cp content/_shared/db/vocabulary.sqlite ios/VocabularyApp/Sources/VocabularyApp/Resources/`.
+2. Copy the packaged DB: `cp content/shared/db/vocabulary.sqlite ios/VocabularyApp/Sources/VocabularyApp/Resources/`.
 3. Open `ios/VocabularyApp/Package.swift` in Xcode; resolve SPM dependencies (GRDB).
 4. Build and run on an iOS 17 simulator; Lesson list should load grade‑4 sections if the resource is bundled correctly.
 
