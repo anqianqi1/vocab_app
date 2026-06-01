@@ -12,7 +12,7 @@ from .ids import DEFAULT_CATEGORY, normalize_category, source_id_from_path
 from .parse import DEFAULT_PARSER_PROFILE, available_parser_profiles, default_entries_output, parse_raw_file
 from .pipeline import PipelineRunner
 from .review import default_review_csv_output, default_review_markdown_output, write_review_files
-from .structured_extraction import extract_and_write_all_lessons
+from .structured_extraction import extract_and_write_all_lessons, extract_and_write_words
 from .validate import default_report_output, validate_files
 from .paths import PipelinePaths
 
@@ -221,6 +221,24 @@ def cmd_bundle_lessons(args: argparse.Namespace) -> None:
     print_json(summary)
 
 
+def cmd_bundle_words(args: argparse.Namespace) -> None:
+    raw_path = Path(args.raw)
+    paths = PipelinePaths()
+    category = paths.category_for_raw(raw_path, category=args.category)
+    words_default = paths.words_output_path_for_raw(
+        raw_path,
+        category=category,
+    )
+    words_output_path = Path(args.words_output) if args.words_output else words_default
+    summary = extract_and_write_words(
+        source_path=raw_path,
+        words_output_path=words_output_path,
+        grade=args.grade,
+    )
+    summary["category"] = category
+    print_json(summary)
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Extract and package vocabulary PDFs for apps.")
     subparsers = parser.add_subparsers(required=True)
@@ -315,6 +333,16 @@ def build_parser() -> argparse.ArgumentParser:
     bundle_lessons_parser.add_argument("--json-output", help="Optional explicit JSON output path.")
     bundle_lessons_parser.add_argument("--markdown-output", help="Optional explicit Markdown output path.")
     bundle_lessons_parser.set_defaults(func=cmd_bundle_lessons)
+
+    bundle_words_parser = subparsers.add_parser(
+        "bundle-words",
+        help="Produce a word-centric words.json from the raw pages JSON.",
+    )
+    bundle_words_parser.add_argument("raw", help="Path to the raw pages JSON file.")
+    bundle_words_parser.add_argument("--grade", type=int, required=True, help="Grade level (e.g. 4).")
+    bundle_words_parser.add_argument("--category", help="Optional category override.")
+    bundle_words_parser.add_argument("--words-output", help="Optional explicit words JSON output path.")
+    bundle_words_parser.set_defaults(func=cmd_bundle_words)
 
     return parser
 

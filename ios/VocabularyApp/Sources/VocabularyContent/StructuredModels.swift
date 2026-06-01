@@ -210,3 +210,84 @@ extension LessonRoot {
         case exampleWord = "example_word"
     }
 }
+
+// MARK: - Word-Centric Models
+
+/// A self-contained word entry with all related info for flashcard-style learning.
+public struct WordEntry: Identifiable, Hashable, Codable {
+    public var id: String { word }
+    public let word: String
+    public let grade: Int
+    public let lessonNumber: Int
+    public let lessonTitle: String
+    public let group: WordGroup
+    public let root: String
+    public let rootMeaning: String
+    public let rootOrigin: String
+    public let partOfSpeech: String
+    public let definition: String
+    public let example: String
+    public let relatedWords: RelatedWords
+    public let exercises: [LessonExercise]
+
+    public init(
+        word: String,
+        grade: Int,
+        lessonNumber: Int,
+        lessonTitle: String,
+        group: WordGroup,
+        root: String,
+        rootMeaning: String,
+        rootOrigin: String,
+        partOfSpeech: String,
+        definition: String,
+        example: String,
+        relatedWords: RelatedWords,
+        exercises: [LessonExercise]
+    ) {
+        self.word = word
+        self.grade = grade
+        self.lessonNumber = lessonNumber
+        self.lessonTitle = lessonTitle
+        self.group = group
+        self.root = root
+        self.rootMeaning = rootMeaning
+        self.rootOrigin = rootOrigin
+        self.partOfSpeech = partOfSpeech
+        self.definition = definition
+        self.example = example
+        self.relatedWords = relatedWords
+        self.exercises = exercises
+    }
+
+    // MARK: Codable
+
+    private enum CodingKeys: String, CodingKey {
+        case word, grade
+        case lessonNumber = "lesson_number"
+        case lessonTitle = "lesson_title"
+        case group, root
+        case rootMeaning = "root_meaning"
+        case rootOrigin = "root_origin"
+        case partOfSpeech = "part_of_speech"
+        case definition, example
+        case relatedWords = "related_words"
+        case exercises
+    }
+}
+
+/// Groups of related words for a word entry.
+public struct RelatedWords: Hashable, Codable {
+    public let sameRoot: [String]
+    public let sameLesson: [String]
+
+    public init(sameRoot: [String], sameLesson: [String]) {
+        self.sameRoot = sameRoot
+        self.sameLesson = sameLesson
+    }
+
+    private enum CodingKeys: String, CodingKey {
+        case sameRoot = "same_root"
+        case sameLesson = "same_lesson"
+    }
+}

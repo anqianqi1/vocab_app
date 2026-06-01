@@ -99,13 +99,24 @@ class PipelinePaths:
         base_name: str = "all_lessons_extraction",
     ) -> tuple[Path, Path]:
         resolved_category = self.category_for_raw(raw_path, category)
+        # Prefix with category so iOS app can find e.g. grade-4_all_lessons_extraction.json
+        prefixed = f"{resolved_category}_{base_name}"
         return (
-            self.lessons_output(resolved_category, f"{base_name}.json"),
-            self.lessons_output(resolved_category, f"{base_name}.md"),
+            self.lessons_output(resolved_category, f"{prefixed}.json"),
+            self.lessons_output(resolved_category, f"{prefixed}.md"),
         )
 
     def lessons_output(self, category: str, file_name: str) -> Path:
         return self.lessons_dir(category) / file_name
+
+    def words_output_path_for_raw(
+        self,
+        raw_path: Path,
+        *,
+        category: str | None = None,
+    ) -> Path:
+        resolved_category = self.category_for_raw(raw_path, category)
+        return self.lessons_dir(resolved_category) / f"{resolved_category}_words.json"
 
     def _category_from_raw(self, raw_path: Path, category: str | None) -> str:
         if category:

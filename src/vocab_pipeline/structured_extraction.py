@@ -740,3 +740,125 @@ def extract_and_write_all_lessons(source_path: Path, json_output_path: Path, mar
         "markdown_output_path": str(markdown_output_path),
         "lesson_count": len(lessons),
     }
+
+
+def _build_word_entries(lessons: list[dict[str, Any]], grade: int) -> list[dict[str, Any]]:
+    """Transform lesson-centric data into a flat word-centric array.
+
+    Each word entry is self-contained with all related info:
+    - root info, definition, example, part of speech
+    - related words (same root, same lesson)
+    - exercises from the lesson
+    """
+
+    # Build lookup: word -> lesson info
+    word_to_lesson: dict[str, dict[str, Any]] = {}
+    word_to_root: dict[str, str] = {}
+    root_to_words: dict[str, list[str]] = {}
+    lesson_words: dict[int, list[str]] = {}
+
+    for lesson in lessons:
+        lesson_num = lesson.get("lesson_number", 0)
+        roots = lesson.get("roots", [])
+        all_words: list[str] = []
+
+        for detail in lesson.get("word_details", []):
+            word = detail.get("word", "")
+            if not word:
+                continue
+            all_words.append(word)
+            word_to_lesson[word] = lesson
+
+            # Match word to its root
+            for root_info in roots:
+                root_code = root_info.get("root", "").upper()
+                if word.lower().startswith(root_code.lower()):
+                    word_to_root[word] = root_code
+                    root_to_words.setdefault(root_code, []).append(word)
+                    break
+
+        lesson_words[lesson_num] = all_words
+
+    # Build word entries
+    entries: list[dict[str, Any]] = []
+    for lesson in lessons:
+        lesson_num = lesson.get("lesson_number", 0)
+        lesson_title = lesson.get("title", "")
+        roots = lesson.get("roots", [])
+        exercises = lesson.get("exercises", [])
+
+        for detail in lesson.get("word_details", []):
+            word = detail.get("word", "")
+            if not word:
+                continue
+
+            group = detail.get("group", "key")
+            senses = detail.get("senses", [])
+
+            # Get root info
+            root_code = word_to_root.get(word, "")
+            root_info = None
+            for r in roots:
+                if r.get("root", "").upper() == root_code:
+                    root_info = r
+                    break
+
+            # Get first sense
+            part_of_speech = ""
+            definition = ""
+            example = ""
+            if senses:
+                first = senses[0]
+                part_of_speech = first.get("part_of_speech", "")
+                definition = first.get("definition", "")
+                example = first.get("example") or ""
+
+            # Related words
+            same_root = [w for w in root_to_words.get(root_code, []) if w != word]
+            same_lesson = [w for w in lesson_words.get(lesson_num, []) if w != word]
+
+            entry = {
+                "word": word,
+                "grade": grade,
+                "lesson_number": lesson_num,
+                "lesson_title": lesson_title,
+                "group": group,
+                "root": root_code,
+                "root_meaning": root_info.get("meaning", "") if root_info else "",
+                "root_origin": root_info.get("origin", "") if root_info else "",
+                "part_of_speech": part_of_speech,
+                "definition": definition,
+                "example": example,
+                "related_words": {
+                    "same_root": same_root,
+                    "same_lesson": same_lesson,
+                },
+                "exercises": exercises,
+            }
+            entries.append(entry)
+
+    return entries
+
+
+def extract_and_write_words(
+    source_path: Path,
+    words_output_path: Path,
+    grade: int,
+) -> dict[str, Any]:
+    """Load lesson bundle JSON and produce a word-centric words.json."""
+    raw_payload = json.loads(source_path.read_text(encoding="utf-8"))
+    lessons = _build_sections_from_pages(raw_payload)
+    word_entries = _build_word_entries(lessons, grade=grade)
+
+    words_output_path.parent.mkdir(parents=True, exist_ok=True)
+    words_output_path.write_text(
+        json.dumps(word_entries, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+
+    return {
+        "source_path": str(source_path),
+        "words_output_path": str(words_output_path),
+        "grade": grade,
+        "word_count": len(word_entries),
+    }
