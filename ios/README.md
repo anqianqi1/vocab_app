@@ -38,11 +38,13 @@ ios/
 The app loads lesson data from JSON files in `Sources/VocabularyApp/Resources/`. Copy the pipeline output:
 
 ```bash
-cp content/grade-4/lessons/all_lessons_extraction.json \
+cp content/grade-4/lessons/grade-4_all_lessons_extraction.json \
    ios/VocabularyApp/Sources/VocabularyApp/Resources/grade-4_all_lessons_extraction.json
+cp content/grade-4/lessons/grade-4_words.json \
+  ios/VocabularyApp/Sources/VocabularyApp/Resources/grade-4_words.json
 ```
 
-Repeat for other grades (grade-5, grade-8, grade-10, grade-11) as they become available.
+Repeat lesson JSON for other grades. Copy `grade-{N}_words.json` only when the generated word bundle has entries.
 
 ### 2. Open in Xcode
 
@@ -106,9 +108,11 @@ The app uses `GeometryReader` to detect screen width and branch between iPad and
 ### Data Flow
 
 ```
-Pipeline output (JSON) -> BundledLessonRepository -> ContentView -> LessonDetailView
-                                                                    |-- LearnView (LearnViewModel)
-                                                                    +-- ExerciseView (ExerciseViewModel)
+Pipeline lesson JSON -> BundledLessonRepository -> ContentView
+Pipeline word JSON   -> BundledWordRepository   -> ContentView
+                                   -> LessonDetailView
+                                     |-- LearnView (LearnViewModel)
+                                     +-- ExerciseView (ExerciseViewModel)
 ```
 
 ## Troubleshooting

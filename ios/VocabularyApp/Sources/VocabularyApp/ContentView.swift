@@ -10,9 +10,11 @@ struct ContentView: View {
     @State private var selectedLesson: StructuredLesson?
 
     private let repository: StructuredLessonRepository
+    private let wordRepository: WordRepository
 
-    init(repository: StructuredLessonRepository) {
+    init(repository: StructuredLessonRepository, wordRepository: WordRepository) {
         self.repository = repository
+        self.wordRepository = wordRepository
     }
 
     var body: some View {
@@ -128,7 +130,7 @@ struct ContentView: View {
         if selectedGrade == nil {
             welcomeView
         } else if let lesson = selectedLesson {
-            LessonDetailView(lesson: lesson)
+            LessonDetailView(lesson: lesson, isWideLayout: true)
         } else {
             emptySelectionView
         }
@@ -206,7 +208,7 @@ struct ContentView: View {
                 }
             }
             .navigationDestination(for: StructuredLesson.self) { lesson in
-                LessonDetailView(lesson: lesson)
+                LessonDetailView(lesson: lesson, isWideLayout: false)
             }
         }
     }
@@ -361,11 +363,41 @@ struct ContentView: View {
             do {
                 isLoading = true
                 error = nil
-                lessons = try await repository.loadLessons(for: grade)
+                let loadedLessons = try await repository.loadLessons(for: grade)
+                let loadedWords = (try? await wordRepository.loadWords(for: grade)) ?? []
+                lessons = mergeWordEntries(loadedWords, into: loadedLessons)
             } catch {
                 self.error = error
             }
             isLoading = false
+        }
+    }
+
+    private func mergeWordEntries(_ words: [WordEntry], into lessons: [StructuredLesson]) -> [StructuredLesson] {
+        guard !words.isEmpty else { return lessons }
+        let wordsByLesson = Dictionary(grouping: words, by: \.lessonNumber)
+        return lessons.map { lesson in
+            guard let lessonWords = wordsByLesson[lesson.lessonNumber], !lessonWords.isEmpty else {
+                return lesson
+            }
+            return StructuredLesson(
+                lessonNumber: lesson.lessonNumber,
+                title: lesson.title,
+                roots: lesson.roots,
+                keyWords: lessonWords.filter { $0.group == .key }.map(\.word),
+                familiarWords: lessonWords.filter { $0.group == .familiar }.map(\.word),
+                challengeWords: lessonWords.filter { $0.group == .challenge }.map(\.word),
+                wordDetails: lessonWords.map { word in
+                    WordDetail(
+                        word: word.word,
+                        group: word.group,
+                        partOfSpeech: word.partOfSpeech,
+                        definition: word.definition,
+                        example: word.example
+                    )
+                },
+                exercises: lesson.exercises
+            )
         }
     }
 }

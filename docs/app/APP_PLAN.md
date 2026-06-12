@@ -7,7 +7,7 @@
 
 ## 2. Objectives
 1. Deliver a friendly lesson → review → summary flow using a single SwiftUI codebase.
-2. Reuse the packaged SQLite database (`content/shared/db/vocabulary.sqlite`) without modifying pipeline code.
+2. Reuse bundled JSON app artifacts (`grade-{N}_all_lessons_extraction.json` and `grade-{N}_words.json`) without parsing raw textbook text in the app.
 3. Establish clean boundaries and a documented data contract between pipeline and app.
 
 ## 3. System Architecture
@@ -21,18 +21,16 @@
 | **UI** | SwiftUI views with Observation-based view models (unidirectional data flow). |
 
 ## 4. Data Contract
-Primary artifact: `content/shared/db/vocabulary.sqlite`
+Primary artifacts:
 
-| Table | Purpose | Key Fields |
-| --- | --- | --- |
-| `sources` | Metadata per textbook | `source_id`, `category`, `source_title`, `page_count`, `extracted_at`, `warnings_json` |
-| `entries` | Normalized vocabulary entries | `id`, `term`, `normalized_term`, `definition`, `part_of_speech`, `example`, `section`, `category`, `source_id`, `related_terms_json`, `warnings_json` |
-| `entries_fts` | FTS index tied to `entries` | `term`, `definition`, `raw_entry_text` |
+- `content/<grade>/lessons/grade-{N}_all_lessons_extraction.json` — lesson browsing fallback and lesson metadata
+- `content/<grade>/lessons/grade-{N}_words.json` — word-centric app data when available
 
-Derived models:
-- **Lesson**: grouping of entries by `section` + `source_id`.
-- **VocabularyEntry**: decoded row with parsed JSON columns (`related_terms`, `warnings`).
-- **ReviewCard**: prompt description derived from `VocabularyEntry` (flashcard, multiple choice, fill-in-the-blank).
+Current app models:
+
+- **StructuredLesson**: lesson metadata, roots, word groups, exercises.
+- **WordEntry**: self-contained word unit with grade, lesson, group, root info, definition, example, related words, and exercises.
+- **WordDetail**: lightweight per-lesson display model used by existing Learn/Practice screens.
 
 ## 5. User Experience Flow
 1. **LessonCatalog** – grid/list of lessons with progress + quick filters.
@@ -43,9 +41,10 @@ Derived models:
 
 ## 6. Build & Bundling Checklist
 1. Ensure the resource folder exists: `mkdir -p ios/VocabularyApp/Sources/VocabularyApp/Resources`.
-2. Copy the packaged DB: `cp content/shared/db/vocabulary.sqlite ios/VocabularyApp/Sources/VocabularyApp/Resources/`.
-3. Open `ios/VocabularyApp/Package.swift` in Xcode; resolve SPM dependencies (GRDB).
-4. Build and run on an iOS 17 simulator; Lesson list should load grade‑4 sections if the resource is bundled correctly.
+2. Copy `grade-{N}_all_lessons_extraction.json` for every supported grade.
+3. Copy `grade-{N}_words.json` for grades where word-centric extraction is non-empty.
+4. Open `ios/VocabularyApp/Package.swift` in Xcode; resolve SPM dependencies (GRDB).
+5. Build and run on an iOS 17 simulator; Lesson list should load bundled grades if resources are present.
 
 Bundling steps are mirrored in `ios/README.md` for quick reference.
 
@@ -57,7 +56,7 @@ Bundling steps are mirrored in `ios/README.md` for quick reference.
 - Project structure: `VocabularyContent`, `VocabularyData`, `VocabularyFeatures`, `VocabularyApp`, `VocabularyAppTests` (Swift Package).
 
 ## 8. Separation from Pipeline
-- Pipeline owns ETL and generates the SQLite artifact; app consumes it read-only.
+- Pipeline owns ETL and generates bundled JSON artifacts; app consumes them read-only.
 - Schema updates require version bump + documented migration steps before app changes land.
 - Shared contract documented in this plan and top-level README “App Prototype Status”.
 - Future remote sync / analytics endpoints must preserve IDs and column semantics.

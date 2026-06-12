@@ -43,19 +43,6 @@ ROOT_TOPICS: dict[str, str] = {
     "TECHN": "practical skills and tools"
 }
 
-
-def _dedupe_words(words: list[str]) -> list[str]:
-    seen: set[str] = set()
-    ordered: list[str] = []
-    for word in words:
-        lowered = word.lower()
-        if lowered in seen:
-            continue
-        seen.add(lowered)
-        ordered.append(word)
-    return ordered
-
-
 def _clean_line(line: str) -> str:
     line = line.replace("\u000c", " ")
     line = line.replace("\u2019", "'")
@@ -249,57 +236,53 @@ def _extract_word_senses(section_text: str, key_word: str) -> list[dict[str, str
     if not match:
         return []
 
-    body_lines = match.group("body").splitlines()
     cleaned_lines: list[str] = []
-    for line in body_lines:
-        body_lines = match.group("body").splitlines()
-        cleaned_lines: list[str] = []
-        for line in body_lines:
-            stripped = line.strip()
-            if not stripped:
-                continue
-            lower = stripped.lower()
-            if lower.startswith("familiar words") or lower.startswith("challenge words"):
-                continue
-            if lower.startswith("with root"):
-                continue
-            tokens = stripped.split()
-            if len(tokens) == 1 and _looks_like_word_token(_normalize_word_token(tokens[0])):
-                continue
-            if lower.startswith("using root clues") or lower.startswith("lesson "):
-                break
-            cleaned_lines.append(stripped)
+    for line in match.group("body").splitlines():
+        stripped = line.strip()
+        if not stripped:
+            continue
+        lower = stripped.lower()
+        if lower.startswith("familiar words") or lower.startswith("challenge words"):
+            continue
+        if lower.startswith("with root"):
+            continue
+        tokens = stripped.split()
+        if len(tokens) == 1 and _looks_like_word_token(_normalize_word_token(tokens[0])):
+            continue
+        if lower.startswith("using root clues") or lower.startswith("lesson "):
+            break
+        cleaned_lines.append(stripped)
 
-        body_text = " ".join(cleaned_lines)
-        body_text = re.sub(r"\s+", " ", body_text).strip()
-        if not body_text:
-            return []
+    body_text = " ".join(cleaned_lines)
+    body_text = re.sub(r"\s+", " ", body_text).strip()
+    if not body_text:
+        return []
 
-        senses: list[dict[str, str | None]] = []
-        matches = list(SENSE_SPLIT_RE.finditer(body_text))
-        if not matches:
-            return []
+    senses: list[dict[str, str | None]] = []
+    matches = list(SENSE_SPLIT_RE.finditer(body_text))
+    if not matches:
+        return []
 
-        for idx, sense_match in enumerate(matches):
-            start = sense_match.end()
-            end = matches[idx + 1].start() if idx + 1 < len(matches) else len(body_text)
-            segment = body_text[start:end].strip()
-            if not segment:
-                continue
-            segment = re.sub(r"^\d+\.\s*", "", segment)
-            sentences = re.split(r"(?<=[.!?])\s+(?=[A-Z])", segment)
-            definition = sentences[0].strip()
-            example = " ".join(sentences[1:]).strip() if len(sentences) > 1 else ""
-            example = re.sub(r"^\d+\.\s*", "", example)
-            senses.append(
-                {
-                    "part_of_speech": sense_match.group(1).lower(),
-                    "definition": definition,
-                    "example": example or None,
-                }
-            )
+    for idx, sense_match in enumerate(matches):
+        start = sense_match.end()
+        end = matches[idx + 1].start() if idx + 1 < len(matches) else len(body_text)
+        segment = body_text[start:end].strip()
+        if not segment:
+            continue
+        segment = re.sub(r"^\d+\.\s*", "", segment)
+        sentences = re.split(r"(?<=[.!?])\s+(?=[A-Z])", segment)
+        definition = sentences[0].strip()
+        example = " ".join(sentences[1:]).strip() if len(sentences) > 1 else ""
+        example = re.sub(r"^\d+\.\s*", "", example)
+        senses.append(
+            {
+                "part_of_speech": sense_match.group(1).lower(),
+                "definition": definition,
+                "example": example or None,
+            }
+        )
 
-        return senses
+    return senses
 
 
 def _word_type_for(word: str) -> str:
@@ -769,13 +752,11 @@ def _build_word_entries(lessons: list[dict[str, Any]], grade: int) -> list[dict[
             all_words.append(word)
             word_to_lesson[word] = lesson
 
-            # Match word to its root
-            for root_info in roots:
-                root_code = root_info.get("root", "").upper()
-                if word.lower().startswith(root_code.lower()):
-                    word_to_root[word] = root_code
-                    root_to_words.setdefault(root_code, []).append(word)
-                    break
+            root_info = _match_root(word, roots)
+            if root_info:
+                root_code = str(root_info.get("root") or "").upper()
+                word_to_root[word] = root_code
+                root_to_words.setdefault(root_code, []).append(word)
 
         lesson_words[lesson_num] = all_words
 

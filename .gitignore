@@ -5,3 +5,6 @@
 *.pdf
 *.pyc
 __pycache__/
+*.xcuserstate
+xcuserdata/
+vocabulary.sqlite

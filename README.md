@@ -117,7 +117,7 @@ The default parser profile is `generic`. Create new profiles for different layou
 ## App Prototype Status
 
 - SwiftUI demo targeting grade-4 content is defined in [docs/app/APP_PLAN.md](docs/app/APP_PLAN.md).
-- The app consumes `content/shared/db/vocabulary.sqlite` read-only; the pipeline remains the authoritative producer.
+- The app consumes bundled JSON resources generated from `content/<grade>/lessons/`: `grade-{N}_all_lessons_extraction.json` for lesson browsing and `grade-{N}_words.json` when word-centric data exists.
 - Any schema changes must be coordinated—update both the pipeline migration docs and the SwiftUI plan before shipping.
 
 ---
@@ -126,10 +126,8 @@ The default parser profile is `generic`. Create new profiles for different layou
 
 - **Raw pages** – `content/<grade>/raw/*.pages.json`
 - **Normalized entries** – `content/<grade>/normalized/*.entries.jsonl`
-- **Review decks** – `content/<grade>/review/*.review.{md,csv}`
-- **Validation reports** – `content/<grade>/reports/*.validation.json`
-- **Lesson bundles** – `content/<grade>/lessons/all_lessons_extraction.{json,md}`
-- **App database** – `content/shared/db/vocabulary.sqlite`
+- **Lesson bundles** – `content/<grade>/lessons/grade-{N}_all_lessons_extraction.{json,md}`
+- **Word bundles** – `content/<grade>/lessons/grade-{N}_words.json` where extraction supports word details
 
 All current grades (4, 5, 8, 10, 11) produce 147–203 entries across 16 lessons each.
 
@@ -137,18 +135,16 @@ All current grades (4, 5, 8, 10, 11) produce 147–203 entries across 16 lessons
 | --- | --- | --- |
 | Extract | `*.pages.json` | `content/<grade>/raw/` |
 | Parse | `*.entries.jsonl` | `content/<grade>/normalized/` |
-| Review | `*.review.{md,csv}` | `content/<grade>/review/` |
-| Validate | `*.validation.json` | `content/<grade>/reports/` |
-| Bundle | `all_lessons_extraction.{json,md}` | `content/<grade>/lessons/` |
-| Package | `vocabulary.sqlite` | `content/shared/db/` |
+| Bundle lessons | `grade-{N}_all_lessons_extraction.{json,md}` | `content/<grade>/lessons/` |
+| Bundle words | `grade-{N}_words.json` | `content/<grade>/lessons/` |
 
 ---
 
 ## Quality & Testing
 
 - Unit tests: `/Users/anqiguo/Documents/Projects/vocab_app/.venv/bin/python -m pytest`
-- Validation check: inspect `content/<grade>/reports/*.validation.json` (status `ok` expected)
-- Manual QA: review Markdown decks before shipping updated datasets
+- Data check: inspect `content/<grade>/lessons/grade-{N}_words.json` for word count and root coverage
+- Manual QA: review lesson Markdown/JSON before shipping updated datasets
 
 ---
 

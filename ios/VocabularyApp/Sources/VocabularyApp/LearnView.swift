@@ -4,19 +4,17 @@ import VocabularyFeatures
 
 struct LearnView: View {
     @State private var viewModel: LearnViewModel
+    let isWideLayout: Bool
 
-    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
-
-    private var isIPad: Bool { horizontalSizeClass == .regular }
-
-    init(lesson: StructuredLesson) {
+    init(lesson: StructuredLesson, isWideLayout: Bool = false) {
         _viewModel = State(initialValue: LearnViewModel(lesson: lesson))
+        self.isWideLayout = isWideLayout
     }
 
     var body: some View {
         VStack(spacing: 0) {
             // Title header (shown on iPad since there's no tab label)
-            if isIPad {
+            if isWideLayout {
                 headerView
             }
 
@@ -37,7 +35,7 @@ struct LearnView: View {
             // Navigation buttons
             navigationButtons
         }
-        .padding(.horizontal, isIPad ? 32 : 16)
+        .padding(.horizontal, isWideLayout ? 32 : 16)
         .padding(.bottom, 16)
         .background(Color(.systemGroupedBackground))
     }
@@ -65,7 +63,7 @@ struct LearnView: View {
                         rootBadge(root)
                     }
                 }
-                .padding(.top, isIPad ? 4 : 8)
+                .padding(.top, isWideLayout ? 4 : 8)
             }
         }
     }
@@ -73,15 +71,15 @@ struct LearnView: View {
     private func rootBadge(_ root: LessonRoot) -> some View {
         VStack(spacing: 2) {
             Text(root.root)
-                .font(isIPad ? .title2.bold() : .title3.bold())
+                .font(isWideLayout ? .title2.bold() : .title3.bold())
                 .foregroundStyle(.white)
             Text(root.meaning)
                 .font(.caption2)
                 .foregroundStyle(.white.opacity(0.8))
                 .lineLimit(1)
         }
-        .padding(.horizontal, isIPad ? 20 : 16)
-        .padding(.vertical, isIPad ? 12 : 10)
+        .padding(.horizontal, isWideLayout ? 20 : 16)
+        .padding(.vertical, isWideLayout ? 12 : 10)
         .background(
             RoundedRectangle(cornerRadius: 16)
                 .fill(LinearGradient(
@@ -160,10 +158,10 @@ struct LearnView: View {
     }
 
     private func flashcard(for word: WordDetail) -> some View {
-        VStack(spacing: isIPad ? 28 : 20) {
+        VStack(spacing: isWideLayout ? 28 : 20) {
             // Word
             Text(word.word)
-                .font(.system(size: isIPad ? 48 : 36, weight: .bold, design: .rounded))
+                .font(.system(size: isWideLayout ? 48 : 36, weight: .bold, design: .rounded))
                 .foregroundStyle(.primary)
 
             // Part of speech badge
@@ -183,7 +181,7 @@ struct LearnView: View {
 
                 // Definition
                 Text(word.definition)
-                    .font(isIPad ? .title2 : .title3)
+                    .font(isWideLayout ? .title2 : .title3)
                     .multilineTextAlignment(.center)
                     .foregroundStyle(.primary)
                     .padding(.horizontal)
@@ -191,7 +189,7 @@ struct LearnView: View {
                 // Example
                 if !word.example.isEmpty {
                     Text(word.example)
-                        .font(isIPad ? .body : .callout)
+                        .font(isWideLayout ? .body : .callout)
                         .foregroundStyle(.secondary)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal)
@@ -204,8 +202,8 @@ struct LearnView: View {
                     .padding(.top, 8)
             }
         }
-        .padding(isIPad ? 48 : 32)
-        .frame(maxWidth: isIPad ? 600 : .infinity)
+        .padding(isWideLayout ? 48 : 32)
+        .frame(maxWidth: isWideLayout ? 600 : .infinity)
         .background(
             RoundedRectangle(cornerRadius: 24)
                 .fill(Color(.systemBackground))
@@ -246,7 +244,7 @@ struct LearnView: View {
             .buttonStyle(.borderedProminent)
             .disabled(!viewModel.hasNext)
         }
-        .frame(maxWidth: isIPad ? 600 : .infinity)
+        .frame(maxWidth: isWideLayout ? 600 : .infinity)
         .padding(.top, 8)
     }
 }

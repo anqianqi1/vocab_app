@@ -20,7 +20,9 @@
         "grades",
         "grading",
         "gradual",
-        "gradation"
+        "downgrade",
+        "gradation",
+        "upgrade"
       ],
       "same_lesson": [
         "graduation",
@@ -138,7 +140,9 @@
         "grades",
         "grading",
         "gradual",
-        "gradation"
+        "downgrade",
+        "gradation",
+        "upgrade"
       ],
       "same_lesson": [
         "gradually",
@@ -257,6 +261,7 @@
         "sensed",
         "senses",
         "sensing",
+        "extrasensory",
         "sensibility",
         "sensitivity",
         "sensitize",
@@ -379,6 +384,7 @@
         "sensed",
         "senses",
         "sensing",
+        "extrasensory",
         "sensibility",
         "sensitivity",
         "sensitize",
@@ -500,7 +506,9 @@
         "grades",
         "grading",
         "gradual",
-        "gradation"
+        "downgrade",
+        "gradation",
+        "upgrade"
       ],
       "same_lesson": [
         "gradually",
@@ -619,6 +627,7 @@
         "sensed",
         "senses",
         "sensing",
+        "extrasensory",
         "sensibility",
         "sensitivity",
         "sensitize",
@@ -741,6 +750,7 @@
         "sensed",
         "senses",
         "sensing",
+        "extrasensory",
         "sensibility",
         "sensitivity",
         "sensitize",
@@ -863,6 +873,7 @@
         "sensed",
         "senses",
         "sensing",
+        "extrasensory",
         "sensibility",
         "sensitivity",
         "sensitize",
@@ -984,7 +995,9 @@
         "grades",
         "grading",
         "gradual",
-        "gradation"
+        "downgrade",
+        "gradation",
+        "upgrade"
       ],
       "same_lesson": [
         "gradually",
@@ -1102,7 +1115,9 @@
         "grades",
         "grading",
         "gradual",
-        "gradation"
+        "downgrade",
+        "gradation",
+        "upgrade"
       ],
       "same_lesson": [
         "gradually",
@@ -1220,7 +1235,9 @@
         "graded",
         "grading",
         "gradual",
-        "gradation"
+        "downgrade",
+        "gradation",
+        "upgrade"
       ],
       "same_lesson": [
         "gradually",
@@ -1338,7 +1355,9 @@
         "graded",
         "grades",
         "gradual",
-        "gradation"
+        "downgrade",
+        "gradation",
+        "upgrade"
       ],
       "same_lesson": [
         "gradually",
@@ -1456,7 +1475,9 @@
         "graded",
         "grades",
         "grading",
-        "gradation"
+        "downgrade",
+        "gradation",
+        "upgrade"
       ],
       "same_lesson": [
         "gradually",
@@ -1575,6 +1596,7 @@
         "sensed",
         "senses",
         "sensing",
+        "extrasensory",
         "sensibility",
         "sensitivity",
         "sensitize",
@@ -1697,6 +1719,7 @@
         "sense",
         "senses",
         "sensing",
+        "extrasensory",
         "sensibility",
         "sensitivity",
         "sensitize",
@@ -1819,6 +1842,7 @@
         "sense",
         "sensed",
         "sensing",
+        "extrasensory",
         "sensibility",
         "sensitivity",
         "sensitize",
@@ -1941,6 +1965,7 @@
         "sense",
         "sensed",
         "senses",
+        "extrasensory",
         "sensibility",
         "sensitivity",
         "sensitize",
@@ -2047,14 +2072,25 @@
     "lesson_number": 1,
     "lesson_title": "Good Sense across the grades",
     "group": "challenge",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "GRAD",
+    "root_meaning": "gradus meaning “step, grade level”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
     "definition": "Downgrade is something we talk about when we think about taking steps forward in school.",
     "example": "In class, we say \"downgrade\" when we talk about taking steps forward in school.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "gradually",
+        "graduation",
+        "graduate",
+        "grade",
+        "graded",
+        "grades",
+        "grading",
+        "gradual",
+        "gradation",
+        "upgrade"
+      ],
       "same_lesson": [
         "gradually",
         "graduation",
@@ -2171,7 +2207,9 @@
         "graded",
         "grades",
         "grading",
-        "gradual"
+        "gradual",
+        "downgrade",
+        "upgrade"
       ],
       "same_lesson": [
         "gradually",
@@ -2274,14 +2312,25 @@
     "lesson_number": 1,
     "lesson_title": "Good Sense across the grades",
     "group": "challenge",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "GRAD",
+    "root_meaning": "gradus meaning “step, grade level”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
     "definition": "Upgrade is something we talk about when we think about taking steps forward in school.",
     "example": "In class, we say \"upgrade\" when we talk about taking steps forward in school.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "gradually",
+        "graduation",
+        "graduate",
+        "grade",
+        "graded",
+        "grades",
+        "grading",
+        "gradual",
+        "downgrade",
+        "gradation"
+      ],
       "same_lesson": [
         "gradually",
         "graduation",
@@ -2383,14 +2432,28 @@
     "lesson_number": 1,
     "lesson_title": "Good Sense across the grades",
     "group": "challenge",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "SENS",
+    "root_meaning": "sensus meaning “feel, become aware of, sense”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
     "definition": "Extrasensory describes something connected to how we feel and notice things.",
     "example": "The word extrasensory helps me describe things that are about how we feel and notice things.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "sensational",
+        "sensible",
+        "sensation",
+        "senseless",
+        "sensitive",
+        "sense",
+        "sensed",
+        "senses",
+        "sensing",
+        "sensibility",
+        "sensitivity",
+        "sensitize",
+        "sensory"
+      ],
       "same_lesson": [
         "gradually",
         "graduation",
@@ -2509,6 +2572,7 @@
         "sensed",
         "senses",
         "sensing",
+        "extrasensory",
         "sensitivity",
         "sensitize",
         "sensory"
@@ -2631,6 +2695,7 @@
         "sensed",
         "senses",
         "sensing",
+        "extrasensory",
         "sensibility",
         "sensitize",
         "sensory"
@@ -2753,6 +2818,7 @@
         "sensed",
         "senses",
         "sensing",
+        "extrasensory",
         "sensibility",
         "sensitivity",
         "sensory"
@@ -2875,6 +2941,7 @@
         "sensed",
         "senses",
         "sensing",
+        "extrasensory",
         "sensibility",
         "sensitivity",
         "sensitize"
@@ -2997,7 +3064,10 @@
         "motioning",
         "motions",
         "motivation",
-        "motorist"
+        "motorist",
+        "promote",
+        "promotion",
+        "remote"
       ],
       "same_lesson": [
         "motivate",
@@ -3121,7 +3191,10 @@
         "motioning",
         "motions",
         "motivation",
-        "motorist"
+        "motorist",
+        "promote",
+        "promotion",
+        "remote"
       ],
       "same_lesson": [
         "motel",
@@ -3245,7 +3318,10 @@
         "motioning",
         "motions",
         "motivation",
-        "motorist"
+        "motorist",
+        "promote",
+        "promotion",
+        "remote"
       ],
       "same_lesson": [
         "motel",
@@ -3363,7 +3439,9 @@
         "numerator",
         "numerous",
         "numeral",
-        "numerals"
+        "numerals",
+        "enumerate",
+        "innumerable"
       ],
       "same_lesson": [
         "motel",
@@ -3487,7 +3565,10 @@
         "motioning",
         "motions",
         "motivation",
-        "motorist"
+        "motorist",
+        "promote",
+        "promotion",
+        "remote"
       ],
       "same_lesson": [
         "motel",
@@ -3611,7 +3692,10 @@
         "motioning",
         "motions",
         "motivation",
-        "motorist"
+        "motorist",
+        "promote",
+        "promotion",
+        "remote"
       ],
       "same_lesson": [
         "motel",
@@ -3729,7 +3813,9 @@
         "numerical",
         "numerous",
         "numeral",
-        "numerals"
+        "numerals",
+        "enumerate",
+        "innumerable"
       ],
       "same_lesson": [
         "motel",
@@ -3847,7 +3933,9 @@
         "numerical",
         "numerator",
         "numeral",
-        "numerals"
+        "numerals",
+        "enumerate",
+        "innumerable"
       ],
       "same_lesson": [
         "motel",
@@ -3971,7 +4059,10 @@
         "motioning",
         "motions",
         "motivation",
-        "motorist"
+        "motorist",
+        "promote",
+        "promotion",
+        "remote"
       ],
       "same_lesson": [
         "motel",
@@ -4095,7 +4186,10 @@
         "motioning",
         "motions",
         "motivation",
-        "motorist"
+        "motorist",
+        "promote",
+        "promotion",
+        "remote"
       ],
       "same_lesson": [
         "motel",
@@ -4219,7 +4313,10 @@
         "motioned",
         "motions",
         "motivation",
-        "motorist"
+        "motorist",
+        "promote",
+        "promotion",
+        "remote"
       ],
       "same_lesson": [
         "motel",
@@ -4343,7 +4440,10 @@
         "motioned",
         "motioning",
         "motivation",
-        "motorist"
+        "motorist",
+        "promote",
+        "promotion",
+        "remote"
       ],
       "same_lesson": [
         "motel",
@@ -4461,7 +4561,9 @@
         "numerical",
         "numerator",
         "numerous",
-        "numerals"
+        "numerals",
+        "enumerate",
+        "innumerable"
       ],
       "same_lesson": [
         "motel",
@@ -4579,7 +4681,9 @@
         "numerical",
         "numerator",
         "numerous",
-        "numeral"
+        "numeral",
+        "enumerate",
+        "innumerable"
       ],
       "same_lesson": [
         "motel",
@@ -4703,7 +4807,10 @@
         "motioned",
         "motioning",
         "motions",
-        "motorist"
+        "motorist",
+        "promote",
+        "promotion",
+        "remote"
       ],
       "same_lesson": [
         "motel",
@@ -4827,7 +4934,10 @@
         "motioned",
         "motioning",
         "motions",
-        "motivation"
+        "motivation",
+        "promote",
+        "promotion",
+        "remote"
       ],
       "same_lesson": [
         "motel",
@@ -4934,14 +5044,28 @@
     "lesson_number": 2,
     "lesson_title": "Moving toward numbers",
     "group": "challenge",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "MOT",
+    "root_meaning": "movere, motus meaning “to move, do, act”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
     "definition": "Promote is something we talk about when we think about movement and the energy that makes things go.",
     "example": "In class, we say \"promote\" when we talk about movement and the energy that makes things go.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "motel",
+        "motivate",
+        "motor",
+        "motionless",
+        "motive",
+        "motion",
+        "motioned",
+        "motioning",
+        "motions",
+        "motivation",
+        "motorist",
+        "promotion",
+        "remote"
+      ],
       "same_lesson": [
         "motel",
         "motivate",
@@ -5047,14 +5171,28 @@
     "lesson_number": 2,
     "lesson_title": "Moving toward numbers",
     "group": "challenge",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "MOT",
+    "root_meaning": "movere, motus meaning “to move, do, act”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
     "definition": "Promotion is something we talk about when we think about movement and the energy that makes things go.",
     "example": "In class, we say \"promotion\" when we talk about movement and the energy that makes things go.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "motel",
+        "motivate",
+        "motor",
+        "motionless",
+        "motive",
+        "motion",
+        "motioned",
+        "motioning",
+        "motions",
+        "motivation",
+        "motorist",
+        "promote",
+        "remote"
+      ],
       "same_lesson": [
         "motel",
         "motivate",
@@ -5160,14 +5298,28 @@
     "lesson_number": 2,
     "lesson_title": "Moving toward numbers",
     "group": "challenge",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "MOT",
+    "root_meaning": "movere, motus meaning “to move, do, act”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
     "definition": "Remote is something we talk about when we think about movement and the energy that makes things go.",
     "example": "In class, we say \"remote\" when we talk about movement and the energy that makes things go.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "motel",
+        "motivate",
+        "motor",
+        "motionless",
+        "motive",
+        "motion",
+        "motioned",
+        "motioning",
+        "motions",
+        "motivation",
+        "motorist",
+        "promote",
+        "promotion"
+      ],
       "same_lesson": [
         "motel",
         "motivate",
@@ -5273,14 +5425,21 @@
     "lesson_number": 2,
     "lesson_title": "Moving toward numbers",
     "group": "challenge",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "NUMER",
+    "root_meaning": "numerus meaning “number”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "v.",
     "definition": "Enumerate means taking action that involves numbers and math ideas.",
     "example": "In class we enumerate when we want to focus on numbers and math ideas.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "numerical",
+        "numerator",
+        "numerous",
+        "numeral",
+        "numerals",
+        "innumerable"
+      ],
       "same_lesson": [
         "motel",
         "motivate",
@@ -5386,14 +5545,21 @@
     "lesson_number": 2,
     "lesson_title": "Moving toward numbers",
     "group": "challenge",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "NUMER",
+    "root_meaning": "numerus meaning “number”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
     "definition": "Innumerable describes something connected to numbers and math ideas.",
     "example": "The word innumerable helps me describe things that are about numbers and math ideas.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "numerical",
+        "numerator",
+        "numerous",
+        "numeral",
+        "numerals",
+        "enumerate"
+      ],
       "same_lesson": [
         "motel",
         "motivate",
@@ -5516,7 +5682,8 @@
         "delighting",
         "delights",
         "deliciousness",
-        "delightfulness"
+        "delightfulness",
+        "indelicate"
       ],
       "same_lesson": [
         "delicatessen",
@@ -5636,7 +5803,8 @@
         "delighting",
         "delights",
         "deliciousness",
-        "delightfulness"
+        "delightfulness",
+        "indelicate"
       ],
       "same_lesson": [
         "delicacy",
@@ -5756,7 +5924,8 @@
         "delighting",
         "delights",
         "deliciousness",
-        "delightfulness"
+        "delightfulness",
+        "indelicate"
       ],
       "same_lesson": [
         "delicacy",
@@ -5872,7 +6041,10 @@
         "question",
         "questioned",
         "questioning",
-        "questions"
+        "questions",
+        "inquest",
+        "request",
+        "unquestionable"
       ],
       "same_lesson": [
         "delicacy",
@@ -5992,7 +6164,8 @@
         "delighting",
         "delights",
         "deliciousness",
-        "delightfulness"
+        "delightfulness",
+        "indelicate"
       ],
       "same_lesson": [
         "delicacy",
@@ -6112,7 +6285,8 @@
         "delighting",
         "delights",
         "deliciousness",
-        "delightfulness"
+        "delightfulness",
+        "indelicate"
       ],
       "same_lesson": [
         "delicacy",
@@ -6228,7 +6402,10 @@
         "question",
         "questioned",
         "questioning",
-        "questions"
+        "questions",
+        "inquest",
+        "request",
+        "unquestionable"
       ],
       "same_lesson": [
         "delicacy",
@@ -6344,7 +6521,10 @@
         "question",
         "questioned",
         "questioning",
-        "questions"
+        "questions",
+        "inquest",
+        "request",
+        "unquestionable"
       ],
       "same_lesson": [
         "delicacy",
@@ -6464,7 +6644,8 @@
         "delighting",
         "delights",
         "deliciousness",
-        "delightfulness"
+        "delightfulness",
+        "indelicate"
       ],
       "same_lesson": [
         "delicacy",
@@ -6584,7 +6765,8 @@
         "delighting",
         "delights",
         "deliciousness",
-        "delightfulness"
+        "delightfulness",
+        "indelicate"
       ],
       "same_lesson": [
         "delicacy",
@@ -6704,7 +6886,8 @@
         "delighted",
         "delights",
         "deliciousness",
-        "delightfulness"
+        "delightfulness",
+        "indelicate"
       ],
       "same_lesson": [
         "delicacy",
@@ -6824,7 +7007,8 @@
         "delighted",
         "delighting",
         "deliciousness",
-        "delightfulness"
+        "delightfulness",
+        "indelicate"
       ],
       "same_lesson": [
         "delicacy",
@@ -6940,7 +7124,10 @@
         "questionnaire",
         "questioned",
         "questioning",
-        "questions"
+        "questions",
+        "inquest",
+        "request",
+        "unquestionable"
       ],
       "same_lesson": [
         "delicacy",
@@ -7056,7 +7243,10 @@
         "questionnaire",
         "question",
         "questioning",
-        "questions"
+        "questions",
+        "inquest",
+        "request",
+        "unquestionable"
       ],
       "same_lesson": [
         "delicacy",
@@ -7172,7 +7362,10 @@
         "questionnaire",
         "question",
         "questioned",
-        "questions"
+        "questions",
+        "inquest",
+        "request",
+        "unquestionable"
       ],
       "same_lesson": [
         "delicacy",
@@ -7288,7 +7481,10 @@
         "questionnaire",
         "question",
         "questioned",
-        "questioning"
+        "questioning",
+        "inquest",
+        "request",
+        "unquestionable"
       ],
       "same_lesson": [
         "delicacy",
@@ -7408,7 +7604,8 @@
         "delighted",
         "delighting",
         "delights",
-        "delightfulness"
+        "delightfulness",
+        "indelicate"
       ],
       "same_lesson": [
         "delicacy",
@@ -7528,7 +7725,8 @@
         "delighted",
         "delighting",
         "delights",
-        "deliciousness"
+        "deliciousness",
+        "indelicate"
       ],
       "same_lesson": [
         "delicacy",
@@ -7631,14 +7829,26 @@
     "lesson_number": 3,
     "lesson_title": "delighted with questions",
     "group": "challenge",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "DELI",
+    "root_meaning": "delicere meaning “to be pleasing”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "v.",
     "definition": "Indelicate means taking action that involves pleasant and delightful experiences.",
     "example": "In class we indelicate when we want to focus on pleasant and delightful experiences.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "delicacy",
+        "delicatessen",
+        "delightful",
+        "delicate",
+        "delicious",
+        "delight",
+        "delighted",
+        "delighting",
+        "delights",
+        "deliciousness",
+        "delightfulness"
+      ],
       "same_lesson": [
         "delicacy",
         "delicatessen",
@@ -7740,14 +7950,24 @@
     "lesson_number": 3,
     "lesson_title": "delighted with questions",
     "group": "challenge",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "QUES",
+    "root_meaning": "quaestio meaning “to ask, to search”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
     "definition": "Inquest is something we talk about when we think about asking thoughtful questions.",
     "example": "In class, we say \"inquest\" when we talk about asking thoughtful questions.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "questionable",
+        "quest",
+        "questionnaire",
+        "question",
+        "questioned",
+        "questioning",
+        "questions",
+        "request",
+        "unquestionable"
+      ],
       "same_lesson": [
         "delicacy",
         "delicatessen",
@@ -7849,14 +8069,24 @@
     "lesson_number": 3,
     "lesson_title": "delighted with questions",
     "group": "challenge",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "QUES",
+    "root_meaning": "quaestio meaning “to ask, to search”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
     "definition": "Request is something we talk about when we think about asking thoughtful questions.",
     "example": "In class, we say \"request\" when we talk about asking thoughtful questions.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "questionable",
+        "quest",
+        "questionnaire",
+        "question",
+        "questioned",
+        "questioning",
+        "questions",
+        "inquest",
+        "unquestionable"
+      ],
       "same_lesson": [
         "delicacy",
         "delicatessen",
@@ -7958,14 +8188,24 @@
     "lesson_number": 3,
     "lesson_title": "delighted with questions",
     "group": "challenge",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "QUES",
+    "root_meaning": "quaestio meaning “to ask, to search”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
     "definition": "Unquestionable describes something connected to asking thoughtful questions.",
     "example": "The word unquestionable helps me describe things that are about asking thoughtful questions.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "questionable",
+        "quest",
+        "questionnaire",
+        "question",
+        "questioned",
+        "questioning",
+        "questions",
+        "inquest",
+        "request"
+      ],
       "same_lesson": [
         "delicacy",
         "delicatessen",
@@ -8079,11 +8319,14 @@
         "partner",
         "particle",
         "partition",
+        "apart",
         "part",
         "parted",
         "parting",
         "partly",
         "parts",
+        "department",
+        "impartial",
         "partiality",
         "participate",
         "partnership"
@@ -8209,11 +8452,14 @@
         "partner",
         "particle",
         "partition",
+        "apart",
         "part",
         "parted",
         "parting",
         "partly",
         "parts",
+        "department",
+        "impartial",
         "partiality",
         "participate",
         "partnership"
@@ -8339,11 +8585,14 @@
         "particular",
         "particle",
         "partition",
+        "apart",
         "part",
         "parted",
         "parting",
         "partly",
         "parts",
+        "department",
+        "impartial",
         "partiality",
         "participate",
         "partnership"
@@ -8592,11 +8841,14 @@
         "particular",
         "partner",
         "partition",
+        "apart",
         "part",
         "parted",
         "parting",
         "partly",
         "parts",
+        "department",
+        "impartial",
         "partiality",
         "participate",
         "partnership"
@@ -8722,11 +8974,14 @@
         "particular",
         "partner",
         "particle",
+        "apart",
         "part",
         "parted",
         "parting",
         "partly",
         "parts",
+        "department",
+        "impartial",
         "partiality",
         "participate",
         "partnership"
@@ -9080,14 +9335,30 @@
     "lesson_number": 5,
     "lesson_title": "studying for a part",
     "group": "familiar",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "PART",
+    "root_meaning": "partis meaning “separate part, piece”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
     "definition": "Apart is something we talk about when we think about sharing pieces or roles in something bigger.",
     "example": "In class, we say \"apart\" when we talk about sharing pieces or roles in something bigger.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "partial",
+        "particular",
+        "partner",
+        "particle",
+        "partition",
+        "part",
+        "parted",
+        "parting",
+        "partly",
+        "parts",
+        "department",
+        "impartial",
+        "partiality",
+        "participate",
+        "partnership"
+      ],
       "same_lesson": [
         "partial",
         "particular",
@@ -9210,10 +9481,13 @@
         "partner",
         "particle",
         "partition",
+        "apart",
         "parted",
         "parting",
         "partly",
         "parts",
+        "department",
+        "impartial",
         "partiality",
         "participate",
         "partnership"
@@ -9340,10 +9614,13 @@
         "partner",
         "particle",
         "partition",
+        "apart",
         "part",
         "parting",
         "partly",
         "parts",
+        "department",
+        "impartial",
         "partiality",
         "participate",
         "partnership"
@@ -9470,10 +9747,13 @@
         "partner",
         "particle",
         "partition",
+        "apart",
         "part",
         "parted",
         "partly",
         "parts",
+        "department",
+        "impartial",
         "partiality",
         "participate",
         "partnership"
@@ -9600,10 +9880,13 @@
         "partner",
         "particle",
         "partition",
+        "apart",
         "part",
         "parted",
         "parting",
         "parts",
+        "department",
+        "impartial",
         "partiality",
         "participate",
         "partnership"
@@ -9730,10 +10013,13 @@
         "partner",
         "particle",
         "partition",
+        "apart",
         "part",
         "parted",
         "parting",
         "partly",
+        "department",
+        "impartial",
         "partiality",
         "participate",
         "partnership"
@@ -10216,14 +10502,30 @@
     "lesson_number": 5,
     "lesson_title": "studying for a part",
     "group": "challenge",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "PART",
+    "root_meaning": "partis meaning “separate part, piece”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
     "definition": "Department is something we talk about when we think about sharing pieces or roles in something bigger.",
     "example": "In class, we say \"department\" when we talk about sharing pieces or roles in something bigger.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "partial",
+        "particular",
+        "partner",
+        "particle",
+        "partition",
+        "apart",
+        "part",
+        "parted",
+        "parting",
+        "partly",
+        "parts",
+        "impartial",
+        "partiality",
+        "participate",
+        "partnership"
+      ],
       "same_lesson": [
         "partial",
         "particular",
@@ -10333,14 +10635,30 @@
     "lesson_number": 5,
     "lesson_title": "studying for a part",
     "group": "challenge",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "PART",
+    "root_meaning": "partis meaning “separate part, piece”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
     "definition": "Impartial describes something connected to sharing pieces or roles in something bigger.",
     "example": "The word impartial helps me describe things that are about sharing pieces or roles in something bigger.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "partial",
+        "particular",
+        "partner",
+        "particle",
+        "partition",
+        "apart",
+        "part",
+        "parted",
+        "parting",
+        "partly",
+        "parts",
+        "department",
+        "partiality",
+        "participate",
+        "partnership"
+      ],
       "same_lesson": [
         "partial",
         "particular",
@@ -10463,11 +10781,14 @@
         "partner",
         "particle",
         "partition",
+        "apart",
         "part",
         "parted",
         "parting",
         "partly",
         "parts",
+        "department",
+        "impartial",
         "participate",
         "partnership"
       ],
@@ -10593,11 +10914,14 @@
         "partner",
         "particle",
         "partition",
+        "apart",
         "part",
         "parted",
         "parting",
         "partly",
         "parts",
+        "department",
+        "impartial",
         "partiality",
         "partnership"
       ],
@@ -10723,11 +11047,14 @@
         "partner",
         "particle",
         "partition",
+        "apart",
         "part",
         "parted",
         "parting",
         "partly",
         "parts",
+        "department",
+        "impartial",
         "partiality",
         "participate"
       ],
@@ -11080,14 +11407,28 @@
     "lesson_number": 6,
     "lesson_title": "different ways to serve",
     "group": "key",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "SERV",
+    "root_meaning": "servire meaning “to serve, to help”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
     "definition": "A restaurant worker that serves food. serves We asked our server to bring us another serving basket of bread as we read the menu.",
     "example": "",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "service",
+        "server",
+        "serviceable",
+        "servant",
+        "servants",
+        "serve",
+        "served",
+        "serves",
+        "serving",
+        "disservice",
+        "servile",
+        "servitude",
+        "undeserved"
+      ],
       "same_lesson": [
         "service",
         "variable",
@@ -11199,6 +11540,7 @@
     "example": "In class, we say \"service\" when we talk about helping others and being useful.",
     "related_words": {
       "same_root": [
+        "deserve",
         "server",
         "serviceable",
         "servant",
@@ -11207,8 +11549,10 @@
         "served",
         "serves",
         "serving",
+        "disservice",
         "servile",
-        "servitude"
+        "servitude",
+        "undeserved"
       ],
       "same_lesson": [
         "deserve",
@@ -11326,6 +11670,7 @@
         "various",
         "varied",
         "varies",
+        "invariably",
         "variant",
         "varicolored"
       ],
@@ -11445,6 +11790,7 @@
         "various",
         "varied",
         "varies",
+        "invariably",
         "variant",
         "varicolored"
       ],
@@ -11559,6 +11905,7 @@
     "example": "In class, we say \"server\" when we talk about helping others and being useful.",
     "related_words": {
       "same_root": [
+        "deserve",
         "service",
         "serviceable",
         "servant",
@@ -11567,8 +11914,10 @@
         "served",
         "serves",
         "serving",
+        "disservice",
         "servile",
-        "servitude"
+        "servitude",
+        "undeserved"
       ],
       "same_lesson": [
         "deserve",
@@ -11681,6 +12030,7 @@
     "example": "The word serviceable helps me describe things that are about helping others and being useful.",
     "related_words": {
       "same_root": [
+        "deserve",
         "service",
         "server",
         "servant",
@@ -11689,8 +12039,10 @@
         "served",
         "serves",
         "serving",
+        "disservice",
         "servile",
-        "servitude"
+        "servitude",
+        "undeserved"
       ],
       "same_lesson": [
         "deserve",
@@ -11808,6 +12160,7 @@
         "various",
         "varied",
         "varies",
+        "invariably",
         "variant",
         "varicolored"
       ],
@@ -11927,6 +12280,7 @@
         "variation",
         "varied",
         "varies",
+        "invariably",
         "variant",
         "varicolored"
       ],
@@ -12041,6 +12395,7 @@
     "example": "The word servant helps me describe things that are about helping others and being useful.",
     "related_words": {
       "same_root": [
+        "deserve",
         "service",
         "server",
         "serviceable",
@@ -12049,8 +12404,10 @@
         "served",
         "serves",
         "serving",
+        "disservice",
         "servile",
-        "servitude"
+        "servitude",
+        "undeserved"
       ],
       "same_lesson": [
         "deserve",
@@ -12163,6 +12520,7 @@
     "example": "In class, we say \"servants\" when we talk about helping others and being useful.",
     "related_words": {
       "same_root": [
+        "deserve",
         "service",
         "server",
         "serviceable",
@@ -12171,8 +12529,10 @@
         "served",
         "serves",
         "serving",
+        "disservice",
         "servile",
-        "servitude"
+        "servitude",
+        "undeserved"
       ],
       "same_lesson": [
         "deserve",
@@ -12285,6 +12645,7 @@
     "example": "In class, we say \"serve\" when we talk about helping others and being useful.",
     "related_words": {
       "same_root": [
+        "deserve",
         "service",
         "server",
         "serviceable",
@@ -12293,8 +12654,10 @@
         "served",
         "serves",
         "serving",
+        "disservice",
         "servile",
-        "servitude"
+        "servitude",
+        "undeserved"
       ],
       "same_lesson": [
         "deserve",
@@ -12407,6 +12770,7 @@
     "example": "The word served helps me describe things that are about helping others and being useful.",
     "related_words": {
       "same_root": [
+        "deserve",
         "service",
         "server",
         "serviceable",
@@ -12415,8 +12779,10 @@
         "serve",
         "serves",
         "serving",
+        "disservice",
         "servile",
-        "servitude"
+        "servitude",
+        "undeserved"
       ],
       "same_lesson": [
         "deserve",
@@ -12529,6 +12895,7 @@
     "example": "In class, we say \"serves\" when we talk about helping others and being useful.",
     "related_words": {
       "same_root": [
+        "deserve",
         "service",
         "server",
         "serviceable",
@@ -12537,8 +12904,10 @@
         "serve",
         "served",
         "serving",
+        "disservice",
         "servile",
-        "servitude"
+        "servitude",
+        "undeserved"
       ],
       "same_lesson": [
         "deserve",
@@ -12651,6 +13020,7 @@
     "example": "In class, we say \"serving\" when we talk about helping others and being useful.",
     "related_words": {
       "same_root": [
+        "deserve",
         "service",
         "server",
         "serviceable",
@@ -12659,8 +13029,10 @@
         "serve",
         "served",
         "serves",
+        "disservice",
         "servile",
-        "servitude"
+        "servitude",
+        "undeserved"
       ],
       "same_lesson": [
         "deserve",
@@ -12778,6 +13150,7 @@
         "variation",
         "various",
         "varies",
+        "invariably",
         "variant",
         "varicolored"
       ],
@@ -12897,6 +13270,7 @@
         "variation",
         "various",
         "varied",
+        "invariably",
         "variant",
         "varicolored"
       ],
@@ -13225,14 +13599,28 @@
     "lesson_number": 6,
     "lesson_title": "different ways to serve",
     "group": "challenge",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "SERV",
+    "root_meaning": "servire meaning “to serve, to help”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
     "definition": "Disservice is something we talk about when we think about helping others and being useful.",
     "example": "In class, we say \"disservice\" when we talk about helping others and being useful.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "deserve",
+        "service",
+        "server",
+        "serviceable",
+        "servant",
+        "servants",
+        "serve",
+        "served",
+        "serves",
+        "serving",
+        "servile",
+        "servitude",
+        "undeserved"
+      ],
       "same_lesson": [
         "deserve",
         "service",
@@ -13344,6 +13732,7 @@
     "example": "In class, we say \"servile\" when we talk about helping others and being useful.",
     "related_words": {
       "same_root": [
+        "deserve",
         "service",
         "server",
         "serviceable",
@@ -13353,7 +13742,9 @@
         "served",
         "serves",
         "serving",
-        "servitude"
+        "disservice",
+        "servitude",
+        "undeserved"
       ],
       "same_lesson": [
         "deserve",
@@ -13466,6 +13857,7 @@
     "example": "In class, we say \"servitude\" when we talk about helping others and being useful.",
     "related_words": {
       "same_root": [
+        "deserve",
         "service",
         "server",
         "serviceable",
@@ -13475,7 +13867,9 @@
         "served",
         "serves",
         "serving",
-        "servile"
+        "disservice",
+        "servile",
+        "undeserved"
       ],
       "same_lesson": [
         "deserve",
@@ -13580,14 +13974,28 @@
     "lesson_number": 6,
     "lesson_title": "different ways to serve",
     "group": "challenge",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "SERV",
+    "root_meaning": "servire meaning “to serve, to help”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
     "definition": "Undeserved describes something connected to helping others and being useful.",
     "example": "The word undeserved helps me describe things that are about helping others and being useful.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "deserve",
+        "service",
+        "server",
+        "serviceable",
+        "servant",
+        "servants",
+        "serve",
+        "served",
+        "serves",
+        "serving",
+        "disservice",
+        "servile",
+        "servitude"
+      ],
       "same_lesson": [
         "deserve",
         "service",
@@ -13691,14 +14099,23 @@
     "lesson_number": 6,
     "lesson_title": "different ways to serve",
     "group": "challenge",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "VARI",
+    "root_meaning": "varius meaning “to be different”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "adv.",
     "definition": "Invariably tells us that something happens in a way related to mixing different kinds of things.",
     "example": "It reminds me that something happens in a way that connects to mixing different kinds of things.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "variable",
+        "variety",
+        "variation",
+        "various",
+        "varied",
+        "varies",
+        "variant",
+        "varicolored"
+      ],
       "same_lesson": [
         "deserve",
         "service",
@@ -13816,6 +14233,7 @@
         "various",
         "varied",
         "varies",
+        "invariably",
         "varicolored"
       ],
       "same_lesson": [
@@ -13935,6 +14353,7 @@
         "various",
         "varied",
         "varies",
+        "invariably",
         "variant"
       ],
       "same_lesson": [
@@ -14048,11 +14467,15 @@
     "example": "In class, we say \"ease\" when we talk about comfort and feeling relaxed.",
     "related_words": {
       "same_root": [
+        "uneasy",
         "easiest",
+        "disease",
         "easily",
         "easy",
         "easement",
-        "easygoing"
+        "easygoing",
+        "uneasily",
+        "uneasiness"
       ],
       "same_lesson": [
         "finale",
@@ -14170,11 +14593,17 @@
         "finally",
         "finalist",
         "finite",
+        "unfinished",
         "final",
         "finish",
         "finished",
         "finishes",
-        "finishing"
+        "finishing",
+        "confine",
+        "infinite",
+        "infinity",
+        "refinery",
+        "semifinal"
       ],
       "same_lesson": [
         "ease",
@@ -14292,11 +14721,17 @@
         "finale",
         "finalist",
         "finite",
+        "unfinished",
         "final",
         "finish",
         "finished",
         "finishes",
-        "finishing"
+        "finishing",
+        "confine",
+        "infinite",
+        "infinity",
+        "refinery",
+        "semifinal"
       ],
       "same_lesson": [
         "ease",
@@ -14403,14 +14838,24 @@
     "lesson_number": 7,
     "lesson_title": "Finishing Easily",
     "group": "key",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "EAS",
+    "root_meaning": "adiacens meaning “lying nearby,” via the French word aise meaning “comfort”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
     "definition": "Uneasy is something we talk about when we think about comfort and feeling relaxed.",
     "example": "In class, we say \"uneasy\" when we talk about comfort and feeling relaxed.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "ease",
+        "easiest",
+        "disease",
+        "easily",
+        "easy",
+        "easement",
+        "easygoing",
+        "uneasily",
+        "uneasiness"
+      ],
       "same_lesson": [
         "ease",
         "finale",
@@ -14525,10 +14970,14 @@
     "related_words": {
       "same_root": [
         "ease",
+        "uneasy",
+        "disease",
         "easily",
         "easy",
         "easement",
-        "easygoing"
+        "easygoing",
+        "uneasily",
+        "uneasiness"
       ],
       "same_lesson": [
         "ease",
@@ -14646,11 +15095,17 @@
         "finale",
         "finally",
         "finite",
+        "unfinished",
         "final",
         "finish",
         "finished",
         "finishes",
-        "finishing"
+        "finishing",
+        "confine",
+        "infinite",
+        "infinity",
+        "refinery",
+        "semifinal"
       ],
       "same_lesson": [
         "ease",
@@ -14768,11 +15223,17 @@
         "finale",
         "finally",
         "finalist",
+        "unfinished",
         "final",
         "finish",
         "finished",
         "finishes",
-        "finishing"
+        "finishing",
+        "confine",
+        "infinite",
+        "infinity",
+        "refinery",
+        "semifinal"
       ],
       "same_lesson": [
         "ease",
@@ -14879,14 +15340,29 @@
     "lesson_number": 7,
     "lesson_title": "Finishing Easily",
     "group": "key",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "FIN",
+    "root_meaning": "finis meaning “end”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
     "definition": "Incomplete, not finished.",
     "example": "When the time ran out, Jeff had to turn in an unfinished test.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "finale",
+        "finally",
+        "finalist",
+        "finite",
+        "final",
+        "finish",
+        "finished",
+        "finishes",
+        "finishing",
+        "confine",
+        "infinite",
+        "infinity",
+        "refinery",
+        "semifinal"
+      ],
       "same_lesson": [
         "ease",
         "finale",
@@ -14992,14 +15468,24 @@
     "lesson_number": 7,
     "lesson_title": "Finishing Easily",
     "group": "familiar",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "EAS",
+    "root_meaning": "adiacens meaning “lying nearby,” via the French word aise meaning “comfort”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
     "definition": "Disease is something we talk about when we think about comfort and feeling relaxed.",
     "example": "In class, we say \"disease\" when we talk about comfort and feeling relaxed.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "ease",
+        "uneasy",
+        "easiest",
+        "easily",
+        "easy",
+        "easement",
+        "easygoing",
+        "uneasily",
+        "uneasiness"
+      ],
       "same_lesson": [
         "ease",
         "finale",
@@ -15114,10 +15600,14 @@
     "related_words": {
       "same_root": [
         "ease",
+        "uneasy",
         "easiest",
+        "disease",
         "easy",
         "easement",
-        "easygoing"
+        "easygoing",
+        "uneasily",
+        "uneasiness"
       ],
       "same_lesson": [
         "ease",
@@ -15233,10 +15723,14 @@
     "related_words": {
       "same_root": [
         "ease",
+        "uneasy",
         "easiest",
+        "disease",
         "easily",
         "easement",
-        "easygoing"
+        "easygoing",
+        "uneasily",
+        "uneasiness"
       ],
       "same_lesson": [
         "ease",
@@ -15355,10 +15849,16 @@
         "finally",
         "finalist",
         "finite",
+        "unfinished",
         "finish",
         "finished",
         "finishes",
-        "finishing"
+        "finishing",
+        "confine",
+        "infinite",
+        "infinity",
+        "refinery",
+        "semifinal"
       ],
       "same_lesson": [
         "ease",
@@ -15477,10 +15977,16 @@
         "finally",
         "finalist",
         "finite",
+        "unfinished",
         "final",
         "finished",
         "finishes",
-        "finishing"
+        "finishing",
+        "confine",
+        "infinite",
+        "infinity",
+        "refinery",
+        "semifinal"
       ],
       "same_lesson": [
         "ease",
@@ -15599,10 +16105,16 @@
         "finally",
         "finalist",
         "finite",
+        "unfinished",
         "final",
         "finish",
         "finishes",
-        "finishing"
+        "finishing",
+        "confine",
+        "infinite",
+        "infinity",
+        "refinery",
+        "semifinal"
       ],
       "same_lesson": [
         "ease",
@@ -15721,10 +16233,16 @@
         "finally",
         "finalist",
         "finite",
+        "unfinished",
         "final",
         "finish",
         "finished",
-        "finishing"
+        "finishing",
+        "confine",
+        "infinite",
+        "infinity",
+        "refinery",
+        "semifinal"
       ],
       "same_lesson": [
         "ease",
@@ -15843,10 +16361,16 @@
         "finally",
         "finalist",
         "finite",
+        "unfinished",
         "final",
         "finish",
         "finished",
-        "finishes"
+        "finishes",
+        "confine",
+        "infinite",
+        "infinity",
+        "refinery",
+        "semifinal"
       ],
       "same_lesson": [
         "ease",
@@ -15962,10 +16486,14 @@
     "related_words": {
       "same_root": [
         "ease",
+        "uneasy",
         "easiest",
+        "disease",
         "easily",
         "easy",
-        "easygoing"
+        "easygoing",
+        "uneasily",
+        "uneasiness"
       ],
       "same_lesson": [
         "ease",
@@ -16081,10 +16609,14 @@
     "related_words": {
       "same_root": [
         "ease",
+        "uneasy",
         "easiest",
+        "disease",
         "easily",
         "easy",
-        "easement"
+        "easement",
+        "uneasily",
+        "uneasiness"
       ],
       "same_lesson": [
         "ease",
@@ -16191,14 +16723,24 @@
     "lesson_number": 7,
     "lesson_title": "Finishing Easily",
     "group": "challenge",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "EAS",
+    "root_meaning": "adiacens meaning “lying nearby,” via the French word aise meaning “comfort”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "adv.",
     "definition": "Uneasily tells us that something happens in a way related to comfort and feeling relaxed.",
     "example": "It reminds me that something happens in a way that connects to comfort and feeling relaxed.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "ease",
+        "uneasy",
+        "easiest",
+        "disease",
+        "easily",
+        "easy",
+        "easement",
+        "easygoing",
+        "uneasiness"
+      ],
       "same_lesson": [
         "ease",
         "finale",
@@ -16304,14 +16846,24 @@
     "lesson_number": 7,
     "lesson_title": "Finishing Easily",
     "group": "challenge",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "EAS",
+    "root_meaning": "adiacens meaning “lying nearby,” via the French word aise meaning “comfort”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
     "definition": "Uneasiness is something we talk about when we think about comfort and feeling relaxed.",
     "example": "In class, we say \"uneasiness\" when we talk about comfort and feeling relaxed.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "ease",
+        "uneasy",
+        "easiest",
+        "disease",
+        "easily",
+        "easy",
+        "easement",
+        "easygoing",
+        "uneasily"
+      ],
       "same_lesson": [
         "ease",
         "finale",
@@ -16417,14 +16969,29 @@
     "lesson_number": 7,
     "lesson_title": "Finishing Easily",
     "group": "challenge",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "FIN",
+    "root_meaning": "finis meaning “end”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
     "definition": "Confine is something we talk about when we think about finishing and reaching the end.",
     "example": "In class, we say \"confine\" when we talk about finishing and reaching the end.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "finale",
+        "finally",
+        "finalist",
+        "finite",
+        "unfinished",
+        "final",
+        "finish",
+        "finished",
+        "finishes",
+        "finishing",
+        "infinite",
+        "infinity",
+        "refinery",
+        "semifinal"
+      ],
       "same_lesson": [
         "ease",
         "finale",
@@ -16530,14 +17097,29 @@
     "lesson_number": 7,
     "lesson_title": "Finishing Easily",
     "group": "challenge",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "FIN",
+    "root_meaning": "finis meaning “end”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
     "definition": "Infinite is something we talk about when we think about finishing and reaching the end.",
     "example": "In class, we say \"infinite\" when we talk about finishing and reaching the end.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "finale",
+        "finally",
+        "finalist",
+        "finite",
+        "unfinished",
+        "final",
+        "finish",
+        "finished",
+        "finishes",
+        "finishing",
+        "confine",
+        "infinity",
+        "refinery",
+        "semifinal"
+      ],
       "same_lesson": [
         "ease",
         "finale",
@@ -16643,14 +17225,29 @@
     "lesson_number": 7,
     "lesson_title": "Finishing Easily",
     "group": "challenge",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "FIN",
+    "root_meaning": "finis meaning “end”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
     "definition": "Infinity is something we talk about when we think about finishing and reaching the end.",
     "example": "In class, we say \"infinity\" when we talk about finishing and reaching the end.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "finale",
+        "finally",
+        "finalist",
+        "finite",
+        "unfinished",
+        "final",
+        "finish",
+        "finished",
+        "finishes",
+        "finishing",
+        "confine",
+        "infinite",
+        "refinery",
+        "semifinal"
+      ],
       "same_lesson": [
         "ease",
         "finale",
@@ -16756,14 +17353,29 @@
     "lesson_number": 7,
     "lesson_title": "Finishing Easily",
     "group": "challenge",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "FIN",
+    "root_meaning": "finis meaning “end”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
     "definition": "Refinery is something we talk about when we think about finishing and reaching the end.",
     "example": "In class, we say \"refinery\" when we talk about finishing and reaching the end.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "finale",
+        "finally",
+        "finalist",
+        "finite",
+        "unfinished",
+        "final",
+        "finish",
+        "finished",
+        "finishes",
+        "finishing",
+        "confine",
+        "infinite",
+        "infinity",
+        "semifinal"
+      ],
       "same_lesson": [
         "ease",
         "finale",
@@ -16869,14 +17481,29 @@
     "lesson_number": 7,
     "lesson_title": "Finishing Easily",
     "group": "challenge",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "FIN",
+    "root_meaning": "finis meaning “end”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
     "definition": "Semifinal describes something connected to finishing and reaching the end.",
     "example": "The word semifinal helps me describe things that are about finishing and reaching the end.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "finale",
+        "finally",
+        "finalist",
+        "finite",
+        "unfinished",
+        "final",
+        "finish",
+        "finished",
+        "finishes",
+        "finishing",
+        "confine",
+        "infinite",
+        "infinity",
+        "refinery"
+      ],
       "same_lesson": [
         "ease",
         "finale",
@@ -16994,7 +17621,8 @@
         "familiarity",
         "families",
         "family",
-        "familial"
+        "familial",
+        "unfamiliar"
       ],
       "same_lesson": [
         "familiarize",
@@ -17107,7 +17735,8 @@
         "familiarity",
         "families",
         "family",
-        "familial"
+        "familial",
+        "unfamiliar"
       ],
       "same_lesson": [
         "familiar",
@@ -17454,7 +18083,8 @@
         "familiarize",
         "families",
         "family",
-        "familial"
+        "familial",
+        "unfamiliar"
       ],
       "same_lesson": [
         "familiar",
@@ -17918,7 +18548,8 @@
         "familiarize",
         "familiarity",
         "family",
-        "familial"
+        "familial",
+        "unfamiliar"
       ],
       "same_lesson": [
         "familiar",
@@ -18031,7 +18662,8 @@
         "familiarize",
         "familiarity",
         "families",
-        "familial"
+        "familial",
+        "unfamiliar"
       ],
       "same_lesson": [
         "familiar",
@@ -18261,7 +18893,8 @@
         "familiarize",
         "familiarity",
         "families",
-        "family"
+        "family",
+        "unfamiliar"
       ],
       "same_lesson": [
         "familiar",
@@ -18362,14 +18995,21 @@
     "lesson_number": 9,
     "lesson_title": "special families",
     "group": "challenge",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "FAMIL",
+    "root_meaning": "familia meaning “household, family”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
     "definition": "Unfamiliar is something we talk about when we think about people and ideas that feel close and known.",
     "example": "In class, we say \"unfamiliar\" when we talk about people and ideas that feel close and known.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "familiar",
+        "familiarize",
+        "familiarity",
+        "families",
+        "family",
+        "familial"
+      ],
       "same_lesson": [
         "familiar",
         "familiarize",
@@ -18946,6 +19586,7 @@
     "related_words": {
       "same_root": [
         "actor",
+        "enact",
         "activity",
         "actually",
         "act",
@@ -18955,7 +19596,10 @@
         "acts",
         "actual",
         "activate",
-        "actuality"
+        "actuality",
+        "inactive",
+        "reaction",
+        "reenactment"
       ],
       "same_lesson": [
         "actor",
@@ -19072,6 +19716,7 @@
     "related_words": {
       "same_root": [
         "active",
+        "enact",
         "activity",
         "actually",
         "act",
@@ -19081,7 +19726,10 @@
         "acts",
         "actual",
         "activate",
-        "actuality"
+        "actuality",
+        "inactive",
+        "reaction",
+        "reenactment"
       ],
       "same_lesson": [
         "active",
@@ -19189,14 +19837,30 @@
     "lesson_number": 10,
     "lesson_title": "action in Office",
     "group": "key",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "ACT",
+    "root_meaning": "actio meaning “action, doing”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
     "definition": "Enact is something we talk about when we think about taking action and getting things done.",
     "example": "In class, we say \"enact\" when we talk about taking action and getting things done.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "active",
+        "actor",
+        "activity",
+        "actually",
+        "act",
+        "acted",
+        "acting",
+        "action",
+        "acts",
+        "actual",
+        "activate",
+        "actuality",
+        "inactive",
+        "reaction",
+        "reenactment"
+      ],
       "same_lesson": [
         "active",
         "actor",
@@ -19315,7 +19979,9 @@
         "officiate",
         "office",
         "offices",
-        "officeholder"
+        "officeholder",
+        "unofficial",
+        "unofficially"
       ],
       "same_lesson": [
         "active",
@@ -19433,6 +20099,7 @@
       "same_root": [
         "active",
         "actor",
+        "enact",
         "actually",
         "act",
         "acted",
@@ -19441,7 +20108,10 @@
         "acts",
         "actual",
         "activate",
-        "actuality"
+        "actuality",
+        "inactive",
+        "reaction",
+        "reenactment"
       ],
       "same_lesson": [
         "active",
@@ -19559,6 +20229,7 @@
       "same_root": [
         "active",
         "actor",
+        "enact",
         "activity",
         "act",
         "acted",
@@ -19567,7 +20238,10 @@
         "acts",
         "actual",
         "activate",
-        "actuality"
+        "actuality",
+        "inactive",
+        "reaction",
+        "reenactment"
       ],
       "same_lesson": [
         "active",
@@ -19687,7 +20361,9 @@
         "officiate",
         "office",
         "offices",
-        "officeholder"
+        "officeholder",
+        "unofficial",
+        "unofficially"
       ],
       "same_lesson": [
         "active",
@@ -19807,7 +20483,9 @@
         "officer",
         "office",
         "offices",
-        "officeholder"
+        "officeholder",
+        "unofficial",
+        "unofficially"
       ],
       "same_lesson": [
         "active",
@@ -19925,6 +20603,7 @@
       "same_root": [
         "active",
         "actor",
+        "enact",
         "activity",
         "actually",
         "acted",
@@ -19933,7 +20612,10 @@
         "acts",
         "actual",
         "activate",
-        "actuality"
+        "actuality",
+        "inactive",
+        "reaction",
+        "reenactment"
       ],
       "same_lesson": [
         "active",
@@ -20051,6 +20733,7 @@
       "same_root": [
         "active",
         "actor",
+        "enact",
         "activity",
         "actually",
         "act",
@@ -20059,7 +20742,10 @@
         "acts",
         "actual",
         "activate",
-        "actuality"
+        "actuality",
+        "inactive",
+        "reaction",
+        "reenactment"
       ],
       "same_lesson": [
         "active",
@@ -20177,6 +20863,7 @@
       "same_root": [
         "active",
         "actor",
+        "enact",
         "activity",
         "actually",
         "act",
@@ -20185,7 +20872,10 @@
         "acts",
         "actual",
         "activate",
-        "actuality"
+        "actuality",
+        "inactive",
+        "reaction",
+        "reenactment"
       ],
       "same_lesson": [
         "active",
@@ -20303,6 +20993,7 @@
       "same_root": [
         "active",
         "actor",
+        "enact",
         "activity",
         "actually",
         "act",
@@ -20311,7 +21002,10 @@
         "acts",
         "actual",
         "activate",
-        "actuality"
+        "actuality",
+        "inactive",
+        "reaction",
+        "reenactment"
       ],
       "same_lesson": [
         "active",
@@ -20429,6 +21123,7 @@
       "same_root": [
         "active",
         "actor",
+        "enact",
         "activity",
         "actually",
         "act",
@@ -20437,7 +21132,10 @@
         "action",
         "actual",
         "activate",
-        "actuality"
+        "actuality",
+        "inactive",
+        "reaction",
+        "reenactment"
       ],
       "same_lesson": [
         "active",
@@ -20555,6 +21253,7 @@
       "same_root": [
         "active",
         "actor",
+        "enact",
         "activity",
         "actually",
         "act",
@@ -20563,7 +21262,10 @@
         "action",
         "acts",
         "activate",
-        "actuality"
+        "actuality",
+        "inactive",
+        "reaction",
+        "reenactment"
       ],
       "same_lesson": [
         "active",
@@ -20683,7 +21385,9 @@
         "officer",
         "officiate",
         "offices",
-        "officeholder"
+        "officeholder",
+        "unofficial",
+        "unofficially"
       ],
       "same_lesson": [
         "active",
@@ -20803,7 +21507,9 @@
         "officer",
         "officiate",
         "office",
-        "officeholder"
+        "officeholder",
+        "unofficial",
+        "unofficially"
       ],
       "same_lesson": [
         "active",
@@ -20921,6 +21627,7 @@
       "same_root": [
         "active",
         "actor",
+        "enact",
         "activity",
         "actually",
         "act",
@@ -20929,7 +21636,10 @@
         "action",
         "acts",
         "actual",
-        "actuality"
+        "actuality",
+        "inactive",
+        "reaction",
+        "reenactment"
       ],
       "same_lesson": [
         "active",
@@ -21047,6 +21757,7 @@
       "same_root": [
         "active",
         "actor",
+        "enact",
         "activity",
         "actually",
         "act",
@@ -21055,7 +21766,10 @@
         "action",
         "acts",
         "actual",
-        "activate"
+        "activate",
+        "inactive",
+        "reaction",
+        "reenactment"
       ],
       "same_lesson": [
         "active",
@@ -21163,14 +21877,30 @@
     "lesson_number": 10,
     "lesson_title": "action in Office",
     "group": "challenge",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "ACT",
+    "root_meaning": "actio meaning “action, doing”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
     "definition": "Inactive describes something connected to taking action and getting things done.",
     "example": "The word inactive helps me describe things that are about taking action and getting things done.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "active",
+        "actor",
+        "enact",
+        "activity",
+        "actually",
+        "act",
+        "acted",
+        "acting",
+        "action",
+        "acts",
+        "actual",
+        "activate",
+        "actuality",
+        "reaction",
+        "reenactment"
+      ],
       "same_lesson": [
         "active",
         "actor",
@@ -21277,14 +22007,30 @@
     "lesson_number": 10,
     "lesson_title": "action in Office",
     "group": "challenge",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "ACT",
+    "root_meaning": "actio meaning “action, doing”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
     "definition": "Reaction is something we talk about when we think about taking action and getting things done.",
     "example": "In class, we say \"reaction\" when we talk about taking action and getting things done.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "active",
+        "actor",
+        "enact",
+        "activity",
+        "actually",
+        "act",
+        "acted",
+        "acting",
+        "action",
+        "acts",
+        "actual",
+        "activate",
+        "actuality",
+        "inactive",
+        "reenactment"
+      ],
       "same_lesson": [
         "active",
         "actor",
@@ -21391,14 +22137,30 @@
     "lesson_number": 10,
     "lesson_title": "action in Office",
     "group": "challenge",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "ACT",
+    "root_meaning": "actio meaning “action, doing”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
     "definition": "Reenactment is something we talk about when we think about taking action and getting things done.",
     "example": "In class, we say \"reenactment\" when we talk about taking action and getting things done.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "active",
+        "actor",
+        "enact",
+        "activity",
+        "actually",
+        "act",
+        "acted",
+        "acting",
+        "action",
+        "acts",
+        "actual",
+        "activate",
+        "actuality",
+        "inactive",
+        "reaction"
+      ],
       "same_lesson": [
         "active",
         "actor",
@@ -21517,7 +22279,9 @@
         "officer",
         "officiate",
         "office",
-        "offices"
+        "offices",
+        "unofficial",
+        "unofficially"
       ],
       "same_lesson": [
         "active",
@@ -21625,14 +22389,22 @@
     "lesson_number": 10,
     "lesson_title": "action in Office",
     "group": "challenge",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "OFFIC",
+    "root_meaning": "officium meaning “duty, work”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
     "definition": "Unofficial describes something connected to important jobs that guide others.",
     "example": "The word unofficial helps me describe things that are about important jobs that guide others.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "official",
+        "officer",
+        "officiate",
+        "office",
+        "offices",
+        "officeholder",
+        "unofficially"
+      ],
       "same_lesson": [
         "active",
         "actor",
@@ -21739,14 +22511,22 @@
     "lesson_number": 10,
     "lesson_title": "action in Office",
     "group": "challenge",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "OFFIC",
+    "root_meaning": "officium meaning “duty, work”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "adv.",
     "definition": "Unofficially tells us that something happens in a way related to important jobs that guide others.",
     "example": "It reminds me that something happens in a way that connects to important jobs that guide others.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "official",
+        "officer",
+        "officiate",
+        "office",
+        "offices",
+        "officeholder",
+        "unofficial"
+      ],
       "same_lesson": [
         "active",
         "actor",
@@ -21863,6 +22643,7 @@
       "same_root": [
         "captivity",
         "captive",
+        "recapture",
         "capture",
         "captured",
         "captures",
@@ -21987,6 +22768,7 @@
       "same_root": [
         "captivate",
         "captive",
+        "recapture",
         "capture",
         "captured",
         "captures",
@@ -22111,11 +22893,14 @@
       "same_root": [
         "statue",
         "stationary",
+        "understate",
         "state",
         "stated",
         "states",
         "stating",
         "station",
+        "overstate",
+        "reinstate",
         "static",
         "statuesque",
         "status"
@@ -22235,11 +23020,14 @@
       "same_root": [
         "statement",
         "stationary",
+        "understate",
         "state",
         "stated",
         "states",
         "stating",
         "station",
+        "overstate",
+        "reinstate",
         "static",
         "statuesque",
         "status"
@@ -22359,6 +23147,7 @@
       "same_root": [
         "captivate",
         "captivity",
+        "recapture",
         "capture",
         "captured",
         "captures",
@@ -22473,14 +23262,26 @@
     "lesson_number": 11,
     "lesson_title": "taking what is stated",
     "group": "key",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "CAPT",
+    "root_meaning": "captura meaning “to take, to capture”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
     "definition": "Recapture is something we talk about when we think about taking hold of something.",
     "example": "In class, we say \"recapture\" when we talk about taking hold of something.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "captivate",
+        "captivity",
+        "captive",
+        "capture",
+        "captured",
+        "captures",
+        "capturing",
+        "caption",
+        "captivating",
+        "captivation",
+        "captor"
+      ],
       "same_lesson": [
         "captivate",
         "captivity",
@@ -22596,11 +23397,14 @@
       "same_root": [
         "statement",
         "statue",
+        "understate",
         "state",
         "stated",
         "states",
         "stating",
         "station",
+        "overstate",
+        "reinstate",
         "static",
         "statuesque",
         "status"
@@ -22710,14 +23514,28 @@
     "lesson_number": 11,
     "lesson_title": "taking what is stated",
     "group": "key",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "STAT",
+    "root_meaning": "status meaning “standing position; state”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "v.",
     "definition": "To present as less important than it really is, to make little of, to deny the seriousness of.",
     "example": "Bella was so brave that she understated the amount of pain she felt from her broken arm.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "statement",
+        "statue",
+        "stationary",
+        "state",
+        "stated",
+        "states",
+        "stating",
+        "station",
+        "overstate",
+        "reinstate",
+        "static",
+        "statuesque",
+        "status"
+      ],
       "same_lesson": [
         "captivate",
         "captivity",
@@ -22834,6 +23652,7 @@
         "captivate",
         "captivity",
         "captive",
+        "recapture",
         "captured",
         "captures",
         "capturing",
@@ -22958,6 +23777,7 @@
         "captivate",
         "captivity",
         "captive",
+        "recapture",
         "capture",
         "captures",
         "capturing",
@@ -23082,6 +23902,7 @@
         "captivate",
         "captivity",
         "captive",
+        "recapture",
         "capture",
         "captured",
         "capturing",
@@ -23206,6 +24027,7 @@
         "captivate",
         "captivity",
         "captive",
+        "recapture",
         "capture",
         "captured",
         "captures",
@@ -23330,10 +24152,13 @@
         "statement",
         "statue",
         "stationary",
+        "understate",
         "stated",
         "states",
         "stating",
         "station",
+        "overstate",
+        "reinstate",
         "static",
         "statuesque",
         "status"
@@ -23454,10 +24279,13 @@
         "statement",
         "statue",
         "stationary",
+        "understate",
         "state",
         "states",
         "stating",
         "station",
+        "overstate",
+        "reinstate",
         "static",
         "statuesque",
         "status"
@@ -23578,10 +24406,13 @@
         "statement",
         "statue",
         "stationary",
+        "understate",
         "state",
         "stated",
         "stating",
         "station",
+        "overstate",
+        "reinstate",
         "static",
         "statuesque",
         "status"
@@ -23702,10 +24533,13 @@
         "statement",
         "statue",
         "stationary",
+        "understate",
         "state",
         "stated",
         "states",
         "station",
+        "overstate",
+        "reinstate",
         "static",
         "statuesque",
         "status"
@@ -23826,10 +24660,13 @@
         "statement",
         "statue",
         "stationary",
+        "understate",
         "state",
         "stated",
         "states",
         "stating",
+        "overstate",
+        "reinstate",
         "static",
         "statuesque",
         "status"
@@ -23950,6 +24787,7 @@
         "captivate",
         "captivity",
         "captive",
+        "recapture",
         "capture",
         "captured",
         "captures",
@@ -24074,6 +24912,7 @@
         "captivate",
         "captivity",
         "captive",
+        "recapture",
         "capture",
         "captured",
         "captures",
@@ -24198,6 +25037,7 @@
         "captivate",
         "captivity",
         "captive",
+        "recapture",
         "capture",
         "captured",
         "captures",
@@ -24322,6 +25162,7 @@
         "captivate",
         "captivity",
         "captive",
+        "recapture",
         "capture",
         "captured",
         "captures",
@@ -24435,14 +25276,28 @@
     "lesson_number": 11,
     "lesson_title": "taking what is stated",
     "group": "challenge",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "STAT",
+    "root_meaning": "status meaning “standing position; state”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "v.",
     "definition": "Overstate means taking action that involves standing firm and sharing facts.",
     "example": "In class we overstate when we want to focus on standing firm and sharing facts.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "statement",
+        "statue",
+        "stationary",
+        "understate",
+        "state",
+        "stated",
+        "states",
+        "stating",
+        "station",
+        "reinstate",
+        "static",
+        "statuesque",
+        "status"
+      ],
       "same_lesson": [
         "captivate",
         "captivity",
@@ -24548,14 +25403,28 @@
     "lesson_number": 11,
     "lesson_title": "taking what is stated",
     "group": "challenge",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "STAT",
+    "root_meaning": "status meaning “standing position; state”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "v.",
     "definition": "Reinstate means taking action that involves standing firm and sharing facts.",
     "example": "In class we reinstate when we want to focus on standing firm and sharing facts.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "statement",
+        "statue",
+        "stationary",
+        "understate",
+        "state",
+        "stated",
+        "states",
+        "stating",
+        "station",
+        "overstate",
+        "static",
+        "statuesque",
+        "status"
+      ],
       "same_lesson": [
         "captivate",
         "captivity",
@@ -24672,11 +25541,14 @@
         "statement",
         "statue",
         "stationary",
+        "understate",
         "state",
         "stated",
         "states",
         "stating",
         "station",
+        "overstate",
+        "reinstate",
         "statuesque",
         "status"
       ],
@@ -24796,11 +25668,14 @@
         "statement",
         "statue",
         "stationary",
+        "understate",
         "state",
         "stated",
         "states",
         "stating",
         "station",
+        "overstate",
+        "reinstate",
         "static",
         "status"
       ],
@@ -24920,11 +25795,14 @@
         "statement",
         "statue",
         "stationary",
+        "understate",
         "state",
         "stated",
         "states",
         "stating",
         "station",
+        "overstate",
+        "reinstate",
         "static",
         "statuesque"
       ],
@@ -25050,7 +25928,8 @@
         "classifiable",
         "classified",
         "classless",
-        "classy"
+        "classy",
+        "unclassified"
       ],
       "same_lesson": [
         "classification",
@@ -25171,7 +26050,8 @@
         "classifiable",
         "classified",
         "classless",
-        "classy"
+        "classy",
+        "unclassified"
       ],
       "same_lesson": [
         "classic",
@@ -25285,11 +26165,13 @@
       "same_root": [
         "gratuity",
         "gratitude",
+        "ungrateful",
         "grateful",
         "gratefully",
         "gratification",
         "gratis",
-        "gratuitous"
+        "gratuitous",
+        "ingratitude"
       ],
       "same_lesson": [
         "classic",
@@ -25403,11 +26285,13 @@
       "same_root": [
         "gratify",
         "gratitude",
+        "ungrateful",
         "grateful",
         "gratefully",
         "gratification",
         "gratis",
-        "gratuitous"
+        "gratuitous",
+        "ingratitude"
       ],
       "same_lesson": [
         "classic",
@@ -25528,7 +26412,8 @@
         "classifiable",
         "classified",
         "classless",
-        "classy"
+        "classy",
+        "unclassified"
       ],
       "same_lesson": [
         "classic",
@@ -25642,11 +26527,13 @@
       "same_root": [
         "gratify",
         "gratuity",
+        "ungrateful",
         "grateful",
         "gratefully",
         "gratification",
         "gratis",
-        "gratuitous"
+        "gratuitous",
+        "ingratitude"
       ],
       "same_lesson": [
         "classic",
@@ -25750,14 +26637,24 @@
     "lesson_number": 13,
     "lesson_title": "GRATEFul for classes",
     "group": "key",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "GRAT",
+    "root_meaning": "gratus meaning “pleasing, thankful”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
     "definition": "Ungrateful describes something connected to showing thanks and appreciation.",
     "example": "The word ungrateful helps me describe things that are about showing thanks and appreciation.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "gratify",
+        "gratuity",
+        "gratitude",
+        "grateful",
+        "gratefully",
+        "gratification",
+        "gratis",
+        "gratuitous",
+        "ingratitude"
+      ],
       "same_lesson": [
         "classic",
         "classification",
@@ -25877,7 +26774,8 @@
         "classifiable",
         "classified",
         "classless",
-        "classy"
+        "classy",
+        "unclassified"
       ],
       "same_lesson": [
         "classic",
@@ -25998,7 +26896,8 @@
         "classifiable",
         "classified",
         "classless",
-        "classy"
+        "classy",
+        "unclassified"
       ],
       "same_lesson": [
         "classic",
@@ -26119,7 +27018,8 @@
         "classifiable",
         "classified",
         "classless",
-        "classy"
+        "classy",
+        "unclassified"
       ],
       "same_lesson": [
         "classic",
@@ -26240,7 +27140,8 @@
         "classifiable",
         "classified",
         "classless",
-        "classy"
+        "classy",
+        "unclassified"
       ],
       "same_lesson": [
         "classic",
@@ -26355,10 +27256,12 @@
         "gratify",
         "gratuity",
         "gratitude",
+        "ungrateful",
         "gratefully",
         "gratification",
         "gratis",
-        "gratuitous"
+        "gratuitous",
+        "ingratitude"
       ],
       "same_lesson": [
         "classic",
@@ -26473,10 +27376,12 @@
         "gratify",
         "gratuity",
         "gratitude",
+        "ungrateful",
         "grateful",
         "gratification",
         "gratis",
-        "gratuitous"
+        "gratuitous",
+        "ingratitude"
       ],
       "same_lesson": [
         "classic",
@@ -26597,7 +27502,8 @@
         "classing",
         "classified",
         "classless",
-        "classy"
+        "classy",
+        "unclassified"
       ],
       "same_lesson": [
         "classic",
@@ -26718,7 +27624,8 @@
         "classing",
         "classifiable",
         "classless",
-        "classy"
+        "classy",
+        "unclassified"
       ],
       "same_lesson": [
         "classic",
@@ -26839,7 +27746,8 @@
         "classing",
         "classifiable",
         "classified",
-        "classy"
+        "classy",
+        "unclassified"
       ],
       "same_lesson": [
         "classic",
@@ -26960,7 +27868,8 @@
         "classing",
         "classifiable",
         "classified",
-        "classless"
+        "classless",
+        "unclassified"
       ],
       "same_lesson": [
         "classic",
@@ -27064,14 +27973,26 @@
     "lesson_number": 13,
     "lesson_title": "GRATEFul for classes",
     "group": "challenge",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "CLASS",
+    "root_meaning": "classis meaning “group, class”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
     "definition": "Unclassified describes something connected to grouping things that belong together.",
     "example": "The word unclassified helps me describe things that are about grouping things that belong together.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "classic",
+        "classification",
+        "classify",
+        "class",
+        "classed",
+        "classes",
+        "classing",
+        "classifiable",
+        "classified",
+        "classless",
+        "classy"
+      ],
       "same_lesson": [
         "classic",
         "classification",
@@ -27185,10 +28106,12 @@
         "gratify",
         "gratuity",
         "gratitude",
+        "ungrateful",
         "grateful",
         "gratefully",
         "gratis",
-        "gratuitous"
+        "gratuitous",
+        "ingratitude"
       ],
       "same_lesson": [
         "classic",
@@ -27303,10 +28226,12 @@
         "gratify",
         "gratuity",
         "gratitude",
+        "ungrateful",
         "grateful",
         "gratefully",
         "gratification",
-        "gratuitous"
+        "gratuitous",
+        "ingratitude"
       ],
       "same_lesson": [
         "classic",
@@ -27421,10 +28346,12 @@
         "gratify",
         "gratuity",
         "gratitude",
+        "ungrateful",
         "grateful",
         "gratefully",
         "gratification",
-        "gratis"
+        "gratis",
+        "ingratitude"
       ],
       "same_lesson": [
         "classic",
@@ -27528,14 +28455,24 @@
     "lesson_number": 13,
     "lesson_title": "GRATEFul for classes",
     "group": "challenge",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "GRAT",
+    "root_meaning": "gratus meaning “pleasing, thankful”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
     "definition": "Ingratitude is something we talk about when we think about showing thanks and appreciation.",
     "example": "In class, we say \"ingratitude\" when we talk about showing thanks and appreciation.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "gratify",
+        "gratuity",
+        "gratitude",
+        "ungrateful",
+        "grateful",
+        "gratefully",
+        "gratification",
+        "gratis",
+        "gratuitous"
+      ],
       "same_lesson": [
         "classic",
         "classification",
@@ -27977,6 +28914,7 @@
         "probe",
         "probably",
         "probation",
+        "improbable",
         "probationary"
       ],
       "same_lesson": [
@@ -28310,6 +29248,7 @@
         "probe",
         "probably",
         "probation",
+        "improbable",
         "probationary"
       ],
       "same_lesson": [
@@ -28425,6 +29364,7 @@
         "probability",
         "probably",
         "probation",
+        "improbable",
         "probationary"
       ],
       "same_lesson": [
@@ -28976,6 +29916,7 @@
         "probability",
         "probe",
         "probation",
+        "improbable",
         "probationary"
       ],
       "same_lesson": [
@@ -29091,6 +30032,7 @@
         "probability",
         "probe",
         "probably",
+        "improbable",
         "probationary"
       ],
       "same_lesson": [
@@ -29521,14 +30463,21 @@
     "lesson_number": 14,
     "lesson_title": "likely to be well organized",
     "group": "challenge",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "PROB",
+    "root_meaning": "probare meaning “to test, to prove”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
     "definition": "Improbable describes something connected to testing ideas to find the truth.",
     "example": "The word improbable helps me describe things that are about testing ideas to find the truth.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "probable",
+        "probability",
+        "probe",
+        "probably",
+        "probation",
+        "probationary"
+      ],
       "same_lesson": [
         "disorganized",
         "organism",
@@ -29642,7 +30591,8 @@
         "probability",
         "probe",
         "probably",
-        "probation"
+        "probation",
+        "improbable"
       ],
       "same_lesson": [
         "disorganized",
@@ -29755,6 +30705,7 @@
       "same_root": [
         "locomotion",
         "location",
+        "relocate",
         "locate",
         "located",
         "locates",
@@ -29872,6 +30823,7 @@
       "same_root": [
         "local",
         "location",
+        "relocate",
         "locate",
         "located",
         "locates",
@@ -30199,6 +31151,7 @@
       "same_root": [
         "local",
         "locomotion",
+        "relocate",
         "locate",
         "located",
         "locates",
@@ -30306,14 +31259,27 @@
     "lesson_number": 15,
     "lesson_title": "Locating technical skills",
     "group": "key",
-    "root": "",
-    "root_meaning": "",
-    "root_origin": "",
+    "root": "LOC",
+    "root_meaning": "locus meaning “place”",
+    "root_origin": "Latin/Greek",
     "part_of_speech": "v.",
     "definition": "Relocate means taking action that involves places and where things are.",
     "example": "In class we relocate when we want to focus on places and where things are.",
     "related_words": {
-      "same_root": [],
+      "same_root": [
+        "local",
+        "locomotion",
+        "location",
+        "locate",
+        "located",
+        "locates",
+        "locating",
+        "locale",
+        "locality",
+        "localization",
+        "localize",
+        "locomotive"
+      ],
       "same_lesson": [
         "local",
         "locomotion",
@@ -30632,6 +31598,7 @@
         "local",
         "locomotion",
         "location",
+        "relocate",
         "located",
         "locates",
         "locating",
@@ -30749,6 +31716,7 @@
         "local",
         "locomotion",
         "location",
+        "relocate",
         "locate",
         "locates",
         "locating",
@@ -30866,6 +31834,7 @@
         "local",
         "locomotion",
         "location",
+        "relocate",
         "locate",
         "located",
         "locating",
@@ -30983,6 +31952,7 @@
         "local",
         "locomotion",
         "location",
+        "relocate",
         "locate",
         "located",
         "locates",
@@ -31310,6 +32280,7 @@
         "local",
         "locomotion",
         "location",
+        "relocate",
         "locate",
         "located",
         "locates",
@@ -31427,6 +32398,7 @@
         "local",
         "locomotion",
         "location",
+        "relocate",
         "locate",
         "located",
         "locates",
@@ -31544,6 +32516,7 @@
         "local",
         "locomotion",
         "location",
+        "relocate",
         "locate",
         "located",
         "locates",
@@ -31661,6 +32634,7 @@
         "local",
         "locomotion",
         "location",
+        "relocate",
         "locate",
         "located",
         "locates",
@@ -31778,6 +32752,7 @@
         "local",
         "locomotion",
         "location",
+        "relocate",
         "locate",
         "located",
         "locates",

@@ -3,31 +3,28 @@ import VocabularyContent
 
 struct LessonDetailView: View {
     let lesson: StructuredLesson
-
-    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
-
-    private var isIPad: Bool { horizontalSizeClass == .regular }
+    let isWideLayout: Bool
 
     var body: some View {
         Group {
-            if isIPad {
+            if isWideLayout {
                 HStack(spacing: 0) {
-                    LearnView(lesson: lesson)
+                    LearnView(lesson: lesson, isWideLayout: true)
                         .frame(maxWidth: .infinity)
 
                     Divider()
 
-                    ExerciseView(lesson: lesson)
+                    ExerciseView(lesson: lesson, isWideLayout: true)
                         .frame(maxWidth: .infinity)
                 }
             } else {
                 TabView {
-                    LearnView(lesson: lesson)
+                    LearnView(lesson: lesson, isWideLayout: false)
                         .tabItem {
                             Label("Learn", systemImage: "book.fill")
                         }
 
-                    ExerciseView(lesson: lesson)
+                    ExerciseView(lesson: lesson, isWideLayout: false)
                         .tabItem {
                             Label("Practice", systemImage: "pencil.and.list.clipboard")
                         }
