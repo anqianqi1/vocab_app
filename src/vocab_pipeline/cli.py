@@ -6,9 +6,10 @@ import shutil
 from pathlib import Path
 from typing import Any
 
-from .db import build_database, default_db_output
+from .db import build_database, build_word_database, default_db_output, list_words
 from .extract import default_raw_output, extract_to_file
 from .ids import DEFAULT_CATEGORY, normalize_category, source_id_from_path
+from .images import enrich_words_with_images
 from .parse import DEFAULT_PARSER_PROFILE, available_parser_profiles, default_entries_output, parse_raw_file
 from .pipeline import PipelineRunner
 from .review import default_review_csv_output, default_review_markdown_output, write_review_files
@@ -130,6 +131,45 @@ def cmd_build_db(args: argparse.Namespace) -> None:
     entries_path = Path(args.entries)
     db_path = Path(args.db) if args.db else default_db_output()
     summary = build_database(raw_path, entries_path, db_path=db_path)
+    print_json(summary)
+
+
+def cmd_build_word_db(args: argparse.Namespace) -> None:
+    words_path = Path(args.words)
+    db_path = Path(args.db) if args.db else default_db_output()
+    summary = build_word_database(words_path, db_path=db_path, category=args.category)
+    print_json(summary)
+
+
+def cmd_list_words(args: argparse.Namespace) -> None:
+    db_path = Path(args.db) if args.db else default_db_output()
+    words = list_words(args.grade, db_path=db_path)
+    if args.limit is not None:
+        words = words[: args.limit]
+    if args.json:
+        print_json({"grade": args.grade, "word_count": len(words), "words": words})
+        return
+    print(f"Grade {args.grade}: {len(words)} words")
+    for word in words:
+        image_flag = "\U0001F5BC" if word.get("image") else " "
+        print(
+            f"  L{word.get('lesson_number'):>2} [{word.get('group'):<9}] "
+            f"{image_flag} {word.get('word'):<18} {word.get('root') or '-':<8} "
+            f"{(word.get('definition') or '')[:60]}"
+        )
+
+
+def cmd_generate_images(args: argparse.Namespace) -> None:
+    words_path = Path(args.words)
+    summary = enrich_words_with_images(
+        words_path,
+        images_dir=Path(args.images_dir) if args.images_dir else None,
+        backend=args.backend,
+        dry_run=not args.write,
+        limit=args.limit,
+        category=args.category,
+        deployment=args.deployment,
+    )
     print_json(summary)
 
 
@@ -275,6 +315,50 @@ def build_parser() -> argparse.ArgumentParser:
     build_db_parser.add_argument("--db")
     build_db_parser.set_defaults(func=cmd_build_db)
 
+    build_word_db_parser = subparsers.add_parser(
+        "build-word-db",
+        help="Build or update the SQLite word database from a word-centric JSON bundle.",
+    )
+    build_word_db_parser.add_argument("words")
+    build_word_db_parser.add_argument("--db")
+    build_word_db_parser.add_argument("--category")
+    build_word_db_parser.set_defaults(func=cmd_build_word_db)
+
+    list_words_parser = subparsers.add_parser(
+        "list-words",
+        help="List all words for a grade from the SQLite word database.",
+    )
+    list_words_parser.add_argument("--grade", type=int, required=True, help="Grade level (e.g. 4).")
+    list_words_parser.add_argument("--db")
+    list_words_parser.add_argument("--limit", type=int, help="Show at most this many words.")
+    list_words_parser.add_argument("--json", action="store_true", help="Emit full word records as JSON.")
+    list_words_parser.set_defaults(func=cmd_list_words)
+
+    generate_images_parser = subparsers.add_parser(
+        "generate-images",
+        help="Plan or generate one memory-aid image per word and record it in words.json.",
+    )
+    generate_images_parser.add_argument("words", help="Path to the word-centric words.json bundle.")
+    generate_images_parser.add_argument("--images-dir", help="Directory to write image files into.")
+    generate_images_parser.add_argument(
+        "--backend",
+        default="none",
+        choices=["none", "openai", "azure"],
+        help="Image source backend (default: none, which only plans prompts).",
+    )
+    generate_images_parser.add_argument(
+        "--deployment",
+        help="Azure image deployment name (overrides AZURE_OPENAI_IMAGE_DEPLOYMENT).",
+    )
+    generate_images_parser.add_argument(
+        "--write",
+        action="store_true",
+        help="Actually generate images and update words.json (omit for a no-cost dry run).",
+    )
+    generate_images_parser.add_argument("--limit", type=int, help="Process at most this many words.")
+    generate_images_parser.add_argument("--category")
+    generate_images_parser.set_defaults(func=cmd_generate_images)
+
     doctor_parser = subparsers.add_parser("doctor", help="Report available PDF/OCR tooling.")
     doctor_parser.set_defaults(func=cmd_doctor)
 
@@ -347,7 +431,17 @@ def build_parser() -> argparse.ArgumentParser:
     return parser
 
 
+def _load_env_file() -> None:
+    """Load variables from a local .env file when python-dotenv is available."""
+    try:
+        from dotenv import load_dotenv
+    except ImportError:
+        return
+    load_dotenv()
+
+
 def main() -> None:
+    _load_env_file()
     parser = build_parser()
     args = parser.parse_args()
     args.func(args)

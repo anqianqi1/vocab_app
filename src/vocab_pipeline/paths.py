@@ -35,6 +35,12 @@ class PipelinePaths:
     def db_dir(self) -> Path:
         return self.content_root / "shared" / "db"
 
+    def images_dir(self) -> Path:
+        return self.content_root / "shared" / "images"
+
+    def words_dir(self, category: str) -> Path:
+        return self.category_root(category) / "words"
+
     def raw_output(self, source_path: Path, *, source_id: str | None = None, category: str | None = None) -> Path:
         selected_category = normalize_category(category)
         selected_source_id = source_id or source_id_from_path(source_path, category=selected_category)
@@ -116,7 +122,7 @@ class PipelinePaths:
         category: str | None = None,
     ) -> Path:
         resolved_category = self.category_for_raw(raw_path, category)
-        return self.lessons_dir(resolved_category) / f"{resolved_category}_words.json"
+        return self.words_dir(resolved_category) / f"{resolved_category}_words.json"
 
     def _category_from_raw(self, raw_path: Path, category: str | None) -> str:
         if category:

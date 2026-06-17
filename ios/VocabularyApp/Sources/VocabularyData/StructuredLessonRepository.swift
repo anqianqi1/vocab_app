@@ -1,4 +1,5 @@
 import Foundation
+import GRDB
 import VocabularyContent
 
 /// Repository that loads structured lesson data from bundled JSON files.
@@ -76,6 +77,39 @@ public final class BundledWordRepository: WordRepository {
         let data = try Data(contentsOf: url)
         let decoder = JSONDecoder()
         return try decoder.decode([WordEntry].self, from: data)
+    }
+
+    public func words(forLesson lessonNumber: Int, grade: Grade) async throws -> [WordEntry] {
+        let all = try await loadWords(for: grade)
+        return all.filter { $0.lessonNumber == lessonNumber }
+    }
+
+    public func words(forGroup group: WordGroup, grade: Grade) async throws -> [WordEntry] {
+        let all = try await loadWords(for: grade)
+        return all.filter { $0.group == group }
+    }
+
+    public func words(forRoot root: String, grade: Grade) async throws -> [WordEntry] {
+        let all = try await loadWords(for: grade)
+        return all.filter { $0.root == root }
+    }
+}
+
+public final class HybridWordRepository: WordRepository {
+    private let bundle: Bundle
+    private let databaseURL: URL?
+
+    public init(bundle: Bundle = .main, databaseURL: URL? = nil) {
+        self.bundle = bundle
+        self.databaseURL = databaseURL
+    }
+
+    public func loadWords(for grade: Grade) async throws -> [WordEntry] {
+        if let databaseURL, FileManager.default.fileExists(atPath: databaseURL.path) {
+            let store = try SQLiteDataStore(databaseURL: databaseURL)
+            return try await store.words(forGrade: grade.level)
+        }
+        return try await BundledWordRepository(bundle: bundle).loadWords(for: grade)
     }
 
     public func words(forLesson lessonNumber: Int, grade: Grade) async throws -> [WordEntry] {

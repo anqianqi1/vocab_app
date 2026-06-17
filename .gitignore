@@ -8,3 +8,12 @@ __pycache__/
 *.xcuserstate
 xcuserdata/
 vocabulary.sqlite
+
+# SwiftPM build output
+.build/
+.swiftpm/xcode/package.xcworkspace/
+
+# Local environment / secrets
+.env
+.env.*
+!.env.example

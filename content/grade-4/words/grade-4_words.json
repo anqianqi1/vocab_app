@@ -117,7 +117,9 @@
           "5. Write a sentence using the adverb gradually."
         ]
       }
-    ]
+    ],
+    "image": "grade-4_gradually.png",
+    "image_source": "azure:gpt-image-2"
   },
   {
     "word": "graduation",
@@ -237,7 +239,9 @@
           "5. Write a sentence using the adverb gradually."
         ]
       }
-    ]
+    ],
+    "image": "grade-4_graduation.png",
+    "image_source": "azure:gpt-image-2"
   },
   {
     "word": "sensational",
@@ -360,7 +364,9 @@
           "5. Write a sentence using the adverb gradually."
         ]
       }
-    ]
+    ],
+    "image": "grade-4_sensational.png",
+    "image_source": "azure:gpt-image-2"
   },
   {
     "word": "sensible",
@@ -483,7 +489,9 @@
           "5. Write a sentence using the adverb gradually."
         ]
       }
-    ]
+    ],
+    "image": "grade-4_sensible.png",
+    "image_source": "azure:gpt-image-2"
   },
   {
     "word": "graduate",
@@ -603,7 +611,9 @@
           "5. Write a sentence using the adverb gradually."
         ]
       }
-    ]
+    ],
+    "image": "grade-4_graduate.png",
+    "image_source": "azure:gpt-image-2"
   },
   {
     "word": "sensation",

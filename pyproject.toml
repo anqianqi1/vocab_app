@@ -5,6 +5,7 @@ description = "Extract, review, validate, and package vocabulary PDFs for apps."
 requires-python = ">=3.10"
 dependencies = [
   "pypdf>=6.0",
+  "python-dotenv>=1.0",
 ]
 
 [project.optional-dependencies]

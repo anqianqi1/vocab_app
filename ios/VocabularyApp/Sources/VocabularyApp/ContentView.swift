@@ -393,7 +393,8 @@ struct ContentView: View {
                         group: word.group,
                         partOfSpeech: word.partOfSpeech,
                         definition: word.definition,
-                        example: word.example
+                        example: word.example,
+                        imageName: word.imageName
                     )
                 },
                 exercises: lesson.exercises

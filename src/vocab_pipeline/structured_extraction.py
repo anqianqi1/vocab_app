@@ -814,6 +814,7 @@ def _build_word_entries(lessons: list[dict[str, Any]], grade: int) -> list[dict[
                     "same_root": same_root,
                     "same_lesson": same_lesson,
                 },
+                "image": "",
                 "exercises": exercises,
             }
             entries.append(entry)

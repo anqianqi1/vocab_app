@@ -22,25 +22,28 @@ public struct WordDetail: Identifiable, Hashable, Codable {
     public let partOfSpeech: String
     public let definition: String
     public let example: String
+    public let imageName: String?
 
-    public init(word: String, group: WordGroup, partOfSpeech: String, definition: String, example: String) {
+    public init(word: String, group: WordGroup, partOfSpeech: String, definition: String, example: String, imageName: String? = nil) {
         self.word = word
         self.group = group
         self.partOfSpeech = partOfSpeech
         self.definition = definition
         self.example = example
+        self.imageName = imageName
     }
 
     // MARK: Codable
 
     private enum CodingKeys: String, CodingKey {
-        case word, group, senses
+        case word, group, senses, image
     }
 
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         word = try container.decode(String.self, forKey: .word)
         group = try container.decode(WordGroup.self, forKey: .group)
+        imageName = try container.decodeIfPresent(String.self, forKey: .image)
 
         var sensesContainer = try container.nestedUnkeyedContainer(forKey: .senses)
         if let firstSense = try? sensesContainer.decode(Sense.self) {
@@ -58,6 +61,7 @@ public struct WordDetail: Identifiable, Hashable, Codable {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(word, forKey: .word)
         try container.encode(group, forKey: .group)
+        try container.encodeIfPresent(imageName, forKey: .image)
         let sense = Sense(partOfSpeech: partOfSpeech, definition: definition, example: example)
         var sensesContainer = container.nestedUnkeyedContainer(forKey: .senses)
         try sensesContainer.encode(sense)
@@ -229,6 +233,7 @@ public struct WordEntry: Identifiable, Hashable, Codable {
     public let example: String
     public let relatedWords: RelatedWords
     public let exercises: [LessonExercise]
+    public let imageName: String?
 
     public init(
         word: String,
@@ -243,7 +248,8 @@ public struct WordEntry: Identifiable, Hashable, Codable {
         definition: String,
         example: String,
         relatedWords: RelatedWords,
-        exercises: [LessonExercise]
+        exercises: [LessonExercise],
+        imageName: String? = nil
     ) {
         self.word = word
         self.grade = grade
@@ -258,6 +264,7 @@ public struct WordEntry: Identifiable, Hashable, Codable {
         self.example = example
         self.relatedWords = relatedWords
         self.exercises = exercises
+        self.imageName = imageName
     }
 
     // MARK: Codable
@@ -273,6 +280,44 @@ public struct WordEntry: Identifiable, Hashable, Codable {
         case definition, example
         case relatedWords = "related_words"
         case exercises
+        case image
+    }
+
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        word = try container.decode(String.self, forKey: .word)
+        grade = try container.decode(Int.self, forKey: .grade)
+        lessonNumber = try container.decode(Int.self, forKey: .lessonNumber)
+        lessonTitle = try container.decode(String.self, forKey: .lessonTitle)
+        group = try container.decode(WordGroup.self, forKey: .group)
+        root = try container.decode(String.self, forKey: .root)
+        rootMeaning = try container.decode(String.self, forKey: .rootMeaning)
+        rootOrigin = try container.decode(String.self, forKey: .rootOrigin)
+        partOfSpeech = try container.decode(String.self, forKey: .partOfSpeech)
+        definition = try container.decode(String.self, forKey: .definition)
+        example = try container.decode(String.self, forKey: .example)
+        relatedWords = try container.decode(RelatedWords.self, forKey: .relatedWords)
+        exercises = (try? container.decode([LessonExercise].self, forKey: .exercises)) ?? []
+        let decodedImage = try container.decodeIfPresent(String.self, forKey: .image)
+        imageName = (decodedImage?.isEmpty == true) ? nil : decodedImage
+    }
+
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(word, forKey: .word)
+        try container.encode(grade, forKey: .grade)
+        try container.encode(lessonNumber, forKey: .lessonNumber)
+        try container.encode(lessonTitle, forKey: .lessonTitle)
+        try container.encode(group, forKey: .group)
+        try container.encode(root, forKey: .root)
+        try container.encode(rootMeaning, forKey: .rootMeaning)
+        try container.encode(rootOrigin, forKey: .rootOrigin)
+        try container.encode(partOfSpeech, forKey: .partOfSpeech)
+        try container.encode(definition, forKey: .definition)
+        try container.encode(example, forKey: .example)
+        try container.encode(relatedWords, forKey: .relatedWords)
+        try container.encode(exercises, forKey: .exercises)
+        try container.encodeIfPresent(imageName, forKey: .image)
     }
 }
 

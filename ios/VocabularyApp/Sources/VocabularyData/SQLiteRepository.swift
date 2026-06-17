@@ -81,6 +81,20 @@ public final class SQLiteDataStore: LessonRepository, EntryRepository {
         }
     }
 
+    public func words(forGrade grade: Int) async throws -> [WordEntry] {
+        try await dbQueue.read { db in
+            let rows = try Row.fetchAll(db, sql: """
+                SELECT word, grade, lesson_number, lesson_title, "group", root, root_meaning,
+                       root_origin, part_of_speech, definition, example, related_words_json,
+                       exercises_json, image_path
+                FROM word_entries
+                WHERE grade = ?
+                ORDER BY lesson_number, word
+            """, arguments: [grade])
+            return rows.map(Self.makeWordEntry)
+        }
+    }
+
     private static func makeVocabularyEntry(from row: Row) -> VocabularyEntry {
         let related: [String] = (row["related_terms_json"] as String?)
             .flatMap { try? JSONDecoder().decode([String].self, from: Data($0.utf8)) } ?? []
@@ -98,6 +112,42 @@ public final class SQLiteDataStore: LessonRepository, EntryRepository {
             sourceID: row["source_id"],
             relatedTerms: related,
             warnings: warnings
+        )
+    }
+
+    private static func makeWordEntry(from row: Row) -> WordEntry {
+        let relatedWords: RelatedWords = {
+            let payload: [String: [String]] = (row["related_words_json"] as String?)
+                .flatMap { try? JSONDecoder().decode([String: [String]].self, from: Data($0.utf8)) } ?? [:]
+            return RelatedWords(
+                sameRoot: payload["same_root"] ?? [],
+                sameLesson: payload["same_lesson"] ?? []
+            )
+        }()
+
+        let exercises: [LessonExercise] = (row["exercises_json"] as String?)
+            .flatMap { try? JSONDecoder().decode([LessonExercise].self, from: Data($0.utf8)) } ?? []
+
+        let imageName: String? = {
+            let value = row["image_path"] as String?
+            return (value?.isEmpty == false) ? value : nil
+        }()
+
+        return WordEntry(
+            word: row["word"],
+            grade: row["grade"],
+            lessonNumber: row["lesson_number"],
+            lessonTitle: row["lesson_title"] ?? "",
+            group: WordGroup(rawValue: row["group"] ?? "key") ?? .key,
+            root: row["root"] ?? "",
+            rootMeaning: row["root_meaning"] ?? "",
+            rootOrigin: row["root_origin"] ?? "",
+            partOfSpeech: row["part_of_speech"] ?? "",
+            definition: row["definition"] ?? "",
+            example: row["example"] ?? "",
+            relatedWords: relatedWords,
+            exercises: exercises,
+            imageName: imageName
         )
     }
 }

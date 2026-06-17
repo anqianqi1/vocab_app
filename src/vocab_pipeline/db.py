@@ -5,8 +5,37 @@ import sqlite3
 from pathlib import Path
 from typing import Any
 
+from .ids import normalize_category
 from .json_io import ensure_parent, read_json, read_jsonl
 from .paths import PipelinePaths
+
+
+WORD_ENTRY_SCHEMA_SQL = """
+CREATE TABLE IF NOT EXISTS word_entries (
+    id TEXT PRIMARY KEY,
+    word TEXT NOT NULL,
+    grade INTEGER NOT NULL,
+    lesson_number INTEGER NOT NULL,
+    lesson_title TEXT NOT NULL DEFAULT '',
+    "group" TEXT NOT NULL DEFAULT 'key',
+    root TEXT NOT NULL DEFAULT '',
+    root_meaning TEXT NOT NULL DEFAULT '',
+    root_origin TEXT NOT NULL DEFAULT '',
+    part_of_speech TEXT NOT NULL DEFAULT '',
+    definition TEXT NOT NULL DEFAULT '',
+    example TEXT NOT NULL DEFAULT '',
+    category TEXT NOT NULL DEFAULT 'uncategorized',
+    related_words_json TEXT NOT NULL DEFAULT '{}',
+    exercises_json TEXT NOT NULL DEFAULT '[]',
+    image_path TEXT NOT NULL DEFAULT '',
+    image_source TEXT NOT NULL DEFAULT '',
+    source_path TEXT NOT NULL DEFAULT ''
+);
+
+CREATE INDEX IF NOT EXISTS idx_word_entries_grade ON word_entries(grade);
+CREATE INDEX IF NOT EXISTS idx_word_entries_category ON word_entries(category);
+CREATE INDEX IF NOT EXISTS idx_word_entries_word ON word_entries(word);
+"""
 
 
 def default_db_output(content_root: Path = Path("content")) -> Path:
@@ -210,3 +239,106 @@ def build_database(raw_path: Path, entries_path: Path, db_path: Path | None = No
         "entry_count": len(entries),
         "fts_enabled": fts_enabled,
     }
+
+
+def build_word_database(words_path: Path, db_path: Path | None = None, category: str | None = None) -> dict[str, Any]:
+    with words_path.open("r", encoding="utf-8") as file_handle:
+        words_value = json.load(file_handle)
+    if not isinstance(words_value, list):
+        raise ValueError(f"Expected a JSON array in {words_path}")
+    words = words_value
+    selected_db_path = db_path or default_db_output()
+
+    with connect_database(selected_db_path) as connection:
+        connection.executescript(WORD_ENTRY_SCHEMA_SQL)
+        ensure_column(connection, "word_entries", "image_path", "image_path TEXT NOT NULL DEFAULT ''")
+        ensure_column(connection, "word_entries", "image_source", "image_source TEXT NOT NULL DEFAULT ''")
+        grades_in_bundle = sorted({int(word_entry.get("grade") or 0) for word_entry in words})
+        if grades_in_bundle:
+            placeholders = ",".join("?" for _ in grades_in_bundle)
+            connection.execute(
+                f"DELETE FROM word_entries WHERE grade IN ({placeholders})",
+                grades_in_bundle,
+            )
+        for word_entry in words:
+            connection.execute(
+                """
+                INSERT INTO word_entries (
+                    id, word, grade, lesson_number, lesson_title, "group", root, root_meaning,
+                    root_origin, part_of_speech, definition, example, category, related_words_json,
+                    exercises_json, image_path, image_source, source_path
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                ON CONFLICT(id) DO UPDATE SET
+                    word = excluded.word,
+                    grade = excluded.grade,
+                    lesson_number = excluded.lesson_number,
+                    lesson_title = excluded.lesson_title,
+                    "group" = excluded."group",
+                    root = excluded.root,
+                    root_meaning = excluded.root_meaning,
+                    root_origin = excluded.root_origin,
+                    part_of_speech = excluded.part_of_speech,
+                    definition = excluded.definition,
+                    example = excluded.example,
+                    category = excluded.category,
+                    related_words_json = excluded.related_words_json,
+                    exercises_json = excluded.exercises_json,
+                    image_path = excluded.image_path,
+                    image_source = excluded.image_source,
+                    source_path = excluded.source_path
+                """,
+                (
+                    f"{word_entry.get('word') or ''}:{word_entry.get('grade') or 0}:{word_entry.get('lesson_number') or 0}",
+                    word_entry.get("word") or "",
+                    word_entry.get("grade") or 0,
+                    word_entry.get("lesson_number") or 0,
+                    word_entry.get("lesson_title") or "",
+                    word_entry.get("group") or "key",
+                    word_entry.get("root") or "",
+                    word_entry.get("root_meaning") or "",
+                    word_entry.get("root_origin") or "",
+                    word_entry.get("part_of_speech") or "",
+                    word_entry.get("definition") or "",
+                    word_entry.get("example") or "",
+                    normalize_category(category) if category else word_entry.get("category") or "uncategorized",
+                    json.dumps(word_entry.get("related_words") or {}, ensure_ascii=False),
+                    json.dumps(word_entry.get("exercises") or [], ensure_ascii=False),
+                    word_entry.get("image") or word_entry.get("image_path") or "",
+                    word_entry.get("image_source") or "",
+                    str(words_path),
+                ),
+            )
+        connection.commit()
+
+    return {
+        "db_path": str(selected_db_path),
+        "word_count": len(words),
+        "category": normalize_category(category) if category else None,
+    }
+
+
+def list_words(grade: int, db_path: Path | None = None) -> list[dict[str, Any]]:
+    """Return all word entries for a grade, decoding JSON columns into nested data."""
+    selected_db_path = db_path or default_db_output()
+    with connect_database(selected_db_path) as connection:
+        connection.row_factory = sqlite3.Row
+        rows = connection.execute(
+            """
+            SELECT word, grade, lesson_number, lesson_title, "group", root, root_meaning,
+                   root_origin, part_of_speech, definition, example, category,
+                   related_words_json, exercises_json, image_path, image_source
+            FROM word_entries
+            WHERE grade = ?
+            ORDER BY lesson_number, "group", word
+            """,
+            (grade,),
+        ).fetchall()
+
+    words: list[dict[str, Any]] = []
+    for row in rows:
+        record = dict(row)
+        record["related_words"] = json.loads(record.pop("related_words_json") or "{}")
+        record["exercises"] = json.loads(record.pop("exercises_json") or "[]")
+        record["image"] = record.pop("image_path", "")
+        words.append(record)
+    return words

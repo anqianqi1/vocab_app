@@ -28,6 +28,18 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
       shouldAutocreateTestPlan = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "VocabularyAppTests"
+               BuildableName = "VocabularyAppTests"
+               BlueprintName = "VocabularyAppTests"
+               ReferencedContainer = "container:">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -39,6 +51,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <PostActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Create .app bundle"
+               scriptText = "#!/bin/bash&#10;set -e&#10;BUILD_DIR=&quot;${BUILT_PRODUCTS_DIR}&quot;&#10;EXEC=&quot;VocabularyApp&quot;&#10;APP_DIR=&quot;${BUILD_DIR}/${EXEC}.app&quot;&#10;EXEC_PATH=&quot;${BUILD_DIR}/${EXEC}&quot;&#10;PLIST_SRC=&quot;${SRCROOT}/Sources/VocabularyApp/AppInfo.plist&quot;&#10;&#10;if [ ! -f &quot;${EXEC_PATH}&quot; ]; then&#10;    echo &quot;Executable not found, skipping.&quot;&#10;    exit 0&#10;fi&#10;&#10;rm -rf &quot;${APP_DIR}&quot;&#10;mkdir -p &quot;${APP_DIR}&quot;&#10;cp &quot;${EXEC_PATH}&quot; &quot;${APP_DIR}/${EXEC}&quot;&#10;&#10;if [ -f &quot;${PLIST_SRC}&quot; ]; then&#10;    cp &quot;${PLIST_SRC}&quot; &quot;${APP_DIR}/Info.plist&quot;&#10;fi&#10;&#10;# Copy resource bundles&#10;for bundle in &quot;${BUILD_DIR}&quot;/*.bundle; do&#10;    if [ -d &quot;${bundle}&quot; ]; then&#10;        cp -r &quot;${bundle}&quot; &quot;${APP_DIR}/&quot;&#10;    fi&#10;done&#10;&#10;echo &quot;App bundle created at ${APP_DIR}&quot;">
+            </ActionContent>
+         </ExecutionAction>
+      </PostActions>
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
@@ -49,15 +70,6 @@
             ReferencedContainer = "container:">
          </BuildableReference>
       </BuildableProductRunnable>
-      <PostActions>
-         <ExecutionAction
-            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
-            <ActionContent
-               title = "Create .app bundle"
-               scriptText = "#!/bin/bash&#10;set -e&#10;BUILD_DIR=&quot;${BUILT_PRODUCTS_DIR}&quot;&#10;EXEC=&quot;VocabularyApp&quot;&#10;APP_DIR=&quot;${BUILD_DIR}/${EXEC}.app&quot;&#10;EXEC_PATH=&quot;${BUILD_DIR}/${EXEC}&quot;&#10;PLIST_SRC=&quot;${SRCROOT}/Sources/VocabularyApp/AppInfo.plist&quot;&#10;&#10;if [ ! -f &quot;${EXEC_PATH}&quot; ]; then&#10;    echo &quot;Executable not found, skipping.&quot;&#10;    exit 0&#10;fi&#10;&#10;rm -rf &quot;${APP_DIR}&quot;&#10;mkdir -p &quot;${APP_DIR}&quot;&#10;cp &quot;${EXEC_PATH}&quot; &quot;${APP_DIR}/${EXEC}&quot;&#10;&#10;if [ -f &quot;${PLIST_SRC}&quot; ]; then&#10;    cp &quot;${PLIST_SRC}&quot; &quot;${APP_DIR}/Info.plist&quot;&#10;fi&#10;&#10;# Copy resource bundles&#10;for bundle in &quot;${BUILD_DIR}&quot;/*.bundle; do&#10;    if [ -d &quot;${bundle}&quot; ]; then&#10;        cp -r &quot;${bundle}&quot; &quot;${APP_DIR}/&quot;&#10;    fi&#10;done&#10;&#10;echo &quot;App bundle created at ${APP_DIR}&quot;">
-            </ActionContent>
-         </ExecutionAction>
-      </PostActions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

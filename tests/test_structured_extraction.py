@@ -13,7 +13,7 @@ def test_lesson_and_word_bundle_paths_are_grade_prefixed() -> None:
 
     assert lessons_json == Path("content/grade-4/lessons/grade-4_all_lessons_extraction.json")
     assert lessons_md == Path("content/grade-4/lessons/grade-4_all_lessons_extraction.md")
-    assert words_json == Path("content/grade-4/lessons/grade-4_words.json")
+    assert words_json == Path("content/grade-4/words/grade-4_words.json")
 
 
 def test_word_entries_match_roots_inside_words() -> None:

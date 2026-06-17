@@ -164,6 +164,22 @@ struct LearnView: View {
                 .font(.system(size: isWideLayout ? 48 : 36, weight: .bold, design: .rounded))
                 .foregroundStyle(.primary)
 
+            // Memory-aid image (shown when available)
+            if let imageURL = bundledImageURL(for: word) {
+                AsyncImage(url: imageURL) { phase in
+                    switch phase {
+                    case .success(let image):
+                        image
+                            .resizable()
+                            .scaledToFit()
+                            .frame(maxHeight: isWideLayout ? 220 : 160)
+                            .clipShape(RoundedRectangle(cornerRadius: 16))
+                    default:
+                        EmptyView()
+                    }
+                }
+            }
+
             // Part of speech badge
             Text(word.partOfSpeech)
                 .font(.subheadline.weight(.medium))
@@ -246,5 +262,17 @@ struct LearnView: View {
         }
         .frame(maxWidth: isWideLayout ? 600 : .infinity)
         .padding(.top, 8)
+    }
+
+    // MARK: - Image lookup
+
+    private func bundledImageURL(for word: WordDetail) -> URL? {
+        guard let imageName = word.imageName, !imageName.isEmpty else { return nil }
+        let resource = (imageName as NSString).deletingPathExtension
+        let ext = (imageName as NSString).pathExtension
+        return Bundle.module.url(
+            forResource: resource,
+            withExtension: ext.isEmpty ? "png" : ext
+        )
     }
 }
