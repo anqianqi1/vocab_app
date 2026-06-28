@@ -13,6 +13,9 @@ vocabulary.sqlite
 .build/
 .swiftpm/xcode/package.xcworkspace/
 
+# Bundled word images are synced from content/shared/images at build time
+ios/VocabularyApp/Sources/VocabularyApp/Resources/*.png
+
 # Local environment / secrets
 .env
 .env.*

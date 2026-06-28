@@ -149,6 +149,7 @@ def enrich_words_with_images(
     resolved_images_dir = images_dir or PipelinePaths().images_dir()
 
     planned: list[dict[str, str]] = []
+    failed: list[dict[str, str]] = []
     generated = 0
     for index, word_entry in enumerate(words):
         if limit is not None and index >= limit:
@@ -164,23 +165,37 @@ def enrich_words_with_images(
         if dry_run:
             continue
 
-        output_path = resolved_images_dir / file_name
-        if backend == "openai":
-            if not output_path.exists():
-                _generate_with_openai(prompt, output_path)
-                generated += 1
-            word_entry["image"] = file_name
-            word_entry["image_source"] = "openai:gpt-image-1"
-        elif backend == "azure":
-            if not output_path.exists():
-                _generate_with_azure_openai(prompt, output_path, deployment=deployment)
-                generated += 1
-            word_entry["image"] = file_name
-            word_entry["image_source"] = f"azure:{deployment or os.environ.get('AZURE_OPENAI_IMAGE_DEPLOYMENT', 'gpt-image')}"
-        elif backend == "none":
+        if backend == "none":
             word_entry["image"] = ""
-        else:
+            continue
+        if backend not in ("openai", "azure"):
             raise ValueError(f"Unknown image backend: {backend}")
+
+        output_path = resolved_images_dir / file_name
+        try:
+            if not output_path.exists():
+                if backend == "openai":
+                    _generate_with_openai(prompt, output_path)
+                else:
+                    _generate_with_azure_openai(prompt, output_path, deployment=deployment)
+                generated += 1
+            word_entry["image"] = file_name
+            word_entry["image_source"] = (
+                "openai:gpt-image-1"
+                if backend == "openai"
+                else f"azure:{deployment or os.environ.get('AZURE_OPENAI_IMAGE_DEPLOYMENT', 'gpt-image')}"
+            )
+        except Exception as error:  # noqa: BLE001 - keep a large batch resilient to one bad word
+            failed.append({"word": word, "error": str(error)})
+            print(f"  ! {word}: {error}")
+            continue
+
+        # Persist progress incrementally so a long run is resumable if interrupted.
+        if generated % 10 == 0:
+            words_path.write_text(
+                json.dumps(words, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
 
     if not dry_run and backend != "none":
         words_path.write_text(
@@ -196,5 +211,7 @@ def enrich_words_with_images(
         "category": resolved_category,
         "words_planned": len(planned),
         "images_generated": generated,
+        "images_failed": len(failed),
+        "failed": failed[:20],
         "sample": planned[:3],
     }
