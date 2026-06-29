@@ -10,6 +10,7 @@ from .db import build_database, build_word_database, default_db_output, list_wor
 from .extract import default_raw_output, extract_to_file
 from .ids import DEFAULT_CATEGORY, normalize_category, source_id_from_path
 from .images import enrich_words_with_images
+from .define import rewrite_definitions
 from .parse import DEFAULT_PARSER_PROFILE, available_parser_profiles, default_entries_output, parse_raw_file
 from .pipeline import PipelineRunner
 from .review import default_review_csv_output, default_review_markdown_output, write_review_files
@@ -157,6 +158,11 @@ def cmd_list_words(args: argparse.Namespace) -> None:
             f"{image_flag} {word.get('word'):<18} {word.get('root') or '-':<8} "
             f"{(word.get('definition') or '')[:60]}"
         )
+
+
+def cmd_define_words(args: argparse.Namespace) -> None:
+    summary = rewrite_definitions(Path(args.words), deployment=args.deployment, dry_run=not args.write, limit=args.limit)
+    print_json(summary)
 
 
 def cmd_generate_images(args: argparse.Namespace) -> None:
@@ -358,6 +364,13 @@ def build_parser() -> argparse.ArgumentParser:
     generate_images_parser.add_argument("--limit", type=int, help="Process at most this many words.")
     generate_images_parser.add_argument("--category")
     generate_images_parser.set_defaults(func=cmd_generate_images)
+
+    define_parser = subparsers.add_parser("define-words", help="Rewrite definitions/examples kid-friendly via Azure chat.")
+    define_parser.add_argument("words")
+    define_parser.add_argument("--deployment")
+    define_parser.add_argument("--limit", type=int)
+    define_parser.add_argument("--write", action="store_true")
+    define_parser.set_defaults(func=cmd_define_words)
 
     doctor_parser = subparsers.add_parser("doctor", help="Report available PDF/OCR tooling.")
     doctor_parser.set_defaults(func=cmd_doctor)

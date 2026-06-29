@@ -33,7 +33,7 @@ struct LessonDetailView: View {
         }
         .navigationTitle(lesson.title)
         #if os(iOS)
-        .navigationBarTitleDisplayMode(.large)
+        .navigationBarTitleDisplayMode(.inline)
         #endif
     }
 }

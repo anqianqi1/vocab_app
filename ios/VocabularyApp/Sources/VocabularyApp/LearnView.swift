@@ -1,6 +1,9 @@
 import SwiftUI
+import AVFoundation
 import VocabularyContent
 import VocabularyFeatures
+
+private let speechSynth = AVSpeechSynthesizer()
 
 struct LearnView: View {
     @State private var viewModel: LearnViewModel
@@ -37,7 +40,7 @@ struct LearnView: View {
         }
         .padding(.horizontal, isWideLayout ? 32 : 16)
         .padding(.bottom, 16)
-        .background(Color(.systemGroupedBackground))
+        .background(LinearGradient(colors: [KidTheme.blue.opacity(0.18), KidTheme.purple.opacity(0.12)], startPoint: .top, endPoint: .bottom).ignoresSafeArea())
     }
 
     // MARK: - Header (iPad)
@@ -56,38 +59,7 @@ struct LearnView: View {
     // MARK: - Root Info
 
     private var rootInfoHeader: some View {
-        VStack(spacing: 8) {
-            if !viewModel.lesson.roots.isEmpty {
-                HStack(spacing: 12) {
-                    ForEach(viewModel.lesson.roots, id: \.root) { root in
-                        rootBadge(root)
-                    }
-                }
-                .padding(.top, isWideLayout ? 4 : 8)
-            }
-        }
-    }
-
-    private func rootBadge(_ root: LessonRoot) -> some View {
-        VStack(spacing: 2) {
-            Text(root.root)
-                .font(isWideLayout ? .title2.bold() : .title3.bold())
-                .foregroundStyle(.white)
-            Text(root.meaning)
-                .font(.caption2)
-                .foregroundStyle(.white.opacity(0.8))
-                .lineLimit(1)
-        }
-        .padding(.horizontal, isWideLayout ? 20 : 16)
-        .padding(.vertical, isWideLayout ? 12 : 10)
-        .background(
-            RoundedRectangle(cornerRadius: 16)
-                .fill(LinearGradient(
-                    colors: [.purple, .indigo],
-                    startPoint: .topLeading,
-                    endPoint: .bottomTrailing
-                ))
-        )
+        EmptyView()
     }
 
     // MARK: - Group Selector
@@ -112,14 +84,13 @@ struct LearnView: View {
     private func groupChip(_ title: String, icon: String, isSelected: Bool, action: @escaping () -> Void) -> some View {
         Button(action: action) {
             Label(title, systemImage: icon)
-                .font(.subheadline.weight(.medium))
-                .padding(.horizontal, 14)
-                .padding(.vertical, 8)
+                .font(.system(.subheadline, design: .rounded).weight(.bold))
+                .padding(.horizontal, 16)
+                .padding(.vertical, 10)
                 .background(
-                    RoundedRectangle(cornerRadius: 20)
-                        .fill(isSelected ? Color.accentColor : Color(.systemGray6))
+                    Capsule().fill(isSelected ? KidTheme.purple : Color.white.opacity(0.7))
                 )
-                .foregroundStyle(isSelected ? .white : .primary)
+                .foregroundStyle(isSelected ? .white : KidTheme.purple)
         }
     }
 
@@ -138,7 +109,7 @@ struct LearnView: View {
     // MARK: - Flashcard
 
     private var flashcardSection: some View {
-        VStack {
+        ScrollView {
             if let word = viewModel.currentWord {
                 flashcard(for: word)
                     .transition(.asymmetric(
@@ -158,11 +129,25 @@ struct LearnView: View {
     }
 
     private func flashcard(for word: WordDetail) -> some View {
-        VStack(spacing: isWideLayout ? 28 : 20) {
-            // Word
-            Text(word.word)
-                .font(.system(size: isWideLayout ? 48 : 36, weight: .bold, design: .rounded))
-                .foregroundStyle(.primary)
+        VStack(spacing: isWideLayout ? 24 : 18) {
+            // Root pill matching this word
+            if !word.root.isEmpty {
+                Text(word.rootMeaning.isEmpty ? word.root : "\(word.root) · \(word.rootMeaning)")
+                    .font(.system(.caption, design: .rounded).bold())
+                    .foregroundStyle(.white)
+                    .lineLimit(1).minimumScaleFactor(0.7)
+                    .padding(.horizontal, 14).padding(.vertical, 6)
+                    .background(Capsule().fill(KidTheme.purple))
+            }
+            // Word + tap-to-hear
+            HStack(spacing: 10) {
+                Text(word.word)
+                    .font(.system(size: isWideLayout ? 48 : 36, weight: .bold, design: .rounded))
+                    .foregroundStyle(.primary)
+                Button { speak(word.word) } label: {
+                    Image(systemName: "speaker.wave.2.fill").font(.title2).foregroundStyle(KidTheme.blue)
+                }
+            }
 
             // Memory-aid image (shown when available)
             if let imageURL = bundledImageURL(for: word) {
@@ -182,29 +167,26 @@ struct LearnView: View {
 
             // Part of speech badge
             Text(word.partOfSpeech)
-                .font(.subheadline.weight(.medium))
-                .foregroundStyle(.secondary)
-                .padding(.horizontal, 12)
-                .padding(.vertical, 4)
-                .background(
-                    RoundedRectangle(cornerRadius: 8)
-                        .fill(Color(.systemGray5))
-                )
+                .font(.system(.subheadline, design: .rounded).weight(.bold))
+                .foregroundStyle(.white)
+                .padding(.horizontal, 14)
+                .padding(.vertical, 5)
+                .background(Capsule().fill(groupColor(word.group)))
 
             if viewModel.showDefinition {
-                Divider()
-                    .padding(.horizontal, 20)
-
-                // Definition
+                // Definition bubble
                 Text(word.definition)
-                    .font(isWideLayout ? .title2 : .title3)
+                    .font(.system(isWideLayout ? .title2 : .title3, design: .rounded))
                     .multilineTextAlignment(.center)
                     .foregroundStyle(.primary)
-                    .padding(.horizontal)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(groupColor(word.group).opacity(0.12), in: RoundedRectangle(cornerRadius: 16))
 
                 // Example
                 if !word.example.isEmpty {
-                    Text(word.example)
+                    Text("“\(word.example)”")
                         .font(isWideLayout ? .body : .callout)
                         .foregroundStyle(.secondary)
                         .multilineTextAlignment(.center)
@@ -212,24 +194,41 @@ struct LearnView: View {
                         .italic()
                 }
             } else {
-                Text("Tap to reveal")
-                    .font(.subheadline)
-                    .foregroundStyle(.secondary)
+                Text("👆 Tap to reveal")
+                    .font(.system(.headline, design: .rounded).bold())
+                    .foregroundStyle(KidTheme.purple)
                     .padding(.top, 8)
             }
         }
         .padding(isWideLayout ? 48 : 32)
         .frame(maxWidth: isWideLayout ? 600 : .infinity)
         .background(
-            RoundedRectangle(cornerRadius: 24)
+            RoundedRectangle(cornerRadius: 28)
                 .fill(Color(.systemBackground))
-                .shadow(color: .black.opacity(0.08), radius: 12, y: 4)
+                .shadow(color: groupColor(word.group).opacity(0.35), radius: 14, y: 6)
         )
+        .overlay(RoundedRectangle(cornerRadius: 28).stroke(groupColor(word.group), lineWidth: 4))
         .onTapGesture {
             withAnimation(.easeInOut(duration: 0.3)) {
                 viewModel.toggleDefinition()
             }
         }
+    }
+
+    private func groupColor(_ group: WordGroup) -> Color {
+        switch group {
+        case .key: return KidTheme.green
+        case .familiar: return KidTheme.blue
+        case .challenge: return KidTheme.orange
+        }
+    }
+
+    private func speak(_ text: String) {
+        let utterance = AVSpeechUtterance(string: text)
+        utterance.rate = 0.4
+        utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
+        if speechSynth.isSpeaking { speechSynth.stopSpeaking(at: .immediate) }
+        speechSynth.speak(utterance)
     }
 
     // MARK: - Navigation
@@ -245,7 +244,7 @@ struct LearnView: View {
                     .font(.headline)
                     .frame(maxWidth: .infinity)
             }
-            .buttonStyle(.bordered)
+            .buttonStyle(BigButtonStyle(color: .gray.opacity(0.7)))
             .disabled(!viewModel.hasPrevious)
 
             Button {
@@ -257,7 +256,7 @@ struct LearnView: View {
                     .font(.headline)
                     .frame(maxWidth: .infinity)
             }
-            .buttonStyle(.borderedProminent)
+            .buttonStyle(BigButtonStyle(color: KidTheme.green))
             .disabled(!viewModel.hasNext)
         }
         .frame(maxWidth: isWideLayout ? 600 : .infinity)

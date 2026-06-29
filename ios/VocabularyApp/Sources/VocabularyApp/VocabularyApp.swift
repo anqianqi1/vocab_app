@@ -5,6 +5,7 @@ import VocabularyData
 struct VocabularyDemoApp: App {
     private let lessonRepository: StructuredLessonRepository
     private let wordRepository: WordRepository
+    @State private var store = ProfileStore()
 
     init() {
         // Bundle.module is needed for SPM resource bundling; Bundle.main for .app bundles.
@@ -17,7 +18,11 @@ struct VocabularyDemoApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView(repository: lessonRepository, wordRepository: wordRepository)
+            if store.current == nil {
+                ProfileGateView(store: store)
+            } else {
+                HomeView(store: store, lessonRepository: lessonRepository, wordRepository: wordRepository)
+            }
         }
     }
 }

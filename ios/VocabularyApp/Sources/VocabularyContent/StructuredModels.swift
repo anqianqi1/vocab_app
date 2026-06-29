@@ -23,14 +23,18 @@ public struct WordDetail: Identifiable, Hashable, Codable {
     public let definition: String
     public let example: String
     public let imageName: String?
+    public let root: String
+    public let rootMeaning: String
 
-    public init(word: String, group: WordGroup, partOfSpeech: String, definition: String, example: String, imageName: String? = nil) {
+    public init(word: String, group: WordGroup, partOfSpeech: String, definition: String, example: String, imageName: String? = nil, root: String = "", rootMeaning: String = "") {
         self.word = word
         self.group = group
         self.partOfSpeech = partOfSpeech
         self.definition = definition
         self.example = example
         self.imageName = imageName
+        self.root = root
+        self.rootMeaning = rootMeaning
     }
 
     // MARK: Codable
@@ -55,6 +59,8 @@ public struct WordDetail: Identifiable, Hashable, Codable {
             definition = ""
             example = ""
         }
+        root = ""
+        rootMeaning = ""
     }
 
     public func encode(to encoder: Encoder) throws {

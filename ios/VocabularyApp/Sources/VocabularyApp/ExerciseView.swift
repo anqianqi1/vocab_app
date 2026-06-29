@@ -30,7 +30,7 @@ struct ExerciseView: View {
                 )
             }
         }
-        .background(Color(.systemGroupedBackground))
+        .background(LinearGradient(colors: [KidTheme.green.opacity(0.16), KidTheme.blue.opacity(0.12)], startPoint: .top, endPoint: .bottom).ignoresSafeArea())
     }
 
     // MARK: - Header (iPad)
@@ -59,7 +59,7 @@ struct ExerciseView: View {
             // Word prompt
             VStack(spacing: 8) {
                 Text("What does this word mean?")
-                    .font(isWideLayout ? .title3 : .subheadline)
+                    .font(.system(isWideLayout ? .title3 : .subheadline, design: .rounded).weight(.semibold))
                     .foregroundStyle(.secondary)
 
                 Text(question.word)
@@ -90,7 +90,7 @@ struct ExerciseView: View {
                         .font(.headline)
                         .frame(maxWidth: .infinity)
                 }
-                .buttonStyle(.borderedProminent)
+                .buttonStyle(BigButtonStyle(color: KidTheme.green))
                 .frame(maxWidth: isWideLayout ? 600 : .infinity)
                 .padding(.horizontal, isWideLayout ? 32 : 16)
                 .padding(.bottom, 16)
@@ -105,15 +105,15 @@ struct ExerciseView: View {
     private var progressSection: some View {
         VStack(spacing: 6) {
             ProgressView(value: viewModel.progressFraction)
-                .tint(.accentColor)
+                .tint(KidTheme.green)
             HStack {
                 Text(viewModel.progress)
                     .font(.caption)
                     .foregroundStyle(.secondary)
                 Spacer()
-                Text("Score: \(viewModel.score)")
-                    .font(.caption.weight(.medium))
-                    .foregroundStyle(.blue)
+                Text("⭐ \(viewModel.score)")
+                    .font(.system(.caption, design: .rounded).weight(.bold))
+                    .foregroundStyle(KidTheme.orange)
             }
         }
         .padding(.horizontal, isWideLayout ? 32 : 16)

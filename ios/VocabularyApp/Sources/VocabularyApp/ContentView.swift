@@ -394,7 +394,9 @@ struct ContentView: View {
                         partOfSpeech: word.partOfSpeech,
                         definition: word.definition,
                         example: word.example,
-                        imageName: word.imageName
+                        imageName: word.imageName,
+                        root: word.root,
+                        rootMeaning: word.rootMeaning
                     )
                 },
                 exercises: lesson.exercises

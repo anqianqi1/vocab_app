@@ -9,8 +9,8 @@
     "root_meaning": "circum meaning “around”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Circuit is something we talk about when we think about around.",
-    "example": "In class, we say \"circuit\" when we talk about around.",
+    "definition": "A path that electricity or signals can follow around and around.",
+    "example": "My toy car needs a circuit to make its lights work.",
     "related_words": {
       "same_root": [
         "circulate",
@@ -116,7 +116,9 @@
           "5. triplets"
         ]
       }
-    ]
+    ],
+    "image": "grade-5_circuit.png",
+    "image_source": "azure:gpt-image-2"
   },
   {
     "word": "circulate",
@@ -128,8 +130,8 @@
     "root_meaning": "circum meaning “around”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "v.",
-    "definition": "Circulate means taking action that involves around.",
-    "example": "In class we circulate when we want to focus on around.",
+    "definition": "To move around and go from one place to another.",
+    "example": "Blood helps energy circulate through your body.",
     "related_words": {
       "same_root": [
         "circuit",
@@ -235,7 +237,9 @@
           "5. triplets"
         ]
       }
-    ]
+    ],
+    "image": "grade-5_circulate.png",
+    "image_source": "azure:gpt-image-2"
   },
   {
     "word": "cyclone",
@@ -247,8 +251,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Cyclone is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"cyclone\" when we talk about important ideas in daily life.",
+    "definition": "A strong spinning storm with fast winds and lots of rain.",
+    "example": "The cyclone blew my hat right off!",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -345,7 +349,9 @@
           "5. triplets"
         ]
       }
-    ]
+    ],
+    "image": "grade-5_cyclone.png",
+    "image_source": "azure:gpt-image-2"
   },
   {
     "word": "semicircle",
@@ -357,8 +363,8 @@
     "root_meaning": "circum meaning “around”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "A half circle.",
-    "example": "We sat in a semicircle facing the librarian as he explained where to find the books we would need for our reports.",
+    "definition": "It is half of a circle.",
+    "example": "We drew a semicircle for the sun in art class.",
     "related_words": {
       "same_root": [
         "circuit",
@@ -464,7 +470,9 @@
           "5. triplets"
         ]
       }
-    ]
+    ],
+    "image": "grade-5_semicircle.png",
+    "image_source": "azure:gpt-image-2"
   },
   {
     "word": "circular",
@@ -476,8 +484,8 @@
     "root_meaning": "circum meaning “around”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Circular is something we talk about when we think about around.",
-    "example": "In class, we say \"circular\" when we talk about around.",
+    "definition": "A shape that goes around and ends where it began.",
+    "example": "The wheel is circular and rolls down the hill.",
     "related_words": {
       "same_root": [
         "circuit",
@@ -583,7 +591,9 @@
           "5. triplets"
         ]
       }
-    ]
+    ],
+    "image": "grade-5_circular.png",
+    "image_source": "azure:gpt-image-2"
   },
   {
     "word": "cycle",
@@ -595,8 +605,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "A strong whirling windstorm. tricycle Thunderstorms surrounded the center of the tropical cyclone as it moved toward the coast. cyclic The factory recycled old newspapers to produce new paper Cyclops products.",
-    "example": "",
+    "definition": "A cycle is a repeating pattern that happens again and again.",
+    "example": "Day and night make a cycle.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -693,7 +703,9 @@
           "5. triplets"
         ]
       }
-    ]
+    ],
+    "image": "grade-5_cycle.png",
+    "image_source": "azure:gpt-image-2"
   },
   {
     "word": "recycle",
@@ -705,8 +717,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Recycle is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"recycle\" when we talk about important ideas in daily life.",
+    "definition": "Using old things again to make something new.",
+    "example": "We recycle bottles so they can become new things.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -803,7 +815,9 @@
           "5. triplets"
         ]
       }
-    ]
+    ],
+    "image": "grade-5_recycle.png",
+    "image_source": "azure:gpt-image-2"
   },
   {
     "word": "unicycle",
@@ -815,8 +829,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Unicycle is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"unicycle\" when we talk about important ideas in daily life.",
+    "definition": "A one-wheel bike you ride by balancing carefully.",
+    "example": "I rode my unicycle around the park.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -913,7 +927,9 @@
           "5. triplets"
         ]
       }
-    ]
+    ],
+    "image": "grade-5_unicycle.png",
+    "image_source": "azure:gpt-image-2"
   },
   {
     "word": "circle",
@@ -925,8 +941,8 @@
     "root_meaning": "circum meaning “around”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Circle is something we talk about when we think about around.",
-    "example": "In class, we say \"circle\" when we talk about around.",
+    "definition": "A round shape with no corners or straight sides.",
+    "example": "We drew a circle on the paper.",
     "related_words": {
       "same_root": [
         "circuit",
@@ -1032,7 +1048,9 @@
           "5. triplets"
         ]
       }
-    ]
+    ],
+    "image": "grade-5_circle.png",
+    "image_source": "azure:gpt-image-2"
   },
   {
     "word": "circus",
@@ -1044,8 +1062,8 @@
     "root_meaning": "circum meaning “around”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Circus is something we talk about when we think about around.",
-    "example": "In class, we say \"circus\" when we talk about around.",
+    "definition": "A circus is a fun show with animals, clowns, and tricks.",
+    "example": "We went to the circus and laughed at the clown.",
     "related_words": {
       "same_root": [
         "circuit",
@@ -1151,7 +1169,9 @@
           "5. triplets"
         ]
       }
-    ]
+    ],
+    "image": "grade-5_circus.png",
+    "image_source": "azure:gpt-image-2"
   },
   {
     "word": "bicycle",
@@ -1163,8 +1183,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Bicycle is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"bicycle\" when we talk about important ideas in daily life.",
+    "definition": "A two-wheeled ride you pedal to move around.",
+    "example": "I rode my bicycle to the park after school.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -1273,8 +1293,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Cyclist is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"cyclist\" when we talk about important ideas in daily life.",
+    "definition": "A person who rides a bike.",
+    "example": "She zoomed past the park on her bike.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -1383,8 +1403,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Motorcycle is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"motorcycle\" when we talk about important ideas in daily life.",
+    "definition": "A two-wheeled vehicle people ride on roads.",
+    "example": "He rode his motorcycle to the park.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -1493,8 +1513,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Tricycle is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"tricycle\" when we talk about important ideas in daily life.",
+    "definition": "A bike with three wheels for riding and playing.",
+    "example": "She rode her tricycle down the sidewalk.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -1603,8 +1623,8 @@
     "root_meaning": "circum meaning “around”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Circlet is something we talk about when we think about around.",
-    "example": "In class, we say \"circlet\" when we talk about around.",
+    "definition": "A small round band worn on the head like a crown.",
+    "example": "She wore a shiny circlet at the dress-up party.",
     "related_words": {
       "same_root": [
         "circuit",
@@ -1722,8 +1742,8 @@
     "root_meaning": "circum meaning “around”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Circuitry is something we talk about when we think about around.",
-    "example": "In class, we say \"circuitry\" when we talk about around.",
+    "definition": "It means the wires and parts that let a machine work.",
+    "example": "The robot's circuitry helped it blink and beep.",
     "related_words": {
       "same_root": [
         "circuit",
@@ -1841,8 +1861,8 @@
     "root_meaning": "circum meaning “around”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
-    "definition": "Circuitous describes something connected to around.",
-    "example": "The word circuitous helps me describe things that are about around.",
+    "definition": "Going the long way around instead of taking a straight path.",
+    "example": "We took a circuitous road and found ice cream on the way.",
     "related_words": {
       "same_root": [
         "circuit",
@@ -1960,8 +1980,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "adj.",
-    "definition": "Cyclic describes something connected to important ideas in daily life.",
-    "example": "The word cyclic helps me describe things that are about important ideas in daily life.",
+    "definition": "It happens again and again in the same order.",
+    "example": "The seasons are cyclic, coming back every year.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -2070,8 +2090,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Cyclops is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"cyclops\" when we talk about important ideas in daily life.",
+    "definition": "A one-eyed giant in old stories.",
+    "example": "The cyclops stomped loudly through the cave.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -2180,8 +2200,8 @@
     "root_meaning": "pendo meaning “hang”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
-    "definition": "Dependent describes something connected to hang.",
-    "example": "The word dependent helps me describe things that are about hang.",
+    "definition": "Needs help or support from someone or something else.",
+    "example": "The baby bird is dependent on its mom for food.",
     "related_words": {
       "same_root": [
         "pending",
@@ -2303,8 +2323,8 @@
     "root_meaning": "aequus meaning “same, even, equal”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "v.",
-    "definition": "Equate means taking action that involves same, even, equal.",
-    "example": "In class we equate when we want to focus on same, even, equal.",
+    "definition": "To say two things are the same or equal.",
+    "example": "I equate two plus two with four.",
     "related_words": {
       "same_root": [
         "equidistant",
@@ -2428,8 +2448,8 @@
     "root_meaning": "aequus meaning “same, even, equal”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
-    "definition": "Equidistant describes something connected to same, even, equal.",
-    "example": "The word equidistant helps me describe things that are about same, even, equal.",
+    "definition": "Things are equidistant when they are the same distance from something.",
+    "example": "The two trees were equidistant from the swing set.",
     "related_words": {
       "same_root": [
         "equate",
@@ -2553,8 +2573,8 @@
     "root_meaning": "pendo meaning “hang”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Pending is something we talk about when we think about hang.",
-    "example": "In class, we say \"pending\" when we talk about hang.",
+    "definition": "Something is waiting to be finished or decided.",
+    "example": "Your homework is pending until you turn it in.",
     "related_words": {
       "same_root": [
         "dependent",
@@ -2676,8 +2696,8 @@
     "root_meaning": "aequus meaning “same, even, equal”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Equality is something we talk about when we think about same, even, equal.",
-    "example": "In class, we say \"equality\" when we talk about same, even, equal.",
+    "definition": "Everyone gets the same fair chance and treatment.",
+    "example": "We share cookies equally so everyone gets one.",
     "related_words": {
       "same_root": [
         "equate",
@@ -2801,8 +2821,8 @@
     "root_meaning": "aequus meaning “same, even, equal”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "An imaginary line around the center of the earth, at the same distance from the North Pole and the South Pole.",
-    "example": "The equator passes through many tropical countries, including Kenya in Africa and Brazil in South America.",
+    "definition": "An imaginary line around Earth halfway between the top and bottom.",
+    "example": "Kids near the equator enjoy warm weather all year.",
     "related_words": {
       "same_root": [
         "equate",
@@ -2926,8 +2946,8 @@
     "root_meaning": "aequus meaning “same, even, equal”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
-    "definition": "Equilateral describes something connected to same, even, equal.",
-    "example": "The word equilateral helps me describe things that are about same, even, equal.",
+    "definition": "All sides are the same length.",
+    "example": "My equilateral triangle has three equal sides.",
     "related_words": {
       "same_root": [
         "equate",
@@ -3051,8 +3071,8 @@
     "root_meaning": "pendo meaning “hang”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Pendulum is something we talk about when we think about hang.",
-    "example": "In class, we say \"pendulum\" when we talk about hang.",
+    "definition": "A thing that swings back and forth like a clock's arm.",
+    "example": "The playground swing moved like a pendulum in the wind.",
     "related_words": {
       "same_root": [
         "dependent",
@@ -3174,8 +3194,8 @@
     "root_meaning": "aequus meaning “same, even, equal”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
-    "definition": "Equal describes something connected to same, even, equal.",
-    "example": "The word equal helps me describe things that are about same, even, equal.",
+    "definition": "Two things are the same in size, amount, or value.",
+    "example": "My sister and I got equal slices of cake.",
     "related_words": {
       "same_root": [
         "equate",
@@ -3299,8 +3319,8 @@
     "root_meaning": "aequus meaning “same, even, equal”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "adv.",
-    "definition": "Equally tells us that something happens in a way related to same, even, equal.",
-    "example": "It reminds me that something happens in a way that connects to same, even, equal.",
+    "definition": "In the same way, so everyone gets a fair share.",
+    "example": "We cut the cake equally, and everyone smiled.",
     "related_words": {
       "same_root": [
         "equate",
@@ -3424,8 +3444,8 @@
     "root_meaning": "aequus meaning “same, even, equal”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
-    "definition": "Equivalent describes something connected to same, even, equal.",
-    "example": "The word equivalent helps me describe things that are about same, even, equal.",
+    "definition": "It means two things are the same in value or amount.",
+    "example": "Two nickels are equivalent to one dime.",
     "related_words": {
       "same_root": [
         "equate",
@@ -3549,8 +3569,8 @@
     "root_meaning": "aequus meaning “same, even, equal”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
-    "definition": "Unequal describes something connected to same, even, equal.",
-    "example": "The word unequal helps me describe things that are about same, even, equal.",
+    "definition": "Something that is not the same in size, amount, or shape.",
+    "example": "Two cookies for me, one for you—that feels unequal!",
     "related_words": {
       "same_root": [
         "equate",
@@ -3674,8 +3694,8 @@
     "root_meaning": "pendo meaning “hang”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Depend is something we talk about when we think about hang.",
-    "example": "In class, we say \"depend\" when we talk about hang.",
+    "definition": "You need something or someone to help or support you.",
+    "example": "I depend on Mom to help me tie my shoes.",
     "related_words": {
       "same_root": [
         "dependent",
@@ -3797,8 +3817,8 @@
     "root_meaning": "pendo meaning “hang”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
-    "definition": "Dependable describes something connected to hang.",
-    "example": "The word dependable helps me describe things that are about hang.",
+    "definition": "You can trust it or them to do what they promise.",
+    "example": "My dog is dependable; he waits by the door every day.",
     "related_words": {
       "same_root": [
         "dependent",
@@ -3920,8 +3940,8 @@
     "root_meaning": "pendo meaning “hang”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Suspenders is something we talk about when we think about hang.",
-    "example": "In class, we say \"suspenders\" when we talk about hang.",
+    "definition": "They are straps that hold up pants over your shoulders.",
+    "example": "Grandpa wore suspenders to keep his pants up.",
     "related_words": {
       "same_root": [
         "dependent",
@@ -4043,8 +4063,8 @@
     "root_meaning": "aequus meaning “same, even, equal”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Equanimity is something we talk about when we think about same, even, equal.",
-    "example": "In class, we say \"equanimity\" when we talk about same, even, equal.",
+    "definition": "Staying calm and even when things go wrong.",
+    "example": "She stayed calm when her block tower fell.",
     "related_words": {
       "same_root": [
         "equate",
@@ -4168,8 +4188,8 @@
     "root_meaning": "aequus meaning “same, even, equal”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Equilibrium is something we talk about when we think about same, even, equal.",
-    "example": "In class, we say \"equilibrium\" when we talk about same, even, equal.",
+    "definition": "It means a steady balance, like when things stay even.",
+    "example": "The bike stayed up in perfect balance.",
     "related_words": {
       "same_root": [
         "equate",
@@ -4293,8 +4313,8 @@
     "root_meaning": "aequus meaning “same, even, equal”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Equinox is something we talk about when we think about same, even, equal.",
-    "example": "In class, we say \"equinox\" when we talk about same, even, equal.",
+    "definition": "It is a day when day and night are almost the same length.",
+    "example": "On the equinox, the sun and stars share the sky evenly.",
     "related_words": {
       "same_root": [
         "equate",
@@ -4418,8 +4438,8 @@
     "root_meaning": "aequus meaning “same, even, equal”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
-    "definition": "Equitable describes something connected to same, even, equal.",
-    "example": "The word equitable helps me describe things that are about same, even, equal.",
+    "definition": "Fair to everyone, giving each person what they need.",
+    "example": "We shared the cookies equitably so everyone got one.",
     "related_words": {
       "same_root": [
         "equate",
@@ -4543,8 +4563,8 @@
     "root_meaning": "pendo meaning “hang”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
-    "definition": "Expendable describes something connected to hang.",
-    "example": "The word expendable helps me describe things that are about hang.",
+    "definition": "Something you can lose or use up without it being a big problem.",
+    "example": "I used an old pencil for drawing practice.",
     "related_words": {
       "same_root": [
         "dependent",
@@ -4666,8 +4686,8 @@
     "root_meaning": "pendo meaning “hang”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Impending is something we talk about when we think about hang.",
-    "example": "In class, we say \"impending\" when we talk about hang.",
+    "definition": "Something that is about to happen very soon.",
+    "example": "Dark clouds meant a storm was coming soon.",
     "related_words": {
       "same_root": [
         "dependent",
@@ -4789,8 +4809,8 @@
     "root_meaning": "pendo meaning “hang”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
-    "definition": "Pendant describes something connected to hang.",
-    "example": "The word pendant helps me describe things that are about hang.",
+    "definition": "Dangling down from above, like a hanging leaf or earring.",
+    "example": "The pendant stars twinkled above our heads.",
     "related_words": {
       "same_root": [
         "dependent",
@@ -4912,8 +4932,8 @@
     "root_meaning": "pendo meaning “hang”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
-    "definition": "Pendulous describes something connected to hang.",
-    "example": "The word pendulous helps me describe things that are about hang.",
+    "definition": "Something that hangs down and swings a little.",
+    "example": "The apple tree had one pendulous branch touching the ground.",
     "related_words": {
       "same_root": [
         "dependent",
@@ -5035,8 +5055,8 @@
     "root_meaning": "pendo meaning “hang”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Suspend is something we talk about when we think about hang.",
-    "example": "In class, we say \"suspend\" when we talk about hang.",
+    "definition": "To stop something for a short time.",
+    "example": "The game was suspend? No—paused when rain started.",
     "related_words": {
       "same_root": [
         "dependent",
@@ -5158,8 +5178,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Suspense is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"suspense\" when we talk about important ideas in daily life.",
+    "definition": "A feeling when you do not know what will happen next.",
+    "example": "The movie had suspense when the door slowly opened.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -5270,8 +5290,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "adj.",
-    "definition": "Interactive describes something connected to important ideas in daily life.",
-    "example": "The word interactive helps me describe things that are about important ideas in daily life.",
+    "definition": "It lets you do things and get a response back.",
+    "example": "This game is interactive because it talks back to you.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -5361,8 +5381,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "v.",
-    "definition": "To cut or pass through, to cross.",
-    "example": "To get to the zoo, follow this street to where it intersects Carson Avenue, and then turn right. intersection,.",
+    "definition": "When two things cross or meet at one point.",
+    "example": "The two roads intersect near the park.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -5452,8 +5472,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Transfer is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"transfer\" when we talk about important ideas in daily life.",
+    "definition": "Moving something from one place or person to another.",
+    "example": "I transfer my toy to my sister.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -5543,8 +5563,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Interfere is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"interfere\" when we talk about important ideas in daily life.",
+    "definition": "It means to get in the way and make things harder.",
+    "example": "My little brother did not interfere when I built my tower.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -5634,8 +5654,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "adj.",
-    "definition": "Interval describes something connected to important ideas in daily life.",
-    "example": "The word interval helps me describe things that are about important ideas in daily life.",
+    "definition": "It means things happen with a break or space between them.",
+    "example": "We had music, then a short break, then more music.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -5725,8 +5745,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Transfusion is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"transfusion\" when we talk about important ideas in daily life.",
+    "definition": "A doctor moves blood or liquid into a person's body.",
+    "example": "The doctor gave her a transfusion to help her get better.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -5816,8 +5836,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "adj.",
-    "definition": "Off-and-on, stop-and-start.",
-    "example": "The dry fields needed steady rain but received only intermittent.",
+    "definition": "Something that starts and stops, not all the time.",
+    "example": "We had intermittent rain during our picnic.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -5907,8 +5927,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "9 VCR_SB_5_EPS2266_int_r2.indd 9 9/12/22 10:41 AM 10 VOCABULARY FROM CLASSICAL ROOTS with Prefix TRANS- meaning “to carry”]",
-    "example": "",
+    "definition": "To make a deal or do business with someone.",
+    "example": "I transact with my friend to trade stickers.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -5998,8 +6018,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Transmit is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"transmit\" when we talk about important ideas in daily life.",
+    "definition": "To send something from one place or person to another.",
+    "example": "The radio can send music to your room.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -6089,8 +6109,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Transform is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"transform\" when we talk about important ideas in daily life.",
+    "definition": "It means a big change that turns something into something else.",
+    "example": "Magic can transform a frog into a prince.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -6180,8 +6200,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "adj.",
-    "definition": "Transparent describes something connected to important ideas in daily life.",
-    "example": "The word transparent helps me describe things that are about important ideas in daily life.",
+    "definition": "You can see through it clearly.",
+    "example": "The window was transparent, so we saw the garden.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -6271,8 +6291,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "adj.",
-    "definition": "Transplant describes something connected to important ideas in daily life.",
-    "example": "The word transplant helps me describe things that are about important ideas in daily life.",
+    "definition": "Moved from one place to another, like a new home for a plant.",
+    "example": "We transplanted the tiny tree into our sunny yard.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -6362,8 +6382,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Transportation is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"transportation\" when we talk about important ideas in daily life.",
+    "definition": "It means how people or things move from one place to another.",
+    "example": "We rode the bus to school.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -6453,8 +6473,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "v.",
-    "definition": "Intermediate means taking action that involves important ideas in daily life.",
-    "example": "In class we intermediate when we want to focus on important ideas in daily life.",
+    "definition": "It means to come between two things or help in the middle.",
+    "example": "The teacher intermediated to help the kids share the toy.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -6544,8 +6564,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "v.",
-    "definition": "Interstate means taking action that involves important ideas in daily life.",
-    "example": "In class we interstate when we want to focus on important ideas in daily life.",
+    "definition": "To travel or go between different states.",
+    "example": "We drove interstate to visit Grandma in another state.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -6635,8 +6655,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Transcribe is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"transcribe\" when we talk about important ideas in daily life.",
+    "definition": "It means to write down words you hear or see.",
+    "example": "I transcribe my teacher’s notes into my notebook.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -6726,8 +6746,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Transgress is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"transgress\" when we talk about important ideas in daily life.",
+    "definition": "It means breaking a rule or doing something you should not do.",
+    "example": "He transgressed by sneaking cookies before dinner.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -6817,8 +6837,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "adj.",
-    "definition": "Transitory describes something connected to important ideas in daily life.",
-    "example": "The word transitory helps me describe things that are about important ideas in daily life.",
+    "definition": "Something that does not stay for long.",
+    "example": "The rain was transitory, and the sun came back soon.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -6908,8 +6928,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "adj.",
-    "definition": "Translucent describes something connected to important ideas in daily life.",
-    "example": "The word translucent helps me describe things that are about important ideas in daily life.",
+    "definition": "Lets some light through, but you cannot see clearly.",
+    "example": "The frosted window looked soft and translucent.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -6999,8 +7019,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Interim is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"interim\" when we talk about important ideas in daily life.",
+    "definition": "A short time between two things.",
+    "example": "We used the interim to play games while the show changed.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -7090,8 +7110,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Interject is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"interject\" when we talk about important ideas in daily life.",
+    "definition": "To speak up quickly in the middle of someone else talking.",
+    "example": "I interject with a joke during the game.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -7181,8 +7201,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Interloper is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"interloper\" when we talk about important ideas in daily life.",
+    "definition": "A person who goes where they are not wanted or asked.",
+    "example": "The cat was an interloper at the dog's birthday party.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -7272,8 +7292,8 @@
     "root_meaning": "aqua meaning “water”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Aquaculture is something we talk about when we think about water.",
-    "example": "In class, we say \"aquaculture\" when we talk about water.",
+    "definition": "Raising fish and other water animals for food or fun.",
+    "example": "Our class visited a farm that grows fish in ponds.",
     "related_words": {
       "same_root": [
         "aquatic",
@@ -7379,8 +7399,8 @@
     "root_meaning": "aqua meaning “water”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
-    "definition": "Aquatic describes something connected to water.",
-    "example": "The word aquatic helps me describe things that are about water.",
+    "definition": "Living in or near water.",
+    "example": "The duck swam in the aquatic pond all day.",
     "related_words": {
       "same_root": [
         "aquaculture",
@@ -7486,8 +7506,8 @@
     "root_meaning": "terra meaning “land”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Subterranean is something we talk about when we think about land.",
-    "example": "In class, we say \"subterranean\" when we talk about land.",
+    "definition": "Under the ground, hidden below the dirt.",
+    "example": "The mole lives in a subterranean home.",
     "related_words": {
       "same_root": [
         "terrain",
@@ -7597,8 +7617,8 @@
     "root_meaning": "terra meaning “land”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Land or ground.",
-    "example": "The truck bumped along on the rough terrain of the field until it reached a paved road on the other side.",
+    "definition": "The land in an area, like hills, flat ground, or rocks.",
+    "example": "We hiked over rough terrain to reach the shiny lake.",
     "related_words": {
       "same_root": [
         "subterranean",
@@ -7708,8 +7728,8 @@
     "root_meaning": "aqua meaning “water”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Aquamarine is something we talk about when we think about water.",
-    "example": "In class, we say \"aquamarine\" when we talk about water.",
+    "definition": "A blue-green gem that sparkles like the sea.",
+    "example": "She wore an aquamarine ring that shone in the sun.",
     "related_words": {
       "same_root": [
         "aquaculture",
@@ -7815,8 +7835,8 @@
     "root_meaning": "terra meaning “land”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Mediterranean is something we talk about when we think about land.",
-    "example": "In class, we say \"mediterranean\" when we talk about land.",
+    "definition": "A sea between Europe, Africa, and Asia.",
+    "example": "We saw fish in the Mediterranean on our map.",
     "related_words": {
       "same_root": [
         "subterranean",
@@ -7926,8 +7946,8 @@
     "root_meaning": "terra meaning “land”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "An area of ground on the side of a hill that has a flattened top in order to grow things.",
-    "example": "We could see terraces all the way up the hillside where farmers had planted their crops.",
+    "definition": "A flat outdoor space next to a house or building.",
+    "example": "We sat on the terrace and ate ice cream.",
     "related_words": {
       "same_root": [
         "subterranean",
@@ -8037,8 +8057,8 @@
     "root_meaning": "terra meaning “land”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
-    "definition": "Territory describes something connected to land.",
-    "example": "The word territory helps me describe things that are about land.",
+    "definition": "It means about land or a place one group says is theirs.",
+    "example": "The cat marked its territory with a tiny paw print.",
     "related_words": {
       "same_root": [
         "subterranean",
@@ -8148,8 +8168,8 @@
     "root_meaning": "aqua meaning “water”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Aquarium is something we talk about when we think about water.",
-    "example": "In class, we say \"aquarium\" when we talk about water.",
+    "definition": "A glass tank where fish and other water animals live.",
+    "example": "We watched colorful fish swim at the aquarium.",
     "related_words": {
       "same_root": [
         "aquaculture",
@@ -8255,8 +8275,8 @@
     "root_meaning": "aqua meaning “water”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Aquarius is something we talk about when we think about water.",
-    "example": "In class, we say \"aquarius\" when we talk about water.",
+    "definition": "A water sign in the stars for some people.",
+    "example": "My friend says she is an Aquarius and loves swimming.",
     "related_words": {
       "same_root": [
         "aquaculture",
@@ -8362,8 +8382,8 @@
     "root_meaning": "terra meaning “land”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
-    "definition": "Extraterrestrial describes something connected to land.",
-    "example": "The word extraterrestrial helps me describe things that are about land.",
+    "definition": "It means coming from outside Earth, like from space.",
+    "example": "The little alien had an extraterrestrial home on Mars.",
     "related_words": {
       "same_root": [
         "subterranean",
@@ -8473,8 +8493,8 @@
     "root_meaning": "terra meaning “land”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Terrarium is something we talk about when we think about land.",
-    "example": "In class, we say \"terrarium\" when we talk about land.",
+    "definition": "A small glass home where plants or tiny animals live.",
+    "example": "My terrarium has a tiny fern and a little rock.",
     "related_words": {
       "same_root": [
         "subterranean",
@@ -8584,8 +8604,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Aqueduct is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"aqueduct\" when we talk about important ideas in daily life.",
+    "definition": "A long channel carries water from one place to another.",
+    "example": "The old aqueduct brought water to the town.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -8686,8 +8706,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "adj.",
-    "definition": "Aqueous describes something connected to important ideas in daily life.",
-    "example": "The word aqueous helps me describe things that are about important ideas in daily life.",
+    "definition": "It means made of or mixed with water.",
+    "example": "The fish swam in an aqueous puddle at the science fair.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -8788,8 +8808,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Aquifer is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"aquifer\" when we talk about important ideas in daily life.",
+    "definition": "An underground layer of rock or soil holds water.",
+    "example": "The aquifer gives water to our town's wells.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -8890,8 +8910,8 @@
     "root_meaning": "terra meaning “land”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Terrazzo is something we talk about when we think about land.",
-    "example": "In class, we say \"terrazzo\" when we talk about land.",
+    "definition": "A floor made from tiny stone pieces mixed into hard cement.",
+    "example": "We saw shiny terrazzo floors at the school museum.",
     "related_words": {
       "same_root": [
         "subterranean",
@@ -9001,8 +9021,8 @@
     "root_meaning": "terra meaning “land”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
-    "definition": "Terrestrial describes something connected to land.",
-    "example": "The word terrestrial helps me describe things that are about land.",
+    "definition": "It means something that lives or happens on land, not in water.",
+    "example": "The turtle is a terrestrial animal that walks on land.",
     "related_words": {
       "same_root": [
         "subterranean",
@@ -9112,8 +9132,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Astronaut is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"astronaut\" when we talk about important ideas in daily life.",
+    "definition": "A person who travels into space.",
+    "example": "She dreamed of becoming an astronaut and visiting the moon.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -9218,8 +9238,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Astronomy is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"astronomy\" when we talk about important ideas in daily life.",
+    "definition": "It is the study of stars, planets, and space.",
+    "example": "We looked at the moon through a telescope.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -9324,8 +9344,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Teleconference is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"teleconference\" when we talk about important ideas in daily life.",
+    "definition": "A meeting where people talk by phone or video from far away.",
+    "example": "We had a teleconference with Grandma on the computer.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -9430,8 +9450,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Telemarketing is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"telemarketing\" when we talk about important ideas in daily life.",
+    "definition": "Calling people to tell them about things to buy or use.",
+    "example": "A caller offered cookies and asked Mom to buy some.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -9536,8 +9556,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "adj.",
-    "definition": "Extremely large, huge.",
-    "example": "",
+    "definition": "So huge that it seems almost impossible to count or measure.",
+    "example": "That cake had an astronomical number of sprinkles!",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -9642,8 +9662,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Telecast is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"telecast\" when we talk about important ideas in daily life.",
+    "definition": "A TV show sent live to people at home.",
+    "example": "We watched the school telecast on Saturday night.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -9748,8 +9768,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "An instrument invented in 1837 by Samuel Morse that used electricity passing through wires to send messages over distances.",
-    "example": "By the 1860s, the telegraph had become the fastest way to send a message from one city to another.",
+    "definition": "A machine that sends messages far away using wires and signals.",
+    "example": "Grandpa sent news by telegraph to his friend.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -9854,8 +9874,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Telescope is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"telescope\" when we talk about important ideas in daily life.",
+    "definition": "A tool that helps us see faraway things close up.",
+    "example": "She used a telescope to look at the moon.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -9960,8 +9980,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Telephone is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"telephone\" when we talk about important ideas in daily life.",
+    "definition": "A phone lets people talk to others far away.",
+    "example": "I called Grandma on the phone after school.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -10066,8 +10086,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Television is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"television\" when we talk about important ideas in daily life.",
+    "definition": "A screen that shows shows, movies, and news at home.",
+    "example": "We watched cartoons on the TV after dinner.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -10172,8 +10192,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Astronomer is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"astronomer\" when we talk about important ideas in daily life.",
+    "definition": "A person who studies stars, planets, and space.",
+    "example": "She looked through a telescope like a space explorer.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -10278,8 +10298,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Disaster is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"disaster\" when we talk about important ideas in daily life.",
+    "definition": "A very bad event that causes harm or big trouble.",
+    "example": "The picnic was a disaster when rain soaked everything.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -10384,8 +10404,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Telecommunication is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"telecommunication\" when we talk about important ideas in daily life.",
+    "definition": "People send messages far away using phones, radios, or the internet.",
+    "example": "We called Grandma far away on the phone.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -10490,8 +10510,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Telepathy is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"telepathy\" when we talk about important ideas in daily life.",
+    "definition": "It means knowing what someone thinks without them saying it.",
+    "example": "She guessed her brother wanted cake before he asked.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -10596,8 +10616,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Telethon is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"telethon\" when we talk about important ideas in daily life.",
+    "definition": "A long TV event that asks people to give money to help.",
+    "example": "We watched a telethon and donated coins to help pets.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -10702,8 +10722,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Asterisk is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"asterisk\" when we talk about important ideas in daily life.",
+    "definition": "It is a star-shaped mark used in writing or books.",
+    "example": "Put an asterisk by the word you want to check.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -10808,8 +10828,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Asteroid is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"asteroid\" when we talk about important ideas in daily life.",
+    "definition": "A small rock in space that moves around the Sun.",
+    "example": "The asteroid zoomed past our planet like a tiny space ball.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -10914,8 +10934,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "adj.",
-    "definition": "Astral describes something connected to important ideas in daily life.",
-    "example": "The word astral helps me describe things that are about important ideas in daily life.",
+    "definition": "It means about stars or space in the sky.",
+    "example": "We saw astral lights twinkle above the camp.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -11020,8 +11040,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "adj.",
-    "definition": "Inactive describes something connected to important ideas in daily life.",
-    "example": "The word inactive helps me describe things that are about important ideas in daily life.",
+    "definition": "Not moving or doing much; resting quietly.",
+    "example": "The turtle stayed inactive in the warm sun.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -11129,8 +11149,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "An ongoing condition of being unable to fall or stay asleep.",
-    "example": "Because of her insomnia, Sarah’s mother kept a book by the bed so she could read when she awoke in the middle of the night. NOTA BENE In is a complete word by itself as well as a meaningful part of other words. Example: The gift is in the box. In that example, the word in means “withi.",
+    "definition": "It means you have trouble falling asleep or staying asleep.",
+    "example": "Last night, Sam had insomnia and couldn’t sleep well.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -11238,8 +11258,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "adj.",
-    "definition": "Semiconscious describes something connected to important ideas in daily life.",
-    "example": "The word semiconscious helps me describe things that are about important ideas in daily life.",
+    "definition": "Not fully awake, but aware a little.",
+    "example": "After the nap, she felt semiconscious and blinked slowly.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -11347,8 +11367,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "adj.",
-    "definition": "Not significant, unimportant, lacking power or value. indefinite An insignificant amount of snow fell last night, leaving only a dusting on the streets.",
-    "example": "",
+    "definition": "Not strict or fancy; like a relaxed way of talking or dressing.",
+    "example": "We had an informal picnic in the backyard after school.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -11456,8 +11476,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "adj.",
-    "definition": "Semiannual describes something connected to important ideas in daily life.",
-    "example": "The word semiannual helps me describe things that are about important ideas in daily life.",
+    "definition": "It happens two times each year.",
+    "example": "We have semiannual family picnics in summer and winter.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -11565,8 +11585,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "adj.",
-    "definition": "Requiring good clothes rather than play clothes.",
-    "example": "Natalie attended the wedding in a semiformal outfit, but the bridesmaids wore formal gowns.",
+    "definition": "A bit dressy, but not too fancy or too casual.",
+    "example": "We wore semiformal clothes to the school concert.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -11674,8 +11694,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "adj.",
-    "definition": "Insignificant describes something connected to important ideas in daily life.",
-    "example": "The word insignificant helps me describe things that are about important ideas in daily life.",
+    "definition": "Too small or unimportant to matter much.",
+    "example": "My tiny sticker felt insignificant next to the giant poster.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -11783,8 +11803,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "A punctuation mark that signals a break in a sentence, halfway between the full stop of a period and the short pause of a comma. ; A semicolon looks like a dot over a comma; it separates two independent clauses in a sentence.",
-    "example": "",
+    "definition": "It is a punctuation mark that links two close ideas.",
+    "example": "I wanted juice; I got water instead.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -11892,8 +11912,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "adj.",
-    "definition": "Having only part of the value of a precious gemstone.",
-    "example": "Semiprecious stones like opals have value but not as much as precious stones like diamonds, emeralds, and rubies. = EXERCISE A: SYNONYMS Write the letter of the best SYNONYM (word or phrase that is closest in meaning to the word in bold-faced type).",
+    "definition": "A gem that is pretty but not as rare as a diamond.",
+    "example": "She wore a semiprecious stone in her shiny bracelet.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -12001,8 +12021,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Incomplete is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"incomplete\" when we talk about important ideas in daily life.",
+    "definition": "Not all of it is there, so it is not finished.",
+    "example": "My puzzle was incomplete until I found the last piece.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -12110,8 +12130,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "adj.",
-    "definition": "Inconvenient describes something connected to important ideas in daily life.",
-    "example": "The word inconvenient helps me describe things that are about important ideas in daily life.",
+    "definition": "Something that is not easy or makes things a little hard.",
+    "example": "Rain during recess was inconvenient for our game.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -12219,8 +12239,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Incorrect is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"incorrect\" when we talk about important ideas in daily life.",
+    "definition": "Something that is not right or true.",
+    "example": "I picked the wrong answer on the quiz.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -12328,8 +12348,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "adj.",
-    "definition": "Infrequent describes something connected to important ideas in daily life.",
-    "example": "The word infrequent helps me describe things that are about important ideas in daily life.",
+    "definition": "It means something that does not happen often.",
+    "example": "We visit grandma on infrequent weekends, not every week.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -12437,8 +12457,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "adj.",
-    "definition": "Semifinal describes something connected to important ideas in daily life.",
-    "example": "The word semifinal helps me describe things that are about important ideas in daily life.",
+    "definition": "Coming right before the final game or match.",
+    "example": "We won the semifinal and moved to the big final!",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -12546,8 +12566,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "v.",
-    "definition": "Semiprivate means taking action that involves important ideas in daily life.",
-    "example": "In class we semiprivate when we want to focus on important ideas in daily life.",
+    "definition": "It means to share with a few people, not everyone.",
+    "example": "Our semiprivate table was just for my family and me.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -12655,8 +12675,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Semisweet is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"semisweet\" when we talk about important ideas in daily life.",
+    "definition": "A taste that is a little sweet and a little not sweet.",
+    "example": "This semisweet chocolate tastes nice with strawberries.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -12764,8 +12784,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "v.",
-    "definition": "Inadequate means taking action that involves important ideas in daily life.",
-    "example": "In class we inadequate when we want to focus on important ideas in daily life.",
+    "definition": "Not good enough for what is needed or wanted.",
+    "example": "The tiny umbrella was inadequate in the big rainstorm.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -12873,8 +12893,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "adj.",
-    "definition": "Incapable describes something connected to important ideas in daily life.",
-    "example": "The word incapable helps me describe things that are about important ideas in daily life.",
+    "definition": "Not able to do something.",
+    "example": "She was incapable of lifting the big box alone.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -12982,8 +13002,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "adj.",
-    "definition": "Incomparable describes something connected to important ideas in daily life.",
-    "example": "The word incomparable helps me describe things that are about important ideas in daily life.",
+    "definition": "So amazing that nothing else can be compared to it.",
+    "example": "Her shiny bike looked truly incomparable at the parade.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -13091,8 +13111,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "adj.",
-    "definition": "Indecisive describes something connected to important ideas in daily life.",
-    "example": "The word indecisive helps me describe things that are about important ideas in daily life.",
+    "definition": "Hard to choose because you keep changing your mind.",
+    "example": "Sam was indecisive choosing pizza or tacos for lunch.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -13200,8 +13220,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Indefinite is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"indefinite\" when we talk about important ideas in daily life.",
+    "definition": "It means something with no clear end or exact time.",
+    "example": "Our game lasted for an indefinite time after dinner.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -13309,8 +13329,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Insincere is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"insincere\" when we talk about important ideas in daily life.",
+    "definition": "It means not really honest or real about feelings.",
+    "example": "She smiled, but her kind words felt fake.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -13418,8 +13438,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "adj.",
-    "definition": "Semidetached describes something connected to important ideas in daily life.",
-    "example": "The word semidetached helps me describe things that are about important ideas in daily life.",
+    "definition": "It means two homes joined by one shared wall.",
+    "example": "We saw a semidetached house with a red door.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -13527,8 +13547,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "adj.",
-    "definition": "Semiprofessional describes something connected to important ideas in daily life.",
-    "example": "The word semiprofessional helps me describe things that are about important ideas in daily life.",
+    "definition": "Not quite full-time, but still good at a job or sport.",
+    "example": "Our town team is semiprofessional and plays for money.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -13636,8 +13656,8 @@
     "root_meaning": "civis meaning “citizen, a member of a city”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Civics is something we talk about when we think about citizen, a member of a city.",
-    "example": "In class, we say \"civics\" when we talk about citizen, a member of a city.",
+    "definition": "It is learning how people help make and follow community rules.",
+    "example": "We learned civics by voting for the class snack!",
     "related_words": {
       "same_root": [
         "civilian",
@@ -13731,8 +13751,8 @@
     "root_meaning": "civis meaning “citizen, a member of a city”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "A person who is not in the military.",
-    "example": "Many countries agree that during war civilians should not be attacked by those who are fighting.",
+    "definition": "A person who is not in the army or police.",
+    "example": "She was a civilian watching the parade with her family.",
     "related_words": {
       "same_root": [
         "civics",
@@ -13826,8 +13846,8 @@
     "root_meaning": "ordo meaning “regularity, order”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
-    "definition": "More than the ordinary, beyond what is expected, The extraordinary length of the Mississippi inordinate 8. ordinarily (or dÆn er ` Æ lŒ) insubordination",
-    "example": "",
+    "definition": "Means working together so things happen in the right order.",
+    "example": "We coordinate our chairs and snacks for the class party.",
     "related_words": {
       "same_root": [
         "ordinarily",
@@ -13926,8 +13946,8 @@
     "root_meaning": "ordo meaning “regularity, order”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "adv.",
-    "definition": "Ordinarily tells us that something happens in a way related to regularity, order.",
-    "example": "It reminds me that something happens in a way that connects to regularity, order.",
+    "definition": "Usually or most of the time; what happens in normal cases.",
+    "example": "I ordinarily read books after dinner.",
     "related_words": {
       "same_root": [
         "coordinate",
@@ -14026,8 +14046,8 @@
     "root_meaning": "civis meaning “citizen, a member of a city”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "”",
-    "example": "",
+    "definition": "Being kind and polite to others, even when you disagree.",
+    "example": "She stayed civil and shared her crayons nicely.",
     "related_words": {
       "same_root": [
         "civics",
@@ -14121,8 +14141,8 @@
     "root_meaning": "civis meaning “citizen, a member of a city”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Courteous behavior.",
-    "example": "Nathan greeted his unwelcome visitors with civility, but not with.",
+    "definition": "Being kind and polite to others in words and actions.",
+    "example": "She used civility by saying please and thank you.",
     "related_words": {
       "same_root": [
         "civics",
@@ -14216,8 +14236,8 @@
     "root_meaning": "ordo meaning “regularity, order”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
-    "definition": "Extraordinary describes something connected to regularity, order.",
-    "example": "The word extraordinary helps me describe things that are about regularity, order.",
+    "definition": "Very special and much better than usual.",
+    "example": "Her extraordinary cake made everyone smile.",
     "related_words": {
       "same_root": [
         "coordinate",
@@ -14316,8 +14336,8 @@
     "root_meaning": "civis meaning “citizen, a member of a city”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
-    "definition": "Uncivilized describes something connected to citizen, a member of a city.",
-    "example": "The word uncivilized helps me describe things that are about citizen, a member of a city.",
+    "definition": "It means not kind, not polite, or not using good manners.",
+    "example": "He was uncivilized at the table, so everyone felt upset.",
     "related_words": {
       "same_root": [
         "civics",
@@ -14411,8 +14431,8 @@
     "root_meaning": "civis meaning “citizen, a member of a city”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Civilization is something we talk about when we think about citizen, a member of a city.",
-    "example": "In class, we say \"civilization\" when we talk about citizen, a member of a city.",
+    "definition": "It means people living together with rules, homes, and shared ways.",
+    "example": "Ancient Egypt was a civilization with pyramids and smart builders.",
     "related_words": {
       "same_root": [
         "civics",
@@ -14506,8 +14526,8 @@
     "root_meaning": "civis meaning “citizen, a member of a city”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "v.",
-    "definition": "Civilize means taking action that involves citizen, a member of a city.",
-    "example": "In class we civilize when we want to focus on citizen, a member of a city.",
+    "definition": "To help people live in a kind, fair, and organized way.",
+    "example": "Friends can civilize a messy game by sharing and taking turns.",
     "related_words": {
       "same_root": [
         "civics",
@@ -14601,8 +14621,8 @@
     "root_meaning": "ordo meaning “regularity, order”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Disorder is something we talk about when we think about regularity, order.",
-    "example": "In class, we say \"disorder\" when we talk about regularity, order.",
+    "definition": "Things are mixed up and not neat or in the right place.",
+    "example": "My room was in disorder after the toy box tipped over.",
     "related_words": {
       "same_root": [
         "coordinate",
@@ -14701,8 +14721,8 @@
     "root_meaning": "ordo meaning “regularity, order”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Order is something we talk about when we think about regularity, order.",
-    "example": "In class, we say \"order\" when we talk about regularity, order.",
+    "definition": "It means putting things in the right place or right sequence.",
+    "example": "Please put your books in order before lunch.",
     "related_words": {
       "same_root": [
         "coordinate",
@@ -14801,8 +14821,8 @@
     "root_meaning": "ordo meaning “regularity, order”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "adv.",
-    "definition": "Orderly tells us that something happens in a way related to regularity, order.",
-    "example": "It reminds me that something happens in a way that connects to regularity, order.",
+    "definition": "In a neat and calm way, with things put in the right place.",
+    "example": "She lined up her crayons neatly and orderly before art class.",
     "related_words": {
       "same_root": [
         "coordinate",
@@ -14901,8 +14921,8 @@
     "root_meaning": "ordo meaning “regularity, order”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Orderliness is something we talk about when we think about regularity, order.",
-    "example": "In class, we say \"orderliness\" when we talk about regularity, order.",
+    "definition": "It means keeping things neat and in the right place.",
+    "example": "Her desk showed orderliness, with pencils and books neatly lined up.",
     "related_words": {
       "same_root": [
         "coordinate",
@@ -15001,8 +15021,8 @@
     "root_meaning": "ordo meaning “regularity, order”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Reorder is something we talk about when we think about regularity, order.",
-    "example": "In class, we say \"reorder\" when we talk about regularity, order.",
+    "definition": "Putting things in a new order, like numbers or books.",
+    "example": "We reordered the books by color on the shelf.",
     "related_words": {
       "same_root": [
         "coordinate",
@@ -15101,8 +15121,8 @@
     "root_meaning": "ordo meaning “regularity, order”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "v.",
-    "definition": "Inordinate means taking action that involves regularity, order.",
-    "example": "In class we inordinate when we want to focus on regularity, order.",
+    "definition": "It means to go too far or be too much.",
+    "example": "He ate too many cookies and felt sick.",
     "related_words": {
       "same_root": [
         "coordinate",
@@ -15201,8 +15221,8 @@
     "root_meaning": "ordo meaning “regularity, order”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Insubordination is something we talk about when we think about regularity, order.",
-    "example": "In class, we say \"insubordination\" when we talk about regularity, order.",
+    "definition": "It means not doing what a grown-up kindly told you to do.",
+    "example": "Tommy talked back after the teacher asked him to sit down.",
     "related_words": {
       "same_root": [
         "coordinate",
@@ -15301,8 +15321,8 @@
     "root_meaning": "ordo meaning “regularity, order”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
-    "definition": "Ordinal describes something connected to regularity, order.",
-    "example": "The word ordinal helps me describe things that are about regularity, order.",
+    "definition": "It shows which thing comes first, second, or third in order.",
+    "example": "She won first place in the race.",
     "related_words": {
       "same_root": [
         "coordinate",
@@ -15401,8 +15421,8 @@
     "root_meaning": "ordo meaning “regularity, order”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Ordinance is something we talk about when we think about regularity, order.",
-    "example": "In class, we say \"ordinance\" when we talk about regularity, order.",
+    "definition": "A rule made by a town or city to help everyone stay safe.",
+    "example": "The city ordinance says dogs must stay on a leash.",
     "related_words": {
       "same_root": [
         "coordinate",
@@ -15501,8 +15521,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Diameter is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"diameter\" when we talk about important ideas in daily life.",
+    "definition": "It is a straight line across a circle through the center.",
+    "example": "The pizza's diameter was as wide as my ruler.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -15650,8 +15670,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "A device that marks the beat for musicians.",
-    "example": "Mr. Rogers, our band leader, set the metronome to tick the quick tempo of a march.",
+    "definition": "It is a tool that helps keep a steady beat in music.",
+    "example": "The metronome clicked while I practiced piano.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -15799,8 +15819,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "adj.",
-    "definition": "Similar in shape and size on opposite sides of a dividing line.",
-    "example": "Carlos folded the paper in half so that as he cut out the bird shape the sides would be symmetrical. NOTA BENE Meter is a complete word in itself as well as a meaningful part of other words. It means the basic unit of length in the metric system, a measurement of 39.37 inches, which is a little longer than a yard.",
+    "definition": "Both sides match and look the same.",
+    "example": "A butterfly has wings that look alike on both sides.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -15948,8 +15968,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Thermometer is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"thermometer\" when we talk about important ideas in daily life.",
+    "definition": "It is a tool that tells how hot or cold something is.",
+    "example": "The thermometer showed our soup was too hot.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -16097,8 +16117,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Geometry is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"geometry\" when we talk about important ideas in daily life.",
+    "definition": "It is about shapes, lines, and how things fit together.",
+    "example": "We used geometry to draw a perfect triangle.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -16246,8 +16266,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Perimeter is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"perimeter\" when we talk about important ideas in daily life.",
+    "definition": "It is the distance around the outside of a shape.",
+    "example": "We measured the fence around the playground.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -16395,8 +16415,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "adj.",
-    "definition": "Thermal describes something connected to important ideas in daily life.",
-    "example": "The word thermal helps me describe things that are about important ideas in daily life.",
+    "definition": "It means having to do with heat or warmth.",
+    "example": "My thermal blanket kept me warm on the cold night.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -16544,8 +16564,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Thermostat is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"thermostat\" when we talk about important ideas in daily life.",
+    "definition": "It is a tool that helps keep rooms warm or cool.",
+    "example": "We changed the thermostat so our room felt cozy.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -16693,8 +16713,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Meter is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"meter\" when we talk about important ideas in daily life.",
+    "definition": "A meter is a way to measure how long something is.",
+    "example": "This rope is two meters long!",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -16842,8 +16862,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "adj.",
-    "definition": "Metric describes something connected to important ideas in daily life.",
-    "example": "The word metric helps me describe things that are about important ideas in daily life.",
+    "definition": "It means using meters, liters, or grams to measure things.",
+    "example": "My ruler uses metric units to measure my desk.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -16991,8 +17011,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Therm is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"therm\" when we talk about important ideas in daily life.",
+    "definition": "A therm is a way to measure heat.",
+    "example": "This cup keeps my cocoa warm for hours.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -17139,8 +17159,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Thermos is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"thermos\" when we talk about important ideas in daily life.",
+    "definition": "A bottle that keeps drinks hot or cold for a long time.",
+    "example": "I packed soup in my thermos for lunch.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -17288,8 +17308,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Chronometer is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"chronometer\" when we talk about important ideas in daily life.",
+    "definition": "It is a very accurate clock that tells time well.",
+    "example": "Grandpa used a chronometer to time the boat race.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -17437,8 +17457,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Trigonometry is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"trigonometry\" when we talk about important ideas in daily life.",
+    "definition": "It is math that helps us find angles and sides of shapes.",
+    "example": "We used trigonometry to find the tree's height!",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -17586,8 +17606,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "adj.",
-    "definition": "Biometric describes something connected to important ideas in daily life.",
-    "example": "The word biometric helps me describe things that are about important ideas in daily life.",
+    "definition": "It uses body parts like a face or finger to know someone.",
+    "example": "My tablet opens with my fingerprint, which feels like magic.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -17735,8 +17755,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Therm is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"therm\" when we talk about important ideas in daily life.",
+    "definition": "A therm is a unit used to measure heat energy.",
+    "example": "We used a therm to count the stove's heat.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -17883,8 +17903,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Thermodynamics is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"thermodynamics\" when we talk about important ideas in daily life.",
+    "definition": "It is the study of heat, energy, and how things change.",
+    "example": "A hot pan shows thermodynamics at work.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -18032,8 +18052,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "adj.",
-    "definition": "Thermoelectric describes something connected to important ideas in daily life.",
-    "example": "The word thermoelectric helps me describe things that are about important ideas in daily life.",
+    "definition": "It turns heat into electricity or uses electricity to make heat.",
+    "example": "My thermos uses thermoelectric power to keep my drink warm.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -18181,8 +18201,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "adj.",
-    "definition": "Thermoplastic describes something connected to important ideas in daily life.",
-    "example": "The word thermoplastic helps me describe things that are about important ideas in daily life.",
+    "definition": "Can be melted and shaped again with heat.",
+    "example": "This toy is made of thermoplastic and can change shape.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -18330,8 +18350,8 @@
     "root_meaning": "struere meaning “to heap up, build”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Construction is something we talk about when we think about to heap up, build.",
-    "example": "In class, we say \"construction\" when we talk about to heap up, build.",
+    "definition": "It means building something like a house, road, or playground.",
+    "example": "Construction made our new school playground bigger and better.",
     "related_words": {
       "same_root": [
         "structure",
@@ -18445,8 +18465,8 @@
     "root_meaning": "tractus meaning “to pull”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Extract is something we talk about when we think about to pull.",
-    "example": "In class, we say \"extract\" when we talk about to pull.",
+    "definition": "A thing taken out from something else.",
+    "example": "She used vanilla extract in the cake.",
     "related_words": {
       "same_root": [
         "retract",
@@ -18561,8 +18581,8 @@
     "root_meaning": "tractus meaning “to pull”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Retract is something we talk about when we think about to pull.",
-    "example": "In class, we say \"retract\" when we talk about to pull.",
+    "definition": "To take back what you said or showed.",
+    "example": "She had to retract her claim after seeing the facts.",
     "related_words": {
       "same_root": [
         "extract",
@@ -18677,8 +18697,8 @@
     "root_meaning": "tractus meaning “to pull”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Contraction is something we talk about when we think about to pull.",
-    "example": "In class, we say \"contraction\" when we talk about to pull.",
+    "definition": "Two words joined to make one shorter word with an apostrophe.",
+    "example": "I’m happy because we’re going to the park!",
     "related_words": {
       "same_root": [
         "extract",
@@ -18793,8 +18813,8 @@
     "root_meaning": "tractus meaning “to pull”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "A semicircular device for drawing and measuring angles.",
-    "example": "When Dominic placed his protractor on top of the angle, he could see the number of degrees it had.",
+    "definition": "A tool used to measure and draw angles.",
+    "example": "I used a protractor to draw a perfect angle.",
     "related_words": {
       "same_root": [
         "extract",
@@ -18909,8 +18929,8 @@
     "root_meaning": "struere meaning “to heap up, build”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Structure is something we talk about when we think about to heap up, build.",
-    "example": "In class, we say \"structure\" when we talk about to heap up, build.",
+    "definition": "It is something made of parts put together in a special way.",
+    "example": "The castle structure stood tall in the playground.",
     "related_words": {
       "same_root": [
         "construction",
@@ -19024,8 +19044,8 @@
     "root_meaning": "struere meaning “to heap up, build”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
-    "definition": "Destructive describes something connected to to heap up, build.",
-    "example": "The word destructive helps me describe things that are about to heap up, build.",
+    "definition": "It can hurt or break things.",
+    "example": "The storm was destructive to the old tree.",
     "related_words": {
       "same_root": [
         "construction",
@@ -19139,8 +19159,8 @@
     "root_meaning": "struere meaning “to heap up, build”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Reconstruct is something we talk about when we think about to heap up, build.",
-    "example": "In class, we say \"reconstruct\" when we talk about to heap up, build.",
+    "definition": "To build something again after it was broken or taken apart.",
+    "example": "We reconstructed the model after it fell on the floor.",
     "related_words": {
       "same_root": [
         "construction",
@@ -19254,8 +19274,8 @@
     "root_meaning": "tractus meaning “to pull”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "The power to grip or hold to a surface.",
-    "example": "Our new tires had good traction, which kept our car from sliding on the ice.",
+    "definition": "It is the grip that helps something not slip.",
+    "example": "My shoes had traction, so I did not slide.",
     "related_words": {
       "same_root": [
         "extract",
@@ -19370,8 +19390,8 @@
     "root_meaning": "struere meaning “to heap up, build”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Struct is something we talk about when we think about to heap up, build.",
-    "example": "In class, we say \"struct\" when we talk about to heap up, build.",
+    "definition": "A simple shape or thing made from parts.",
+    "example": "We built a cool struct with blocks at school.",
     "related_words": {
       "same_root": [
         "construction",
@@ -19483,8 +19503,8 @@
     "root_meaning": "struere meaning “to heap up, build”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Construct is something we talk about when we think about to heap up, build.",
-    "example": "In class, we say \"construct\" when we talk about to heap up, build.",
+    "definition": "A thing made by putting parts together.",
+    "example": "We built a sand construct at the beach.",
     "related_words": {
       "same_root": [
         "construction",
@@ -19598,8 +19618,8 @@
     "root_meaning": "struere meaning “to heap up, build”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Instruct is something we talk about when we think about to heap up, build.",
-    "example": "In class, we say \"instruct\" when we talk about to heap up, build.",
+    "definition": "To teach or tell someone how to do something.",
+    "example": "My mom instructed me to wash my hands before dinner.",
     "related_words": {
       "same_root": [
         "construction",
@@ -19713,8 +19733,8 @@
     "root_meaning": "struere meaning “to heap up, build”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Instructions is something we talk about when we think about to heap up, build.",
-    "example": "In class, we say \"instructions\" when we talk about to heap up, build.",
+    "definition": "They are steps that show you how to do something.",
+    "example": "Follow the instructions to build a cool paper airplane.",
     "related_words": {
       "same_root": [
         "construction",
@@ -19828,8 +19848,8 @@
     "root_meaning": "tractus meaning “to pull”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Tract is something we talk about when we think about to pull.",
-    "example": "In class, we say \"tract\" when we talk about to pull.",
+    "definition": "It is a small area of land or a part of something.",
+    "example": "The farmer bought a tract near the river.",
     "related_words": {
       "same_root": [
         "extract",
@@ -19942,8 +19962,8 @@
     "root_meaning": "tractus meaning “to pull”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Attract is something we talk about when we think about to pull.",
-    "example": "In class, we say \"attract\" when we talk about to pull.",
+    "definition": "To pull something closer to you, like a magnet does.",
+    "example": "The bright toy can attract curious kids at the store.",
     "related_words": {
       "same_root": [
         "extract",
@@ -20058,8 +20078,8 @@
     "root_meaning": "tractus meaning “to pull”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Subtract is something we talk about when we think about to pull.",
-    "example": "In class, we say \"subtract\" when we talk about to pull.",
+    "definition": "Take away one number from another to find what is left.",
+    "example": "I subtract three apples from five and have two left.",
     "related_words": {
       "same_root": [
         "extract",
@@ -20174,8 +20194,8 @@
     "root_meaning": "tractus meaning “to pull”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Subtraction is something we talk about when we think about to pull.",
-    "example": "In class, we say \"subtraction\" when we talk about to pull.",
+    "definition": "It means taking one number away from another number.",
+    "example": "I had five cookies, then ate two!",
     "related_words": {
       "same_root": [
         "extract",
@@ -20290,8 +20310,8 @@
     "root_meaning": "tractus meaning “to pull”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Tractor is something we talk about when we think about to pull.",
-    "example": "In class, we say \"tractor\" when we talk about to pull.",
+    "definition": "A big farm machine helps pull, plow, and carry heavy things.",
+    "example": "The tractor pulled the hay across the muddy field.",
     "related_words": {
       "same_root": [
         "extract",
@@ -20406,8 +20426,8 @@
     "root_meaning": "struere meaning “to heap up, build”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Struct is something we talk about when we think about to heap up, build.",
-    "example": "In class, we say \"struct\" when we talk about to heap up, build.",
+    "definition": "A thing built to hold or support something.",
+    "example": "The tower's struct helped keep the blocks steady.",
     "related_words": {
       "same_root": [
         "construction",
@@ -20519,8 +20539,8 @@
     "root_meaning": "struere meaning “to heap up, build”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Obstruct is something we talk about when we think about to heap up, build.",
-    "example": "In class, we say \"obstruct\" when we talk about to heap up, build.",
+    "definition": "To block something so it cannot move or get through.",
+    "example": "A fallen tree can obstruct the path to school.",
     "related_words": {
       "same_root": [
         "construction",
@@ -20634,8 +20654,8 @@
     "root_meaning": "struere meaning “to heap up, build”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Restructure is something we talk about when we think about to heap up, build.",
-    "example": "In class, we say \"restructure\" when we talk about to heap up, build.",
+    "definition": "It means to change how something is built or organized.",
+    "example": "We will restructure our toy shelf to fit more games.",
     "related_words": {
       "same_root": [
         "construction",
@@ -20749,8 +20769,8 @@
     "root_meaning": "struere meaning “to heap up, build”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "adv.",
-    "definition": "Structurally tells us that something happens in a way related to to heap up, build.",
-    "example": "It reminds me that something happens in a way that connects to to heap up, build.",
+    "definition": "It means how something is built or put together.",
+    "example": "The bridge was strong structurally, so it did not wobble.",
     "related_words": {
       "same_root": [
         "construction",
@@ -20864,8 +20884,8 @@
     "root_meaning": "struere meaning “to heap up, build”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Superstructure is something we talk about when we think about to heap up, build.",
-    "example": "In class, we say \"superstructure\" when we talk about to heap up, build.",
+    "definition": "It is the top part built on top of something else.",
+    "example": "The ship's superstructure rose above the water like a castle.",
     "related_words": {
       "same_root": [
         "construction",
@@ -20979,8 +20999,8 @@
     "root_meaning": "tractus meaning “to pull”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Tract is something we talk about when we think about to pull.",
-    "example": "In class, we say \"tract\" when we talk about to pull.",
+    "definition": "A tract is a small area of land.",
+    "example": "We walked across a tract near the school.",
     "related_words": {
       "same_root": [
         "extract",
@@ -21093,8 +21113,8 @@
     "root_meaning": "tractus meaning “to pull”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Detract is something we talk about when we think about to pull.",
-    "example": "In class, we say \"detract\" when we talk about to pull.",
+    "definition": "It means to take away from how good something is.",
+    "example": "Noise can detract from a movie's fun.",
     "related_words": {
       "same_root": [
         "extract",
@@ -21209,8 +21229,8 @@
     "root_meaning": "tractus meaning “to pull”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Distraction is something we talk about when we think about to pull.",
-    "example": "In class, we say \"distraction\" when we talk about to pull.",
+    "definition": "It is something that pulls your mind away from what you are doing.",
+    "example": "The buzzing fly was a distraction during my reading.",
     "related_words": {
       "same_root": [
         "extract",
@@ -21325,8 +21345,8 @@
     "root_meaning": "tractus meaning “to pull”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
-    "definition": "Intractable describes something connected to to pull.",
-    "example": "The word intractable helps me describe things that are about to pull.",
+    "definition": "Hard to control or solve.",
+    "example": "The puzzle was intractable, so we asked for help.",
     "related_words": {
       "same_root": [
         "extract",
@@ -21441,8 +21461,8 @@
     "root_meaning": "rumpere meaning “to break; to burst”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "v.",
-    "definition": "To disturb, to break into or destroy corrupt engine disrupted the quiet summer morning. incorruptibility 7. interruption (in tÆ rÆp ` shÆn)",
-    "example": "",
+    "definition": "It means to stop or change very quickly, with no warning.",
+    "example": "The movie ended abruptly, and we all gasped.",
     "related_words": {
       "same_root": [
         "interruption",
@@ -21580,8 +21600,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "adj.",
-    "definition": "Fractional describes something connected to important ideas in daily life.",
-    "example": "The word fractional helps me describe things that are about important ideas in daily life.",
+    "definition": "It means something is split into smaller parts.",
+    "example": "We ate a fractional piece of the pizza together.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -21712,8 +21732,8 @@
     "root_meaning": "fractus/frangere meaning “to crack; to break”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "The condition of being easily shattered or broke",
-    "example": "",
+    "definition": "It means something breaks or gets hurt very easily.",
+    "example": "The glass’s fragility made it crack when it fell.",
     "related_words": {
       "same_root": [
         "fragment",
@@ -21848,8 +21868,8 @@
     "root_meaning": "rumpere meaning “to break; to burst”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Interruption is something we talk about when we think about to break; to burst.",
-    "example": "In class, we say \"interruption\" when we talk about to break; to burst.",
+    "definition": "When something stops what you are doing for a moment.",
+    "example": "The phone call was an interruption during our game.",
     "related_words": {
       "same_root": [
         "abrupt",
@@ -21987,8 +22007,8 @@
     "root_meaning": "rumpere meaning “to break; to burst”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Disrupt is something we talk about when we think about to break; to burst.",
-    "example": "In class, we say \"disrupt\" when we talk about to break; to burst.",
+    "definition": "It means to stop something from going smoothly.",
+    "example": "The loud bell disrupted our quiet reading time.",
     "related_words": {
       "same_root": [
         "abrupt",
@@ -22126,8 +22146,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Fracture is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"fracture\" when we talk about important ideas in daily life.",
+    "definition": "It is when a bone breaks or cracks.",
+    "example": "She had a fracture after falling off her bike.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -22258,8 +22278,8 @@
     "root_meaning": "fractus/frangere meaning “to crack; to break”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Fragment is something we talk about when we think about to crack; to break.",
-    "example": "In class, we say \"fragment\" when we talk about to crack; to break.",
+    "definition": "A small piece broken from a bigger thing.",
+    "example": "I found a fragment of my crayon on the floor.",
     "related_words": {
       "same_root": [
         "fragility",
@@ -22394,8 +22414,8 @@
     "root_meaning": "rumpere meaning “to break; to burst”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Rupture is something we talk about when we think about to break; to burst.",
-    "example": "In class, we say \"rupture\" when we talk about to break; to burst.",
+    "definition": "A tear or break that opens something up.",
+    "example": "The balloon had a rupture after the sharp pin touched it.",
     "related_words": {
       "same_root": [
         "abrupt",
@@ -22533,8 +22553,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Fraction is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"fraction\" when we talk about important ideas in daily life.",
+    "definition": "It is one part of a whole thing.",
+    "example": "I ate one fraction of the pizza and shared the rest.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -22665,8 +22685,8 @@
     "root_meaning": "fractus/frangere meaning “to crack; to break”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Fragile is something we talk about when we think about to crack; to break.",
-    "example": "In class, we say \"fragile\" when we talk about to crack; to break.",
+    "definition": "Breaks or bends easily, so you must be careful.",
+    "example": "My sister's fragile toy fell and broke fast.",
     "related_words": {
       "same_root": [
         "fragility",
@@ -22801,8 +22821,8 @@
     "root_meaning": "rumpere meaning “to break; to burst”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Erupt is something we talk about when we think about to break; to burst.",
-    "example": "In class, we say \"erupt\" when we talk about to break; to burst.",
+    "definition": "A sudden burst of hot rock and ash from a volcano.",
+    "example": "The volcano erupted and sent ash into the sky.",
     "related_words": {
       "same_root": [
         "abrupt",
@@ -22940,8 +22960,8 @@
     "root_meaning": "rumpere meaning “to break; to burst”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Interrupt is something we talk about when we think about to break; to burst.",
-    "example": "In class, we say \"interrupt\" when we talk about to break; to burst.",
+    "definition": "To stop someone while they are talking or doing something.",
+    "example": "I interrupted Mom to show her my drawing.",
     "related_words": {
       "same_root": [
         "abrupt",
@@ -23079,8 +23099,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Fracas is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"fracas\" when we talk about important ideas in daily life.",
+    "definition": "A noisy fight or argument between people.",
+    "example": "The kids had a fracas over the last cookie.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -23211,8 +23231,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Infraction is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"infraction\" when we talk about important ideas in daily life.",
+    "definition": "It means breaking a rule, like when you do something not allowed.",
+    "example": "Skipping line at lunch is an infraction.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -23343,8 +23363,8 @@
     "root_meaning": "fractus/frangere meaning “to crack; to break”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
-    "definition": "Fragmentary describes something connected to to crack; to break.",
-    "example": "The word fragmentary helps me describe things that are about to crack; to break.",
+    "definition": "Something fragmentary is broken into small pieces or parts.",
+    "example": "The torn puzzle was fragmentary and missing many pieces.",
     "related_words": {
       "same_root": [
         "fragility",
@@ -23479,8 +23499,8 @@
     "root_meaning": "rumpere meaning “to break; to burst”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Corrupt is something we talk about when we think about to break; to burst.",
-    "example": "In class, we say \"corrupt\" when we talk about to break; to burst.",
+    "definition": "A person who takes bribes or uses power in a bad way.",
+    "example": "The corrupt mayor took money to help his friend.",
     "related_words": {
       "same_root": [
         "abrupt",
@@ -23618,8 +23638,8 @@
     "root_meaning": "bassus meaning “low,” and the Greek word basis meaning “pedestal or base”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Basement is something we talk about when we think about low,.",
-    "example": "In class, we say \"basement\" when we talk about low,.",
+    "definition": "A room under a house, often used for storage or play.",
+    "example": "We played games in the basement during the rain.",
     "related_words": {
       "same_root": [
         "bass",
@@ -23733,8 +23753,8 @@
     "root_meaning": "bassus meaning “low,” and the Greek word basis meaning “pedestal or base”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Bass is something we talk about when we think about low,.",
-    "example": "In class, we say \"bass\" when we talk about low,.",
+    "definition": "A low, deep sound or a fish that lives in water.",
+    "example": "I heard the bass drum boom at the parade.",
     "related_words": {
       "same_root": [
         "basement",
@@ -23848,8 +23868,8 @@
     "root_meaning": "positum meaning “to put, to place”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "v.",
-    "definition": "To get rid of or throw away.",
-    "example": "Because of its odor, Ryan disposed of the garbage in a covered container.",
+    "definition": "To throw something away or get rid of it safely.",
+    "example": "We dispose of old paper in the recycling bin.",
     "related_words": {
       "same_root": [
         "position",
@@ -23969,8 +23989,8 @@
     "root_meaning": "positum meaning “to put, to place”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Position is something we talk about when we think about to put, to place.",
-    "example": "In class, we say \"position\" when we talk about to put, to place.",
+    "definition": "It means where something or someone is placed or standing.",
+    "example": "My position on the team is goalie.",
     "related_words": {
       "same_root": [
         "dispose",
@@ -24090,8 +24110,8 @@
     "root_meaning": "bassus meaning “low,” and the Greek word basis meaning “pedestal or base”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Basis is something we talk about when we think about low,.",
-    "example": "In class, we say \"basis\" when we talk about low,.",
+    "definition": "It means the reason or starting point for something.",
+    "example": "Her drawing was the basis for our class poster.",
     "related_words": {
       "same_root": [
         "basement",
@@ -24205,8 +24225,8 @@
     "root_meaning": "positum meaning “to put, to place”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Composition is something we talk about when we think about to put, to place.",
-    "example": "In class, we say \"composition\" when we talk about to put, to place.",
+    "definition": "It means putting things together to make one thing.",
+    "example": "My sandwich is a tasty composition of bread, cheese, and ham.",
     "related_words": {
       "same_root": [
         "dispose",
@@ -24326,8 +24346,8 @@
     "root_meaning": "positum meaning “to put, to place”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "The result of being unprotected outside, especially in severe weather.",
-    "example": "We were worried that the lost hikers would suffer from exposure if we didn’t find them soo.",
+    "definition": "Being in a place or near something that can affect you.",
+    "example": "Too much sun exposure can make your skin burn.",
     "related_words": {
       "same_root": [
         "dispose",
@@ -24447,8 +24467,8 @@
     "root_meaning": "positum meaning “to put, to place”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
-    "definition": "Sure, certain, definite.",
-    "example": "The twins were positive that they had left their bicycles in back of the house.",
+    "definition": "It means good, happy, or expecting good things.",
+    "example": "She had a positive smile before the game started.",
     "related_words": {
       "same_root": [
         "dispose",
@@ -24568,8 +24588,8 @@
     "root_meaning": "bassus meaning “low,” and the Greek word basis meaning “pedestal or base”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Base is something we talk about when we think about low,.",
-    "example": "In class, we say \"base\" when we talk about low,.",
+    "definition": "It is the bottom part that helps something stay up.",
+    "example": "The base held the tower steady in the wind.",
     "related_words": {
       "same_root": [
         "basement",
@@ -24683,8 +24703,8 @@
     "root_meaning": "bassus meaning “low,” and the Greek word basis meaning “pedestal or base”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Baseboard is something we talk about when we think about low,.",
-    "example": "In class, we say \"baseboard\" when we talk about low,.",
+    "definition": "It is the long strip along the bottom of a room wall.",
+    "example": "My dog bumped the baseboard while chasing his toy.",
     "related_words": {
       "same_root": [
         "basement",
@@ -24798,8 +24818,8 @@
     "root_meaning": "bassus meaning “low,” and the Greek word basis meaning “pedestal or base”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
-    "definition": "Basic describes something connected to low,.",
-    "example": "The word basic helps me describe things that are about low,.",
+    "definition": "Something basic is simple and easy to understand or do.",
+    "example": "We learned a basic song in music class.",
     "related_words": {
       "same_root": [
         "basement",
@@ -24913,8 +24933,8 @@
     "root_meaning": "positum meaning “to put, to place”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Pose is something we talk about when we think about to put, to place.",
-    "example": "In class, we say \"pose\" when we talk about to put, to place.",
+    "definition": "It is a way to stand or sit for a picture.",
+    "example": "She struck a silly pose for the class photo.",
     "related_words": {
       "same_root": [
         "dispose",
@@ -25034,8 +25054,8 @@
     "root_meaning": "positum meaning “to put, to place”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Post is something we talk about when we think about to put, to place.",
-    "example": "In class, we say \"post\" when we talk about to put, to place.",
+    "definition": "A post is a message or letter sent to someone.",
+    "example": "I got a post from my grandma today.",
     "related_words": {
       "same_root": [
         "dispose",
@@ -25155,8 +25175,8 @@
     "root_meaning": "positum meaning “to put, to place”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Poster is something we talk about when we think about to put, to place.",
-    "example": "In class, we say \"poster\" when we talk about to put, to place.",
+    "definition": "A poster is a big picture with words that shares a message.",
+    "example": "I made a poster for our school fair.",
     "related_words": {
       "same_root": [
         "dispose",
@@ -25276,8 +25296,8 @@
     "root_meaning": "positum meaning “to put, to place”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Posture is something we talk about when we think about to put, to place.",
-    "example": "In class, we say \"posture\" when we talk about to put, to place.",
+    "definition": "It means how your body sits or stands.",
+    "example": "She had good posture while reading her book.",
     "related_words": {
       "same_root": [
         "dispose",
@@ -25397,8 +25417,8 @@
     "root_meaning": "bassus meaning “low,” and the Greek word basis meaning “pedestal or base”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Bassoon is something we talk about when we think about low,.",
-    "example": "In class, we say \"bassoon\" when we talk about low,.",
+    "definition": "It is a tall wood instrument with a low, funny sound.",
+    "example": "The bassoon made the band sound warm and silly.",
     "related_words": {
       "same_root": [
         "basement",
@@ -25512,8 +25532,8 @@
     "root_meaning": "bassus meaning “low,” and the Greek word basis meaning “pedestal or base”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Debase is something we talk about when we think about low,.",
-    "example": "In class, we say \"debase\" when we talk about low,.",
+    "definition": "It means to make something seem less good or less valuable.",
+    "example": "Littering can debase a beautiful park.",
     "related_words": {
       "same_root": [
         "basement",
@@ -25627,8 +25647,8 @@
     "root_meaning": "positum meaning “to put, to place”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Depose is something we talk about when we think about to put, to place.",
-    "example": "In class, we say \"depose\" when we talk about to put, to place.",
+    "definition": "To depose means to remove a king or leader from power.",
+    "example": "The people depose the mean king and choose a new leader.",
     "related_words": {
       "same_root": [
         "dispose",
@@ -25748,8 +25768,8 @@
     "root_meaning": "positum meaning “to put, to place”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Impose is something we talk about when we think about to put, to place.",
-    "example": "In class, we say \"impose\" when we talk about to put, to place.",
+    "definition": "To put a rule or limit on someone.",
+    "example": "The teacher imposed quiet time after lunch.",
     "related_words": {
       "same_root": [
         "dispose",
@@ -25869,8 +25889,8 @@
     "root_meaning": "positum meaning “to put, to place”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Interpose is something we talk about when we think about to put, to place.",
-    "example": "In class, we say \"interpose\" when we talk about to put, to place.",
+    "definition": "To step in between people or things to help or stop trouble.",
+    "example": "She interposed herself between the dogs to keep them safe.",
     "related_words": {
       "same_root": [
         "dispose",
@@ -25990,8 +26010,8 @@
     "root_meaning": "positum meaning “to put, to place”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "adj.",
-    "definition": "Proposal describes something connected to to put, to place.",
-    "example": "The word proposal helps me describe things that are about to put, to place.",
+    "definition": "It means about a plan someone suggests to do.",
+    "example": "She made a proposal to have a pizza party.",
     "related_words": {
       "same_root": [
         "dispose",
@@ -26111,8 +26131,8 @@
     "root_meaning": "positum meaning “to put, to place”",
     "root_origin": "Latin/Greek",
     "part_of_speech": "n.",
-    "definition": "Repose is something we talk about when we think about to put, to place.",
-    "example": "In class, we say \"repose\" when we talk about to put, to place.",
+    "definition": "It means a calm, quiet rest.",
+    "example": "After playing, she sat in repose under the tree.",
     "related_words": {
       "same_root": [
         "dispose",
@@ -26232,8 +26252,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Committee is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"committee\" when we talk about important ideas in daily life.",
+    "definition": "A group of people who work together to make a choice.",
+    "example": "Our school committee planned the fun field day!",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -26334,8 +26354,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "A joining word; the part of speech that joins other words or groups of words.",
-    "example": "In the sentence, “Kim and Lee liked baseball, but not tennis,” the words and and but are conjunctions.",
+    "definition": "It joins words or parts of a sentence together.",
+    "example": "I wanted cookies, but I ate carrots.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -26436,8 +26456,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Reaction is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"reaction\" when we talk about important ideas in daily life.",
+    "definition": "It is what happens after something makes you feel or act.",
+    "example": "She laughed when the joke gave her a happy reaction.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -26538,8 +26558,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Reflect is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"reflect\" when we talk about important ideas in daily life.",
+    "definition": "It means to think carefully about something or look back at it.",
+    "example": "I reflect on my game and try to do better.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -26640,8 +26660,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "v.",
-    "definition": "Communicate means taking action that involves important ideas in daily life.",
-    "example": "In class we communicate when we want to focus on important ideas in daily life.",
+    "definition": "To share your thoughts or feelings with someone.",
+    "example": "We communicate by talking and drawing pictures.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -26742,8 +26762,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Converse is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"converse\" when we talk about important ideas in daily life.",
+    "definition": "A talk between two people who take turns speaking.",
+    "example": "We had a fun converse about our favorite pets.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -26844,8 +26864,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Reelect is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"reelect\" when we talk about important ideas in daily life.",
+    "definition": "Choose someone to do the same job again.",
+    "example": "Kids reelect Maya as class leader because she is kind.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -26946,8 +26966,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "v.",
-    "definition": "To have a connection with.",
-    "example": "Often the meaning of a word is related to, and can be traced back to, its root.",
+    "definition": "To relate means to connect one thing to another.",
+    "example": "I can relate my story to the one in class.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -27048,8 +27068,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Combine is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"combine\" when we talk about important ideas in daily life.",
+    "definition": "To put things together to make one thing.",
+    "example": "We can combine juice and ice for a cool drink.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -27150,8 +27170,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Commotion is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"commotion\" when we talk about important ideas in daily life.",
+    "definition": "A loud, busy mix of noise and movement that can feel chaotic.",
+    "example": "The classroom made a commotion when the puppy ran in.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -27252,8 +27272,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Rearrange is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"rearrange\" when we talk about important ideas in daily life.",
+    "definition": "To put things in a new order.",
+    "example": "She rearranged her books by color.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -27354,8 +27374,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Recall is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"recall\" when we talk about important ideas in daily life.",
+    "definition": "It means remembering something from your mind.",
+    "example": "I can recall where I hid my toy.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -27456,8 +27476,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Repeat is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"repeat\" when we talk about important ideas in daily life.",
+    "definition": "Doing something again, like saying a word or playing a game.",
+    "example": "We sang the chorus again as a repeat.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -27558,8 +27578,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Return is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"return\" when we talk about important ideas in daily life.",
+    "definition": "To get something back after you gave it away or borrowed it.",
+    "example": "Please return my book when you finish reading it.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -27660,8 +27680,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Review is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"review\" when we talk about important ideas in daily life.",
+    "definition": "A look again to check if something is good or needs help.",
+    "example": "We did a review before the big test.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -27762,8 +27782,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Rewrite is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"rewrite\" when we talk about important ideas in daily life.",
+    "definition": "It means writing something again in a new way.",
+    "example": "She rewrote her story to make it more fun.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -27864,8 +27884,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Compete is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"compete\" when we talk about important ideas in daily life.",
+    "definition": "Trying to win or do better than others in a game.",
+    "example": "We compete in a race and cheer for each other.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -27966,8 +27986,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Condone is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"condone\" when we talk about important ideas in daily life.",
+    "definition": "It means to let something bad happen without stopping it.",
+    "example": "She did not condone cheating on the test.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -28068,8 +28088,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Congestion is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"congestion\" when we talk about important ideas in daily life.",
+    "definition": "Too many things crowded together in one place.",
+    "example": "Traffic congestion made our car move very slowly.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -28170,8 +28190,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Contrite is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"contrite\" when we talk about important ideas in daily life.",
+    "definition": "Feeling sorry after doing something wrong.",
+    "example": "After teasing Sam, Mia felt contrite and said sorry.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -28272,8 +28292,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Refute is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"refute\" when we talk about important ideas in daily life.",
+    "definition": "To show an idea is wrong with facts or proof.",
+    "example": "Her proof helped refute the silly rumor.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -28374,8 +28394,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Remit is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"remit\" when we talk about important ideas in daily life.",
+    "definition": "It means the amount of money you must pay.",
+    "example": "I asked for the remit before buying my new bike.",
     "related_words": {
       "same_root": [],
       "same_lesson": [
@@ -28476,8 +28496,8 @@
     "root_meaning": "",
     "root_origin": "",
     "part_of_speech": "n.",
-    "definition": "Repose is something we talk about when we think about important ideas in daily life.",
-    "example": "In class, we say \"repose\" when we talk about important ideas in daily life.",
+    "definition": "A calm, quiet rest after being busy.",
+    "example": "After soccer, Mia sat in repose under a tree.",
     "related_words": {
       "same_root": [
         "dispose",
